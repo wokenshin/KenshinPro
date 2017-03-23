@@ -153,7 +153,7 @@
 #pragma mark - 发短信
 - (IBAction)btnSendMSM:(id)sender
 {
-    [self sendMSMPhoneNos:@[@"18385099600"]
+    [self sendMSMPhoneNos:@[@"18312345678"]
                     title:@"测试发送短信"
                   content:@"短信内容，明天我们一起去打篮球吧"
     resultBlock:^(BOOL sendSuccess) {

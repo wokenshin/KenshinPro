@@ -46,6 +46,16 @@
 #pragma mark 发送短信
 - (IBAction)btnSendSMS:(id)sender
 {
+    if ([_phoneNo.text isEqualToString:@""])
+    {
+        [self showError:@"请输入手机号"];
+        return;
+    }
+    if ([_contentView.text isEqualToString:@""])
+    {
+        [self showError:@"请输入短信内容"];
+        return;
+    }
     [self showMessageView:@[_phoneNo.text] title:@"发送短信啦啦啦" body:_contentView.text];
     
 }
