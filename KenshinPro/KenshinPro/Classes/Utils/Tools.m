@@ -1138,5 +1138,17 @@
     return deviceString;
 }
 
++ (BOOL)isKongWithObj:(id)obj
+{
+    if (obj == nil)
+    {
+        return YES;
+    }
+    if ([obj isEqual:[NSNull null]])
+    {
+        return YES;
+    }
+    return NO;
+}
 
 @end

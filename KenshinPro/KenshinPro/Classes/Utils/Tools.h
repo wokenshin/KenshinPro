@@ -235,4 +235,7 @@
 //获取设备型号 例如 iPhone6s
 + (NSString *)getDeviceName;
 
+//判断当前传入的值是否为 nil 或者 null
++ (BOOL)isKongWithObj:(id)isKong;
+
 @end
