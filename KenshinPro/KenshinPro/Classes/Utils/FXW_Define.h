@@ -52,7 +52,7 @@
 
 #define FontK(i) ([UIFont systemFontOfSize:i])
 
-//母亲电商 字体大小
+//mqds 字体大小
 
 
 #define Font4      [UIFont fontWithName:@"Helvetica" size:11]

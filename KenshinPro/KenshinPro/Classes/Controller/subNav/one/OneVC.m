@@ -45,7 +45,7 @@
     [self addDataWithTitle:@"自定义导航栏" andDetail:@"添加导航栏按钮，titleView，或者隐藏导航栏等"];
     [self addDataWithTitle:@"常用封装UI" andDetail:@"封装的按钮，UIControl，弹框的"];
     [self addDataWithTitle:@"通讯录" andDetail:@"获取系统通讯录，和自定义通讯录"];
-    [self addDataWithTitle:@"发送短信" andDetail:@"发送短信-进入系统短信编辑界面"];
+    [self addDataWithTitle:@"发送短信-打电话" andDetail:@"发送短信-进入系统短信编辑界面"];
     [self addDataWithTitle:@"界面-情景模式" andDetail:@"ddzm - Masonry 布局 模态显示 "];
     [self addDataWithTitle:@"菜单-CollectionVew" andDetail:@"ddzm - 控制页面底部菜单"];
     [self addDataWithTitle:@"xib-按钮设置选中状态时的图片" andDetail:@"ddzm - 切换电子锁体"];
@@ -117,7 +117,6 @@
     if ([title isEqualToString:@"BaseVC"])
     {
         BaseFunctionVC *vc = [[BaseFunctionVC alloc] init];
-        vc.isHiddenBackButtonTitle = NO;
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;
@@ -151,7 +150,7 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
-    if ([title isEqualToString:@"发送短信"])
+    if ([title isEqualToString:@"发送短信-打电话"])
     {
         SendSMSVC *vc = [[SendSMSVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
@@ -182,6 +181,8 @@
         return;
     }
     
+    [self toast:[NSString stringWithFormat:@"未找到对应VC 点击了:%@", title]];
+    
 }
 
 #pragma mark 懒加载
@@ -196,7 +197,6 @@
         //隐藏都偶遇分割线【注释掉 可看效果】
         UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
         [_tableView setTableFooterView:v];
-        
         
     }
     return _tableView;

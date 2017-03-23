@@ -677,21 +677,21 @@
 }
 
 #pragma mark - UIApplocation［方法未测试］
-//打电话
-+ (void)tellPhoneWith:(NSString *)phoneNun
+//打电话[会现有弹框，提示是否呼叫 点击呼叫后开始拨号]
++ (void)tellPhoneWithNo:(NSString *)phoneNun
 {
     NSString *protocol = [NSString stringWithFormat:@"tel://%@", phoneNun];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:protocol]];
     
 }
 
-//发短信
-+ (void)sendMessageWith:(NSString *)contents
-{
-    NSString *protocol = [NSString stringWithFormat:@"sms://%@", contents];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:protocol]];
-    
-}
+//发短信 不管用
+//+ (void)sendMessageWith:(NSString *)contents
+//{
+//    NSString *protocol = [NSString stringWithFormat:@"sms://%@", contents];
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:protocol]];
+//    
+//}
 
 //发邮件
 + (void)sendEmailWith:(NSString *)emailAddress

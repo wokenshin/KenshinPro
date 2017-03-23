@@ -133,10 +133,10 @@
 
 #pragma mark - UIApplocation
 //打电话
-+ (void)tellPhoneWith:(NSString *)phoneNun;
++ (void)tellPhoneWithNo:(NSString *)phoneNun;
 
-//发短信
-+ (void)sendMessageWith:(NSString *)contents;
+//发短信 不管用
+//+ (void)sendMessageWith:(NSString *)contents;
 
 //发邮件
 + (void)sendEmailWith:(NSString *)emailAddress;

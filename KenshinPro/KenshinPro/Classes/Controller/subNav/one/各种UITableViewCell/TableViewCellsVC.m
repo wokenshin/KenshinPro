@@ -24,14 +24,14 @@
 
 - (void)loadData
 {
-    //博文软件[其中有意个可扩展的Cell]
-    [self addDataWithTitle:@"CellType1" andDetail:@"博文软件"];
+    //bwrj[其中有意个可扩展的Cell]
+    [self addDataWithTitle:@"CellType1" andDetail:@"bwrj"];
     
-    //母亲电商
-    [self addDataWithTitle:@"CellType2" andDetail:@"母亲电商"];
+    //mqds
+    [self addDataWithTitle:@"CellType2" andDetail:@"mqds"];
     
-    //丁丁掌门
-    [self addDataWithTitle:@"CellType3" andDetail:@"丁丁掌门"];
+    //ddzm
+    [self addDataWithTitle:@"CellType3" andDetail:@"ddzm"];
     
 }
 

@@ -192,6 +192,17 @@
     
 }
 
+#pragma mark 打电话 [这个地方如果快速点击按钮的话，会响应多次，应该避免这种情况]
+- (IBAction)btnCallNo:(UIButton *)btn
+{
+    btn.enabled = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        btn.enabled = YES;
+    });
+    
+    [self callNo:@"10086"];
+    
+}
 
 
 - (void)dealloc

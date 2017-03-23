@@ -208,4 +208,12 @@ typedef void (^MSMNoBlock)(BOOL sendSuccess);
                content:(NSString *)content
            resultBlock:(MSMNoBlock)block;
 
+#pragma mark - 打电话
+/**
+ 拨号 会有系统弹框提示 是否呼叫 点击呼叫后出发
+
+ @param no 拨号号码
+ */
+- (void)callNo:(NSString *)no;
+
 @end

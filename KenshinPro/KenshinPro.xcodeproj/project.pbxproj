@@ -55,6 +55,8 @@
 		B92641EB1E83997300EEED61 /* FXW_Button.m in Sources */ = {isa = PBXBuildFile; fileRef = B92641E81E83997300EEED61 /* FXW_Button.m */; };
 		B92641EC1E83997300EEED61 /* FXW_Control.m in Sources */ = {isa = PBXBuildFile; fileRef = B92641EA1E83997300EEED61 /* FXW_Control.m */; };
 		B92641EF1E8399C900EEED61 /* PopSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = B92641EE1E8399C900EEED61 /* PopSelect.m */; };
+		B92641F41E83C5E100EEED61 /* SendSMSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B92641F21E83C5E100EEED61 /* SendSMSVC.m */; };
+		B92641F51E83C5E100EEED61 /* SendSMSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92641F31E83C5E100EEED61 /* SendSMSVC.xib */; };
 		B92CCAE81E7A149300035A79 /* MainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B92CCAE71E7A149300035A79 /* MainTabBarVC.m */; };
 		B92CCAF01E7A154600035A79 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B92CCAEF1E7A154600035A79 /* BaseVC.m */; };
 		B92CCAF31E7A156800035A79 /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B92CCAF21E7A156800035A79 /* OneVC.m */; };
@@ -81,8 +83,6 @@
 		B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9673FA21E78E22A006AB3DA /* LaunchScreen.storyboard */; };
 		B9673FAF1E78E22A006AB3DA /* KenshinProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9673FAE1E78E22A006AB3DA /* KenshinProTests.m */; };
 		B9673FBA1E78E22A006AB3DA /* KenshinProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9673FB91E78E22A006AB3DA /* KenshinProUITests.m */; };
-		B9B0D78B1E820ACF001C04FB /* SendSMSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D7891E820ACF001C04FB /* SendSMSVC.m */; };
-		B9B0D78C1E820ACF001C04FB /* SendSMSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B0D78A1E820ACF001C04FB /* SendSMSVC.xib */; };
 		B9B0D7911E820C29001C04FB /* FXW_TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D78E1E820C29001C04FB /* FXW_TextField.m */; };
 		B9B0D7921E820C29001C04FB /* FXW_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D7901E820C29001C04FB /* FXW_TextView.m */; };
 		B9B0D7951E827B57001C04FB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D7941E827B57001C04FB /* BaseModel.m */; };
@@ -226,6 +226,9 @@
 		B92641EA1E83997300EEED61 /* FXW_Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_Control.m; sourceTree = "<group>"; };
 		B92641ED1E8399C900EEED61 /* PopSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopSelect.h; sourceTree = "<group>"; };
 		B92641EE1E8399C900EEED61 /* PopSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopSelect.m; sourceTree = "<group>"; };
+		B92641F11E83C5E100EEED61 /* SendSMSVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendSMSVC.h; sourceTree = "<group>"; };
+		B92641F21E83C5E100EEED61 /* SendSMSVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendSMSVC.m; sourceTree = "<group>"; };
+		B92641F31E83C5E100EEED61 /* SendSMSVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendSMSVC.xib; sourceTree = "<group>"; };
 		B92CCAE61E7A149300035A79 /* MainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarVC.h; sourceTree = "<group>"; };
 		B92CCAE71E7A149300035A79 /* MainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarVC.m; sourceTree = "<group>"; };
 		B92CCAEE1E7A154600035A79 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
@@ -278,9 +281,6 @@
 		B9673FB51E78E22A006AB3DA /* KenshinProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenshinProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9673FB91E78E22A006AB3DA /* KenshinProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KenshinProUITests.m; sourceTree = "<group>"; };
 		B9673FBB1E78E22A006AB3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9B0D7881E820ACF001C04FB /* SendSMSVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendSMSVC.h; sourceTree = "<group>"; };
-		B9B0D7891E820ACF001C04FB /* SendSMSVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendSMSVC.m; sourceTree = "<group>"; };
-		B9B0D78A1E820ACF001C04FB /* SendSMSVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendSMSVC.xib; sourceTree = "<group>"; };
 		B9B0D78D1E820C29001C04FB /* FXW_TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_TextField.h; sourceTree = "<group>"; };
 		B9B0D78E1E820C29001C04FB /* FXW_TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_TextField.m; sourceTree = "<group>"; };
 		B9B0D78F1E820C29001C04FB /* FXW_TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_TextView.h; sourceTree = "<group>"; };
@@ -479,6 +479,16 @@
 			path = "自定义导航栏";
 			sourceTree = "<group>";
 		};
+		B92641F01E83C5E100EEED61 /* 发送短信-打电话 */ = {
+			isa = PBXGroup;
+			children = (
+				B92641F11E83C5E100EEED61 /* SendSMSVC.h */,
+				B92641F21E83C5E100EEED61 /* SendSMSVC.m */,
+				B92641F31E83C5E100EEED61 /* SendSMSVC.xib */,
+			);
+			path = "发送短信-打电话";
+			sourceTree = "<group>";
+		};
 		B92CCADE1E7A13E300035A79 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,8 +609,8 @@
 			isa = PBXGroup;
 			children = (
 				B9BD97531E810B19009BB0D4 /* BaseVC全部功能 */,
+				B92641F01E83C5E100EEED61 /* 发送短信-打电话 */,
 				B92CCB131E7A278F00035A79 /* 获取通讯库数据 */,
-				B9B0D7871E820AA3001C04FB /* 发送短信 */,
 				B9D626CA1E7CC48F00593EC1 /* 界面-情景模式 */,
 				B9D626F51E7D19E700593EC1 /* 菜单-CollectionView */,
 				B915C1CC1E7F9D290088A31F /* 按钮设置选中图片-xib */,
@@ -752,16 +762,6 @@
 				B9673FBB1E78E22A006AB3DA /* Info.plist */,
 			);
 			path = KenshinProUITests;
-			sourceTree = "<group>";
-		};
-		B9B0D7871E820AA3001C04FB /* 发送短信 */ = {
-			isa = PBXGroup;
-			children = (
-				B9B0D7881E820ACF001C04FB /* SendSMSVC.h */,
-				B9B0D7891E820ACF001C04FB /* SendSMSVC.m */,
-				B9B0D78A1E820ACF001C04FB /* SendSMSVC.xib */,
-			);
-			path = "发送短信";
 			sourceTree = "<group>";
 		};
 		B9B0D7961E827B98001C04FB /* 各种UITableViewCell */ = {
@@ -1032,10 +1032,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9B0D78C1E820ACF001C04FB /* SendSMSVC.xib in Resources */,
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9D627001E7D302700593EC1 /* CellCtrlDdzm.xib in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
+				B92641F51E83C5E100EEED61 /* SendSMSVC.xib in Resources */,
 				B92CCB411E7A895900035A79 /* SysContactsVC.xib in Resources */,
 				B915C1D11E7F9D290088A31F /* XibSelectedBtnImgVC.xib in Resources */,
 				B9BD97501E81054C009BB0D4 /* MBProgressHUD.bundle in Resources */,
@@ -1070,7 +1070,6 @@
 				B92CCAFC1E7A159300035A79 /* FourVC.m in Sources */,
 				B92CCB0A1E7A192100035A79 /* DateUtil.m in Sources */,
 				B915C2471E7F9DE10088A31F /* MDTextField.m in Sources */,
-				B9B0D78B1E820ACF001C04FB /* SendSMSVC.m in Sources */,
 				B9D626F01E7CC4D600593EC1 /* NSArray+MASAdditions.m in Sources */,
 				B915C24D1E7F9DE10088A31F /* NSDateHelper.m in Sources */,
 				B92CCB0C1E7A192100035A79 /* SFHFKeychainUtils.m in Sources */,
@@ -1154,6 +1153,7 @@
 				B915C2501E7F9DE10088A31F /* UIView+MDExtension.m in Sources */,
 				B9D626F81E7D19FF00593EC1 /* ControlMenuVC.m in Sources */,
 				B92CCB401E7A895900035A79 /* SysContactsVC.m in Sources */,
+				B92641F41E83C5E100EEED61 /* SendSMSVC.m in Sources */,
 				B92CCAE81E7A149300035A79 /* MainTabBarVC.m in Sources */,
 				B92CCAF01E7A154600035A79 /* BaseVC.m in Sources */,
 				B9B0D7921E820C29001C04FB /* FXW_TextView.m in Sources */,

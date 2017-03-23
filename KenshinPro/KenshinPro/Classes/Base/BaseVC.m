@@ -499,4 +499,16 @@
     
 }
 
+- (void)callNo:(NSString *)no
+{
+    //如果 no 为 @“”，不会有任何反应
+    //如果 no 为 nil， 会提示是否呼叫，可以打出去
+    
+    //[Tools tellPhoneWithNo:no];
+    
+    //等同注释掉的代码
+    NSString *protocol = [NSString stringWithFormat:@"tel://%@", no];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:protocol]];
+    
+}
 @end
