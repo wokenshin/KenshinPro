@@ -18,7 +18,6 @@
                     MFMessageComposeViewControllerDelegate>//发短信代理>
 
 
-@property (nonatomic, strong) MBProgressHUD                     *juHua;
 @property (nonatomic, copy) voidBlock                           clickRightBtnCallback;//导航栏右边的按钮block
 @property (nonatomic, copy) voidBlock                           clickLeftBtnCallback;//导航栏左边的按钮block
 
@@ -40,6 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    self.view.backgroundColor = [UIColor whiteColor];//设置背景色
     [self addTapClickBackCloseKeyBoard];
     [self setBackButtonNoTitle];//隐藏导航栏返回按钮的标题 只显示返回按钮的箭头
     
@@ -77,6 +77,19 @@
 {
     [self.view endEditing:YES];
     
+}
+
+//获取指定控制器
+- (UIViewController *)getViewControllerWithClass:(Class)vcClass;
+{
+    for (UIViewController *controller in self.navigationController.viewControllers)
+    {
+        if ([controller isKindOfClass:vcClass])
+        {
+            return controller;
+        }
+    }
+    return nil;
 }
 
 - (void)setNavRightBtnWithImg:(NSString *)imgName andClickResultblock:(voidBlock )block
@@ -214,23 +227,13 @@
     
 }
 
-//使用懒加载避免重复创建
-- (MBProgressHUD *)juHua
-{
-    if (_juHua == nil)
-    {
-        _juHua = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-        
-    }
-    return _juHua;
-    
-}
 
 -(void)showJuHua:(NSString *)message
 {
     [self hideJuHua];
-    self.juHua.mode = MBProgressHUDModeIndeterminate;
-    self.juHua.labelText = message;
+    MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hub.mode = MBProgressHUDModeIndeterminate;
+    hub.labelText = message;
     
 }
 
@@ -499,6 +502,7 @@
     
 }
 
+//拨号
 - (void)callNo:(NSString *)no
 {
     //如果 no 为 @“”，不会有任何反应

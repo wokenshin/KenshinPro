@@ -14,14 +14,15 @@
 #import "FXWUD.h"
 
 //我的UI
-#import "FXW_TextField.h"
-#import "FXW_TextView.h"
+#import "FXWUI.h"
 
 //三方库
 #import "Masonry.h"
 #import "MDToast.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+MJ.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"//table 上下拉 刷新
 
 /**
  将最常用的功能集成到这里 比如 菊花、吐司等
@@ -47,6 +48,16 @@ typedef void(^voidBlock) ();
  关闭软键盘[点击空白处时会触发该方法]
  */
 - (void)closeKeyBoard;
+
+#pragma mark - 获取指定的控制器 从控制器数组中
+
+/**
+ 获取指定的控制器 从控制器数组中 【该方法可以用在pop到制定的vc时，也可以在pop时传值】
+
+ @param vcClass 需要获取的控制器的Class
+ @return 控制器实例，如果没有 返回 nil
+ */
+- (UIViewController *)getViewControllerWithClass:(Class)vcClass;
 
 #pragma mark - 导航栏右边按钮
 /**

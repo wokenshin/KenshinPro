@@ -74,7 +74,7 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     //设置NavBar背景和前景颜色
-    [[UINavigationBar appearance] setBarTintColor:colorBlueNavBar];
+    [[UINavigationBar appearance] setBarTintColor:colorDdzmBlueNavBar];
     
     //设置返回文字和图标颜色[系统默认返回按钮]
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

@@ -11,7 +11,7 @@
 @interface FXW_TextField : UITextField
 
 /*功能概述
- 
+    0.默认缩进10
     1.限制文本框输入内容，字符串、数字、小数[未实现]这样应该可以限制输入表情
     2.是否禁止粘贴、禁止输入空           [未实现]
     3.限制文本长度
@@ -23,18 +23,15 @@
  */
 
 
+/**
+ 文本距离锁边的距离 默认是10
+ */
+@property (nonatomic, assign) CGFloat                           leftMargin;
+
+
 //定义一个代码块 类型 叫 clickControl
 typedef void (^FXW_TextFieldBlock)(FXW_TextField* text);
 
-//定义一个枚举 限制文本框的输入内容
-typedef NS_ENUM(NSInteger, InputValueType)
-{
-    InputValueTypeNum               = 1,
-    InputValueTypeDouble            = 2,
-    InputValueTypeString            = 3,//不设置输入类型 默认是字符串
-    InputValueTypePassword          = 4,
-    
-};
 
 /**
  设置文本长度
@@ -44,12 +41,6 @@ typedef NS_ENUM(NSInteger, InputValueType)
  */
 - (void)setLimitLen:(NSInteger)len andWithResultBlock:(FXW_TextFieldBlock )block;
 
-/**
- 限制文本框的输入类型，限制类型的同时，更改软键盘的显示 数字就显示数字键盘，小数就显示小数键盘等
-
- @param inputType InputValueType
- */
-- (void)setLimitInputValue:(InputValueType)inputType;
 
 /**
  监听文本框的编辑 当文本内容发生改变时触发回调

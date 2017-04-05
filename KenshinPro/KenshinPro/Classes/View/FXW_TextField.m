@@ -23,6 +23,7 @@
 
 @property (nonatomic, copy)   FXW_TextFieldBlock                begainingEditCallback;
 
+
 @end
 
 @implementation FXW_TextField
@@ -121,6 +122,25 @@
 {
     self.delegate = self;
     _begainingEditCallback = block;
+    
+}
+
+#pragma mark 覆盖父类方法［缩进的效果］
+//控制文本所在的的位置，左右缩 10[初始化 set上值的时候]
+- (CGRect)textRectForBounds:(CGRect)bounds
+{
+    int margin = _leftMargin>0?_leftMargin:10;
+    
+    return CGRectInset(bounds, margin, 0);
+    
+}
+
+//控制编辑文本时所在的位置，左右缩 10[编辑的时候]
+- (CGRect)editingRectForBounds:(CGRect)bounds
+{
+    int margin = _leftMargin>0?_leftMargin:10;
+    
+    return CGRectInset(bounds, margin, 0);
     
 }
 

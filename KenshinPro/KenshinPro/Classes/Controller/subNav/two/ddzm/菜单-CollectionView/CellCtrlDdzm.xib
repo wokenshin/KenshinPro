@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellCtrlDdzm">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IHt-Cv-aS0">
+                        <rect key="frame" x="59" y="20" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="8Yh-Vr-OMh"/>
+                            <constraint firstAttribute="width" constant="36" id="wxV-5G-EPX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjc-xQ-Iek">
+                        <rect key="frame" x="0.0" y="66" width="154" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fTh-qV-iXQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Hjc-xQ-Iek" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AQF-2A-obJ"/>
+                <constraint firstItem="IHt-Cv-aS0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="EaS-JK-klv"/>
+                <constraint firstItem="IHt-Cv-aS0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="YjL-VW-pEU"/>
+                <constraint firstItem="Hjc-xQ-Iek" firstAttribute="top" secondItem="IHt-Cv-aS0" secondAttribute="bottom" constant="10" id="kkd-cJ-6N2"/>
+                <constraint firstAttribute="trailing" secondItem="Hjc-xQ-Iek" secondAttribute="trailing" id="oiW-PG-poF"/>
+            </constraints>
+            <size key="customSize" width="154" height="98"/>
+            <connections>
+                <outlet property="imageView" destination="IHt-Cv-aS0" id="E6P-ZH-Ppg"/>
+                <outlet property="labTitle" destination="Hjc-xQ-Iek" id="jRe-Rg-Uxa"/>
+            </connections>
+            <point key="canvasLocation" x="-1020" y="-119"/>
+        </collectionViewCell>
+    </objects>
+</document>

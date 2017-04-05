@@ -1,0 +1,58 @@
+//
+//  AFNManagerVC.m
+//  KenshinPro
+//
+//  Created by kenshin on 17/3/28.
+//  Copyright © 2017年 Kenshin. All rights reserved.
+//
+
+#import "AFNManagerVC.h"
+#import "AFNMCVC.h"
+
+@interface AFNManagerVC ()
+
+@end
+
+@implementation AFNManagerVC
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self loadData];
+    [self initLockMasterAppVCUI];
+    
+}
+
+- (void)loadData
+{
+    [self addDataWithTitle:@"AFN_MC" andDetail:@"在MC工作的时候对AFN的封装"];
+    
+    
+}
+
+- (void)initLockMasterAppVCUI
+{
+    self.navigationItem.title = @"锁匠App";
+    [self.view addSubview:self.tableView];
+    
+}
+
+- (void)clickCellWithTitle:(NSString *)title
+{
+    if ([title isEqualToString:@"AFN_MC"])
+    {
+        AFNMCVC *vc = [[AFNMCVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+        
+    }
+    
+}
+
+- (void)dealloc
+{
+    [Tools NSLogClassDestroy:self];
+    
+}
+
+@end

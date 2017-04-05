@@ -246,17 +246,23 @@
                     <rect key="frame" x="195" y="554" width="161" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.39430074040000002" blue="0.044995069980000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button">
+                    <state key="normal" title="获取指定vc演示">
                         <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="getVCDemo:" destination="-1" eventType="touchUpInside" id="0iR-qK-dAZ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4L-Ph-V8X">
                     <rect key="frame" x="20" y="598" width="161" height="36"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.39430074040000002" blue="0.044995069980000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button">
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.71764705880000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="MB_MJ">
                         <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="clickMB_MJ:" destination="-1" eventType="touchUpInside" id="CG4-ha-6CT"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqP-c9-KHs">
                     <rect key="frame" x="195" y="598" width="161" height="36"/>
@@ -305,7 +311,7 @@
                 <constraint firstItem="v8i-gm-Ifr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xwf-Ht-a6K"/>
                 <constraint firstItem="A0t-8w-w6b" firstAttribute="top" secondItem="dmg-rx-4YZ" secondAttribute="bottom" constant="15" id="z9e-YQ-QEx"/>
             </constraints>
-            <point key="canvasLocation" x="-1911.5" y="24.5"/>
+            <point key="canvasLocation" x="-2224" y="-19"/>
         </view>
     </objects>
 </document>

@@ -91,16 +91,31 @@
 
 
 //三禾项目 贵州华尚高科         主色 蓝色
-#define colorBlueNavBar     RGB2Color(17, 103, 172)
-#define colorBlueHome       RGB2Color(68, 140, 202)
-#define colorBlueBackgroud  RGB2Color(68, 140, 202)
-#define colorBlueButton     RGB2Color(13, 111, 183)
-#define colorGrayTxt        RGB2Color(222, 223, 224)//灰色
-#define colorLene           RGB2Color(230, 230, 230)
-#define colorBtnHighlight   RGB2Color(225, 81, 73)//淡红
+#define colorDdzmBlueNavBar     RGB2Color(17, 103, 172)
+#define colorDdzmBlueBtn        RGB2Color(68, 140, 202)
+#define colorDdzmBlueBackgroud  RGB2Color(68, 140, 202)
+#define colorDdzmBlueButton     RGB2Color(13, 111, 183)
+#define colorDdzmGrayTxt        RGB2Color(222, 223, 224)//灰色
+#define colorDdzmLene           RGB2Color(230, 230, 230)
+#define colorDdzmBtnHighlight   RGB2Color(225, 81, 73)//淡红
 
 //16进制取色
-#define UIColorFrom16(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define HexColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+//锁匠端颜色
+#define colorNavBarBlue     HexColor(0x0FB7DB)//导航栏颜色-天蓝色
+#define colorTabBar_normal  HexColor(0x8F8B8B)//tabBar默认字色-灰色
+#define colorBackground     HexColor(0xF4F4F4)//背景色-灰色
+#define colorTextBlack      HexColor(0x333333)//黑色字
+#define colorTextGray       HexColor(0x8F8B8B)//灰色字
+#define colorTextOrange     HexColor(0xFF5000)//橘色字
+#define colorLine           HexColor(0xD9D9D9)//分割线颜色-灰色
+#define colorBtnOrange      HexColor(0xFF5000)//橘色按钮
+
+//主色调
+#define colorHomeBlue       HexColor(0x0FB7DB)//天蓝色
+#define colorHomeOrange     HexColor(0xFF5000)//橘黄色
 
 @interface FXW_Define : NSObject
 

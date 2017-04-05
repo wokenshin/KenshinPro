@@ -18,30 +18,17 @@
 
 @class PopSelect;
 
-typedef void (^VSActionBlock)(int);
-@protocol SSPopupDelegate <NSObject>
-
-@optional
-/* Pickup Outlet get Delegate */
-
--(void)GetSelectedOutlet:(int)tag;
-
-
-
-
-@end
+typedef void (^IntBlock)(int tag);
 
 @interface PopSelect : UIControl<UITableViewDataSource,UITableViewDelegate>
 {
     
-    VSActionBlock completionBlock;
+    IntBlock completionBlock;
     UITableView *DropdownTable;
     NSString *Title;
     
 }
-@property (nonatomic, assign) id<SSPopupDelegate> SSPopupDelegate;
 
-- (id)initWithFrame:(CGRect)frame delegate:(id<SSPopupDelegate>)delegate;
+-(void)alertTableview:(NSArray *)Contentarray title:(NSString *)title resultBlock:(IntBlock )block;
 
--(void)CreateTableview:(NSArray *)Contentarray withSender:(id)sender withTitle:(NSString *)title setCompletionBlock:(VSActionBlock )aCompletionBlock;
 @end

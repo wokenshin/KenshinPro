@@ -7,6 +7,8 @@
 //
 
 #import "BaseFunctionVC.h"
+#import "ViewControllerOne.h"
+#import "MBMJVC.h"
 
 @interface BaseFunctionVC ()
 
@@ -204,6 +206,20 @@
     
 }
 
+//获取指定的控制器
+- (IBAction)getVCDemo:(id)sender
+{
+    ViewControllerOne *vc = [[ViewControllerOne alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+- (IBAction)clickMB_MJ:(id)sender
+{
+    MBMJVC *vc = [[MBMJVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 - (void)dealloc
 {

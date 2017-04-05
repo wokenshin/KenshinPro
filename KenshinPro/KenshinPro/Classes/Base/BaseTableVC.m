@@ -80,6 +80,7 @@
     if (_tableView == nil)
     {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
+        _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.dataSource = self;
         _tableView.delegate   = self;
         
