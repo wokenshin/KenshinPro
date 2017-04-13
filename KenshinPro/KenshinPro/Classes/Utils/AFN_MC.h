@@ -18,8 +18,8 @@
 #define AFN_MC_VERSION @"1"
 #define AFN_MC_SYSTEM  @"ios"
 
-#define baseUrl IS_DEBUG ? @"http://119.23.130.129:8080/request/post" : @"http://119.23.130.129:8080/request/post"
-#define baseUrlMix @"http://119.23.130.129:8080/request/mixed"
+#define baseUrl IS_DEBUG ? @"http://119.23.129.169:8080/request/post" : @"http://119.23.129.169:8080/request/post"
+#define baseUrlMix @"http://119.23.129.169:8080/request/mixed"
 
 /**
  *  SSL 证书名称，仅支持cer格式。“app.bishe.com.cer”,则填“app.bishe.com”

@@ -8,6 +8,8 @@
 	<string>zh_CN</string>
 	<key>NSContactsUsageDescription</key>
 	<string>是否允许KenshinPro访问手机通讯录？</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App 需要访问你的蓝牙设备</string>
 	<key>CFBundleDisplayName</key>
 	<string>KenshinPro</string>
 	<key>CFBundleExecutable</key>

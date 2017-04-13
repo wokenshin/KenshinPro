@@ -1151,4 +1151,15 @@
     return NO;
 }
 
+- (void)swiftCallObjFunc
+{
+    NSLog(@"swift 调用了 OC 的 对象方法");
+    
+}
+
++ (void)swiftCallClassFunc
+{
+    NSLog(@"swift 调用了 OC 的 类方法");
+    
+}
 @end

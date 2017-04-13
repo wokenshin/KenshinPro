@@ -18,7 +18,8 @@
 #import "CommonUIVC.h"
 #import "CustomNavVC.h"
 #import "DicAndModelVC.h"
-
+#import "TableViewBuJuVC.h"
+#import "ADVC.h"
 
 @interface OneVC ()
 
@@ -38,10 +39,15 @@
 - (void)loadData
 {
     [self addDataWithTitle:@"BaseVC" andDetail:@"包含BaseVC的全部功能演示"];
+    [self addDataWithTitle:@"控制器之间的跳转" andDetail:@"push、pop、present、dismiss"];
+    [self addDataWithTitle:@"TableView布局控制器" andDetail:@"全部内容都方到tableView中展示"];
+    [self addDataWithTitle:@"字符串" andDetail:@""];
+    [self addDataWithTitle:@"时间" andDetail:@""];
     [self addDataWithTitle:@"AFN封装" andDetail:@"针对所在公司进行的封装"];
     [self addDataWithTitle:@"字典与模型的转换" andDetail:@"用到了MJExtension"];
     [self addDataWithTitle:@"各种UITableViewCell" andDetail:@"基本上包含了目前项目中使用的所有的cell"];
     [self addDataWithTitle:@"各种菜单" andDetail:@"基本上包含了目前项目中使用的所有的菜单"];
+    [self addDataWithTitle:@"广告-滚动视图" andDetail:@"MC的项目中使用到"];
     [self addDataWithTitle:@"各种UI的尺寸" andDetail:@"AppIcon，屏幕快照，导航栏、状态栏、tabBar等"];
     [self addDataWithTitle:@"自定义导航栏" andDetail:@"添加导航栏按钮，titleView，或者隐藏导航栏等"];
     [self addDataWithTitle:@"常用封装UI" andDetail:@"封装的按钮，UIControl，弹框的"];
@@ -54,7 +60,7 @@
 #pragma mark 初始化UI
 - (void)initOneUI
 {
-    self.navigationItem.title = @"one";
+    self.navigationItem.title = @"基础+封装";
     [self.view addSubview:self.tableView];
     
 }
@@ -64,6 +70,18 @@
     if ([title isEqualToString:@"BaseVC"])
     {
         BaseFunctionVC *vc = [[BaseFunctionVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if([title isEqualToString:@"控制器之间的跳转"])
+    {
+        //参考csdn中的纯代码vc跳转 http://blog.csdn.net/wokenshin/article/details/50989690
+        return;
+    }
+    if([title isEqualToString:@"TableView布局控制器"])
+    {
+        TableViewBuJuVC *vc = [[TableViewBuJuVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;
@@ -102,7 +120,6 @@
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;
-        
     }
     if ([title isEqualToString:@"常用封装UI"])
     {
@@ -110,7 +127,6 @@
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;
-        
     }
     if ([title isEqualToString:@"通讯录"])
     {
@@ -129,6 +145,13 @@
     if ([title isEqualToString:@"自定义导航栏"])
     {
         CustomNavVC *vc = [[CustomNavVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"广告-滚动视图"])
+    {
+        ADVC *vc = [[ADVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

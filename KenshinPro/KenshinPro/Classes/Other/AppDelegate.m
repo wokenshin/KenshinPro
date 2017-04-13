@@ -16,7 +16,7 @@
 
 @implementation AppDelegate
 
-#pragma mark AppDelegate
+#pragma mark - AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self intoFirstVC];
@@ -24,7 +24,6 @@
     return YES;
     
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -7,6 +7,9 @@
 //
 
 #import "MenusVC.h"
+#import "BaiDuBottomMenu.h"
+#import "DDZM_BottomMenuVC.h"
+#import "DdzmLeftMenuVC.h"
 
 @interface MenusVC ()
 
@@ -24,10 +27,16 @@
 
 - (void)loadData
 {
-    [self addDataWithTitle:@"Menu1" andDetail:@"侧滑菜单"];
-    [self addDataWithTitle:@"Menu2" andDetail:@"底部菜单"];
-    [self addDataWithTitle:@"Menu3" andDetail:@"顶部菜单"];
-    [self addDataWithTitle:@"Menu4" andDetail:@"弹出菜单"];
+    
+    [self addDataWithTitle:@"底部菜单-ddzm" andDetail:@"动画来实现的"];
+    [self addDataWithTitle:@"底部菜单-百度" andDetail:@"collectionView 感觉没有我的xib菜单好用 可读性差"];
+    [self addDataWithTitle:@"底部菜单-ldkd" andDetail:@"滚动视图"];
+    
+    [self addDataWithTitle:@"左侧菜单-ddzm" andDetail:@"封装的不好"];
+    
+    [self addDataWithTitle:@"顶部菜单-" andDetail:@"顶部菜单"];
+    
+    [self addDataWithTitle:@"弹出菜单-" andDetail:@"弹出菜单"];
     
 }
 
@@ -40,10 +49,28 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    if ([title isEqualToString:@"系统通讯录"])
+    if ([title isEqualToString:@"底部菜单-ddzm"])
+    {
+        DDZM_BottomMenuVC *vc = [[DDZM_BottomMenuVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"左侧菜单-ddzm"])
+    {
+        DdzmLeftMenuVC *vc = [[DdzmLeftMenuVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"底部菜单-ldkd"])
     {
         
-        
+        return;
+    }
+    if ([title isEqualToString:@"底部菜单-百度"])
+    {
+        BaiDuBottomMenu *vc = [[BaiDuBottomMenu alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
     }
     
 }

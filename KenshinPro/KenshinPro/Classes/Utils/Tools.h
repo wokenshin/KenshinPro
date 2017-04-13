@@ -238,4 +238,6 @@
 //判断当前传入的值是否为 nil 或者 null
 + (BOOL)isKongWithObj:(id)isKong;
 
+- (void)swiftCallObjFunc;
++ (void)swiftCallClassFunc;
 @end

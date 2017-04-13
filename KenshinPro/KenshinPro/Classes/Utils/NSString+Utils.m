@@ -119,4 +119,41 @@
             [predicateCT evaluateWithObject:self] == YES ||
             [predicateCU evaluateWithObject:self] == YES;
 }
+
+/*
+ //判断字符是否包含某字符串；
+ NSString *string = @"hello,shenzhen,martin";
+ 
+ //字条串是否包含有某字符串
+ if ([string rangeOfString:@"martin"].location == NSNotFound) {
+ NSLog(@"string 不存在 martin");
+ } else {
+ NSLog(@"string 包含 martin");
+ }
+ 
+ //字条串开始包含有某字符串
+ if ([string hasPrefix:@"hello"]) {
+ NSLog(@"string 包含 hello");
+ } else {
+ NSLog(@"string 不存在 hello");
+ }
+ 
+ //字符串末尾有某字符串；
+ if ([string hasSuffix:@"martin"]) {
+ NSLog(@"string 包含 martin");
+ } else {
+ NSLog(@"string 不存在 martin");
+ }
+ 在iOS8以后，还可以用下面的方法来判断是否包含某字符串：
+ 
+ //在iOS8中你可以这样判断
+ NSString *str = @"hello world";
+ if ([str containsString:@"world"]) {
+ NSLog(@"str 包含 world");
+ } else {
+ NSLog(@"str 不存在 world");
+ }
+ */
+
+
 @end
