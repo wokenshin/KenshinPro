@@ -11,6 +11,7 @@
 #import "FXW_Define.h"
 #import "Tools.h"
 #import "RegexUtil.h"
+#import "ImageUtil.h"
 #import "FXWUD.h"
 
 //我的UI

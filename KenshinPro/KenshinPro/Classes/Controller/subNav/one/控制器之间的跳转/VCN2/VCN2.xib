@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCN2">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7f-Xd-yWj">
+                    <rect key="frame" x="30" y="74" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.71372549019999998" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="aAs-65-KYe"/>
+                    </constraints>
+                    <state key="normal" title="pop到上一级VC">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popPreVC:" destination="-1" eventType="touchUpInside" id="C0T-RQ-IRv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjB-Tf-3jx">
+                    <rect key="frame" x="30" y="130" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.39430074040000002" blue="0.044995069980000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="u1e-dy-HEP"/>
+                    </constraints>
+                    <state key="normal" title="pop到上一级VC 并传值">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popSetPreVCValue:" destination="-1" eventType="touchUpInside" id="DN9-Mm-rTq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-6n-QRZ">
+                    <rect key="frame" x="30" y="186" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.55294117649999996" green="0.80000000000000004" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="xFH-TV-lGV"/>
+                    </constraints>
+                    <state key="normal" title="pop到根VC">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popToRootVC:" destination="-1" eventType="touchUpInside" id="iXR-2Q-8zk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdX-aN-Rna">
+                    <rect key="frame" x="30" y="242" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.71372549019999998" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="bTJ-M2-Ep8"/>
+                    </constraints>
+                    <state key="normal" title="push-&gt;VCN3">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pushVCN3:" destination="-1" eventType="touchUpInside" id="ZJd-F6-2lc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.058823529409999999" green="0.71764705880000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bjB-Tf-3jx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="DLV-eP-DNa"/>
+                <constraint firstAttribute="trailing" secondItem="bjB-Tf-3jx" secondAttribute="trailing" constant="30" id="ENf-9I-Ysw"/>
+                <constraint firstItem="f7f-Xd-yWj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="IKA-0Y-bnD"/>
+                <constraint firstItem="bjB-Tf-3jx" firstAttribute="top" secondItem="f7f-Xd-yWj" secondAttribute="bottom" constant="20" id="QcV-IW-VW9"/>
+                <constraint firstItem="cOb-6n-QRZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="R08-cP-93F"/>
+                <constraint firstAttribute="trailing" secondItem="kdX-aN-Rna" secondAttribute="trailing" constant="30" id="RiJ-Yu-I9x"/>
+                <constraint firstAttribute="trailing" secondItem="cOb-6n-QRZ" secondAttribute="trailing" constant="30" id="TiN-nd-KIK"/>
+                <constraint firstItem="kdX-aN-Rna" firstAttribute="top" secondItem="cOb-6n-QRZ" secondAttribute="bottom" constant="20" id="bf2-7d-nfc"/>
+                <constraint firstItem="f7f-Xd-yWj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="kCt-RF-baj"/>
+                <constraint firstItem="kdX-aN-Rna" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="lHL-7I-pZy"/>
+                <constraint firstItem="cOb-6n-QRZ" firstAttribute="top" secondItem="bjB-Tf-3jx" secondAttribute="bottom" constant="20" id="sBD-u9-Lhb"/>
+                <constraint firstAttribute="trailing" secondItem="f7f-Xd-yWj" secondAttribute="trailing" constant="30" id="vmb-18-bJ5"/>
+            </constraints>
+            <point key="canvasLocation" x="-821" y="21"/>
+        </view>
+    </objects>
+</document>

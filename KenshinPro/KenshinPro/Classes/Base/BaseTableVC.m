@@ -18,7 +18,6 @@
 {
     [super viewDidLoad];
     
-    
 }
 
 - (void)addDataWithTitle:(NSString *)title andDetail:(NSString *)detail

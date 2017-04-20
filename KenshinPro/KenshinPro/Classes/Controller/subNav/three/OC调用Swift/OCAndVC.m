@@ -7,7 +7,7 @@
 //
 
 #import "OCAndVC.h"
-#import "KenshinPro-Swift.h"
+#import "KenshinPro-Swift.h" //OC中调用Swift时记住要导入该头文件
 
 /**
  参考 http://www.jianshu.com/p/01410d991788

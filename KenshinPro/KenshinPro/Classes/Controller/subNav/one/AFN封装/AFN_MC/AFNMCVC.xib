@@ -25,19 +25,35 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="XUw-dq-MIy"/>
                     </constraints>
-                    <state key="normal" title="Test One">
+                    <state key="normal" title="获取验证码">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="getVerifyCode:" destination="-1" eventType="touchUpInside" id="iHQ-3y-vgh"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YB-UH-xmY">
+                    <rect key="frame" x="30" y="120" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.30196078430000001" green="0.71372549019999998" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="PdP-Q4-TkG"/>
+                    </constraints>
+                    <state key="normal" title="表单方式上传图片(可多张)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickUploadImage:" destination="-1" eventType="touchUpInside" id="yQY-mn-mpE"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="sbX-nC-cGM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="76J-0i-VV0"/>
+                <constraint firstItem="0YB-UH-xmY" firstAttribute="top" secondItem="sbX-nC-cGM" secondAttribute="bottom" constant="10" id="7Yc-Ae-ObD"/>
+                <constraint firstAttribute="trailing" secondItem="0YB-UH-xmY" secondAttribute="trailing" constant="30" id="AXH-b4-Ztw"/>
                 <constraint firstItem="sbX-nC-cGM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="IAl-sM-RSj"/>
                 <constraint firstAttribute="trailing" secondItem="sbX-nC-cGM" secondAttribute="trailing" constant="30" id="Yc3-YF-Zk8"/>
+                <constraint firstItem="0YB-UH-xmY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="ufe-sT-4L6"/>
             </constraints>
             <point key="canvasLocation" x="-188" y="-84"/>
         </view>

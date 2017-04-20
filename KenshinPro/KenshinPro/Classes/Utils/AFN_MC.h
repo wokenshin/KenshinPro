@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 //封装在 MC 工作时期所用的网络请求
+# define IS_PRINT_LOG YES
 
 #define IS_DEBUG YES  //正式库 NO  测试库 YES
 
@@ -18,7 +19,7 @@
 #define AFN_MC_VERSION @"1"
 #define AFN_MC_SYSTEM  @"ios"
 
-#define baseUrl IS_DEBUG ? @"http://119.23.129.169:8080/request/post" : @"http://119.23.129.169:8080/request/post"
+#define baseUrl IS_DEBUG ? @"http://119.23.129.169:8080/request/post" : @""
 #define baseUrlMix @"http://119.23.129.169:8080/request/mixed"
 
 /**
@@ -64,5 +65,19 @@ typedef void(^MCResultBlock) (BOOL success, NSDictionary *resultDic, NSString *e
                 params:(NSDictionary *)params
         andUploadFiles:(NSArray *)fileNames
            resultBlock:(MCResultBlock )resultblock;
+
+
+/**
+ 上传图片
+
+ 返回内容 数组 包含字典： fileFullUrl = "http://119.23.129.169:8082/upload/17041809282029345.png";
+                      fileName = "17041809282029345.png";
+                      fileOldName = "userHeadImg.png";
+                      fileUrl = "upload/17041809282029345.png";
+ 
+ @param fileNames 图片数组
+ @param resultblock MCResultBlock
+ */
++ (void)postUploadImageWithFiles:(NSArray *)fileNames resultBlock:(MCResultBlock )resultblock;
 
 @end

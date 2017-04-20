@@ -9,6 +9,7 @@
 #import "ThreeVC.h"
 #import "OCAndVC.h"
 #import "OCCallThirdSwiftLibVC.h"
+#import "SetUICornerRadiusVC.h"
 
 @interface ThreeVC ()
 
@@ -28,7 +29,7 @@
 {
     [self addDataWithTitle:@"OC+Swift 混编" andDetail:@"OC下调用Swift，Swift下调用OC"];
     [self addDataWithTitle:@"OC调用Swift三方库" andDetail:@"这个就爽了"];
-    
+    [self addDataWithTitle:@"在Xib或者故事版中为UI设置圆角" andDetail:@"通过分类 UIView+FXW 实现"];
     
 }
 
@@ -52,6 +53,13 @@
     if ([title isEqualToString:@"OC调用Swift三方库"])
     {
         OCCallThirdSwiftLibVC *vc = [[OCCallThirdSwiftLibVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"在Xib或者故事版中为UI设置圆角"])
+    {
+        SetUICornerRadiusVC *vc = [[SetUICornerRadiusVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

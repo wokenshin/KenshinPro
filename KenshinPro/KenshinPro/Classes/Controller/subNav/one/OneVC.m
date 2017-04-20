@@ -20,6 +20,7 @@
 #import "DicAndModelVC.h"
 #import "TableViewBuJuVC.h"
 #import "ADVC.h"
+#import "MainVC.h"
 
 @interface OneVC ()
 
@@ -41,8 +42,8 @@
     [self addDataWithTitle:@"BaseVC" andDetail:@"包含BaseVC的全部功能演示"];
     [self addDataWithTitle:@"控制器之间的跳转" andDetail:@"push、pop、present、dismiss"];
     [self addDataWithTitle:@"TableView布局控制器" andDetail:@"全部内容都方到tableView中展示"];
-    [self addDataWithTitle:@"字符串" andDetail:@""];
-    [self addDataWithTitle:@"时间" andDetail:@""];
+    [self addDataWithTitle:@"字符串" andDetail:@"字符串的基本操作"];
+    [self addDataWithTitle:@"时间" andDetail:@"时间的基本操作"];
     [self addDataWithTitle:@"AFN封装" andDetail:@"针对所在公司进行的封装"];
     [self addDataWithTitle:@"字典与模型的转换" andDetail:@"用到了MJExtension"];
     [self addDataWithTitle:@"各种UITableViewCell" andDetail:@"基本上包含了目前项目中使用的所有的cell"];
@@ -76,7 +77,9 @@
     }
     if([title isEqualToString:@"控制器之间的跳转"])
     {
-        //参考csdn中的纯代码vc跳转 http://blog.csdn.net/wokenshin/article/details/50989690
+        MainVC *vc = [[MainVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
         return;
     }
     if([title isEqualToString:@"TableView布局控制器"])
