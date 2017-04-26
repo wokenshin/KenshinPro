@@ -137,28 +137,72 @@
     
 }
 
-
-#pragma mark 读写 数组 [还没有实现]
+#pragma mark 读写 数组
 + (void)saveArray:(NSArray *)array forKey:(NSString *)key
 {
-    
+    if (array != nil && ![array isEqual:[NSNull null]])
+    {
+        if (key != nil && ![key isEqual:[NSNull null]])
+        {
+            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+            [userDefaults setObject:array forKey:key];
+            [userDefaults synchronize];
+        }
+        else
+        {
+            NSLog(@"沙盒存储数组失败 key 为空");
+        }
+    }
+    else
+    {
+        NSLog(@"沙盒存储数组失败 dic 为空");
+    }
     
 }
 
 + (NSArray *)getArrayForKey:(NSString *)key
 {
+    if (key != nil && ![key isEqual:[NSNull null]])
+    {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSArray *arr = [defaults arrayForKey:key];
+        return arr;
+    }
+    NSLog(@"沙盒读取数组失败 key 为空");
     return nil;
     
 }
 
 + (void)saveDic:(NSDictionary *)dic forKey:(NSString *)key
 {
-    
-    
+    if (dic != nil && ![dic isEqual:[NSNull null]])
+    {
+        if (key != nil && ![key isEqual:[NSNull null]])
+        {
+            NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+            [userDefaults setObject:dic forKey:key];
+            [userDefaults synchronize];
+        }
+        else
+        {
+            NSLog(@"沙盒存储字典失败 key 为空");
+        }
+    }
+    else
+    {
+        NSLog(@"沙盒存储字典失败 dic 为空");
+    }
 }
 
 + (NSDictionary *)getDicForKey:(NSString *)key
 {
+    if (key != nil && ![key isEqual:[NSNull null]])
+    {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSDictionary *dic = [defaults dictionaryForKey:key];
+        return dic;
+    }
+    NSLog(@"沙盒读取字典失败 key 为空");
     return nil;
     
 }
@@ -172,7 +216,6 @@
     [userDefaults synchronize];
     
 }
-
 
 + (void)saveLoginState:(BOOL)isLoginState
 {

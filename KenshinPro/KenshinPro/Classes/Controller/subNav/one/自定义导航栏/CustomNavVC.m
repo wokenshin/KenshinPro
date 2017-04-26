@@ -7,6 +7,7 @@
 //
 
 #import "CustomNavVC.h"
+#import "NavBarCustomVC.h"
 
 @interface CustomNavVC ()
 
@@ -38,9 +39,11 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    if ([title isEqualToString:@"FXW_Button"])
+    if ([title isEqualToString:@"自定义导航栏-kenshinApp"])
     {
-        
+        NavBarCustomVC *vc = [[NavBarCustomVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
         return;
     }
     

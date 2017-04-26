@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainTabBarVC.h"
 #import "FXW_Define.h"
+#import "AFN_HS.h"
 
 @interface AppDelegate ()
 

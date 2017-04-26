@@ -7,7 +7,7 @@
 //
 
 #import "SetUICornerRadiusVC.h"
-
+#import "UIView+FXW.h"
 @interface SetUICornerRadiusVC ()
 
 @end
@@ -17,6 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UILabel *lab = [[UILabel alloc] initWithFrame:CGRectMake(100, 80, 100, 100)];
+    lab.backgroundColor = [UIColor yellowColor];
+    lab.cornerRadius = 10;
+    [self.view addSubview:lab];
     
 }
 

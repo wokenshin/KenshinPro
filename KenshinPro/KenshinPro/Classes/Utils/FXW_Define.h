@@ -98,7 +98,7 @@
 #define colorDdzmGrayTxt        RGB2Color(222, 223, 224)//灰色
 #define colorDdzmLene           RGB2Color(230, 230, 230)
 #define colorDdzmBtnHighlight   RGB2Color(225, 81, 73)//淡红
-
+#define colorGraySearch         RGB2Color(250, 250, 250)
 //16进制取色
 #define HexColor(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 

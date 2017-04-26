@@ -25,7 +25,16 @@
 //输出当前释放类 类名
 + (void)NSLogClassDestroy:(id)cuSelf;
 
-//设置UI圆角
+
+/**
+ 设置圆角
+
+ @param view 设置圆角的UI
+ @param angle 圆角大小
+ */
++ (void)setCornerRadiusWithView:(UIView *)view andAngle:(CGFloat)angle;
+
+//同上
 + (void)setFilletWithView:(UIView *)view andAngle:(CGFloat)angle;
 
 //设置边框
@@ -114,7 +123,14 @@
 
 
 #pragma mark - UIImageView
-+ (void)setMaoBoliStyleWithImageView:(UIImageView *)imgView;//这个效果比较垃圾
+/**
+ 毛玻璃效果 分类来实现
+
+ @param image 需要设置毛玻璃的图片
+ @param value 模糊度 推荐设置为5 or 10
+ @return 返回模糊化的图片
+ */
++ (UIImage *)setMaoBoLi:(UIImage *)image andValue:(CGFloat )value;
 
 //裁剪图片[获取图片顶部的内容]
 + (UIImage *)handleImage:(UIImage *)originalImage withCutSize:(CGSize)size;

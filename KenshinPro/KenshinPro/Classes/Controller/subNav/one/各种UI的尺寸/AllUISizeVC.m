@@ -24,6 +24,8 @@
 - (void)initAllUISizeVCUI
 {
     self.navigationItem.title = @"各种UI的size";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     //如果用table来显示 就更换父类vc[推荐]
     //如果用滚动视图来显示 就用Masonry
     

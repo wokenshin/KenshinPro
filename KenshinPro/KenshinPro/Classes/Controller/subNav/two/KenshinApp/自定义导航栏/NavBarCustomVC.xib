@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavBarCustomVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-g0-Okq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJN-rJ-a2F" userLabel="contentSizeView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xc-Ue-yTK">
+                                    <rect key="frame" x="30" y="286" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="jxm-Uu-rKM"/>
+                                    </constraints>
+                                    <state key="normal" title="导航栏按钮-自定义">
+                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnNavBtnCustomImg:" destination="-1" eventType="touchUpInside" id="CTL-pe-vSb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgG-ek-NZQ">
+                                    <rect key="frame" x="30" y="158" width="315" height="44"/>
+                                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="0eQ-JP-eCA"/>
+                                    </constraints>
+                                    <state key="normal" title="导航栏按钮-系统的">
+                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnNavBtn:" destination="-1" eventType="touchUpInside" id="1OS-BD-Atz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-fX-3Ki">
+                                    <rect key="frame" x="30" y="94" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="gr4-gr-Wup"/>
+                                    </constraints>
+                                    <state key="normal" title="自定义搜索框">
+                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSearchNav:" destination="-1" eventType="touchUpInside" id="dYw-ah-4kM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aok-g0-KvA">
+                                    <rect key="frame" x="30" y="30" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="FPT-p5-CY1"/>
+                                    </constraints>
+                                    <state key="normal" title="修改导航条标题">
+                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnChangeNavTitle:" destination="-1" eventType="touchUpInside" id="zdv-PV-lmG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbE-LC-Ih8">
+                                    <rect key="frame" x="30" y="222" width="315" height="44"/>
+                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="Q2h-mE-YwK"/>
+                                    </constraints>
+                                    <state key="normal" title="导航栏按钮-文本">
+                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnNavBtnCustom:" destination="-1" eventType="touchUpInside" id="JzC-o3-IgU"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrp-wj-2Wp">
+                                    <rect key="frame" x="30" y="350" width="315" height="36"/>
+                                    <color key="backgroundColor" red="0.45007914304733276" green="0.84707331657409668" blue="0.91103857755661011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="pYf-ya-0lw"/>
+                                    </constraints>
+                                    <state key="normal" title="带搜索样式的导航栏">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnCustomNavBar:" destination="-1" eventType="touchUpInside" id="HhL-W9-r1c"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="DbE-LC-Ih8" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="5lM-uV-LWZ"/>
+                                <constraint firstItem="HdC-fX-3Ki" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="EpR-S9-1AH"/>
+                                <constraint firstAttribute="trailing" secondItem="DbE-LC-Ih8" secondAttribute="trailing" constant="30" id="Oqu-hf-n5D"/>
+                                <constraint firstItem="9xc-Ue-yTK" firstAttribute="top" secondItem="DbE-LC-Ih8" secondAttribute="bottom" constant="20" id="Shw-OO-Q85"/>
+                                <constraint firstItem="aok-g0-KvA" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="V0c-vN-LAd"/>
+                                <constraint firstItem="qgG-ek-NZQ" firstAttribute="top" secondItem="HdC-fX-3Ki" secondAttribute="bottom" constant="20" id="W4a-AV-NOd"/>
+                                <constraint firstAttribute="trailing" secondItem="aok-g0-KvA" secondAttribute="trailing" constant="30" id="cMn-7d-TST"/>
+                                <constraint firstItem="Mrp-wj-2Wp" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="ddu-jx-SSU"/>
+                                <constraint firstAttribute="trailing" secondItem="9xc-Ue-yTK" secondAttribute="trailing" constant="30" id="fKd-25-J1J"/>
+                                <constraint firstAttribute="height" constant="604" id="g38-Ol-3JI"/>
+                                <constraint firstItem="9xc-Ue-yTK" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="h67-S6-Blo"/>
+                                <constraint firstAttribute="trailing" secondItem="HdC-fX-3Ki" secondAttribute="trailing" constant="30" id="jOS-Ds-0Xw"/>
+                                <constraint firstAttribute="trailing" secondItem="Mrp-wj-2Wp" secondAttribute="trailing" constant="30" id="mRt-hp-OJc"/>
+                                <constraint firstItem="HdC-fX-3Ki" firstAttribute="top" secondItem="aok-g0-KvA" secondAttribute="bottom" constant="20" id="q0h-mT-Yua"/>
+                                <constraint firstItem="DbE-LC-Ih8" firstAttribute="top" secondItem="qgG-ek-NZQ" secondAttribute="bottom" constant="20" id="q5e-cQ-894"/>
+                                <constraint firstItem="qgG-ek-NZQ" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="rw4-dv-3AW"/>
+                                <constraint firstItem="Mrp-wj-2Wp" firstAttribute="top" secondItem="9xc-Ue-yTK" secondAttribute="bottom" constant="20" id="tX9-jq-Sqi"/>
+                                <constraint firstItem="aok-g0-KvA" firstAttribute="top" secondItem="LJN-rJ-a2F" secondAttribute="top" constant="30" id="vgQ-Wa-eWG"/>
+                                <constraint firstAttribute="trailing" secondItem="qgG-ek-NZQ" secondAttribute="trailing" constant="30" id="vo8-kN-U3T"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LJN-rJ-a2F" secondAttribute="trailing" id="AuE-f2-pmj"/>
+                        <constraint firstAttribute="bottom" secondItem="LJN-rJ-a2F" secondAttribute="bottom" id="J6T-41-yMD"/>
+                        <constraint firstItem="LJN-rJ-a2F" firstAttribute="centerX" secondItem="vD9-g0-Okq" secondAttribute="centerX" id="Pvt-uw-JoT"/>
+                        <constraint firstItem="LJN-rJ-a2F" firstAttribute="top" secondItem="vD9-g0-Okq" secondAttribute="top" id="qhZ-hT-xf0"/>
+                        <constraint firstItem="LJN-rJ-a2F" firstAttribute="leading" secondItem="vD9-g0-Okq" secondAttribute="leading" id="w95-Iv-We4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vD9-g0-Okq" secondAttribute="bottom" id="N01-tn-P3R"/>
+                <constraint firstItem="vD9-g0-Okq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rfu-xJ-qY9"/>
+                <constraint firstAttribute="trailing" secondItem="vD9-g0-Okq" secondAttribute="trailing" id="mwi-2P-4qA"/>
+                <constraint firstItem="vD9-g0-Okq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="my1-9u-1Dm"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="257.5" y="201.5"/>
+        </view>
+    </objects>
+</document>

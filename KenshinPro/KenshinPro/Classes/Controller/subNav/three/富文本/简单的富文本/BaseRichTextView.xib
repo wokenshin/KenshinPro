@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaseRichTextView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="富文本 方式一" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59x-tt-sZO">
+                    <rect key="frame" x="10" y="10" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="富文本 方式二" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hca-bO-dmk">
+                    <rect key="frame" x="10" y="51" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRJ-x9-HmV">
+                    <rect key="frame" x="30" y="102" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="CdV-uY-2Ez"/>
+                    </constraints>
+                    <state key="normal" title="图文混排">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jnh-d8-81C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="59x-tt-sZO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="56N-OD-nAp"/>
+                <constraint firstAttribute="trailing" secondItem="hca-bO-dmk" secondAttribute="trailing" constant="10" id="FC3-BP-NQG"/>
+                <constraint firstItem="hca-bO-dmk" firstAttribute="top" secondItem="59x-tt-sZO" secondAttribute="bottom" constant="20" id="Tuk-2Y-VW0"/>
+                <constraint firstAttribute="trailing" secondItem="vRJ-x9-HmV" secondAttribute="trailing" constant="30" id="UAc-TM-u2G"/>
+                <constraint firstAttribute="trailing" secondItem="59x-tt-sZO" secondAttribute="trailing" constant="10" id="hHp-1q-VAv"/>
+                <constraint firstItem="59x-tt-sZO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="hXU-f5-nd7"/>
+                <constraint firstItem="hca-bO-dmk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="kMS-qa-hrY"/>
+                <constraint firstItem="vRJ-x9-HmV" firstAttribute="top" secondItem="hca-bO-dmk" secondAttribute="bottom" constant="30" id="lhn-Ss-pVO"/>
+                <constraint firstItem="vRJ-x9-HmV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="mCD-6v-2VK"/>
+            </constraints>
+            <connections>
+                <outlet property="richLabOne" destination="59x-tt-sZO" id="vVJ-U1-ZU5"/>
+                <outlet property="richLabTwo" destination="hca-bO-dmk" id="FZX-84-qcW"/>
+            </connections>
+            <point key="canvasLocation" x="-680" y="-10"/>
+        </view>
+    </objects>
+</document>

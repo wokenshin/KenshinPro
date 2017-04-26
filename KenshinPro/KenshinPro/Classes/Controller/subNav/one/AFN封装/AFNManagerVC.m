@@ -27,6 +27,7 @@
 {
     [self addDataWithTitle:@"AFN_MC" andDetail:@"在MC工作的时候对AFN的封装"];
     [self addDataWithTitle:@"AFN_HS" andDetail:@"在HS工作的时候对AFN的封装"];
+    [self addDataWithTitle:@"AFN_FXW" andDetail:@"通用的AFN 网络请求 from kenshin"];
     
 }
 
@@ -48,6 +49,11 @@
     if ([title isEqualToString:@"AFN_HS"])
     {
         [self toast:@"下次添加... AFN_HS"];
+        return;
+    }
+    if ([title isEqualToString:@"AFN_FXW"])
+    {
+        [self toast:@"下次添加... AFN_FXW"];
         return;
     }
     

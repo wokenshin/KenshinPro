@@ -11,17 +11,17 @@
 @interface FXWUD : NSObject
 
 
-#pragma mark 向沙盒读写字符串
+#pragma mark 向沙盒读写字NSString
 + (void)saveString:(NSString *)strValue forKey:(NSString *)key;
 + (NSString *)getStringForKey:(NSString *)key;
-
-#pragma mark 向沙盒读写double
-+ (void)saveDounle:(double)doubleValue forKey:(NSString *)key;
-+ (double)getDoubleForKey:(NSString *)key;
 
 #pragma mark 向沙盒读写BOOL
 + (void)saveBOOL:(BOOL)isValue forKey:(NSString *)key;
 + (BOOL)getBOOLForKey:(NSString *)key;
+
+#pragma mark 向沙盒读写double
++ (void)saveDounle:(double)doubleValue forKey:(NSString *)key;
++ (double)getDoubleForKey:(NSString *)key;
 
 #pragma mark 读写 NSInteger
 + (void)saveInteger:(NSInteger )integerValue forKey:(NSString *)key;

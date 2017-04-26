@@ -31,7 +31,9 @@
 
 - (void)initOrderUI
 {
-    self.navigationItem.title = @"接单";
+    self.navigationItem.title = @"接单2";
+    self.view.backgroundColor = [UIColor whiteColor];//背景
+    
     [self initSegmentUI];
     [self initContentUI];
 }

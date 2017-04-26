@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GifContentVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUk-3F-9Y1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pda-77-2ci">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSf-km-UB4">
+                                    <rect key="frame" x="30" y="30" width="315" height="36"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="sJf-mC-UV0"/>
+                                    </constraints>
+                                    <state key="normal" title="WebView加载Gif">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnWebViewLoadGif:" destination="-1" eventType="touchUpInside" id="379-qQ-Jpp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJz-JP-CEl">
+                                    <rect key="frame" x="30" y="86" width="315" height="36"/>
+                                    <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="jTH-EO-zSe"/>
+                                    </constraints>
+                                    <state key="normal" title="SDWebImage加载Gif">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSDWebImageLoadGif:" destination="-1" eventType="touchUpInside" id="ACd-OC-hkZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="VSf-km-UB4" firstAttribute="top" secondItem="pda-77-2ci" secondAttribute="top" constant="30" id="6kV-tH-qAk"/>
+                                <constraint firstItem="DJz-JP-CEl" firstAttribute="top" secondItem="VSf-km-UB4" secondAttribute="bottom" constant="20" id="Av7-di-wWL"/>
+                                <constraint firstItem="VSf-km-UB4" firstAttribute="leading" secondItem="pda-77-2ci" secondAttribute="leading" constant="30" id="FGs-H7-AAB"/>
+                                <constraint firstAttribute="trailing" secondItem="DJz-JP-CEl" secondAttribute="trailing" constant="30" id="bgH-5G-d5F"/>
+                                <constraint firstItem="DJz-JP-CEl" firstAttribute="leading" secondItem="pda-77-2ci" secondAttribute="leading" constant="30" id="fom-Tn-0wX"/>
+                                <constraint firstAttribute="trailing" secondItem="VSf-km-UB4" secondAttribute="trailing" constant="30" id="t7O-hO-eNo"/>
+                                <constraint firstAttribute="height" constant="604" id="y7D-qM-JS3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="pda-77-2ci" firstAttribute="top" secondItem="wUk-3F-9Y1" secondAttribute="top" id="4fE-x4-joG"/>
+                        <constraint firstItem="pda-77-2ci" firstAttribute="centerX" secondItem="wUk-3F-9Y1" secondAttribute="centerX" id="8bE-mr-fde"/>
+                        <constraint firstItem="pda-77-2ci" firstAttribute="leading" secondItem="wUk-3F-9Y1" secondAttribute="leading" id="Ty8-c4-s6D"/>
+                        <constraint firstAttribute="trailing" secondItem="pda-77-2ci" secondAttribute="trailing" id="XZ6-yp-ooM"/>
+                        <constraint firstAttribute="bottom" secondItem="pda-77-2ci" secondAttribute="bottom" id="Y2J-Uf-T05"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wUk-3F-9Y1" secondAttribute="bottom" id="UOB-XN-4AH"/>
+                <constraint firstItem="wUk-3F-9Y1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZNM-X4-xwN"/>
+                <constraint firstItem="wUk-3F-9Y1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lI3-p2-bwV"/>
+                <constraint firstAttribute="trailing" secondItem="wUk-3F-9Y1" secondAttribute="trailing" id="oUn-e7-suT"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

@@ -7,6 +7,7 @@
 //
 
 #import "Tools.h"
+#import "UIImage+ImageEffects.h"//毛玻璃分类 被 setMaoBoLiBackWithImage: 使用
 
 @implementation Tools
 
@@ -26,6 +27,14 @@
 
 #pragma mark 设置UI圆角
 + (void)setFilletWithView:(UIView *)view andAngle:(CGFloat)angle
+{
+    view.layer.cornerRadius  = angle; //本行代码在IOS6中就可以给label设置圆角，但是在IOS7中不行，还需要再加上下面一行代码
+    view.layer.masksToBounds = YES;   //默认是NO,超出主层边界的内容统统剪掉
+    
+}
+
+#pragma mark 设置UI圆角
++ (void)setCornerRadiusWithView:(UIView *)view andAngle:(CGFloat)angle
 {
     view.layer.cornerRadius  = angle; //本行代码在IOS6中就可以给label设置圆角，但是在IOS7中不行，还需要再加上下面一行代码
     view.layer.masksToBounds = YES;   //默认是NO,超出主层边界的内容统统剪掉
@@ -472,42 +481,15 @@
 //
 //}
 
-#pragma mark 毛玻璃效果
-+ (void)setMaoBoliStyleWithImageView:(UIImageView *)imgView
++ (UIImage *)setMaoBoLi:(UIImage *)image andValue:(CGFloat )value;
 {
-    if (imgView == nil || ![imgView isKindOfClass:[UIImageView class]]) {
-        return;
-    }
-    imgView.userInteractionEnabled = YES;
-    imgView.contentMode = UIViewContentModeScaleAspectFit;
-    
-    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-    UIVisualEffectView *effectview = [[UIVisualEffectView alloc] initWithEffect:blur];
-    effectview.frame = CGRectMake(0, 0, imgView.frame.size.width, imgView.frame.size.height);
-    
-    [imgView addSubview:effectview];
-    
-    //还有一种更好的方式[等有时间的时候再做一次封装吧]
-    /*
-     使用一个分类：UIImage+ImageEffects.h
-     然后代码如下
-     
-     UIImage *sourceImage = [UIImage imageNamed:@"testPic"];
-     
-     UIImage *lastImage = [sourceImage applyBlurWithRadius:5 tintColor:[UIColor clearColor] saturationDeltaFactor:1 maskImage:nil];
-     _personalImgView.image = lastImage;
-     _personalImgView.userInteractionEnabled = YES;
-     
-     */
-    
+    UIImage *lastImage = [image applyBlurWithRadius:value
+                                          tintColor:[UIColor clearColor]
+                              saturationDeltaFactor:1 maskImage:nil];
+    return lastImage;
 }
 
-//+ (UIImage *)blurBaclgroundImg:(UIImage *)img
-//{
-//    UIImage *backgroundImg = [img applyBlurWithRadius:5 tintColor:[UIColor clearColor] saturationDeltaFactor:1 maskImage:nil];
-//    return backgroundImg;
-//
-//}
+
 
 //裁剪图片 第二个参数传size 如CGSizeMake(screenWidth, 250)
 + (UIImage *)handleImage:(UIImage *)originalImage withCutSize:(CGSize)size

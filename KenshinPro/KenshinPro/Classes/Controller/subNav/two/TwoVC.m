@@ -42,7 +42,7 @@
 
 - (void)initLockMasterAppVCUI
 {
-    self.navigationItem.title = @"Demo";
+    self.navigationItem.title = @"App";
     [self.view addSubview:self.tableView];
     
 }

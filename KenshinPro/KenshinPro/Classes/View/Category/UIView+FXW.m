@@ -13,6 +13,7 @@
 - (void)setCornerRadius:(CGFloat)cornerRadius
 {
     self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;   //默认是NO,超出主层边界的内容统统剪掉
 }
 
 - (CGFloat)cornerRadius
