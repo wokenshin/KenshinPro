@@ -47,8 +47,6 @@
             [ws toast:@"pop失败"];
         }
     }];
-    
-    
 }
 
 - (void)dealloc

@@ -9,17 +9,23 @@
 #import "BaseVC.h"
 
 //跳转到系统的通讯录选择手机号码后_返回获取手机号 注意！ 需要在info.plish 中设置 通讯录权限
+//IOS10之前获取通讯录
 #import <AddressBookUI/ABPeoplePickerNavigationController.h>
 #import <AddressBook/ABPerson.h>
 #import <AddressBookUI/ABPersonViewController.h>
 
+//IOS10之后获取通讯录
+#import <ContactsUI/ContactsUI.h>
+
 #import <MessageUI/MessageUI.h>//导入发短信头文件 类库
-@interface BaseVC ()<ABPersonViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate,//通讯录代理
+@interface BaseVC ()<ABPersonViewControllerDelegate,
+ABPeoplePickerNavigationControllerDelegate,//通讯录代理<IOS10
+CNContactPickerDelegate,//通讯录>=IOS10
                     MFMessageComposeViewControllerDelegate>//发短信代理>
 
 
-@property (nonatomic, copy) voidBlock                           clickRightBtnCallback;//导航栏右边的按钮block
-@property (nonatomic, copy) voidBlock                           clickLeftBtnCallback;//导航栏左边的按钮block
+@property (nonatomic, copy) VoidBlock                           clickRightBtnCallback;//导航栏右边的按钮block
+@property (nonatomic, copy) VoidBlock                           clickLeftBtnCallback;//导航栏左边的按钮block
 
 @property (nonatomic, copy) PhoneNoBlock                        phoneNoCallback;
 @property (nonatomic, copy) MSMNoBlock                          sendMsmCallback;
@@ -92,7 +98,7 @@
     return nil;
 }
 
-- (void)setNavRightBtnWithImg:(NSString *)imgName andClickResultblock:(voidBlock )block
+- (void)setNavRightBtnWithImg:(NSString *)imgName andClickResultblock:(VoidBlock )block
 {
     //eg: 需要注意 这里的图片最要是使用2倍或者3倍的 不然会显示得很的张
     UIImage *image = [UIImage imageNamed:imgName];
@@ -103,7 +109,7 @@
     
 }
 
-- (void)setNavRightBtnWithName:(NSString *)btnName andClickResultblock:(voidBlock )block
+- (void)setNavRightBtnWithName:(NSString *)btnName andClickResultblock:(VoidBlock )block
 {
     UIButton* rightBtn= [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -121,7 +127,7 @@
 
 - (void)setNavRightBtnWithName:(NSString *)btnName
                 andTitleColor:(UIColor *)color
-          andClickResultblock:(voidBlock )block
+          andClickResultblock:(VoidBlock )block
 {
     UIButton* rightBtn= [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -137,7 +143,7 @@
     
 }
 
-- (void)setNavLeftBtnWithImg:(NSString *)imgName andClickResultblock:(voidBlock )block
+- (void)setNavLeftBtnWithImg:(NSString *)imgName andClickResultblock:(VoidBlock )block
 {
     UIImage *image = [UIImage imageNamed:imgName];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//IOS 7以上要设置图片渲染模式
@@ -147,7 +153,7 @@
     
 }
 
-- (void)setNavLeftBtnWithName:(NSString *)btnName andClickResultblock:(voidBlock )block
+- (void)setNavLeftBtnWithName:(NSString *)btnName andClickResultblock:(VoidBlock )block
 {
     UIButton* rightBtn= [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -165,7 +171,7 @@
 
 - (void)setNavLeftBtnWithName:(NSString *)btnName
                andTitleColor:(UIColor *)color
-         andClickResultblock:(voidBlock )block
+         andClickResultblock:(VoidBlock )block
 {
     UIButton* rightBtn= [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -231,15 +237,33 @@
 -(void)showJuHua:(NSString *)message
 {
     [self hideJuHua];
-    MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hub.mode = MBProgressHUDModeIndeterminate;
-    hub.labelText = message;
+    
+    //其实这里统一使用self.view就可以了，但是这样的话，navc 的返回按钮是可以点击的
+    if (self.navigationController == nil)//因为有些页面是模态出来的 没有导航栏控制器 那样的话使用会崩溃
+    {
+        MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hub.mode = MBProgressHUDModeIndeterminate;
+        hub.labelText = message;
+    }
+    else
+    {
+        MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        hub.mode = MBProgressHUDModeIndeterminate;
+        hub.labelText = message;
+    }
     
 }
 
 -(void)hideJuHua
 {
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    if (self.navigationController == nil)//因为有些页面是模态出来的 没有导航栏控制器 那样的话使用会崩溃
+    {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    }
+    else
+    {
+        [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+    }
     
 }
 
@@ -282,7 +306,7 @@
 
 - (void)alertSystemTitle:(NSString *)title
                  message:(NSString *)message
-                      OK:(voidBlock)okBlock
+                      OK:(VoidBlock)okBlock
 {
     UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
@@ -303,8 +327,8 @@
 
 - (void)alertSystemTitle:(NSString *)title
                  message:(NSString *)message
-                      OK:(voidBlock)okBlock
-                  Cancel:(voidBlock)cancelBlock
+                      OK:(VoidBlock)okBlock
+                  Cancel:(VoidBlock)cancelBlock
 {
     UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
@@ -332,18 +356,28 @@
 {
     _phoneNoCallback = block;
     
-    //初始化ABPeoplePickerNavigationController
-    ABPeoplePickerNavigationController *nav = [[ABPeoplePickerNavigationController alloc] init];
-    nav.peoplePickerDelegate = self;
-    if([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+    //需要区别一下当前系统 测试 在5C上没有区分系统直接调用ABPeoplePickerNavigationController 导致崩溃
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 10.0)
     {
-        nav.predicateForSelectionOfPerson = [NSPredicate predicateWithValue:false];
-        //在iOS8之后，需要添加nav.predicateForSelectionOfPerson = [NSPredicate predicateWithValue:false];
-        //这一段代码，否则选择联系人之后会直接dismiss，不能进入详情选择电话。
-        
+        //初始化ABPeoplePickerNavigationController
+        ABPeoplePickerNavigationController *nav = [[ABPeoplePickerNavigationController alloc] init];
+        nav.peoplePickerDelegate = self;
+        if([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
+        {
+            nav.predicateForSelectionOfPerson = [NSPredicate predicateWithValue:false];
+            //在iOS8之后，需要添加nav.predicateForSelectionOfPerson = [NSPredicate predicateWithValue:false];
+            //这一段代码，否则选择联系人之后会直接dismiss，不能进入详情选择电话。
+            
+        }
+        //进入通讯录控制器
+        [self presentViewController:nav animated:YES completion:nil];
     }
-    //进入通讯录控制器
-    [self presentViewController:nav animated:YES completion:nil];
+    else
+    {
+        CNContactPickerViewController * contactVc = [CNContactPickerViewController new];
+        contactVc.delegate = self;
+        [self presentViewController:contactVc animated:YES completion:nil];
+    }
     
 }
 
@@ -371,8 +405,9 @@
         phoneNO = [phoneNO substringFromIndex:3];
     }
     
+    //取消号码中的特殊符号
     phoneNO = [phoneNO stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    NSLog(@"%@", phoneNO);
+    
     if (phone)//[RegexUtil isValidTelePhone:phoneNO]
     {
         if (_phoneNoCallback)
@@ -414,8 +449,9 @@
         
     }
     
+    //取消号码中的特殊符号
     phoneNO = [phoneNO stringByReplacingOccurrencesOfString:@"-" withString:@""];
-    NSLog(@"%@", phoneNO);
+    
     if (phone)//[RegexUtil isValidTelePhone:phoneNO]
     {
         if (_phoneNoCallback)
@@ -435,6 +471,29 @@
     return YES;
     
 }
+
+#pragma mark 这个方法调用会进入通讯录详情界面 >=IOS10
+- (void)contactPicker:(CNContactPickerViewController *)picker didSelectContactProperty:(CNContactProperty *)contactProperty {
+    
+//    NSString *firstName = contactProperty.contact.familyName;
+//    NSString *lastName = contactProperty.contact.givenName;
+//    NSString *Name = [NSString stringWithFormat:@"%@%@",firstName,lastName];
+    NSString *phoneNum = [contactProperty.value stringValue];
+    
+    //去掉获取的电话号码中的特殊符号
+    NSString *phoneString = [phoneNum stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    if (_phoneNoCallback)
+    {
+        _phoneNoCallback(phoneString);
+    }
+    
+}
+
+//取消选择回调 >=IOS10
+- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 #pragma mark - 发送短信
 - (void)sendMSMPhoneNos:(NSArray *)phoneNos

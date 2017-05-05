@@ -39,25 +39,25 @@
     FourVC      *fourVC     = [[FourVC alloc] init];
     
     //返回四个导航控制器
-    UINavigationController *navHome      = [self subNavOfTabBarVCWith:@"基础"
+    UINavigationController *navHome      = [self subNavOfTabBarVCWith:@"测试"
                                                        viewController:oneVC
-                                                            imageName:@"tabbar_home_normal"
-                                                    selectedImageName:@"tabbar_home_selected"];
+                                                            imageName:@"wb_home"
+                                                    selectedImageName:@"wb_home_selected"];
     
-    UINavigationController *navExpert    = [self subNavOfTabBarVCWith:@"APP"
+    UINavigationController *navExpert    = [self subNavOfTabBarVCWith:@"公开"
                                                        viewController:twoVC
-                                                            imageName:@"tabbar_expert_normal"
-                                                    selectedImageName:@"tabbar_expert_selected"];
+                                                            imageName:@"wb_message_center"
+                                                    selectedImageName:@"wb_message_center_selected"];
     
-    UINavigationController *navQuestions = [self subNavOfTabBarVCWith:@"进阶"
+    UINavigationController *navQuestions = [self subNavOfTabBarVCWith:@"待定"
                                                        viewController:threeVC
-                                                            imageName:@"tabbar_qusetion_normal"
-                                                    selectedImageName:@"tabbar_question_selected"];
+                                                            imageName:@"wb_discover"
+                                                    selectedImageName:@"wb_discover_selected"];
     
     UINavigationController *navMine      = [self subNavOfTabBarVCWith:@"待定"
                                                        viewController:fourVC
-                                                            imageName:@"tabbar_mine_normal"
-                                                    selectedImageName:@"tabbar_mine_selected"];
+                                                            imageName:@"wb_profile"
+                                                    selectedImageName:@"wb_profile_selected"];
     
     
     //设置TabBarVC的四个子控制器
@@ -84,7 +84,6 @@
     navViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:image selectedImage:selectedImage];
     
     //设置Tab选中时文本文字颜色
-    
     [navViewController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:RGB2Color(255,70,70)}
                                                 forState:UIControlStateSelected];
     

@@ -7,9 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworkReachabilityManager.h"
+
 #import "MainTabBarVC.h"
 #import "FXW_Define.h"
 #import "AFN_HS.h"
+
+#import "MDToast.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +24,11 @@
 #pragma mark - AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self intoFirstVC];
+    [self intoRootVC];
     [self setNavigationBarStyle];
+    [self realTimeCheckNetStatus];
     return YES;
+    
     
 }
 
@@ -56,7 +62,7 @@
 }
 
 #pragma mark - 设置根控制器
-- (void)intoFirstVC
+- (void)intoRootVC
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -85,5 +91,70 @@
     
 }
 
+#pragma mark 实时监听网络状态
+- (void)realTimeCheckNetStatus
+{
+    AFNetworkReachabilityManager *reachabilityManager = [AFNetworkReachabilityManager sharedManager];
+    [reachabilityManager startMonitoring];//打开监测
+    
+    WS(ws);
+    //监测网络状态回调
+    [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status)
+        {
+            case AFNetworkReachabilityStatusUnknown://未知
+            {
+                ws.netStatus = AFNetworkReachabilityStatusUnknown;
+                [ws toast:@"网络不可用-未知情况"];
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusNotReachable://无连接
+            {
+                ws.netStatus = AFNetworkReachabilityStatusNotReachable;
+                [ws toast:@"网络无连接"];
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN://2G 3G 4G
+            {
+                ws.netStatus = AFNetworkReachabilityStatusReachableViaWWAN;
+                [ws toast:@"当前使用流量联网"];
+            }
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi://WIFI
+            {
+                ws.netStatus = AFNetworkReachabilityStatusReachableViaWiFi;
+                [ws toast:@"当前使用WiFi联网"];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }];
+
+}
+
+- (void)toast:(NSString *)message
+{
+    MDToast *toast = [[MDToast alloc] initWithText:@"" duration:kMDToastDurationShort];
+    toast.textFont = [UIFont systemFontOfSize:14];
+    [toast setGravity:MDGravityCenterVertical | MDGravityCenterHorizontal];
+    
+    [toast setText:message];
+    [toast show];
+    
+}
+
+- (void)toastBottom:(NSString *)message
+{
+    MDToast *toast = [[MDToast alloc] initWithText:@"" duration:kMDToastDurationShort];
+    toast.textFont = [UIFont systemFontOfSize:14];
+    [toast setText:message];
+    [toast show];
+    
+}
 
 @end

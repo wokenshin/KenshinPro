@@ -41,14 +41,14 @@
         NSString *strValue = [userDefaults objectForKey:key];
         if (strValue == nil || [strValue isEqual:[NSNull null]])
         {
-            strValue = @"空";//测试过 如果获取沙盒中没有的key 返回的字符串是 nil
+            strValue = nil;//测试过 如果获取沙盒中没有的key 返回的字符串是 nil
         }
         
         return strValue;
     }
     else
     {
-        return @"key==nil";
+        return nil;
     }
     
 }
@@ -79,8 +79,8 @@
     else
     {
         NSLog(@"沙盒读取double失败， key == nil");
+        return 0;
     }
-    return 0;
     
 }
 
@@ -104,7 +104,6 @@
         NSLog(@"沙盒读取BOOL失败 key == nil");
         return NO;
     }
-    
     
 }
 

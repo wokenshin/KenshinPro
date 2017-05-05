@@ -21,6 +21,9 @@
 #import "TableViewBuJuVC.h"
 #import "ADVC.h"
 #import "MainVC.h"
+#import "MBProgressVC.h"
+#import "NSStringVC.h"
+#import "ArrayVC.h"
 
 @interface OneVC ()
 
@@ -39,12 +42,15 @@
 #pragma mark 加载数据
 - (void)loadData
 {
+    [self addDataWithTitle:@"网络状态实时监听" andDetail:@"通过AFN 在AppDelegate中实现"];
     [self addDataWithTitle:@"BaseVC" andDetail:@"包含BaseVC的全部功能演示"];
     [self addDataWithTitle:@"控制器之间的跳转" andDetail:@"push、pop、present、dismiss"];
     [self addDataWithTitle:@"TableView布局控制器" andDetail:@"全部内容都方到tableView中展示"];
     [self addDataWithTitle:@"字符串" andDetail:@"字符串的基本操作"];
     [self addDataWithTitle:@"时间" andDetail:@"时间的基本操作"];
+    [self addDataWithTitle:@"数组" andDetail:@"系统自带的排序方法等"];
     [self addDataWithTitle:@"AFN封装" andDetail:@"针对所在公司进行的封装"];
+    [self addDataWithTitle:@"麻痹进度" andDetail:@"有些进度条出现的时候，nav返回按钮会失效哟"];
     [self addDataWithTitle:@"字典与模型的转换" andDetail:@"用到了MJExtension"];
     [self addDataWithTitle:@"各种UITableViewCell" andDetail:@"基本上包含了目前项目中使用的所有的cell"];
     [self addDataWithTitle:@"各种菜单" andDetail:@"基本上包含了目前项目中使用的所有的菜单"];
@@ -68,6 +74,28 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if([title isEqualToString:@"网络状态实时监听"])
+    {
+        switch (AppDel.netStatus)
+        {
+            case AppNetStatusUnknown:
+                [self toast:@"当前网络状态未知"];
+                break;
+            case AppNetStatusNotReachable:
+                [self toast:@"当前网络不可用"];
+                break;
+            case AppNetStatusViaWWAN:
+                [self toast:@"当前网络状态为流量"];
+                break;
+            case AppNetStatusWiFi:
+                [self toast:@"当前网络状态为Wifi连接"];
+                break;
+                
+            default:[self toast:@"当前网络状态未知 default"];
+                break;
+        }
+        return;
+    }
     if ([title isEqualToString:@"BaseVC"])
     {
         BaseFunctionVC *vc = [[BaseFunctionVC alloc] init];
@@ -89,9 +117,30 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
+    if ([title isEqualToString:@"字符串"])
+    {
+        NSStringVC *vc = [[NSStringVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"数组"])
+    {
+        ArrayVC *vc = [[ArrayVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"AFN封装"])
     {
         AFNManagerVC *vc = [[AFNManagerVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"麻痹进度"])
+    {
+        MBProgressVC *vc = [[MBProgressVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

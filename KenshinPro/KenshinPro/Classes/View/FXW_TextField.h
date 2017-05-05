@@ -41,7 +41,6 @@ typedef void (^FXW_TextFieldBlock)(FXW_TextField* text);
  */
 - (void)setLimitLen:(NSInteger)len andWithResultBlock:(FXW_TextFieldBlock )block;
 
-
 /**
  监听文本框的编辑 当文本内容发生改变时触发回调
 

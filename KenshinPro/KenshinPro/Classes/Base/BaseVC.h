@@ -41,7 +41,7 @@
 /**
  定义一个代码块类型 类型为 void
  */
-typedef void(^voidBlock) ();
+typedef void(^VoidBlock) ();
 
 
 #pragma mark - 关闭软键盘
@@ -68,7 +68,7 @@ typedef void(^voidBlock) ();
  @param block   回调block
  */
 - (void)setNavRightBtnWithImg:(NSString *)imgName
-          andClickResultblock:(voidBlock )block;
+          andClickResultblock:(VoidBlock )block;
 
 
 /**
@@ -78,7 +78,7 @@ typedef void(^voidBlock) ();
  @param block   回调block
  */
 - (void)setNavRightBtnWithName:(NSString *)btnName
-          andClickResultblock:(voidBlock )block;
+          andClickResultblock:(VoidBlock )block;
 
 
 /**
@@ -90,7 +90,7 @@ typedef void(^voidBlock) ();
  */
 - (void)setNavRightBtnWithName:(NSString *)btnName
                 andTitleColor:(UIColor *)color
-          andClickResultblock:(voidBlock )block;
+          andClickResultblock:(VoidBlock )block;
 
 #pragma mark - 导航栏左边按钮
 /**
@@ -100,7 +100,7 @@ typedef void(^voidBlock) ();
  @param block   回调block
  */
 - (void)setNavLeftBtnWithImg:(NSString *)imgName
-         andClickResultblock:(voidBlock )block;
+         andClickResultblock:(VoidBlock )block;
 
 /**
  设置导航栏左边的按钮 以及点击回调
@@ -109,7 +109,7 @@ typedef void(^voidBlock) ();
  @param block   回调block
  */
 - (void)setNavLeftBtnWithName:(NSString *)btnName
-         andClickResultblock:(voidBlock )block;
+         andClickResultblock:(VoidBlock )block;
 
 /**
  设置导航栏左边的按钮 以及点击回调 可设置文本颜色
@@ -120,7 +120,7 @@ typedef void(^voidBlock) ();
  */
 - (void)setNavLeftBtnWithName:(NSString *)btnName
                 andTitleColor:(UIColor *)color
-          andClickResultblock:(voidBlock )block;
+          andClickResultblock:(VoidBlock )block;
 
 #pragma mark - 吐司
 /**
@@ -177,7 +177,7 @@ typedef void(^voidBlock) ();
  */
 - (void)alertSystemTitle:(NSString *)title
                  message:(NSString *)message
-                      OK:(voidBlock)okBlock;
+                      OK:(VoidBlock)okBlock;
 
 /**
  系统弹框 [确定 & 取消]
@@ -189,8 +189,8 @@ typedef void(^voidBlock) ();
  */
 - (void)alertSystemTitle:(NSString *)title
                  message:(NSString *)message
-                      OK:(voidBlock)okBlock
-                  Cancel:(voidBlock)cancelBlock;
+                      OK:(VoidBlock)okBlock
+                  Cancel:(VoidBlock)cancelBlock;
 
 
 typedef void (^PhoneNoBlock)(NSString *phoneNo);

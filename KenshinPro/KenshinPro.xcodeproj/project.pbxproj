@@ -168,6 +168,13 @@
 		B94CD4B81E9C7D71003A889E /* CtrlCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4B71E9C7D71003A889E /* CtrlCountDown.m */; };
 		B94DA31A1E8CB82B0072BECE /* MJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA3191E8CB82B0072BECE /* MJStudent.m */; };
 		B94DA31D1E8CCAF70072BECE /* MJBag.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA31C1E8CCAF70072BECE /* MJBag.m */; };
+		B94F909B1EB2C6F40032FC0E /* MBProgressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F909A1EB2C6F40032FC0E /* MBProgressVC.m */; };
+		B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F909D1EB2E3560032FC0E /* NSStringVC.m */; };
+		B94F90A01EB2E3560032FC0E /* NSStringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94F909E1EB2E3560032FC0E /* NSStringVC.xib */; };
+		B94F90A51EB2E6800032FC0E /* ArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F90A31EB2E6800032FC0E /* ArrayVC.m */; };
+		B94F90A61EB2E6800032FC0E /* ArrayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94F90A41EB2E6800032FC0E /* ArrayVC.xib */; };
+		B94F90AB1EB31B1A0032FC0E /* HideNavDividingLineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F90A91EB31B1A0032FC0E /* HideNavDividingLineVC.m */; };
+		B94F90AC1EB31B1A0032FC0E /* HideNavDividingLineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94F90AA1EB31B1A0032FC0E /* HideNavDividingLineVC.xib */; };
 		B950FC891E835946003D7376 /* MenusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B950FC881E835946003D7376 /* MenusVC.m */; };
 		B950FC8D1E835C6C003D7376 /* AllUISizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B950FC8C1E835C6C003D7376 /* AllUISizeVC.m */; };
 		B95AC8871EADA05400806D1A /* BaseRichTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B95AC8851EADA05400806D1A /* BaseRichTextVC.m */; };
@@ -680,6 +687,17 @@
 		B94DA3191E8CB82B0072BECE /* MJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStudent.m; sourceTree = "<group>"; };
 		B94DA31B1E8CCAF70072BECE /* MJBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBag.h; sourceTree = "<group>"; };
 		B94DA31C1E8CCAF70072BECE /* MJBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBag.m; sourceTree = "<group>"; };
+		B94F90991EB2C6F40032FC0E /* MBProgressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressVC.h; sourceTree = "<group>"; };
+		B94F909A1EB2C6F40032FC0E /* MBProgressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressVC.m; sourceTree = "<group>"; };
+		B94F909C1EB2E3560032FC0E /* NSStringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringVC.h; sourceTree = "<group>"; };
+		B94F909D1EB2E3560032FC0E /* NSStringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringVC.m; sourceTree = "<group>"; };
+		B94F909E1EB2E3560032FC0E /* NSStringVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSStringVC.xib; sourceTree = "<group>"; };
+		B94F90A21EB2E6800032FC0E /* ArrayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayVC.h; sourceTree = "<group>"; };
+		B94F90A31EB2E6800032FC0E /* ArrayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayVC.m; sourceTree = "<group>"; };
+		B94F90A41EB2E6800032FC0E /* ArrayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrayVC.xib; sourceTree = "<group>"; };
+		B94F90A81EB31B1A0032FC0E /* HideNavDividingLineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideNavDividingLineVC.h; sourceTree = "<group>"; };
+		B94F90A91EB31B1A0032FC0E /* HideNavDividingLineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideNavDividingLineVC.m; sourceTree = "<group>"; };
+		B94F90AA1EB31B1A0032FC0E /* HideNavDividingLineVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HideNavDividingLineVC.xib; sourceTree = "<group>"; };
 		B950FC871E835946003D7376 /* MenusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenusVC.h; sourceTree = "<group>"; };
 		B950FC881E835946003D7376 /* MenusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenusVC.m; sourceTree = "<group>"; };
 		B950FC8B1E835C6C003D7376 /* AllUISizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllUISizeVC.h; sourceTree = "<group>"; };
@@ -1497,6 +1515,7 @@
 		B92641E31E837CFD00EEED61 /* 自定义导航栏 */ = {
 			isa = PBXGroup;
 			children = (
+				B94F90A71EB31AA80032FC0E /* 隐藏导航栏分割线 */,
 				B9D8568F1E84CE450053697F /* CustomNavVC.h */,
 				B9D856901E84CE450053697F /* CustomNavVC.m */,
 			);
@@ -1680,11 +1699,13 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				B94F90981EB2C6DB0032FC0E /* 麻痹进度 */,
 				B9B9CE841E9CB83C008CC558 /* 广告滚动视图 */,
 				B9BD97531E810B19009BB0D4 /* BaseVC全部功能 */,
 				B94CD4961E9C6426003A889E /* TableView布局VC */,
 				B98437001E9B71C900E3273C /* 时间 */,
 				B98436FF1E9B71C100E3273C /* 字符串 */,
+				B94F90A11EB2E63A0032FC0E /* 数组 */,
 				B98505481E9645DD007C01CB /* 控制器之间的跳转 */,
 				B92641F01E83C5E100EEED61 /* 发送短信-打电话 */,
 				B92CCB131E7A278F00035A79 /* 获取通讯库数据 */,
@@ -1853,6 +1874,32 @@
 				B94CD4AF1E9C7CF4003A889E /* UITextField+MFClearButton.m */,
 			);
 			path = MaterialTextField;
+			sourceTree = "<group>";
+		};
+		B94F90981EB2C6DB0032FC0E /* 麻痹进度 */ = {
+			isa = PBXGroup;
+			children = (
+				B94F90991EB2C6F40032FC0E /* MBProgressVC.h */,
+				B94F909A1EB2C6F40032FC0E /* MBProgressVC.m */,
+			);
+			path = "麻痹进度";
+			sourceTree = "<group>";
+		};
+		B94F90A11EB2E63A0032FC0E /* 数组 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "数组";
+			sourceTree = "<group>";
+		};
+		B94F90A71EB31AA80032FC0E /* 隐藏导航栏分割线 */ = {
+			isa = PBXGroup;
+			children = (
+				B94F90A81EB31B1A0032FC0E /* HideNavDividingLineVC.h */,
+				B94F90A91EB31B1A0032FC0E /* HideNavDividingLineVC.m */,
+				B94F90AA1EB31B1A0032FC0E /* HideNavDividingLineVC.xib */,
+			);
+			path = "隐藏导航栏分割线";
 			sourceTree = "<group>";
 		};
 		B950FC8A1E835B57003D7376 /* 各种UI的尺寸 */ = {
@@ -2350,6 +2397,9 @@
 		B98436FF1E9B71C100E3273C /* 字符串 */ = {
 			isa = PBXGroup;
 			children = (
+				B94F909C1EB2E3560032FC0E /* NSStringVC.h */,
+				B94F909D1EB2E3560032FC0E /* NSStringVC.m */,
+				B94F909E1EB2E3560032FC0E /* NSStringVC.xib */,
 			);
 			path = "字符串";
 			sourceTree = "<group>";
@@ -2357,6 +2407,9 @@
 		B98437001E9B71C900E3273C /* 时间 */ = {
 			isa = PBXGroup;
 			children = (
+				B94F90A21EB2E6800032FC0E /* ArrayVC.h */,
+				B94F90A31EB2E6800032FC0E /* ArrayVC.m */,
+				B94F90A41EB2E6800032FC0E /* ArrayVC.xib */,
 			);
 			path = "时间";
 			sourceTree = "<group>";
@@ -3059,6 +3112,7 @@
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
+				B94F90A61EB2E6800032FC0E /* ArrayVC.xib in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
@@ -3113,8 +3167,10 @@
 				B9BADB441EA5BB99000B3C1C /* VCN3.xib in Resources */,
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
 				B94CD49E1E9C65B1003A889E /* VCView.xib in Resources */,
+				B94F90A01EB2E3560032FC0E /* NSStringVC.xib in Resources */,
 				B98DF72E1EA852AC00296C2A /* jsCallOC.html in Resources */,
 				B9A743CC1E95EE1400ABFD86 /* XibSelectedBtnImgVC.xib in Resources */,
+				B94F90AC1EB31B1A0032FC0E /* HideNavDividingLineVC.xib in Resources */,
 				B95AC88D1EADC95300806D1A /* BaseRichTextView.xib in Resources */,
 				B9BD97581E810B68009BB0D4 /* BaseFunctionVC.xib in Resources */,
 			);
@@ -3254,6 +3310,7 @@
 				B906FD531E8B668F00645C96 /* UIScrollView+MJExtension.m in Sources */,
 				B9254BC41EAED92E00F82344 /* NSUserDefaultsVC.m in Sources */,
 				B906FC621E8B450100645C96 /* MJStatusResult.m in Sources */,
+				B94F909B1EB2C6F40032FC0E /* MBProgressVC.m in Sources */,
 				B9A743CB1E95EE1400ABFD86 /* XibSelectedBtnImgVC.m in Sources */,
 				B96477121EB02DEB00A9A498 /* STConst.m in Sources */,
 				B92CCAF91E7A158500035A79 /* ThreeVC.m in Sources */,
@@ -3294,6 +3351,7 @@
 				B92641EB1E83997300EEED61 /* FXW_Button.m in Sources */,
 				B915C23C1E7F9DE10088A31F /* MDSlider.m in Sources */,
 				B915C2301E7F9DE10088A31F /* MDCalendarYearSelector.m in Sources */,
+				B94F90A51EB2E6800032FC0E /* ArrayVC.m in Sources */,
 				B915C24B1E7F9DE10088A31F /* NSCalendarHelper.m in Sources */,
 				B9BD97571E810B68009BB0D4 /* BaseFunctionVC.m in Sources */,
 				B92CCAFF1E7A166100035A79 /* Tools.m in Sources */,
@@ -3308,8 +3366,10 @@
 				B915C2381E7F9DE10088A31F /* MDMathHelper.m in Sources */,
 				B96528891EA5A5230044CA5F /* ModelUploadImg.m in Sources */,
 				B915C2421E7F9DE10088A31F /* MDSuggestTableView.m in Sources */,
+				B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */,
 				B915C22D1E7F9DE10088A31F /* MDCalendarCell.m in Sources */,
 				B9A743CD1E95EE1400ABFD86 /* SwitchModeVC.m in Sources */,
+				B94F90AB1EB31B1A0032FC0E /* HideNavDividingLineVC.m in Sources */,
 				B9C9634A1E9F141A00A9C0CF /* Test.swift in Sources */,
 				B915C2291E7F9DE10088A31F /* MaterialControls.m in Sources */,
 				B906FC501E8B3BC000645C96 /* NSObject+MJKeyValue.m in Sources */,
