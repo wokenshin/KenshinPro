@@ -27,6 +27,7 @@
 - (void)initDataBaseVCUI
 {
     self.navigationItem.title = @"数据存储";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
 }
 

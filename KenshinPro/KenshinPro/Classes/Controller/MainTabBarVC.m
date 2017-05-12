@@ -49,12 +49,12 @@
                                                             imageName:@"wb_message_center"
                                                     selectedImageName:@"wb_message_center_selected"];
     
-    UINavigationController *navQuestions = [self subNavOfTabBarVCWith:@"待定"
+    UINavigationController *navQuestions = [self subNavOfTabBarVCWith:@"进阶"
                                                        viewController:threeVC
                                                             imageName:@"wb_discover"
                                                     selectedImageName:@"wb_discover_selected"];
     
-    UINavigationController *navMine      = [self subNavOfTabBarVCWith:@"待定"
+    UINavigationController *navMine      = [self subNavOfTabBarVCWith:@"高级"
                                                        viewController:fourVC
                                                             imageName:@"wb_profile"
                                                     selectedImageName:@"wb_profile_selected"];

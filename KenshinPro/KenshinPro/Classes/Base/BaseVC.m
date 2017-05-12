@@ -48,6 +48,25 @@ CNContactPickerDelegate,//通讯录>=IOS10
 //    self.view.backgroundColor = [UIColor whiteColor];//设置背景色
     [self addTapClickBackCloseKeyBoard];
     [self setBackButtonNoTitle];//隐藏导航栏返回按钮的标题 只显示返回按钮的箭头
+    [self cancelAutoDownMove];//取消自动下移
+    
+}
+
+- (void)cancelAutoDownMove
+{
+    //有了下面两端代码之后，所有滚动视图极其子类都不会自动下移64了 所以在有导航栏的控制器中使用tableview y值需要+64 高度需要减64 如果有tabBar 还需要减49
+    /*
+     会导致滚动视图极其子类自动下移的情况
+     1.导航栏控制器 默认就会自动下移64 导航栏的高度就是64
+     2.在设置导航栏背景图片的时候 还会倒是 view层自动下移
+     如：
+     [self.navigationController.navigationBar
+     setBackgroundImage:[UIImage imageNamed:@"navigation"]
+     forBarPosition:UIBarPositionAny
+     barMetrics:UIBarMetricsDefault];
+     */
+    self.automaticallyAdjustsScrollViewInsets   = NO; //取消scrollview的自动像素下移
+    self.extendedLayoutIncludesOpaqueBars       = YES;//取消navigationbar导致的view层自动下移
     
 }
 

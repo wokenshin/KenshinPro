@@ -43,6 +43,7 @@
 - (void)initLockMasterAppVCUI
 {
     self.navigationItem.title = @"ddzm";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }

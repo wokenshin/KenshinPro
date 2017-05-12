@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavBarCustomVC">
@@ -22,85 +26,85 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xc-Ue-yTK">
-                                    <rect key="frame" x="30" y="286" width="315" height="44"/>
-                                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="30" y="330" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="jxm-Uu-rKM"/>
                                     </constraints>
                                     <state key="normal" title="导航栏按钮-自定义">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnNavBtnCustomImg:" destination="-1" eventType="touchUpInside" id="CTL-pe-vSb"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgG-ek-NZQ">
-                                    <rect key="frame" x="30" y="158" width="315" height="44"/>
-                                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="30" y="202" width="315" height="44"/>
+                                    <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="0eQ-JP-eCA"/>
                                     </constraints>
                                     <state key="normal" title="导航栏按钮-系统的">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnNavBtn:" destination="-1" eventType="touchUpInside" id="1OS-BD-Atz"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-fX-3Ki">
-                                    <rect key="frame" x="30" y="94" width="315" height="44"/>
-                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="30" y="138" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="gr4-gr-Wup"/>
                                     </constraints>
                                     <state key="normal" title="自定义搜索框">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnSearchNav:" destination="-1" eventType="touchUpInside" id="dYw-ah-4kM"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aok-g0-KvA">
-                                    <rect key="frame" x="30" y="30" width="315" height="44"/>
-                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="30" y="74" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="FPT-p5-CY1"/>
                                     </constraints>
                                     <state key="normal" title="修改导航条标题">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnChangeNavTitle:" destination="-1" eventType="touchUpInside" id="zdv-PV-lmG"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbE-LC-Ih8">
-                                    <rect key="frame" x="30" y="222" width="315" height="44"/>
-                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="30" y="266" width="315" height="44"/>
+                                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="Q2h-mE-YwK"/>
                                     </constraints>
                                     <state key="normal" title="导航栏按钮-文本">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnNavBtnCustom:" destination="-1" eventType="touchUpInside" id="JzC-o3-IgU"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrp-wj-2Wp">
-                                    <rect key="frame" x="30" y="350" width="315" height="36"/>
-                                    <color key="backgroundColor" red="0.45007914304733276" green="0.84707331657409668" blue="0.91103857755661011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <rect key="frame" x="30" y="394" width="315" height="36"/>
+                                    <color key="backgroundColor" red="0.38977554440498352" green="0.81555169820785522" blue="0.88839805126190186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="36" id="pYf-ya-0lw"/>
                                     </constraints>
                                     <state key="normal" title="带搜索样式的导航栏">
-                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnCustomNavBar:" destination="-1" eventType="touchUpInside" id="HhL-W9-r1c"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="DbE-LC-Ih8" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="5lM-uV-LWZ"/>
                                 <constraint firstItem="HdC-fX-3Ki" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="EpR-S9-1AH"/>
@@ -119,7 +123,7 @@
                                 <constraint firstItem="DbE-LC-Ih8" firstAttribute="top" secondItem="qgG-ek-NZQ" secondAttribute="bottom" constant="20" id="q5e-cQ-894"/>
                                 <constraint firstItem="qgG-ek-NZQ" firstAttribute="leading" secondItem="LJN-rJ-a2F" secondAttribute="leading" constant="30" id="rw4-dv-3AW"/>
                                 <constraint firstItem="Mrp-wj-2Wp" firstAttribute="top" secondItem="9xc-Ue-yTK" secondAttribute="bottom" constant="20" id="tX9-jq-Sqi"/>
-                                <constraint firstItem="aok-g0-KvA" firstAttribute="top" secondItem="LJN-rJ-a2F" secondAttribute="top" constant="30" id="vgQ-Wa-eWG"/>
+                                <constraint firstItem="aok-g0-KvA" firstAttribute="top" secondItem="LJN-rJ-a2F" secondAttribute="top" constant="74" id="vgQ-Wa-eWG"/>
                                 <constraint firstAttribute="trailing" secondItem="qgG-ek-NZQ" secondAttribute="trailing" constant="30" id="vo8-kN-U3T"/>
                             </constraints>
                         </view>
@@ -133,15 +137,14 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="vD9-g0-Okq" secondAttribute="bottom" id="N01-tn-P3R"/>
                 <constraint firstItem="vD9-g0-Okq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rfu-xJ-qY9"/>
                 <constraint firstAttribute="trailing" secondItem="vD9-g0-Okq" secondAttribute="trailing" id="mwi-2P-4qA"/>
                 <constraint firstItem="vD9-g0-Okq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="my1-9u-1Dm"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="257.5" y="201.5"/>
+            <point key="canvasLocation" x="-129" y="173"/>
         </view>
     </objects>
 </document>

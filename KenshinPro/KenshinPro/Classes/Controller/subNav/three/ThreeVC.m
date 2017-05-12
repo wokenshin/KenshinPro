@@ -14,6 +14,7 @@
 #import "BaseRichTextVC.h"
 #import "DataBaseVC.h"
 #import "ImgScanPickerVC.h"
+#import "ThemeVC.h"
 
 @interface ThreeVC ()
 
@@ -39,6 +40,7 @@
     [self addDataWithTitle:@"富文本-基础" andDetail:@"AttributedString"];
     [self addDataWithTitle:@"富文本-高级" andDetail:@"三方库 YYText 其实就是前者的封装"];
     [self addDataWithTitle:@"图片浏览器-MC期间" andDetail:@"http url 需要设置 App Transport Security Settings"];
+    [self addDataWithTitle:@"App主题切换" andDetail:@"HS期间实现"];
     
 }
 
@@ -101,6 +103,14 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
+    if ([title isEqualToString:@"App主题切换"])
+    {
+        ThemeVC *vc = [[ThemeVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    [self toastBottom:@"没有实现该功能"];
     
 }
 

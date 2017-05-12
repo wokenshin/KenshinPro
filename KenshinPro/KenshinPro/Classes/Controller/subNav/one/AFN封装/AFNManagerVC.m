@@ -34,6 +34,7 @@
 - (void)initLockMasterAppVCUI
 {
     self.navigationItem.title = @"锁匠App";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }

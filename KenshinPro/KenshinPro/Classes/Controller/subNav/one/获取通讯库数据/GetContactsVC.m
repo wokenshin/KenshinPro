@@ -34,6 +34,7 @@
 - (void)initContactsUI
 {
     self.navigationItem.title = @"通讯录";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }

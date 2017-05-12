@@ -338,6 +338,10 @@
 		B9C9634A1E9F141A00A9C0CF /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C963491E9F141A00A9C0CF /* Test.swift */; };
 		B9C963921E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C963901E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m */; };
 		B9C963931E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C963911E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib */; };
+		B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CF8BDA1EC2AF5500C64D58 /* FXW_Theme.m */; };
+		B9CF8C041EC2B16700C64D58 /* ThemeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CF8C021EC2B16700C64D58 /* ThemeVC.m */; };
+		B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CF8C031EC2B16700C64D58 /* ThemeVC.xib */; };
+		B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */ = {isa = PBXBuildFile; fileRef = B9CF8C2B1EC2BA2F00C64D58 /* skin */; };
 		B9D626E91E7CC4D600593EC1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9D626CF1E7CC4D600593EC1 /* Info.plist */; };
 		B9D626EA1E7CC4D600593EC1 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D626D11E7CC4D600593EC1 /* MASCompositeConstraint.m */; };
 		B9D626EB1E7CC4D600593EC1 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D626D41E7CC4D600593EC1 /* MASConstraint.m */; };
@@ -982,6 +986,12 @@
 		B9C9638F1E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallThirdSwiftLibVC.h; sourceTree = "<group>"; };
 		B9C963901E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallThirdSwiftLibVC.m; sourceTree = "<group>"; };
 		B9C963911E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallThirdSwiftLibVC.xib; sourceTree = "<group>"; };
+		B9CF8BD91EC2AF5500C64D58 /* FXW_Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_Theme.h; sourceTree = "<group>"; };
+		B9CF8BDA1EC2AF5500C64D58 /* FXW_Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_Theme.m; sourceTree = "<group>"; };
+		B9CF8C011EC2B16700C64D58 /* ThemeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeVC.h; sourceTree = "<group>"; };
+		B9CF8C021EC2B16700C64D58 /* ThemeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeVC.m; sourceTree = "<group>"; };
+		B9CF8C031EC2B16700C64D58 /* ThemeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeVC.xib; sourceTree = "<group>"; };
+		B9CF8C2B1EC2BA2F00C64D58 /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
 		B9D626CF1E7CC4D600593EC1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9D626D01E7CC4D600593EC1 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		B9D626D11E7CC4D600593EC1 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -1651,6 +1661,8 @@
 			children = (
 				B92CCAFD1E7A166100035A79 /* Tools.h */,
 				B92CCAFE1E7A166100035A79 /* Tools.m */,
+				B9CF8BD91EC2AF5500C64D58 /* FXW_Theme.h */,
+				B9CF8BDA1EC2AF5500C64D58 /* FXW_Theme.m */,
 				B92CCB001E7A167D00035A79 /* FXW_Define.h */,
 				B92CCB2F1E7A73D000035A79 /* FXW_ENUM.h */,
 				B906FCE81E8B553600645C96 /* FXW_Const.h */,
@@ -1725,6 +1737,7 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				B98EAF8F1EC0768B00CBFF6F /* App主题切换 */,
 				B96476DC1EB0296C00A9A498 /* 图片浏览 */,
 				B9254BB41EAED6EC00F82344 /* 数据存储 */,
 				B95AC8811EADA01900806D1A /* 富文本 */,
@@ -2347,6 +2360,7 @@
 		B9673F941E78E22A006AB3DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9CF8C2B1EC2BA2F00C64D58 /* skin */,
 				B9673F951E78E22A006AB3DA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -2612,6 +2626,16 @@
 				B98DF74D1EA85D0700296C2A /* MaoBoLiVC.xib */,
 			);
 			path = "毛玻璃";
+			sourceTree = "<group>";
+		};
+		B98EAF8F1EC0768B00CBFF6F /* App主题切换 */ = {
+			isa = PBXGroup;
+			children = (
+				B9CF8C011EC2B16700C64D58 /* ThemeVC.h */,
+				B9CF8C021EC2B16700C64D58 /* ThemeVC.m */,
+				B9CF8C031EC2B16700C64D58 /* ThemeVC.xib */,
+			);
+			path = "App主题切换";
 			sourceTree = "<group>";
 		};
 		B993767A1E9F000400D94C0A /* OC调用Swift */ = {
@@ -3139,6 +3163,7 @@
 				B910E23D1EA880D700DFCC86 /* GifContentVC.xib in Resources */,
 				B9C963931E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib in Resources */,
 				B9BADB381EA5B703000B3C1C /* VCPush.png in Resources */,
+				B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */,
 				B9254BCA1EAEF20E00F82344 /* PlistVC.xib in Resources */,
 				B9BADB5B1EA5E5D6000B3C1C /* VCN5.xib in Resources */,
 				B964771C1EB04A5300A9A498 /* alert_error_icon@2x.png in Resources */,
@@ -3165,6 +3190,7 @@
 				B98DF71D1EA8521300296C2A /* index1.css in Resources */,
 				B95ED6B31E9474E200AD490B /* WoYaoBianDaView.xib in Resources */,
 				B9BADB441EA5BB99000B3C1C /* VCN3.xib in Resources */,
+				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
 				B94CD49E1E9C65B1003A889E /* VCView.xib in Resources */,
 				B94F90A01EB2E3560032FC0E /* NSStringVC.xib in Resources */,
@@ -3197,6 +3223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CF8C041EC2B16700C64D58 /* ThemeVC.m in Sources */,
 				B90978861E95E7F300F5A0B5 /* LeftMenuView.m in Sources */,
 				B98DF70F1EA8516100296C2A /* JSContentVC.m in Sources */,
 				B906FD441E8B668F00645C96 /* MJRefreshComponent.m in Sources */,
@@ -3463,6 +3490,7 @@
 				B930023C1E8A3BBA000C0563 /* AFNManagerVC.m in Sources */,
 				B92CCB401E7A895900035A79 /* SysContactsVC.m in Sources */,
 				B95AC8871EADA05400806D1A /* BaseRichTextVC.m in Sources */,
+				B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */,
 				B906FD421E8B668F00645C96 /* MJRefreshAutoFooter.m in Sources */,
 				B906FC5C1E8B3ED900645C96 /* User.m in Sources */,
 				B9B9CECC1E9CB986008CC558 /* UIImage+MultiFormat.m in Sources */,

@@ -38,6 +38,7 @@
 - (void)initTableViewCellsUI
 {
     self.navigationItem.title = @"各种UITableViewCell";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }

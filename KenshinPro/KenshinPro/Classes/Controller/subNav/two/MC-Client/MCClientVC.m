@@ -25,6 +25,7 @@
 - (void)initMCClientVCUI
 {
     self.navigationItem.title = @"MC-Client";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }

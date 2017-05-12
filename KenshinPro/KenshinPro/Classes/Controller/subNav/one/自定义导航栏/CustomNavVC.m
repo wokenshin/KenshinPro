@@ -33,7 +33,8 @@
 
 - (void)initMenusVCUI
 {
-    self.navigationItem.title = @"各种菜单";
+    self.navigationItem.title = @"各种导航栏样式";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }

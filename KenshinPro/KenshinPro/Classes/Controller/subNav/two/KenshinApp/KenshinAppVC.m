@@ -31,6 +31,7 @@
 - (void)initKenshinAppVCUI
 {
     self.navigationItem.title = @"KenshinApp";
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
 }
