@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
     [self loadData];
-    [self initLockMasterAppVCUI];
+    [self initThreeVCUI];
     
 }
 
@@ -44,7 +44,7 @@
     
 }
 
-- (void)initLockMasterAppVCUI
+- (void)initThreeVCUI
 {
     self.navigationItem.title = @"进阶";
     [self.view addSubview:self.tableView];

@@ -39,12 +39,12 @@
     FourVC      *fourVC     = [[FourVC alloc] init];
     
     //返回四个导航控制器
-    UINavigationController *navHome      = [self subNavOfTabBarVCWith:@"测试"
+    UINavigationController *navHome      = [self subNavOfTabBarVCWith:@"基础"
                                                        viewController:oneVC
                                                             imageName:@"wb_home"
                                                     selectedImageName:@"wb_home_selected"];
     
-    UINavigationController *navExpert    = [self subNavOfTabBarVCWith:@"公开"
+    UINavigationController *navExpert    = [self subNavOfTabBarVCWith:@"App"
                                                        viewController:twoVC
                                                             imageName:@"wb_message_center"
                                                     selectedImageName:@"wb_message_center_selected"];

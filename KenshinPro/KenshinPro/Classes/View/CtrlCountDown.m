@@ -11,14 +11,15 @@
 @interface CtrlCountDown()
 
 //倒计时
-@property (nonatomic, strong) NSTimer        *timer;
-@property (nonatomic, assign) NSTimeInterval timeNum;//60s
+@property (nonatomic, strong) NSTimer           *timer;
+@property (nonatomic, assign) NSTimeInterval    timeNum;//60s
 
-@property (nonatomic, assign) NSTimeInterval backTime;//后台时间
-@property (nonatomic, assign) NSTimeInterval forgTime;//前台时间
-@property (nonatomic, assign) NSTimeInterval remberTime;//保存定时器进入后台时的时间
+@property (nonatomic, assign) NSTimeInterval    backTime;//后台时间
+@property (nonatomic, assign) NSTimeInterval    forgTime;//前台时间
+@property (nonatomic, assign) NSTimeInterval    remberTime;//保存定时器进入后台时的时间
 
-@property (nonatomic, assign) BOOL          countingFlag;//判断是否正在倒计时
+@property (nonatomic, assign) BOOL              countingFlag;//判断是否正在倒计时
+
 @end
 
 @implementation CtrlCountDown
@@ -74,7 +75,7 @@
     return _countingFlag;
 }
 
-//进入后台 保存当前时间 获取准确倒计时时间【因为倒计时 在进入后台后5秒回停止】
+//进入后台 保存当前时间 获取准确倒计时时间【因为倒计时 在进入后台后5秒后会停止】
 - (void)realStateInBackground
 {
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
@@ -86,9 +87,11 @@
 //进入前台 计算时间差 获取准确倒计时时间【因为倒计时 在进入后台后5秒回停止】
 - (void)realStateInForeground
 {
-    if (_timer == nil) {
+    if (_timer == nil)
+    {
         return;
     }
+    
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
     _forgTime = time;
 //    NSLog(@"进入前台：%f", _forgTime);
@@ -110,6 +113,7 @@
     //将保存的时间清零
     _forgTime = 0;
     _backTime = 0;
+    
 }
 
 #pragma mark 倒计时_周期调用 <=0时 停止倒计时 并恢复默认样式

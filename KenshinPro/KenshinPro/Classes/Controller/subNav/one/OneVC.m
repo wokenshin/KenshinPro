@@ -24,6 +24,7 @@
 #import "MBProgressVC.h"
 #import "NSStringVC.h"
 #import "ArrayVC.h"
+#import "CountDownVC.h"
 
 @interface OneVC ()
 
@@ -35,7 +36,7 @@
 {
     [super viewDidLoad];
     [self loadData];
-    [self initOneUI];
+    [self initOneVCUI];
     
 }
 
@@ -60,12 +61,12 @@
     [self addDataWithTitle:@"常用封装UI" andDetail:@"封装的按钮，UIControl，弹框的"];
     [self addDataWithTitle:@"通讯录" andDetail:@"获取系统通讯录，和自定义通讯录"];
     [self addDataWithTitle:@"发送短信-打电话" andDetail:@"发送短信-进入系统短信编辑界面"];
+    [self addDataWithTitle:@"倒计时按钮" andDetail:@"按钮内部判断时间"];
     
 }
 
-
 #pragma mark 初始化UI
-- (void)initOneUI
+- (void)initOneVCUI
 {
     self.navigationItem.title = @"基础+封装";
     [self.view addSubview:self.tableView];
@@ -204,6 +205,13 @@
     if ([title isEqualToString:@"广告-滚动视图"])
     {
         ADVC *vc = [[ADVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"倒计时按钮"])
+    {
+        CountDownVC *vc = [[CountDownVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

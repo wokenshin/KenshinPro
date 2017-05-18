@@ -17,7 +17,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadData];
+    [self initFourVCUI];
+    
+}
+
+- (void)loadData
+{
+    [self addDataWithTitle:@"设计模式" andDetail:@"常用的设计模式"];
+    
+}
+
+- (void)initFourVCUI
+{
     self.navigationItem.title = @"高级";
+    [self.view addSubview:self.tableView];
+    
+}
+
+- (void)clickCellWithTitle:(NSString *)title
+{
+//    if ([title isEqualToString:@"设计模式"])
+//    {
+//        DataBaseVC *vc = [[DataBaseVC alloc] init];
+//        vc.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:vc animated:YES];
+//        return;
+//    }
+    [self toastBottom:@"没有实现该功能"];
     
 }
 

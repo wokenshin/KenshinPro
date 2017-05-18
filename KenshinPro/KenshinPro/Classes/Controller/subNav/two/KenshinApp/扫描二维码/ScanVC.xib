@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanVC">
@@ -22,33 +26,33 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXz-es-KKl">
-                                    <rect key="frame" x="0.0" y="110" width="187.5" height="100"/>
-                                    <color key="backgroundColor" red="0.98431372549999996" green="0.36470588240000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="0.0" y="110" width="188" height="100"/>
+                                    <color key="backgroundColor" red="0.98431372549999996" green="0.36470588240000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="fHm-Nx-4Hq"/>
                                     </constraints>
                                     <state key="normal" title="样式一">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnScanStyleOne:" destination="-1" eventType="touchUpInside" id="Waa-0W-EvN"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM8-xO-DE4">
-                                    <rect key="frame" x="187.5" y="110" width="187.5" height="100"/>
-                                    <color key="backgroundColor" red="0.74808861410000005" green="0.53959346770000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <rect key="frame" x="188" y="110" width="187" height="100"/>
+                                    <color key="backgroundColor" red="0.74808861410000005" green="0.53959346770000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="lm8-EA-93W"/>
                                     </constraints>
                                     <state key="normal" title="样式二">
-                                        <color key="titleColor" white="0.96334941279999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleColor" red="0.96334940195083618" green="0.96334940195083618" blue="0.96334940195083618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="btnScanStyleTwo:" destination="-1" eventType="touchUpInside" id="7Mc-JN-6jt"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="xM8-xO-DE4" secondAttribute="trailing" id="8ed-cu-g2Z"/>
                                 <constraint firstItem="bXz-es-KKl" firstAttribute="leading" secondItem="Q1j-mI-H1u" secondAttribute="leading" id="DOF-V3-kWb"/>
@@ -69,14 +73,13 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="O4I-a0-dpq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PX5-yG-mqS"/>
                 <constraint firstAttribute="bottom" secondItem="O4I-a0-dpq" secondAttribute="bottom" id="S6b-bf-JF8"/>
                 <constraint firstItem="O4I-a0-dpq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VeX-Sc-bl2"/>
                 <constraint firstAttribute="trailing" secondItem="O4I-a0-dpq" secondAttribute="trailing" id="Y6z-Ae-HoX"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="320.5" y="327.5"/>
         </view>
     </objects>

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 M2Mkey. All rights reserved.
 //
 
-#import "MDButton.h"
+#import "MDButton.h"//代码写的有点垃圾 不推荐使用了，建议使用FXW_CountDownButton
 
 @interface CtrlCountDown : MDButton         //这是一个倒计时按钮 使用的时候必须调用setCountDownTime
                                             //必须调用closeCountDown

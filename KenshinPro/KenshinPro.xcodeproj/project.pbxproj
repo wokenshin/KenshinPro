@@ -114,6 +114,9 @@
 		B915C24F1E7F9DE10088A31F /* UIFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B915C2231E7F9DE10088A31F /* UIFontHelper.m */; };
 		B915C2501E7F9DE10088A31F /* UIView+MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B915C2251E7F9DE10088A31F /* UIView+MDExtension.m */; };
 		B915C2511E7F9DE10088A31F /* UIViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B915C2271E7F9DE10088A31F /* UIViewHelper.m */; };
+		B91748D61ECC3FDD006C70F5 /* CountDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B91748D41ECC3FDD006C70F5 /* CountDownVC.m */; };
+		B91748D71ECC3FDD006C70F5 /* CountDownVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91748D51ECC3FDD006C70F5 /* CountDownVC.xib */; };
+		B91748DA1ECC49A4006C70F5 /* FXW_CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B91748D91ECC49A4006C70F5 /* FXW_CountDownButton.m */; };
 		B9254BC01EAED73A00F82344 /* DataBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9254BBF1EAED73A00F82344 /* DataBaseVC.m */; };
 		B9254BC41EAED92E00F82344 /* NSUserDefaultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9254BC21EAED92E00F82344 /* NSUserDefaultsVC.m */; };
 		B9254BC51EAED92E00F82344 /* NSUserDefaultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9254BC31EAED92E00F82344 /* NSUserDefaultsVC.xib */; };
@@ -587,6 +590,11 @@
 		B915C2251E7F9DE10088A31F /* UIView+MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MDExtension.m"; sourceTree = "<group>"; };
 		B915C2261E7F9DE10088A31F /* UIViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewHelper.h; sourceTree = "<group>"; };
 		B915C2271E7F9DE10088A31F /* UIViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewHelper.m; sourceTree = "<group>"; };
+		B91748D31ECC3FDD006C70F5 /* CountDownVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownVC.h; sourceTree = "<group>"; };
+		B91748D41ECC3FDD006C70F5 /* CountDownVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownVC.m; sourceTree = "<group>"; };
+		B91748D51ECC3FDD006C70F5 /* CountDownVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountDownVC.xib; sourceTree = "<group>"; };
+		B91748D81ECC49A4006C70F5 /* FXW_CountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_CountDownButton.h; sourceTree = "<group>"; };
+		B91748D91ECC49A4006C70F5 /* FXW_CountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_CountDownButton.m; sourceTree = "<group>"; };
 		B9254BBE1EAED73A00F82344 /* DataBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseVC.h; sourceTree = "<group>"; };
 		B9254BBF1EAED73A00F82344 /* DataBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseVC.m; sourceTree = "<group>"; };
 		B9254BC11EAED92E00F82344 /* NSUserDefaultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsVC.h; sourceTree = "<group>"; };
@@ -1456,6 +1464,16 @@
 			path = MaterialControls;
 			sourceTree = "<group>";
 		};
+		B91748D21ECC3FA7006C70F5 /* 倒计时按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				B91748D31ECC3FDD006C70F5 /* CountDownVC.h */,
+				B91748D41ECC3FDD006C70F5 /* CountDownVC.m */,
+				B91748D51ECC3FDD006C70F5 /* CountDownVC.xib */,
+			);
+			path = "倒计时按钮";
+			sourceTree = "<group>";
+		};
 		B9254BB41EAED6EC00F82344 /* 数据存储 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1606,6 +1624,8 @@
 				B9D856811E84A4960053697F /* FXWUI.h */,
 				B92641E71E83997300EEED61 /* FXW_Button.h */,
 				B92641E81E83997300EEED61 /* FXW_Button.m */,
+				B91748D81ECC49A4006C70F5 /* FXW_CountDownButton.h */,
+				B91748D91ECC49A4006C70F5 /* FXW_CountDownButton.m */,
 				B92641E91E83997300EEED61 /* FXW_Control.h */,
 				B92641EA1E83997300EEED61 /* FXW_Control.m */,
 				B9B0D78D1E820C29001C04FB /* FXW_TextField.h */,
@@ -1711,6 +1731,7 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				B91748D21ECC3FA7006C70F5 /* 倒计时按钮 */,
 				B94F90981EB2C6DB0032FC0E /* 麻痹进度 */,
 				B9B9CE841E9CB83C008CC558 /* 广告滚动视图 */,
 				B9BD97531E810B19009BB0D4 /* BaseVC全部功能 */,
@@ -3130,6 +3151,7 @@
 			files = (
 				B95ED6CC1E947FCF00AD490B /* BLEVC.xib in Resources */,
 				B9D8568D1E84B91C0053697F /* AlertVC2.xib in Resources */,
+				B91748D71ECC3FDD006C70F5 /* CountDownVC.xib in Resources */,
 				B964771D1EB04A5300A9A498 /* alert_success_icon@2x.png in Resources */,
 				B95ED6C51E9474E200AD490B /* CellCtrlDdzm.xib in Resources */,
 				B98DF71E1EA8521300296C2A /* index1.html in Resources */,
@@ -3240,6 +3262,7 @@
 				B98505441E963CF5007C01CB /* GestureVerifyViewController.m in Sources */,
 				B96180A81E8F4A6600ABCCF3 /* MBMJVC.m in Sources */,
 				B9D626F01E7CC4D600593EC1 /* NSArray+MASAdditions.m in Sources */,
+				B91748D61ECC3FDD006C70F5 /* CountDownVC.m in Sources */,
 				B96477101EB02DEB00A9A498 /* STAlertView.m in Sources */,
 				B98505401E963CF5007C01CB /* PCCircle.m in Sources */,
 				B98505471E963CF5007C01CB /* PCLockLabel.m in Sources */,
@@ -3325,6 +3348,7 @@
 				B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */,
 				B93002271E89FB41000C0563 /* FXW_TextFieldVC.m in Sources */,
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
+				B91748DA1ECC49A4006C70F5 /* FXW_CountDownButton.m in Sources */,
 				B9B9CEC61E9CB986008CC558 /* SDWebImageDownloader.m in Sources */,
 				B98DF7291EA8524B00296C2A /* JSTWOVC.m in Sources */,
 				B95ED6AD1E9474E200AD490B /* LockMasterAppVC.m in Sources */,

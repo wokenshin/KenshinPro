@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
     [self loadData];
-    [self initLockMasterAppVCUI];
+    [self initTwoVCUI];
     
 }
 
@@ -40,7 +40,7 @@
     
 }
 
-- (void)initLockMasterAppVCUI
+- (void)initTwoVCUI
 {
     self.navigationItem.title = @"App";
     [self.view addSubview:self.tableView];
