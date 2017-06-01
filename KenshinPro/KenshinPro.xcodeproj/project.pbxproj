@@ -158,6 +158,8 @@
 		B930023C1E8A3BBA000C0563 /* AFNManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B930023B1E8A3BBA000C0563 /* AFNManagerVC.m */; };
 		B93002401E8A3C15000C0563 /* AFNMCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B930023E1E8A3C15000C0563 /* AFNMCVC.m */; };
 		B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B930023F1E8A3C15000C0563 /* AFNMCVC.xib */; };
+		B93F58651ED2844200393292 /* JWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B93F58631ED2844200393292 /* JWTVC.m */; };
+		B93F58661ED2844200393292 /* JWTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93F58641ED2844200393292 /* JWTVC.xib */; };
 		B94CD4991E9C645F003A889E /* TableViewBuJuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4981E9C645F003A889E /* TableViewBuJuVC.m */; };
 		B94CD49C1E9C65A5003A889E /* VCView.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD49B1E9C65A5003A889E /* VCView.m */; };
 		B94CD49E1E9C65B1003A889E /* VCView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94CD49D1E9C65B1003A889E /* VCView.xib */; };
@@ -169,6 +171,9 @@
 		B94CD4B41E9C7CF4003A889E /* UIImage+MFTint.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4AD1E9C7CF4003A889E /* UIImage+MFTint.m */; };
 		B94CD4B51E9C7CF4003A889E /* UITextField+MFClearButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4AF1E9C7CF4003A889E /* UITextField+MFClearButton.m */; };
 		B94CD4B81E9C7D71003A889E /* CtrlCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4B71E9C7D71003A889E /* CtrlCountDown.m */; };
+		B94D8F2D1EDF99800003D10A /* NSData+CRC32.m in Sources */ = {isa = PBXBuildFile; fileRef = B94D8F2C1EDF99800003D10A /* NSData+CRC32.m */; };
+		B94D8F321EDF99EB0003D10A /* CRC32VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94D8F301EDF99EB0003D10A /* CRC32VC.m */; };
+		B94D8F331EDF99EB0003D10A /* CRC32VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94D8F311EDF99EB0003D10A /* CRC32VC.xib */; };
 		B94DA31A1E8CB82B0072BECE /* MJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA3191E8CB82B0072BECE /* MJStudent.m */; };
 		B94DA31D1E8CCAF70072BECE /* MJBag.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA31C1E8CCAF70072BECE /* MJBag.m */; };
 		B94F909B1EB2C6F40032FC0E /* MBProgressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F909A1EB2C6F40032FC0E /* MBProgressVC.m */; };
@@ -363,6 +368,21 @@
 		B9D856951E84EEFA0053697F /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D856941E84EEFA0053697F /* ViewControllerOne.m */; };
 		B9D856981E84EF230053697F /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D856971E84EF230053697F /* ViewControllerTwo.m */; };
 		B9D8569B1E84EF340053697F /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8569A1E84EF340053697F /* ViewControllerThree.m */; };
+		B9EFE9541EDE4A62002C2758 /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE92B1EDE4A62002C2758 /* MF_Base64Additions.m */; };
+		B9EFE9551EDE4A62002C2758 /* JWTAlgorithmFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9321EDE4A62002C2758 /* JWTAlgorithmFactory.m */; };
+		B9EFE9561EDE4A62002C2758 /* JWTAlgorithmNone.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9341EDE4A62002C2758 /* JWTAlgorithmNone.m */; };
+		B9EFE9571EDE4A62002C2758 /* JWTAlgorithmDataHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9371EDE4A62002C2758 /* JWTAlgorithmDataHolder.m */; };
+		B9EFE9581EDE4A62002C2758 /* JWTAlgorithmHS256.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE93A1EDE4A62002C2758 /* JWTAlgorithmHS256.m */; };
+		B9EFE9591EDE4A62002C2758 /* JWTAlgorithmHS384.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE93C1EDE4A62002C2758 /* JWTAlgorithmHS384.m */; };
+		B9EFE95A1EDE4A62002C2758 /* JWTAlgorithmHS512.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE93E1EDE4A62002C2758 /* JWTAlgorithmHS512.m */; };
+		B9EFE95B1EDE4A63002C2758 /* JWTAlgorithmHSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9401EDE4A62002C2758 /* JWTAlgorithmHSBase.m */; };
+		B9EFE95C1EDE4A63002C2758 /* JWTAlgorithmRSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9431EDE4A62002C2758 /* JWTAlgorithmRSBase.m */; };
+		B9EFE95D1EDE4A63002C2758 /* JWTClaim.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9471EDE4A62002C2758 /* JWTClaim.m */; };
+		B9EFE95E1EDE4A63002C2758 /* JWTClaimsSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9491EDE4A62002C2758 /* JWTClaimsSet.m */; };
+		B9EFE95F1EDE4A63002C2758 /* JWTClaimsSetSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE94B1EDE4A62002C2758 /* JWTClaimsSetSerializer.m */; };
+		B9EFE9601EDE4A63002C2758 /* JWTClaimsSetVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE94D1EDE4A62002C2758 /* JWTClaimsSetVerifier.m */; };
+		B9EFE9611EDE4A63002C2758 /* JWT.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE94F1EDE4A62002C2758 /* JWT.m */; };
+		B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9531EDE4A62002C2758 /* JWTTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -674,6 +694,9 @@
 		B930023D1E8A3C15000C0563 /* AFNMCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNMCVC.h; sourceTree = "<group>"; };
 		B930023E1E8A3C15000C0563 /* AFNMCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNMCVC.m; sourceTree = "<group>"; };
 		B930023F1E8A3C15000C0563 /* AFNMCVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AFNMCVC.xib; sourceTree = "<group>"; };
+		B93F58621ED2844200393292 /* JWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTVC.h; sourceTree = "<group>"; };
+		B93F58631ED2844200393292 /* JWTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTVC.m; sourceTree = "<group>"; };
+		B93F58641ED2844200393292 /* JWTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWTVC.xib; sourceTree = "<group>"; };
 		B94CD4971E9C645F003A889E /* TableViewBuJuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewBuJuVC.h; sourceTree = "<group>"; };
 		B94CD4981E9C645F003A889E /* TableViewBuJuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewBuJuVC.m; sourceTree = "<group>"; };
 		B94CD49A1E9C65A5003A889E /* VCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCView.h; sourceTree = "<group>"; };
@@ -695,6 +718,11 @@
 		B94CD4AF1E9C7CF4003A889E /* UITextField+MFClearButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MFClearButton.m"; sourceTree = "<group>"; };
 		B94CD4B61E9C7D71003A889E /* CtrlCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CtrlCountDown.h; sourceTree = "<group>"; };
 		B94CD4B71E9C7D71003A889E /* CtrlCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CtrlCountDown.m; sourceTree = "<group>"; };
+		B94D8F2B1EDF99800003D10A /* NSData+CRC32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC32.h"; sourceTree = "<group>"; };
+		B94D8F2C1EDF99800003D10A /* NSData+CRC32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC32.m"; sourceTree = "<group>"; };
+		B94D8F2F1EDF99EB0003D10A /* CRC32VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRC32VC.h; sourceTree = "<group>"; };
+		B94D8F301EDF99EB0003D10A /* CRC32VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRC32VC.m; sourceTree = "<group>"; };
+		B94D8F311EDF99EB0003D10A /* CRC32VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRC32VC.xib; sourceTree = "<group>"; };
 		B94DA3181E8CB82B0072BECE /* MJStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJStudent.h; sourceTree = "<group>"; };
 		B94DA3191E8CB82B0072BECE /* MJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStudent.m; sourceTree = "<group>"; };
 		B94DA31B1E8CCAF70072BECE /* MJBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBag.h; sourceTree = "<group>"; };
@@ -1040,6 +1068,39 @@
 		B9D856971E84EF230053697F /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
 		B9D856991E84EF340053697F /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
 		B9D8569A1E84EF340053697F /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
+		B9EFE92A1EDE4A62002C2758 /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base64Additions.h; sourceTree = "<group>"; };
+		B9EFE92B1EDE4A62002C2758 /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base64Additions.m; sourceTree = "<group>"; };
+		B9EFE9301EDE4A62002C2758 /* JWTAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithm.h; sourceTree = "<group>"; };
+		B9EFE9311EDE4A62002C2758 /* JWTAlgorithmFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmFactory.h; sourceTree = "<group>"; };
+		B9EFE9321EDE4A62002C2758 /* JWTAlgorithmFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmFactory.m; sourceTree = "<group>"; };
+		B9EFE9331EDE4A62002C2758 /* JWTAlgorithmNone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmNone.h; sourceTree = "<group>"; };
+		B9EFE9341EDE4A62002C2758 /* JWTAlgorithmNone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmNone.m; sourceTree = "<group>"; };
+		B9EFE9361EDE4A62002C2758 /* JWTAlgorithmDataHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmDataHolder.h; sourceTree = "<group>"; };
+		B9EFE9371EDE4A62002C2758 /* JWTAlgorithmDataHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmDataHolder.m; sourceTree = "<group>"; };
+		B9EFE9391EDE4A62002C2758 /* JWTAlgorithmHS256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmHS256.h; sourceTree = "<group>"; };
+		B9EFE93A1EDE4A62002C2758 /* JWTAlgorithmHS256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmHS256.m; sourceTree = "<group>"; };
+		B9EFE93B1EDE4A62002C2758 /* JWTAlgorithmHS384.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmHS384.h; sourceTree = "<group>"; };
+		B9EFE93C1EDE4A62002C2758 /* JWTAlgorithmHS384.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmHS384.m; sourceTree = "<group>"; };
+		B9EFE93D1EDE4A62002C2758 /* JWTAlgorithmHS512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmHS512.h; sourceTree = "<group>"; };
+		B9EFE93E1EDE4A62002C2758 /* JWTAlgorithmHS512.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmHS512.m; sourceTree = "<group>"; };
+		B9EFE93F1EDE4A62002C2758 /* JWTAlgorithmHSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmHSBase.h; sourceTree = "<group>"; };
+		B9EFE9401EDE4A62002C2758 /* JWTAlgorithmHSBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmHSBase.m; sourceTree = "<group>"; };
+		B9EFE9421EDE4A62002C2758 /* JWTAlgorithmRSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithmRSBase.h; sourceTree = "<group>"; };
+		B9EFE9431EDE4A62002C2758 /* JWTAlgorithmRSBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTAlgorithmRSBase.m; sourceTree = "<group>"; };
+		B9EFE9441EDE4A62002C2758 /* JWTRSAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTRSAlgorithm.h; sourceTree = "<group>"; };
+		B9EFE9461EDE4A62002C2758 /* JWTClaim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTClaim.h; sourceTree = "<group>"; };
+		B9EFE9471EDE4A62002C2758 /* JWTClaim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTClaim.m; sourceTree = "<group>"; };
+		B9EFE9481EDE4A62002C2758 /* JWTClaimsSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTClaimsSet.h; sourceTree = "<group>"; };
+		B9EFE9491EDE4A62002C2758 /* JWTClaimsSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTClaimsSet.m; sourceTree = "<group>"; };
+		B9EFE94A1EDE4A62002C2758 /* JWTClaimsSetSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTClaimsSetSerializer.h; sourceTree = "<group>"; };
+		B9EFE94B1EDE4A62002C2758 /* JWTClaimsSetSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTClaimsSetSerializer.m; sourceTree = "<group>"; };
+		B9EFE94C1EDE4A62002C2758 /* JWTClaimsSetVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTClaimsSetVerifier.h; sourceTree = "<group>"; };
+		B9EFE94D1EDE4A62002C2758 /* JWTClaimsSetVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTClaimsSetVerifier.m; sourceTree = "<group>"; };
+		B9EFE94E1EDE4A62002C2758 /* JWT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWT.h; sourceTree = "<group>"; };
+		B9EFE94F1EDE4A62002C2758 /* JWT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWT.m; sourceTree = "<group>"; };
+		B9EFE9511EDE4A62002C2758 /* JWTDeprecations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTDeprecations.h; sourceTree = "<group>"; };
+		B9EFE9521EDE4A62002C2758 /* JWTTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTTools.h; sourceTree = "<group>"; };
+		B9EFE9531EDE4A62002C2758 /* JWTTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1701,6 +1762,8 @@
 				B92CCB3B1E7A88B900035A79 /* RegexUtil.m */,
 				B926420D1E83D4B500EEED61 /* NSString+Utils.h */,
 				B926420E1E83D4B500EEED61 /* NSString+Utils.m */,
+				B94D8F2B1EDF99800003D10A /* NSData+CRC32.h */,
+				B94D8F2C1EDF99800003D10A /* NSData+CRC32.m */,
 				B96528801EA598600044CA5F /* ImageUtil.h */,
 				B96528811EA598600044CA5F /* ImageUtil.m */,
 				B92CCB031E7A192100035A79 /* HDeviceIdentifierUtils */,
@@ -1758,6 +1821,8 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				B94D8F2E1EDF99C80003D10A /* CRC校验 */,
+				B93F58611ED2842400393292 /* JWT */,
 				B98EAF8F1EC0768B00CBFF6F /* App主题切换 */,
 				B96476DC1EB0296C00A9A498 /* 图片浏览 */,
 				B9254BB41EAED6EC00F82344 /* 数据存储 */,
@@ -1869,6 +1934,17 @@
 			path = AFN_MC;
 			sourceTree = "<group>";
 		};
+		B93F58611ED2842400393292 /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9271EDE4A62002C2758 /* JWT */,
+				B93F58621ED2844200393292 /* JWTVC.h */,
+				B93F58631ED2844200393292 /* JWTVC.m */,
+				B93F58641ED2844200393292 /* JWTVC.xib */,
+			);
+			path = JWT;
+			sourceTree = "<group>";
+		};
 		B94CD4961E9C6426003A889E /* TableView布局VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1908,6 +1984,16 @@
 				B94CD4AF1E9C7CF4003A889E /* UITextField+MFClearButton.m */,
 			);
 			path = MaterialTextField;
+			sourceTree = "<group>";
+		};
+		B94D8F2E1EDF99C80003D10A /* CRC校验 */ = {
+			isa = PBXGroup;
+			children = (
+				B94D8F2F1EDF99EB0003D10A /* CRC32VC.h */,
+				B94D8F301EDF99EB0003D10A /* CRC32VC.m */,
+				B94D8F311EDF99EB0003D10A /* CRC32VC.xib */,
+			);
+			path = "CRC校验";
 			sourceTree = "<group>";
 		};
 		B94F90981EB2C6DB0032FC0E /* 麻痹进度 */ = {
@@ -3023,6 +3109,134 @@
 			path = "获取指定的VC演示";
 			sourceTree = "<group>";
 		};
+		B9EFE9271EDE4A62002C2758 /* JWT */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9281EDE4A62002C2758 /* Base642.1.0 */,
+				B9EFE92C1EDE4A62002C2758 /* JWT2.1.0 */,
+				B9EFE9521EDE4A62002C2758 /* JWTTools.h */,
+				B9EFE9531EDE4A62002C2758 /* JWTTools.m */,
+			);
+			path = JWT;
+			sourceTree = "<group>";
+		};
+		B9EFE9281EDE4A62002C2758 /* Base642.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9291EDE4A62002C2758 /* Base64 */,
+			);
+			path = Base642.1.0;
+			sourceTree = "<group>";
+		};
+		B9EFE9291EDE4A62002C2758 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE92A1EDE4A62002C2758 /* MF_Base64Additions.h */,
+				B9EFE92B1EDE4A62002C2758 /* MF_Base64Additions.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		B9EFE92C1EDE4A62002C2758 /* JWT2.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE92D1EDE4A62002C2758 /* Classes */,
+			);
+			path = JWT2.1.0;
+			sourceTree = "<group>";
+		};
+		B9EFE92D1EDE4A62002C2758 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9501EDE4A62002C2758 /* Supplement */,
+				B9EFE92E1EDE4A62002C2758 /* Algorithms */,
+				B9EFE9451EDE4A62002C2758 /* ClaimSet */,
+				B9EFE94E1EDE4A62002C2758 /* JWT.h */,
+				B9EFE94F1EDE4A62002C2758 /* JWT.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B9EFE92E1EDE4A62002C2758 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE92F1EDE4A62002C2758 /* Base */,
+				B9EFE9351EDE4A62002C2758 /* Holders */,
+				B9EFE9381EDE4A62002C2758 /* HSFamily */,
+				B9EFE9411EDE4A62002C2758 /* RSFamily */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		B9EFE92F1EDE4A62002C2758 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9301EDE4A62002C2758 /* JWTAlgorithm.h */,
+				B9EFE9311EDE4A62002C2758 /* JWTAlgorithmFactory.h */,
+				B9EFE9321EDE4A62002C2758 /* JWTAlgorithmFactory.m */,
+				B9EFE9331EDE4A62002C2758 /* JWTAlgorithmNone.h */,
+				B9EFE9341EDE4A62002C2758 /* JWTAlgorithmNone.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B9EFE9351EDE4A62002C2758 /* Holders */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9361EDE4A62002C2758 /* JWTAlgorithmDataHolder.h */,
+				B9EFE9371EDE4A62002C2758 /* JWTAlgorithmDataHolder.m */,
+			);
+			path = Holders;
+			sourceTree = "<group>";
+		};
+		B9EFE9381EDE4A62002C2758 /* HSFamily */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9391EDE4A62002C2758 /* JWTAlgorithmHS256.h */,
+				B9EFE93A1EDE4A62002C2758 /* JWTAlgorithmHS256.m */,
+				B9EFE93B1EDE4A62002C2758 /* JWTAlgorithmHS384.h */,
+				B9EFE93C1EDE4A62002C2758 /* JWTAlgorithmHS384.m */,
+				B9EFE93D1EDE4A62002C2758 /* JWTAlgorithmHS512.h */,
+				B9EFE93E1EDE4A62002C2758 /* JWTAlgorithmHS512.m */,
+				B9EFE93F1EDE4A62002C2758 /* JWTAlgorithmHSBase.h */,
+				B9EFE9401EDE4A62002C2758 /* JWTAlgorithmHSBase.m */,
+			);
+			path = HSFamily;
+			sourceTree = "<group>";
+		};
+		B9EFE9411EDE4A62002C2758 /* RSFamily */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9421EDE4A62002C2758 /* JWTAlgorithmRSBase.h */,
+				B9EFE9431EDE4A62002C2758 /* JWTAlgorithmRSBase.m */,
+				B9EFE9441EDE4A62002C2758 /* JWTRSAlgorithm.h */,
+			);
+			path = RSFamily;
+			sourceTree = "<group>";
+		};
+		B9EFE9451EDE4A62002C2758 /* ClaimSet */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9461EDE4A62002C2758 /* JWTClaim.h */,
+				B9EFE9471EDE4A62002C2758 /* JWTClaim.m */,
+				B9EFE9481EDE4A62002C2758 /* JWTClaimsSet.h */,
+				B9EFE9491EDE4A62002C2758 /* JWTClaimsSet.m */,
+				B9EFE94A1EDE4A62002C2758 /* JWTClaimsSetSerializer.h */,
+				B9EFE94B1EDE4A62002C2758 /* JWTClaimsSetSerializer.m */,
+				B9EFE94C1EDE4A62002C2758 /* JWTClaimsSetVerifier.h */,
+				B9EFE94D1EDE4A62002C2758 /* JWTClaimsSetVerifier.m */,
+			);
+			path = ClaimSet;
+			sourceTree = "<group>";
+		};
+		B9EFE9501EDE4A62002C2758 /* Supplement */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFE9511EDE4A62002C2758 /* JWTDeprecations.h */,
+			);
+			path = Supplement;
+			sourceTree = "<group>";
+		};
 		B9F06F731EA7626900C2C309 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -3166,6 +3380,7 @@
 				B95ED6DB1E94EA4F00AD490B /* CategoryCell.xib in Resources */,
 				B94CD4B01E9C7CF4003A889E /* Info.plist in Resources */,
 				B95ED6D51E94DC4600AD490B /* FXW_BLECtrlDemoVC.xib in Resources */,
+				B93F58661ED2844200393292 /* JWTVC.xib in Resources */,
 				B95ED6E01E94EA6900AD490B /* BaiDuBottomMenu.xib in Resources */,
 				B95AC89A1EADDC2600806D1A /* TextConnectWebVC.xib in Resources */,
 				B98DF7101EA8516100296C2A /* JSContentVC.xib in Resources */,
@@ -3192,6 +3407,7 @@
 				B98DF7281EA8524B00296C2A /* call2.html in Resources */,
 				B95ED6EA1E94EEF200AD490B /* DeviceMenuView.xib in Resources */,
 				B9C963451E9F0D1F00A9C0CF /* OCAndVC.xib in Resources */,
+				B94D8F331EDF99EB0003D10A /* CRC32VC.xib in Resources */,
 				B9BADB4A1EA5BF57000B3C1C /* VCN4.xib in Resources */,
 				B9BADB3F1EA5BB82000B3C1C /* VCN2.xib in Resources */,
 				B98DF7331EA852D100296C2A /* jsCallOC2.html in Resources */,
@@ -3252,6 +3468,7 @@
 				B93002401E8A3C15000C0563 /* AFNMCVC.m in Sources */,
 				B9C963441E9F0D1F00A9C0CF /* OCAndVC.m in Sources */,
 				B95ED6D01E94DABD00AD490B /* FXW_BLECtrl.m in Sources */,
+				B9EFE95B1EDE4A63002C2758 /* JWTAlgorithmHSBase.m in Sources */,
 				B9BADB5A1EA5E5D6000B3C1C /* VCN5.m in Sources */,
 				B9B9CE991E9CB8EC008CC558 /* TAAnimatedDotView.m in Sources */,
 				B96BF32D1E9B0E10008ADB3D /* KenshinAppVC.m in Sources */,
@@ -3266,6 +3483,7 @@
 				B96477101EB02DEB00A9A498 /* STAlertView.m in Sources */,
 				B98505401E963CF5007C01CB /* PCCircle.m in Sources */,
 				B98505471E963CF5007C01CB /* PCLockLabel.m in Sources */,
+				B9EFE95A1EDE4A62002C2758 /* JWTAlgorithmHS512.m in Sources */,
 				B95ED6AE1E9474E200AD490B /* RFSegmentView.m in Sources */,
 				B9B9CED01E9CB986008CC558 /* UIView+WebCacheOperation.m in Sources */,
 				B95ED6B21E9474E200AD490B /* WoYaoBianDaView.m in Sources */,
@@ -3274,6 +3492,7 @@
 				B906FCEA1E8B553600645C96 /* FXW_Const.m in Sources */,
 				B98505421E963CF5007C01CB /* PCCircleViewConst.m in Sources */,
 				B9B9CE9A1E9CB8EC008CC558 /* TADotView.m in Sources */,
+				B9EFE9601EDE4A63002C2758 /* JWTClaimsSetVerifier.m in Sources */,
 				B906FD521E8B668F00645C96 /* NSBundle+MJRefresh.m in Sources */,
 				B98DF73C1EA8530C00296C2A /* OCCallJSTwoVC.m in Sources */,
 				B98DF72F1EA852AC00296C2A /* JSCallOCVC.m in Sources */,
@@ -3291,10 +3510,13 @@
 				B906FC651E8B452C00645C96 /* MJStatus.m in Sources */,
 				B92642091E83D3AF00EEED61 /* AFURLSessionManager.m in Sources */,
 				B910E2651EA8888C00DFCC86 /* QRCodeBacgrouView.m in Sources */,
+				B9EFE9571EDE4A62002C2758 /* JWTAlgorithmDataHolder.m in Sources */,
 				B92642081E83D3AF00EEED61 /* AFURLResponseSerialization.m in Sources */,
 				B95ED6B51E9474E200AD490B /* OrderVC2.m in Sources */,
 				B906FC611E8B450100645C96 /* MJBaseObject.m in Sources */,
 				B96477111EB02DEB00A9A498 /* STIndicatorView.m in Sources */,
+				B9EFE95F1EDE4A63002C2758 /* JWTClaimsSetSerializer.m in Sources */,
+				B9EFE9591EDE4A62002C2758 /* JWTAlgorithmHS384.m in Sources */,
 				B95ED6AF1E9474E200AD490B /* YQYPiecewiseView.m in Sources */,
 				B9BADB491EA5BF57000B3C1C /* VCN4.m in Sources */,
 				B9D8568C1E84B91C0053697F /* AlertVC2.m in Sources */,
@@ -3302,8 +3524,10 @@
 				B906FD471E8B668F00645C96 /* MJRefreshAutoGifFooter.m in Sources */,
 				B95ED6BC1E9474E200AD490B /* OrderWaittingVC.m in Sources */,
 				B93002371E8A3695000C0563 /* AFN_MC.m in Sources */,
+				B9EFE9551EDE4A62002C2758 /* JWTAlgorithmFactory.m in Sources */,
 				B92641EF1E8399C900EEED61 /* PopSelect.m in Sources */,
 				B95AC88B1EADC94800806D1A /* BaseRichTextView.m in Sources */,
+				B9EFE9611EDE4A63002C2758 /* JWT.m in Sources */,
 				B9D856951E84EEFA0053697F /* ViewControllerOne.m in Sources */,
 				B9BADB431EA5BB99000B3C1C /* VCN3.m in Sources */,
 				B926420F1E83D4B500EEED61 /* NSString+Utils.m in Sources */,
@@ -3355,9 +3579,11 @@
 				B9B9CECA1E9CB986008CC558 /* UIButton+WebCache.m in Sources */,
 				B915C2431E7F9DE10088A31F /* MDSwitch.m in Sources */,
 				B92CCB0E1E7A1AEB00035A79 /* README.md in Sources */,
+				B94D8F2D1EDF99800003D10A /* NSData+CRC32.m in Sources */,
 				B9B9CE981E9CB8EC008CC558 /* TAAbstractDotView.m in Sources */,
 				B9BD97451E810509009BB0D4 /* FXWUD.m in Sources */,
 				B910E2371EA880A500DFCC86 /* SDWebImageLoadGifVC.m in Sources */,
+				B94D8F321EDF99EB0003D10A /* CRC32VC.m in Sources */,
 				B906FD531E8B668F00645C96 /* UIScrollView+MJExtension.m in Sources */,
 				B9254BC41EAED92E00F82344 /* NSUserDefaultsVC.m in Sources */,
 				B906FC621E8B450100645C96 /* MJStatusResult.m in Sources */,
@@ -3365,6 +3591,7 @@
 				B9A743CB1E95EE1400ABFD86 /* XibSelectedBtnImgVC.m in Sources */,
 				B96477121EB02DEB00A9A498 /* STConst.m in Sources */,
 				B92CCAF91E7A158500035A79 /* ThreeVC.m in Sources */,
+				B93F58651ED2844200393292 /* JWTVC.m in Sources */,
 				B915C2371E7F9DE10088A31F /* MDLinearProgressLayer.m in Sources */,
 				B92642071E83D3AF00EEED61 /* AFURLRequestSerialization.m in Sources */,
 				B906FC571E8B3C6500645C96 /* DicAndModelVC.m in Sources */,
@@ -3417,10 +3644,12 @@
 				B915C2381E7F9DE10088A31F /* MDMathHelper.m in Sources */,
 				B96528891EA5A5230044CA5F /* ModelUploadImg.m in Sources */,
 				B915C2421E7F9DE10088A31F /* MDSuggestTableView.m in Sources */,
+				B9EFE9541EDE4A62002C2758 /* MF_Base64Additions.m in Sources */,
 				B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */,
 				B915C22D1E7F9DE10088A31F /* MDCalendarCell.m in Sources */,
 				B9A743CD1E95EE1400ABFD86 /* SwitchModeVC.m in Sources */,
 				B94F90AB1EB31B1A0032FC0E /* HideNavDividingLineVC.m in Sources */,
+				B9EFE9561EDE4A62002C2758 /* JWTAlgorithmNone.m in Sources */,
 				B9C9634A1E9F141A00A9C0CF /* Test.swift in Sources */,
 				B915C2291E7F9DE10088A31F /* MaterialControls.m in Sources */,
 				B906FC501E8B3BC000645C96 /* NSObject+MJKeyValue.m in Sources */,
@@ -3443,6 +3672,7 @@
 				B950FC891E835946003D7376 /* MenusVC.m in Sources */,
 				B910E24E1EA884F700DFCC86 /* MCSearchVC.m in Sources */,
 				B95ED6BA1E9474E200AD490B /* OrderFinishVC.m in Sources */,
+				B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */,
 				B915C2321E7F9DE10088A31F /* MDCircularProgressLayer.m in Sources */,
 				B915C2511E7F9DE10088A31F /* UIViewHelper.m in Sources */,
 				B906FC681E8B455500645C96 /* MJAd.m in Sources */,
@@ -3466,6 +3696,7 @@
 				B906FD581E8B66EF00645C96 /* NoDataView.m in Sources */,
 				B915C23E1E7F9DE10088A31F /* MDSliderThumbView.m in Sources */,
 				B910E24A1EA884F700DFCC86 /* NavBarCustomVC.m in Sources */,
+				B9EFE9581EDE4A62002C2758 /* JWTAlgorithmHS256.m in Sources */,
 				B915C23A1E7F9DE10088A31F /* MDProgressLayer.m in Sources */,
 				B906FC4C1E8B3BC000645C96 /* MJPropertyKey.m in Sources */,
 				B906FD4D1E8B668F00645C96 /* MJRefreshGifHeader.m in Sources */,
@@ -3486,8 +3717,10 @@
 				B9D626F21E7CC4D600593EC1 /* View+MASAdditions.m in Sources */,
 				B94CD49C1E9C65A5003A889E /* VCView.m in Sources */,
 				B96477131EB02DEB00A9A498 /* STUI.m in Sources */,
+				B9EFE95D1EDE4A63002C2758 /* JWTClaim.m in Sources */,
 				B950FC8D1E835C6C003D7376 /* AllUISizeVC.m in Sources */,
 				B92642061E83D3AF00EEED61 /* AFSecurityPolicy.m in Sources */,
+				B9EFE95E1EDE4A63002C2758 /* JWTClaimsSet.m in Sources */,
 				B94DA31D1E8CCAF70072BECE /* MJBag.m in Sources */,
 				B94CD4B11E9C7CF4003A889E /* MFTextField.m in Sources */,
 				B9B0D7911E820C29001C04FB /* FXW_TextField.m in Sources */,
@@ -3499,6 +3732,7 @@
 				B98505411E963CF5007C01CB /* PCCircleView.m in Sources */,
 				B92CCB391E7A773C00035A79 /* CustomContactsVC.m in Sources */,
 				B915C2281E7F9DE10088A31F /* AutoResizeTextView.m in Sources */,
+				B9EFE95C1EDE4A63002C2758 /* JWTAlgorithmRSBase.m in Sources */,
 				B92CCAF61E7A157700035A79 /* TwoVC.m in Sources */,
 				B906FD541E8B668F00645C96 /* UIScrollView+MJRefresh.m in Sources */,
 				B906FD4E1E8B668F00645C96 /* MJRefreshNormalHeader.m in Sources */,

@@ -15,6 +15,8 @@
 #import "DataBaseVC.h"
 #import "ImgScanPickerVC.h"
 #import "ThemeVC.h"
+#import "JWTVC.h"
+#import "CRC32VC.h"
 
 @interface ThreeVC ()
 
@@ -41,6 +43,8 @@
     [self addDataWithTitle:@"富文本-高级" andDetail:@"三方库 YYText 其实就是前者的封装"];
     [self addDataWithTitle:@"图片浏览器-MC期间" andDetail:@"http url 需要设置 App Transport Security Settings"];
     [self addDataWithTitle:@"App主题切换" andDetail:@"HS期间实现"];
+    [self addDataWithTitle:@"JWT" andDetail:@"关于这货是什么 自己百度去"];
+    [self addDataWithTitle:@"CRC校验" andDetail:@"关于这货是什么 自己百度去"];
     
 }
 
@@ -106,6 +110,20 @@
     if ([title isEqualToString:@"App主题切换"])
     {
         ThemeVC *vc = [[ThemeVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"JWT"])
+    {
+        JWTVC *vc = [[JWTVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"CRC校验"])
+    {
+        CRC32VC *vc = [[CRC32VC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

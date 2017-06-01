@@ -67,6 +67,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name: UIApplicationWillEnterForegroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name: UIApplicationDidEnterBackgroundNotification object:nil];
     
+    //不用调用 invalidate 倒计时为0的时候就会触发 因为我的方法里面已经调用invalidate了
 //    [_timer invalidate];
 //    _timer = nil;
     
