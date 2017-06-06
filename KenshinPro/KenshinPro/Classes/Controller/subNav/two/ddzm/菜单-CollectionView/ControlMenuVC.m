@@ -38,8 +38,15 @@
 
 - (void)loadData
 {
-    _arrImg   = @[@"ddzmMenu1",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",@"ddzmMenu6"];
-    _arrTitle = @[@"下载",@"指纹",@"ID卡",@"日志",@"手机钥匙",@"节电模式"];
+    _arrImg   = @[@"ddzmMenu1",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",
+                  @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",
+                  @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",
+                  @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",@"ddzmMenu6"];
+    
+    _arrTitle = @[@"下载",@"指纹",@"ID卡",@"日志",@"手机钥匙",
+                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙"
+                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙",
+                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙",@"节电模式"];
 }
 
 - (void)initUI
@@ -48,14 +55,15 @@
     
     
     //此处必须要有创见一个UICollectionViewFlowLayout的对象
-    UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     //同一行相邻两个cell的最小间距
     layout.minimumInteritemSpacing = 0;
     //最小两行之间的间距
     layout.minimumLineSpacing = 0;
     
-    _collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight) collectionViewLayout:layout];
-    _collectionView.backgroundColor=[UIColor whiteColor];
+    //末尾-64 是因为集合view的高度已经在y坐标系的影响下 超出的屏幕 所以要剪掉64
+    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, screenWidth, screenHeight - 64) collectionViewLayout:layout];
+    _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     //这个是横向滑动
@@ -123,6 +131,9 @@
 //每一个分组的上左下右间距
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
+    //在设置间距的时候，个人觉得 可以把间距直接体现在单个cell上。
+    //或者也可以在这里设置， 个人建议 设置上 下 间距的时候 不要只设置一个，最好上下都设置，不然最顶部 或者 最底部 可能因为你没有设置 而变成0
+    //那样看着并不美观
     return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 

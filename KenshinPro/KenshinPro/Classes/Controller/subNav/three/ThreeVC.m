@@ -17,6 +17,7 @@
 #import "ThemeVC.h"
 #import "JWTVC.h"
 #import "CRC32VC.h"
+#import "RegexVC.h"
 
 @interface ThreeVC ()
 
@@ -45,6 +46,7 @@
     [self addDataWithTitle:@"App主题切换" andDetail:@"HS期间实现"];
     [self addDataWithTitle:@"JWT" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"CRC校验" andDetail:@"关于这货是什么 自己百度去"];
+    [self addDataWithTitle:@"正则表达式" andDetail:@"常用正则表达式，以及自定义正则表达式"];
     
 }
 
@@ -124,6 +126,13 @@
     if ([title isEqualToString:@"CRC校验"])
     {
         CRC32VC *vc = [[CRC32VC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"正则表达式"])
+    {
+        RegexVC *vc = [[RegexVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

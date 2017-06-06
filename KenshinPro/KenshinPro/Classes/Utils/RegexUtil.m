@@ -15,19 +15,26 @@ BOOL isValid(NSString *validateObj, NSString *regEx)
 
 @implementation RegexUtil
 
-+ (BOOL)isValidTelePhone:(NSString *)telephone{
-    if (telephone == nil || telephone.length < 1) {
++ (BOOL)isValidTelePhone:(NSString *)telephone
+{
+    if (telephone == nil || telephone.length < 1)
+    {
         return NO;
     }
+    
     telephone = [telephone stringByReplacingOccurrencesOfString:@"-" withString:@""];
     NSString *regex = @"^0(10|2[0-5789]|\\d{3})\\d{7,8}$";
     
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     BOOL isMatch = [pred evaluateWithObject:telephone];
-    if (!isMatch) {
+    
+    if (!isMatch)
+    {
         return [RegexUtil isValidMobileNumber:telephone];
     }
+    
     return isMatch;
+    
 }
 
 + (BOOL)isValidMobileNumber:(NSString*)mobileNum
@@ -60,7 +67,7 @@ BOOL isValid(NSString *validateObj, NSString *regEx)
 
 + (BOOL)isValidEmail:(NSString *)email
 {
-    NSString *emailRegEx = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSString *emailRegEx = @"^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$";
     return isValid(email, emailRegEx);
 }
 
