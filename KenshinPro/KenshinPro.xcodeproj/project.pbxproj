@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B906B3D51EE94B7C0073E175 /* FXW_TableMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B906B3D01EE94B7C0073E175 /* FXW_TableMenu.m */; };
+		B906B3D61EE94B7C0073E175 /* CellFXWTableMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B906B3D31EE94B7C0073E175 /* CellFXWTableMenu.m */; };
+		B906B3D71EE94B7C0073E175 /* CellFXWTableMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B906B3D41EE94B7C0073E175 /* CellFXWTableMenu.xib */; };
+		B906B3DB1EE94B9F0073E175 /* BottomTableMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B906B3D91EE94B9F0073E175 /* BottomTableMenuVC.m */; };
+		B906B3DC1EE94B9F0073E175 /* BottomTableMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B906B3DA1EE94B9F0073E175 /* BottomTableMenuVC.xib */; };
 		B906FC481E8B3BC000645C96 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B906FC321E8B3BC000645C96 /* Info.plist */; };
 		B906FC491E8B3BC000645C96 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B906FC351E8B3BC000645C96 /* MJExtensionConst.m */; };
 		B906FC4A1E8B3BC000645C96 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B906FC371E8B3BC000645C96 /* MJFoundation.m */; };
@@ -260,6 +265,10 @@
 		B98505451E963CF5007C01CB /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B985053A1E963CF5007C01CB /* GestureViewController.m */; };
 		B98505461E963CF5007C01CB /* PCCircleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B985053D1E963CF5007C01CB /* PCCircleInfoView.m */; };
 		B98505471E963CF5007C01CB /* PCLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B985053F1E963CF5007C01CB /* PCLockLabel.m */; };
+		B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B985680E1EE7A11400FF9668 /* DesignModeVC.m */; };
+		B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B985680F1EE7A11400FF9668 /* DesignModeVC.xib */; };
+		B98568151EE7A16100FF9668 /* BLECoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98568131EE7A16100FF9668 /* BLECoreVC.m */; };
+		B98568161EE7A16100FF9668 /* BLECoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98568141EE7A16100FF9668 /* BLECoreVC.xib */; };
 		B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DF7021EA83FDF00296C2A /* SetUICornerRadiusVC.m */; };
 		B98DF7051EA83FDF00296C2A /* SetUICornerRadiusVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98DF7031EA83FDF00296C2A /* SetUICornerRadiusVC.xib */; };
 		B98DF7091EA8481F00296C2A /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DF7081EA8481F00296C2A /* AnimationVC.m */; };
@@ -405,6 +414,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B906B3CF1EE94B7C0073E175 /* FXW_TableMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_TableMenu.h; sourceTree = "<group>"; };
+		B906B3D01EE94B7C0073E175 /* FXW_TableMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_TableMenu.m; sourceTree = "<group>"; };
+		B906B3D21EE94B7C0073E175 /* CellFXWTableMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFXWTableMenu.h; sourceTree = "<group>"; };
+		B906B3D31EE94B7C0073E175 /* CellFXWTableMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFXWTableMenu.m; sourceTree = "<group>"; };
+		B906B3D41EE94B7C0073E175 /* CellFXWTableMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellFXWTableMenu.xib; sourceTree = "<group>"; };
+		B906B3D81EE94B9F0073E175 /* BottomTableMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomTableMenuVC.h; sourceTree = "<group>"; };
+		B906B3D91EE94B9F0073E175 /* BottomTableMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomTableMenuVC.m; sourceTree = "<group>"; };
+		B906B3DA1EE94B9F0073E175 /* BottomTableMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomTableMenuVC.xib; sourceTree = "<group>"; };
 		B906FC321E8B3BC000645C96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B906FC331E8B3BC000645C96 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
 		B906FC341E8B3BC000645C96 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
@@ -879,6 +896,12 @@
 		B985053D1E963CF5007C01CB /* PCCircleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleInfoView.m; sourceTree = "<group>"; };
 		B985053E1E963CF5007C01CB /* PCLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLockLabel.h; sourceTree = "<group>"; };
 		B985053F1E963CF5007C01CB /* PCLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLockLabel.m; sourceTree = "<group>"; };
+		B985680D1EE7A11400FF9668 /* DesignModeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignModeVC.h; sourceTree = "<group>"; };
+		B985680E1EE7A11400FF9668 /* DesignModeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignModeVC.m; sourceTree = "<group>"; };
+		B985680F1EE7A11400FF9668 /* DesignModeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignModeVC.xib; sourceTree = "<group>"; };
+		B98568121EE7A16100FF9668 /* BLECoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECoreVC.h; sourceTree = "<group>"; };
+		B98568131EE7A16100FF9668 /* BLECoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECoreVC.m; sourceTree = "<group>"; };
+		B98568141EE7A16100FF9668 /* BLECoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLECoreVC.xib; sourceTree = "<group>"; };
 		B98DF7011EA83FDF00296C2A /* SetUICornerRadiusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUICornerRadiusVC.h; sourceTree = "<group>"; };
 		B98DF7021EA83FDF00296C2A /* SetUICornerRadiusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUICornerRadiusVC.m; sourceTree = "<group>"; };
 		B98DF7031EA83FDF00296C2A /* SetUICornerRadiusVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUICornerRadiusVC.xib; sourceTree = "<group>"; };
@@ -1133,6 +1156,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B906B3CC1EE94B0E0073E175 /* 底部Table菜单-巧寓 */ = {
+			isa = PBXGroup;
+			children = (
+				B906B3D81EE94B9F0073E175 /* BottomTableMenuVC.h */,
+				B906B3D91EE94B9F0073E175 /* BottomTableMenuVC.m */,
+				B906B3DA1EE94B9F0073E175 /* BottomTableMenuVC.xib */,
+			);
+			path = "底部Table菜单-巧寓";
+			sourceTree = "<group>";
+		};
+		B906B3CD1EE94B7C0073E175 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B906B3CE1EE94B7C0073E175 /* MenuTable */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		B906B3CE1EE94B7C0073E175 /* MenuTable */ = {
+			isa = PBXGroup;
+			children = (
+				B906B3CF1EE94B7C0073E175 /* FXW_TableMenu.h */,
+				B906B3D01EE94B7C0073E175 /* FXW_TableMenu.m */,
+				B906B3D11EE94B7C0073E175 /* View */,
+			);
+			path = MenuTable;
+			sourceTree = "<group>";
+		};
+		B906B3D11EE94B7C0073E175 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B906B3D21EE94B7C0073E175 /* CellFXWTableMenu.h */,
+				B906B3D31EE94B7C0073E175 /* CellFXWTableMenu.m */,
+				B906B3D41EE94B7C0073E175 /* CellFXWTableMenu.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B906FC311E8B3BC000645C96 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -1682,6 +1743,7 @@
 		B92CCAE11E7A13E300035A79 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B906B3CD1EE94B7C0073E175 /* Menu */,
 				B9F06F731EA7626900C2C309 /* Category */,
 				B92CCAE21E7A13E300035A79 /* Cell */,
 				B9D626F41E7CCA4100593EC1 /* Picker */,
@@ -1790,6 +1852,8 @@
 		B92CCAEA1E7A151F00035A79 /* four */ = {
 			isa = PBXGroup;
 			children = (
+				B985680C1EE7A0FD00FF9668 /* DesignMode */,
+				B985680B1EE7A0FD00FF9668 /* BLE蓝牙核心 */,
 				B92CCAFA1E7A159300035A79 /* FourVC.h */,
 				B92CCAFB1E7A159300035A79 /* FourVC.m */,
 			);
@@ -2615,6 +2679,26 @@
 			path = "控制器之间的跳转";
 			sourceTree = "<group>";
 		};
+		B985680B1EE7A0FD00FF9668 /* BLE蓝牙核心 */ = {
+			isa = PBXGroup;
+			children = (
+				B98568121EE7A16100FF9668 /* BLECoreVC.h */,
+				B98568131EE7A16100FF9668 /* BLECoreVC.m */,
+				B98568141EE7A16100FF9668 /* BLECoreVC.xib */,
+			);
+			path = "BLE蓝牙核心";
+			sourceTree = "<group>";
+		};
+		B985680C1EE7A0FD00FF9668 /* DesignMode */ = {
+			isa = PBXGroup;
+			children = (
+				B985680D1EE7A11400FF9668 /* DesignModeVC.h */,
+				B985680E1EE7A11400FF9668 /* DesignModeVC.m */,
+				B985680F1EE7A11400FF9668 /* DesignModeVC.xib */,
+			);
+			path = DesignMode;
+			sourceTree = "<group>";
+		};
 		B98DF7001EA83FB300296C2A /* 在Xib或sb中为UI设置圆角 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2828,6 +2912,7 @@
 		B9B0D79D1E827EEE001C04FB /* 各种Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B906B3CC1EE94B0E0073E175 /* 底部Table菜单-巧寓 */,
 				B9B0D79E1E827EEE001C04FB /* 侧滑菜单 */,
 				B9B0D79F1E827EEE001C04FB /* 底部菜单 */,
 				B9B0D7A01E827EEE001C04FB /* 弹出菜单 */,
@@ -3388,10 +3473,12 @@
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
+				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
 				B94F90A61EB2E6800032FC0E /* ArrayVC.xib in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
+				B906B3DC1EE94B9F0073E175 /* BottomTableMenuVC.xib in Resources */,
 				B9254BC51EAED92E00F82344 /* NSUserDefaultsVC.xib in Resources */,
 				B95ED6DB1E94EA4F00AD490B /* CategoryCell.xib in Resources */,
 				B94CD4B01E9C7CF4003A889E /* Info.plist in Resources */,
@@ -3403,6 +3490,7 @@
 				B92641F51E83C5E100EEED61 /* SendSMSVC.xib in Resources */,
 				B98DF7051EA83FDF00296C2A /* SetUICornerRadiusVC.xib in Resources */,
 				B910E2361EA880A500DFCC86 /* testXiDaBian.gif in Resources */,
+				B98568161EE7A16100FF9668 /* BLECoreVC.xib in Resources */,
 				B95AC8941EADD63000806D1A /* TextMixPicVC.xib in Resources */,
 				B9BADB501EA5DED9000B3C1C /* VCM1.xib in Resources */,
 				B9BADB551EA5DEE9000B3C1C /* VCM2.xib in Resources */,
@@ -3444,6 +3532,7 @@
 				B98DF71D1EA8521300296C2A /* index1.css in Resources */,
 				B95ED6B31E9474E200AD490B /* WoYaoBianDaView.xib in Resources */,
 				B9BADB441EA5BB99000B3C1C /* VCN3.xib in Resources */,
+				B906B3D71EE94B7C0073E175 /* CellFXWTableMenu.xib in Resources */,
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
@@ -3601,6 +3690,7 @@
 				B9BD97451E810509009BB0D4 /* FXWUD.m in Sources */,
 				B910E2371EA880A500DFCC86 /* SDWebImageLoadGifVC.m in Sources */,
 				B94D8F321EDF99EB0003D10A /* CRC32VC.m in Sources */,
+				B906B3D51EE94B7C0073E175 /* FXW_TableMenu.m in Sources */,
 				B906FD531E8B668F00645C96 /* UIScrollView+MJExtension.m in Sources */,
 				B9254BC41EAED92E00F82344 /* NSUserDefaultsVC.m in Sources */,
 				B906FC621E8B450100645C96 /* MJStatusResult.m in Sources */,
@@ -3619,6 +3709,7 @@
 				B906FD4F1E8B668F00645C96 /* MJRefreshStateHeader.m in Sources */,
 				B90978851E95E7F300F5A0B5 /* LeftMenuTableView.m in Sources */,
 				B9D626F11E7CC4D600593EC1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */,
 				B906FC4E1E8B3BC000645C96 /* NSObject+MJClass.m in Sources */,
 				B915C22E1E7F9DE10088A31F /* MDCalendarDateHeader.m in Sources */,
 				B95ED6E41E94EDE700AD490B /* DDZM_BottomMenuVC.m in Sources */,
@@ -3632,6 +3723,7 @@
 				B9B9CE9B1E9CB8EC008CC558 /* TAPageControl.m in Sources */,
 				B910E23C1EA880D700DFCC86 /* GifContentVC.m in Sources */,
 				B906FD481E8B668F00645C96 /* MJRefreshAutoNormalFooter.m in Sources */,
+				B98568151EE7A16100FF9668 /* BLECoreVC.m in Sources */,
 				B9B0D7951E827B57001C04FB /* BaseModel.m in Sources */,
 				B92641E61E8398D000EEED61 /* CommonUIVC.m in Sources */,
 				B94CD4B21E9C7CF4003A889E /* UIColor+MaterialTextField.m in Sources */,
@@ -3681,6 +3773,7 @@
 				B9D626ED1E7CC4D600593EC1 /* MASLayoutConstraint.m in Sources */,
 				B94CD4B31E9C7CF4003A889E /* UIFont+MaterialTextField.m in Sources */,
 				B9B9CE871E9CB859008CC558 /* ADVC.m in Sources */,
+				B906B3D61EE94B7C0073E175 /* CellFXWTableMenu.m in Sources */,
 				B94CD4B81E9C7D71003A889E /* CtrlCountDown.m in Sources */,
 				B9BD97511E81054C009BB0D4 /* MBProgressHUD.m in Sources */,
 				B98DF7431EA857DD00296C2A /* AFN_FXW.m in Sources */,
@@ -3769,6 +3862,7 @@
 				B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */,
 				B906FD421E8B668F00645C96 /* MJRefreshAutoFooter.m in Sources */,
 				B906FC5C1E8B3ED900645C96 /* User.m in Sources */,
+				B906B3DB1EE94B9F0073E175 /* BottomTableMenuVC.m in Sources */,
 				B9B9CECC1E9CB986008CC558 /* UIImage+MultiFormat.m in Sources */,
 				B95ED6BB1E9474E200AD490B /* ModelOrderWaitting.m in Sources */,
 				B92641F41E83C5E100EEED61 /* SendSMSVC.m in Sources */,

@@ -32,6 +32,9 @@
     [self initRegexVCUI];
     [self testFunc];
     
+    NSString *strLHV = [[NSString alloc] initWithFormat:@"%1x", 15];
+    NSLog(@"%@", strLHV);
+    NSLog(@"");
     
 }
 

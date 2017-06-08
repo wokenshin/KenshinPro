@@ -10,6 +10,7 @@
 #import "BaiDuBottomMenu.h"
 #import "DDZM_BottomMenuVC.h"
 #import "DdzmLeftMenuVC.h"
+#import "BottomTableMenuVC.h"
 
 @interface MenusVC ()
 
@@ -29,14 +30,11 @@
 {
     
     [self addDataWithTitle:@"底部菜单-ddzm" andDetail:@"动画来实现的"];
+    [self addDataWithTitle:@"底部菜单-qy" andDetail:@"菜单长度根据内容可变 <= 1/2屏幕高度"];
     [self addDataWithTitle:@"底部菜单-百度" andDetail:@"collectionView 感觉没有我的xib菜单好用 可读性差"];
     [self addDataWithTitle:@"底部菜单-ldkd" andDetail:@"滚动视图"];
-    
     [self addDataWithTitle:@"左侧菜单-ddzm" andDetail:@"封装的不好"];
     
-    [self addDataWithTitle:@"顶部菜单-" andDetail:@"顶部菜单"];
-    
-    [self addDataWithTitle:@"弹出菜单-" andDetail:@"弹出菜单"];
     
 }
 
@@ -56,15 +54,21 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
-    if ([title isEqualToString:@"左侧菜单-ddzm"])
+    if ([title isEqualToString:@"底部菜单-qy"])
     {
-        DdzmLeftMenuVC *vc = [[DdzmLeftMenuVC alloc] init];
+        BottomTableMenuVC *vc = [[BottomTableMenuVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
     if ([title isEqualToString:@"底部菜单-ldkd"])
     {
-        
+        [self toast:@"有时间搞进来"];
+        return;
+    }
+    if ([title isEqualToString:@"左侧菜单-ddzm"])
+    {
+        DdzmLeftMenuVC *vc = [[DdzmLeftMenuVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         return;
     }
     if ([title isEqualToString:@"底部菜单-百度"])

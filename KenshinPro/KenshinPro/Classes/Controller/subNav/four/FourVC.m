@@ -7,6 +7,12 @@
 //
 
 #import "FourVC.h"
+#import "DesignModeVC.h"
+#import "BLECoreVC.h"
+
+
+
+
 
 @interface FourVC ()
 
@@ -25,6 +31,7 @@
 - (void)loadData
 {
     [self addDataWithTitle:@"设计模式" andDetail:@"常用的设计模式"];
+    [self addDataWithTitle:@"BLE核心" andDetail:@"由浅入深"];
     
 }
 
@@ -37,13 +44,20 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-//    if ([title isEqualToString:@"设计模式"])
-//    {
-//        DataBaseVC *vc = [[DataBaseVC alloc] init];
-//        vc.hidesBottomBarWhenPushed = YES;
-//        [self.navigationController pushViewController:vc animated:YES];
-//        return;
-//    }
+    if ([title isEqualToString:@"设计模式"])
+    {
+        DesignModeVC *vc = [[DesignModeVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"BLE核心"])
+    {
+        BLECoreVC *vc = [[BLECoreVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     [self toastBottom:@"没有实现该功能"];
     
 }

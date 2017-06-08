@@ -67,7 +67,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    MainTabBarVC *rootVC = [MainTabBarVC new];
+    MainTabBarVC *rootVC = [[MainTabBarVC alloc] init];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     

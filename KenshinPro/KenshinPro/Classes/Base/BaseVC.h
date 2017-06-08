@@ -115,8 +115,8 @@ typedef void(^VoidBlock) ();
  设置导航栏左边的按钮 以及点击回调 可设置文本颜色
  
  @param btnName 按钮文本
- @param color 文本颜色
- @param block 回调block
+ @param color   文本颜色
+ @param block   回调block
  */
 - (void)setNavLeftBtnWithName:(NSString *)btnName
                 andTitleColor:(UIColor *)color
@@ -172,7 +172,7 @@ typedef void(^VoidBlock) ();
 /**
  系统弹框 [好的]
  
- @param title 标题
+ @param title   标题
  @param message 内容
  */
 - (void)alertSystemTitle:(NSString *)title
@@ -182,9 +182,9 @@ typedef void(^VoidBlock) ();
 /**
  系统弹框 [确定 & 取消]
  
- @param title 标题
- @param message 内容
- @param okBlock 确定的回调
+ @param title       标题
+ @param message     内容
+ @param okBlock     确定的回调
  @param cancelBlock 取消的回调
  */
 - (void)alertSystemTitle:(NSString *)title
@@ -210,10 +210,10 @@ typedef void (^MSMNoBlock)(BOOL sendSuccess);
 /**
  发短信
 
- @param phoneNos 手机号码 数组
- @param title 标题 这个标题好像没有用
- @param content 短信内容
- @param block BOOL 是否发送成功
+ @param phoneNos    手机号码 数组
+ @param title       标题 这个标题好像没有用
+ @param content     短信内容
+ @param block BOOL  是否发送成功
  */
 - (void)sendMSMPhoneNos:(NSArray *)phoneNos
                  title:(NSString *)title
