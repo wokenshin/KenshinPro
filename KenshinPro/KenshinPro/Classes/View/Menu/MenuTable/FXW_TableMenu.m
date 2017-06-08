@@ -154,7 +154,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    NSString *title = [_arr objectAtIndex:indexPath.row];
-    
+    [self clickBackRemoveSelf];
     if (_clickCellCallback)
     {
         _clickCellCallback(indexPath.row);

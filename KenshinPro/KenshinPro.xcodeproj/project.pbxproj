@@ -1177,9 +1177,9 @@
 		B906B3CE1EE94B7C0073E175 /* MenuTable */ = {
 			isa = PBXGroup;
 			children = (
+				B906B3D11EE94B7C0073E175 /* View */,
 				B906B3CF1EE94B7C0073E175 /* FXW_TableMenu.h */,
 				B906B3D01EE94B7C0073E175 /* FXW_TableMenu.m */,
-				B906B3D11EE94B7C0073E175 /* View */,
 			);
 			path = MenuTable;
 			sourceTree = "<group>";
