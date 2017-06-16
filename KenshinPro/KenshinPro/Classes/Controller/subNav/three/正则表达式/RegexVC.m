@@ -30,11 +30,12 @@
 {
     [super viewDidLoad];
     [self initRegexVCUI];
-    [self testFunc];
     
     NSString *strLHV = [[NSString alloc] initWithFormat:@"%1x", 15];
     NSLog(@"%@", strLHV);
     NSLog(@"");
+    
+    [self testFunc];
     
 }
 
@@ -56,7 +57,7 @@
     
     [self matchPhoneNo];//匹配手机号
     [self matchEmail];//匹配邮箱
-    
+    [self matchLock];//匹配特定字符串类型的锁
     
 }
 
@@ -109,6 +110,31 @@
     [self printLogWithBool:isValid3 str:str3];
     [self printLogWithBool:isValid4 str:str1];
     
+}
+
+- (void)matchLock
+{
+    NSString *value = @"fLock6aAAAAAAAAAAAA";
+    
+    
+    NSString *regex1 = @"^[a|s|f|c|z]Lock-[1-9][A-F0-9]{12}$";
+    
+    NSPredicate *test1 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex1];
+    
+    NSString *regex2 = @"^[a|s|f|c|z]Lock[1-9][a-z][a-fA-F0-9]{12}$";
+    
+    NSPredicate *test2 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex2];
+    
+    
+    if ([test1 evaluateWithObject: value] ||
+        [test2 evaluateWithObject: value] )
+    {
+        NSLog(@"%@ 锁体支持", value);
+    }
+    else
+    {
+        NSLog(@"%@ 锁体不支持", value);
+    }
 }
 
 - (void)printLogWithBool:(BOOL)isValid str:(NSString *)str

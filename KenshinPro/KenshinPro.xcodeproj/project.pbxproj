@@ -165,6 +165,10 @@
 		B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B930023F1E8A3C15000C0563 /* AFNMCVC.xib */; };
 		B93F58651ED2844200393292 /* JWTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B93F58631ED2844200393292 /* JWTVC.m */; };
 		B93F58661ED2844200393292 /* JWTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93F58641ED2844200393292 /* JWTVC.xib */; };
+		B9436F571EEE6E8200660C70 /* SocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9436F551EEE6E8200660C70 /* SocketVC.m */; };
+		B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9436F561EEE6E8200660C70 /* SocketVC.xib */; };
+		B9436F611EEE6F8B00660C70 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B9436F5E1EEE6F8B00660C70 /* GCDAsyncSocket.m */; };
+		B9436F621EEE6F8B00660C70 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B9436F601EEE6F8B00660C70 /* GCDAsyncUdpSocket.m */; };
 		B94CD4991E9C645F003A889E /* TableViewBuJuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4981E9C645F003A889E /* TableViewBuJuVC.m */; };
 		B94CD49C1E9C65A5003A889E /* VCView.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD49B1E9C65A5003A889E /* VCView.m */; };
 		B94CD49E1E9C65B1003A889E /* VCView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94CD49D1E9C65B1003A889E /* VCView.xib */; };
@@ -253,6 +257,8 @@
 		B9673FAF1E78E22A006AB3DA /* KenshinProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9673FAE1E78E22A006AB3DA /* KenshinProTests.m */; };
 		B9673FBA1E78E22A006AB3DA /* KenshinProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9673FB91E78E22A006AB3DA /* KenshinProUITests.m */; };
 		B96BF32D1E9B0E10008ADB3D /* KenshinAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B96BF32C1E9B0E10008ADB3D /* KenshinAppVC.m */; };
+		B96C9A9E1EF23BB400D35B9A /* BigSmallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B96C9A9C1EF23BB400D35B9A /* BigSmallVC.m */; };
+		B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96C9A9D1EF23BB400D35B9A /* BigSmallVC.xib */; };
 		B96E60671EA70DBF00BC0543 /* MCClientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E60661EA70DBF00BC0543 /* MCClientVC.m */; };
 		B96E606B1EA70E5900BC0543 /* EvaluateStarsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E606A1EA70E5900BC0543 /* EvaluateStarsVC.m */; };
 		B985052A1E96371C007C01CB /* GestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98505281E96371C007C01CB /* GestureLockVC.m */; };
@@ -379,6 +385,10 @@
 		B9D856951E84EEFA0053697F /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D856941E84EEFA0053697F /* ViewControllerOne.m */; };
 		B9D856981E84EF230053697F /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D856971E84EF230053697F /* ViewControllerTwo.m */; };
 		B9D8569B1E84EF340053697F /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8569A1E84EF340053697F /* ViewControllerThree.m */; };
+		B9EE6ADB1EEA4A46000A06DA /* QYVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE6ADA1EEA4A46000A06DA /* QYVC.m */; };
+		B9EE6AE21EEA4B06000A06DA /* DeviceManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE6ADD1EEA4B06000A06DA /* DeviceManageVC.m */; };
+		B9EE6AE31EEA4B06000A06DA /* CellDeviceManage.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EE6AE01EEA4B06000A06DA /* CellDeviceManage.m */; };
+		B9EE6AE41EEA4B06000A06DA /* CellDeviceManage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EE6AE11EEA4B06000A06DA /* CellDeviceManage.xib */; };
 		B9EFE9541EDE4A62002C2758 /* MF_Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE92B1EDE4A62002C2758 /* MF_Base64Additions.m */; };
 		B9EFE9551EDE4A62002C2758 /* JWTAlgorithmFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9321EDE4A62002C2758 /* JWTAlgorithmFactory.m */; };
 		B9EFE9561EDE4A62002C2758 /* JWTAlgorithmNone.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9341EDE4A62002C2758 /* JWTAlgorithmNone.m */; };
@@ -716,6 +726,13 @@
 		B93F58621ED2844200393292 /* JWTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTVC.h; sourceTree = "<group>"; };
 		B93F58631ED2844200393292 /* JWTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTVC.m; sourceTree = "<group>"; };
 		B93F58641ED2844200393292 /* JWTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JWTVC.xib; sourceTree = "<group>"; };
+		B9436F541EEE6E8200660C70 /* SocketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketVC.h; sourceTree = "<group>"; };
+		B9436F551EEE6E8200660C70 /* SocketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketVC.m; sourceTree = "<group>"; };
+		B9436F561EEE6E8200660C70 /* SocketVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocketVC.xib; sourceTree = "<group>"; };
+		B9436F5D1EEE6F8B00660C70 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		B9436F5E1EEE6F8B00660C70 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		B9436F5F1EEE6F8B00660C70 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		B9436F601EEE6F8B00660C70 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		B94CD4971E9C645F003A889E /* TableViewBuJuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewBuJuVC.h; sourceTree = "<group>"; };
 		B94CD4981E9C645F003A889E /* TableViewBuJuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewBuJuVC.m; sourceTree = "<group>"; };
 		B94CD49A1E9C65A5003A889E /* VCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCView.h; sourceTree = "<group>"; };
@@ -872,6 +889,9 @@
 		B9673FBB1E78E22A006AB3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B96BF32B1E9B0E10008ADB3D /* KenshinAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KenshinAppVC.h; sourceTree = "<group>"; };
 		B96BF32C1E9B0E10008ADB3D /* KenshinAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KenshinAppVC.m; sourceTree = "<group>"; };
+		B96C9A9B1EF23BB400D35B9A /* BigSmallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigSmallVC.h; sourceTree = "<group>"; };
+		B96C9A9C1EF23BB400D35B9A /* BigSmallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigSmallVC.m; sourceTree = "<group>"; };
+		B96C9A9D1EF23BB400D35B9A /* BigSmallVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigSmallVC.xib; sourceTree = "<group>"; };
 		B96E60651EA70DBF00BC0543 /* MCClientVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClientVC.h; sourceTree = "<group>"; };
 		B96E60661EA70DBF00BC0543 /* MCClientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClientVC.m; sourceTree = "<group>"; };
 		B96E60691EA70E5900BC0543 /* EvaluateStarsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluateStarsVC.h; sourceTree = "<group>"; };
@@ -1096,6 +1116,13 @@
 		B9D856971E84EF230053697F /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
 		B9D856991E84EF340053697F /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
 		B9D8569A1E84EF340053697F /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
+		B9EE6AD91EEA4A46000A06DA /* QYVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYVC.h; sourceTree = "<group>"; };
+		B9EE6ADA1EEA4A46000A06DA /* QYVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYVC.m; sourceTree = "<group>"; };
+		B9EE6ADC1EEA4B06000A06DA /* DeviceManageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManageVC.h; sourceTree = "<group>"; };
+		B9EE6ADD1EEA4B06000A06DA /* DeviceManageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManageVC.m; sourceTree = "<group>"; };
+		B9EE6ADF1EEA4B06000A06DA /* CellDeviceManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDeviceManage.h; sourceTree = "<group>"; };
+		B9EE6AE01EEA4B06000A06DA /* CellDeviceManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDeviceManage.m; sourceTree = "<group>"; };
+		B9EE6AE11EEA4B06000A06DA /* CellDeviceManage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDeviceManage.xib; sourceTree = "<group>"; };
 		B9EFE92A1EDE4A62002C2758 /* MF_Base64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MF_Base64Additions.h; sourceTree = "<group>"; };
 		B9EFE92B1EDE4A62002C2758 /* MF_Base64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MF_Base64Additions.m; sourceTree = "<group>"; };
 		B9EFE9301EDE4A62002C2758 /* JWTAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTAlgorithm.h; sourceTree = "<group>"; };
@@ -1791,6 +1818,7 @@
 		B92CCAE41E7A140A00035A79 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				B9436F5C1EEE6F8B00660C70 /* CocoaAsyncSocket */,
 				B9B9CE9F1E9CB986008CC558 /* SDWebImage */,
 				B9B9CE881E9CB8EC008CC558 /* SDCycleScrollView */,
 				B94CD4A31E9C7CF4003A889E /* MaterialTextField */,
@@ -1863,6 +1891,7 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				B96C9A9A1EF23B6F00D35B9A /* 大小端转换 */,
 				B91748D21ECC3FA7006C70F5 /* 倒计时按钮 */,
 				B94F90981EB2C6DB0032FC0E /* 麻痹进度 */,
 				B9B9CE841E9CB83C008CC558 /* 广告滚动视图 */,
@@ -1890,6 +1919,7 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				B9436F531EEE6E7300660C70 /* Socket */,
 				B98F396B1EE4EF820064468E /* 正则表达式 */,
 				B94D8F2E1EDF99C80003D10A /* CRC校验 */,
 				B93F58611ED2842400393292 /* JWT */,
@@ -1910,6 +1940,7 @@
 		B92CCAED1E7A151F00035A79 /* two */ = {
 			isa = PBXGroup;
 			children = (
+				B9EE6AD71EEA4A13000A06DA /* qy */,
 				B95ED6651E9474E200AD490B /* 锁匠App */,
 				B95ED69E1E9474E200AD490B /* ddzm */,
 				B95ED6AA1E9474E200AD490B /* MC-Client */,
@@ -2013,6 +2044,27 @@
 				B93F58641ED2844200393292 /* JWTVC.xib */,
 			);
 			path = JWT;
+			sourceTree = "<group>";
+		};
+		B9436F531EEE6E7300660C70 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				B9436F541EEE6E8200660C70 /* SocketVC.h */,
+				B9436F551EEE6E8200660C70 /* SocketVC.m */,
+				B9436F561EEE6E8200660C70 /* SocketVC.xib */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		B9436F5C1EEE6F8B00660C70 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				B9436F5D1EEE6F8B00660C70 /* GCDAsyncSocket.h */,
+				B9436F5E1EEE6F8B00660C70 /* GCDAsyncSocket.m */,
+				B9436F5F1EEE6F8B00660C70 /* GCDAsyncUdpSocket.h */,
+				B9436F601EEE6F8B00660C70 /* GCDAsyncUdpSocket.m */,
+			);
+			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
 		B94CD4961E9C6426003A889E /* TableView布局VC */ = {
@@ -2574,6 +2626,16 @@
 				B96BF32C1E9B0E10008ADB3D /* KenshinAppVC.m */,
 			);
 			path = KenshinApp;
+			sourceTree = "<group>";
+		};
+		B96C9A9A1EF23B6F00D35B9A /* 大小端转换 */ = {
+			isa = PBXGroup;
+			children = (
+				B96C9A9B1EF23BB400D35B9A /* BigSmallVC.h */,
+				B96C9A9C1EF23BB400D35B9A /* BigSmallVC.m */,
+				B96C9A9D1EF23BB400D35B9A /* BigSmallVC.xib */,
+			);
+			path = "大小端转换";
 			sourceTree = "<group>";
 		};
 		B96E60681EA70E3F00BC0543 /* 星星评级 */ = {
@@ -3210,6 +3272,36 @@
 			path = "获取指定的VC演示";
 			sourceTree = "<group>";
 		};
+		B9EE6AD71EEA4A13000A06DA /* qy */ = {
+			isa = PBXGroup;
+			children = (
+				B9EE6AD81EEA4A23000A06DA /* 集合View-设备管理 */,
+				B9EE6AD91EEA4A46000A06DA /* QYVC.h */,
+				B9EE6ADA1EEA4A46000A06DA /* QYVC.m */,
+			);
+			path = qy;
+			sourceTree = "<group>";
+		};
+		B9EE6AD81EEA4A23000A06DA /* 集合View-设备管理 */ = {
+			isa = PBXGroup;
+			children = (
+				B9EE6ADE1EEA4B06000A06DA /* View */,
+				B9EE6ADC1EEA4B06000A06DA /* DeviceManageVC.h */,
+				B9EE6ADD1EEA4B06000A06DA /* DeviceManageVC.m */,
+			);
+			path = "集合View-设备管理";
+			sourceTree = "<group>";
+		};
+		B9EE6ADE1EEA4B06000A06DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9EE6ADF1EEA4B06000A06DA /* CellDeviceManage.h */,
+				B9EE6AE01EEA4B06000A06DA /* CellDeviceManage.m */,
+				B9EE6AE11EEA4B06000A06DA /* CellDeviceManage.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B9EFE9271EDE4A62002C2758 /* JWT */ = {
 			isa = PBXGroup;
 			children = (
@@ -3477,6 +3569,7 @@
 				B94F90A61EB2E6800032FC0E /* ArrayVC.xib in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
+				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
 				B906B3DC1EE94B9F0073E175 /* BottomTableMenuVC.xib in Resources */,
 				B9254BC51EAED92E00F82344 /* NSUserDefaultsVC.xib in Resources */,
@@ -3522,10 +3615,12 @@
 				B96180A91E8F4A6600ABCCF3 /* MBMJVC.xib in Resources */,
 				B910E2621EA8888C00DFCC86 /* ScanVC.xib in Resources */,
 				B910E24B1EA884F700DFCC86 /* NavBarCustomVC.xib in Resources */,
+				B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */,
 				B98DF7271EA8524B00296C2A /* call.html in Resources */,
 				B9673FA11E78E22A006AB3DA /* Assets.xcassets in Resources */,
 				B98DF74F1EA85D0800296C2A /* MaoBoLiVC.xib in Resources */,
 				B910E24F1EA884F700DFCC86 /* MCSearchVC.xib in Resources */,
+				B9EE6AE41EEA4B06000A06DA /* CellDeviceManage.xib in Resources */,
 				B98DF72A1EA8524B00296C2A /* JSTWOVC.xib in Resources */,
 				B90978791E95E7D200F5A0B5 /* DdzmLeftMenuVC.xib in Resources */,
 				B9D626E91E7CC4D600593EC1 /* Info.plist in Resources */,
@@ -3648,6 +3743,7 @@
 				B9D626EB1E7CC4D600593EC1 /* MASConstraint.m in Sources */,
 				B915C2461E7F9DE10088A31F /* MDTableViewCell.m in Sources */,
 				B9B9CECD1E9CB986008CC558 /* UIImage+WebP.m in Sources */,
+				B9EE6AE21EEA4B06000A06DA /* DeviceManageVC.m in Sources */,
 				B95ED6C41E9474E200AD490B /* CellCtrlDdzm.m in Sources */,
 				B95ED6DA1E94EA4F00AD490B /* CategoryCell.m in Sources */,
 				B915C23B1E7F9DE10088A31F /* MDRippleLayer.m in Sources */,
@@ -3704,10 +3800,12 @@
 				B92642071E83D3AF00EEED61 /* AFURLRequestSerialization.m in Sources */,
 				B906FC571E8B3C6500645C96 /* DicAndModelVC.m in Sources */,
 				B95ED6B71E9474E200AD490B /* OrderCtrlingVC.m in Sources */,
+				B9EE6ADB1EEA4A46000A06DA /* QYVC.m in Sources */,
 				B95ED6CB1E947FCF00AD490B /* BLEVC.m in Sources */,
 				B98505431E963CF5007C01CB /* CALayer+Anim.m in Sources */,
 				B906FD4F1E8B668F00645C96 /* MJRefreshStateHeader.m in Sources */,
 				B90978851E95E7F300F5A0B5 /* LeftMenuTableView.m in Sources */,
+				B9436F611EEE6F8B00660C70 /* GCDAsyncSocket.m in Sources */,
 				B9D626F11E7CC4D600593EC1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */,
 				B906FC4E1E8B3BC000645C96 /* NSObject+MJClass.m in Sources */,
@@ -3719,6 +3817,7 @@
 				B915C24E1E7F9DE10088A31F /* UIColorHelper.m in Sources */,
 				B98DF7461EA85AB700296C2A /* UIImage+ImageEffects.m in Sources */,
 				B9D626EC1E7CC4D600593EC1 /* MASConstraintMaker.m in Sources */,
+				B96C9A9E1EF23BB400D35B9A /* BigSmallVC.m in Sources */,
 				B9B9CEC51E9CB986008CC558 /* SDWebImageDecoder.m in Sources */,
 				B9B9CE9B1E9CB8EC008CC558 /* TAPageControl.m in Sources */,
 				B910E23C1EA880D700DFCC86 /* GifContentVC.m in Sources */,
@@ -3772,6 +3871,7 @@
 				B92CCB121E7A268B00035A79 /* AppDelegate.m in Sources */,
 				B9D626ED1E7CC4D600593EC1 /* MASLayoutConstraint.m in Sources */,
 				B94CD4B31E9C7CF4003A889E /* UIFont+MaterialTextField.m in Sources */,
+				B9EE6AE31EEA4B06000A06DA /* CellDeviceManage.m in Sources */,
 				B9B9CE871E9CB859008CC558 /* ADVC.m in Sources */,
 				B906B3D61EE94B7C0073E175 /* CellFXWTableMenu.m in Sources */,
 				B94CD4B81E9C7D71003A889E /* CtrlCountDown.m in Sources */,
@@ -3803,6 +3903,7 @@
 				B96477151EB02DEB00A9A498 /* STPhotoBrowserController.m in Sources */,
 				B9C963921E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m in Sources */,
 				B906FD4B1E8B668F00645C96 /* MJRefreshBackNormalFooter.m in Sources */,
+				B9436F571EEE6E8200660C70 /* SocketVC.m in Sources */,
 				B92641EC1E83997300EEED61 /* FXW_Control.m in Sources */,
 				B906FD581E8B66EF00645C96 /* NoDataView.m in Sources */,
 				B915C23E1E7F9DE10088A31F /* MDSliderThumbView.m in Sources */,
@@ -3868,6 +3969,7 @@
 				B92641F41E83C5E100EEED61 /* SendSMSVC.m in Sources */,
 				B92CCAE81E7A149300035A79 /* MainTabBarVC.m in Sources */,
 				B98DF7091EA8481F00296C2A /* AnimationVC.m in Sources */,
+				B9436F621EEE6F8B00660C70 /* GCDAsyncUdpSocket.m in Sources */,
 				B910E2661EA8888C00DFCC86 /* UIViewExt.m in Sources */,
 				B92CCAF01E7A154600035A79 /* BaseVC.m in Sources */,
 				B95AC8931EADD63000806D1A /* TextMixPicVC.m in Sources */,

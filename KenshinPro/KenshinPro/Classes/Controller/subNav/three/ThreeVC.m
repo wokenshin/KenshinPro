@@ -18,6 +18,7 @@
 #import "JWTVC.h"
 #import "CRC32VC.h"
 #import "RegexVC.h"
+#import "SocketVC.h"
 
 @interface ThreeVC ()
 
@@ -47,6 +48,7 @@
     [self addDataWithTitle:@"JWT" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"CRC校验" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"正则表达式" andDetail:@"常用正则表达式，以及自定义正则表达式"];
+    [self addDataWithTitle:@"Socket" andDetail:@"AnsycSocket"];
     
 }
 
@@ -60,6 +62,13 @@
 - (void)clickCellWithTitle:(NSString *)title
 {
     
+    if ([title isEqualToString:@"Socket"])
+    {
+        SocketVC *vc = [[SocketVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"数据存储"])
     {
         DataBaseVC *vc = [[DataBaseVC alloc] init];

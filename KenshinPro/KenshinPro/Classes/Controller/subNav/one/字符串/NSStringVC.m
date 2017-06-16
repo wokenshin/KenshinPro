@@ -18,6 +18,33 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"字符串";
+    
+    /*
+     
+     1.截取字符串
+     
+     NSString*string =@"sdfsfsfsAdfsdf";
+     string = [string substringToIndex:7];//截取掉下标7之后的字符串
+     NSLog(@"截取的值为：%@",string);
+     [string substringFromIndex:2];//截取掉下标2之前的字符串
+     NSLog(@"截取的值为：%@",string);
+     
+     
+     2.匹配字符串
+     NSString*string =@"sdfsfsfsAdfsdf";
+     NSRangerange = [stringrangeOfString:@"f"];//匹配得到的下标
+     NSLog(@"rang:%@",NSStringFromRange(range));
+     string = [string substringWithRange:range];//截取范围类的字符串
+     NSLog(@"截取的值为：%@",string);
+     
+     
+     3.分隔字符串
+     NSString*string =@"sdfsfsfsAdfsdf";
+     
+     NSArray *array = [string componentsSeparatedByString:@"A"]; //从字符A中分隔成2个元素的数组
+     NSLog(@"array:%@",array); //结果是adfsfsfs和dfsdf
+     
+     */
 }
 
 #pragma mark 字符串->字节
@@ -34,6 +61,44 @@
     
     
 }
+
+//插入字符
+- (IBAction)insertStr:(id)sender
+{
+    
+    
+}
+
+//删除字符
+- (IBAction)deleteStr:(id)sender
+{
+    
+    
+}
+
+//修改字符
+- (IBAction)changeStr:(id)sender
+{
+    
+    
+}
+
+//查询字符
+- (IBAction)selectStr:(id)sender
+{
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

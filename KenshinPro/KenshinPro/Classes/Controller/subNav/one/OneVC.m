@@ -25,6 +25,7 @@
 #import "NSStringVC.h"
 #import "ArrayVC.h"
 #import "CountDownVC.h"
+#import "BigSmallVC.h"
 
 @interface OneVC ()
 
@@ -62,6 +63,8 @@
     [self addDataWithTitle:@"通讯录" andDetail:@"获取系统通讯录，和自定义通讯录"];
     [self addDataWithTitle:@"发送短信-打电话" andDetail:@"发送短信-进入系统短信编辑界面"];
     [self addDataWithTitle:@"倒计时按钮" andDetail:@"按钮内部判断时间"];
+    [self addDataWithTitle:@"高位补0" andDetail:@"C里面的方法"];
+    [self addDataWithTitle:@"大小端转换" andDetail:@"数据存储到内存地址中的顺序"];
     
 }
 
@@ -75,6 +78,22 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"大小端转换"])
+    {
+        BigSmallVC *vc = [[BigSmallVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"高位补0"])
+    {
+        for (int i = 0; i < 1000; i++)
+        {
+            NSString *testStr = [NSString stringWithFormat:@"%08zd",i];
+            NSLog(@"%@", testStr);
+        }
+        return;
+    }
     if([title isEqualToString:@"网络状态实时监听"])
     {
         switch (AppDel.netStatus)

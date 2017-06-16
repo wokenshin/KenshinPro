@@ -11,6 +11,7 @@
 #import "LockMasterAppVC.h"
 #import "KenshinAppVC.h"
 #import "MCClientVC.h"
+#import "QYVC.h"
 
 @interface TwoVC ()
 
@@ -28,6 +29,7 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"QYApp" andDetail:@"智能锁 服务端 2017-06"];
     [self addDataWithTitle:@"锁匠App" andDetail:@"智能锁 服务端 2017-03"];
     [self addDataWithTitle:@"ddzm" andDetail:@"蓝牙+TCP 智能锁App 2016-11"];
     [self addDataWithTitle:@"MC-Service" andDetail:@"GY-像样一点的电商App 2016-07"];
@@ -49,7 +51,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-
+    if ([title isEqualToString:@"QYApp"])
+    {
+        QYVC *vc = [[QYVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"锁匠App"])
     {
         LockMasterAppVC *vc = [[LockMasterAppVC alloc] init];
