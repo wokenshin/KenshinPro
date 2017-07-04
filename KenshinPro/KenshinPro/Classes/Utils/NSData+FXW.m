@@ -1,14 +1,15 @@
 //
-//  NSData+CRC32.m
-//  CRC32_iOS
+//  NSData+FXW.m
+//  KenshinPro
 //
-//  Created by 宣佚 on 15/7/14.
-//  Copyright (c) 2015年 宣佚. All rights reserved.
+//  Created by kenshin on 2017/6/23.
+//  Copyright © 2017年 Kenshin. All rights reserved.
 //
 
-#import "NSData+CRC32.h"
+#import "NSData+FXW.h"
+#import <CommonCrypto/CommonDigest.h>//md5
 
-@implementation NSData (CRC32)
+@implementation NSData (FXW)
 
 -(int32_t)crc32
 {
@@ -42,5 +43,22 @@
     return crc;
     
 }
+
+- (NSString *)md5
+{
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    
+    CC_MD5(self.bytes, (CC_LONG)self.length, result);
+    
+    NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH*2];
+    
+    for (int i = 0; i<CC_MD5_DIGEST_LENGTH; i++)
+    {
+        [ret appendFormat:@"%02x",result[i]];
+    }
+    return ret;
+    
+}
+
 
 @end

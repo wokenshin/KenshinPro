@@ -7,7 +7,7 @@
 //
 
 #import "CRC32VC.h"
-#import "NSData+CRC32.h"
+#import "NSData+FXW.h"
 
 @interface CRC32VC ()
 

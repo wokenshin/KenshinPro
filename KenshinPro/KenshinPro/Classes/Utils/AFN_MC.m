@@ -339,7 +339,7 @@
                                                                       options:kNilOptions
                                                                         error:nil];
              NSDictionary *result = [dictData objectForKey:@"result"];
-             NSDictionary *error = [dictData objectForKey:@"error"];
+             NSDictionary *error  = [dictData objectForKey:@"error"];
              
              if (result != nil && ![result isEqual:[NSNull null]])
              {

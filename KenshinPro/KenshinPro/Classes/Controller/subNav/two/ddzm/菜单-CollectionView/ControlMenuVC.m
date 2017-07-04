@@ -41,12 +41,12 @@
     _arrImg   = @[@"ddzmMenu1",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",
                   @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",
                   @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",
-                  @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5",@"ddzmMenu6"];
+                  @"ddzmMenu6",@"ddzmMenu2",@"ddzmMenu3",@"ddzmMenu4",@"ddzmMenu5"];
     
     _arrTitle = @[@"下载",@"指纹",@"ID卡",@"日志",@"手机钥匙",
-                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙"
                   @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙",
-                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙",@"节电模式"];
+                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙",
+                  @"节电模式",@"指纹",@"ID卡",@"日志",@"手机钥匙"];
 }
 
 - (void)initUI

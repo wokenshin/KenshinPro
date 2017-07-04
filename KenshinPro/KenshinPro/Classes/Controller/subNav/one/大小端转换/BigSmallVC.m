@@ -62,7 +62,7 @@
     NSLog(@"%@", bigStr);
     NSLog(@"%@", smallStr);
     
-    _labBig.text = bigStr;
+    _labBig.text   = bigStr;
     _labSmall.text = smallStr;
     
 }

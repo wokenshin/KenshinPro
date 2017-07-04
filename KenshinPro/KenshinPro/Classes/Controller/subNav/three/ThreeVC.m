@@ -44,7 +44,7 @@
     [self addDataWithTitle:@"富文本-基础" andDetail:@"AttributedString"];
     [self addDataWithTitle:@"富文本-高级" andDetail:@"三方库 YYText 其实就是前者的封装"];
     [self addDataWithTitle:@"图片浏览器-MC期间" andDetail:@"http url 需要设置 App Transport Security Settings"];
-    [self addDataWithTitle:@"App主题切换" andDetail:@"HS期间实现"];
+    [self addDataWithTitle:@"App主题切换" andDetail:@"实现方式其实并不好"];
     [self addDataWithTitle:@"JWT" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"CRC校验" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"正则表达式" andDetail:@"常用正则表达式，以及自定义正则表达式"];

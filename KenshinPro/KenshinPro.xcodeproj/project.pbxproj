@@ -180,7 +180,6 @@
 		B94CD4B41E9C7CF4003A889E /* UIImage+MFTint.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4AD1E9C7CF4003A889E /* UIImage+MFTint.m */; };
 		B94CD4B51E9C7CF4003A889E /* UITextField+MFClearButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4AF1E9C7CF4003A889E /* UITextField+MFClearButton.m */; };
 		B94CD4B81E9C7D71003A889E /* CtrlCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = B94CD4B71E9C7D71003A889E /* CtrlCountDown.m */; };
-		B94D8F2D1EDF99800003D10A /* NSData+CRC32.m in Sources */ = {isa = PBXBuildFile; fileRef = B94D8F2C1EDF99800003D10A /* NSData+CRC32.m */; };
 		B94D8F321EDF99EB0003D10A /* CRC32VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94D8F301EDF99EB0003D10A /* CRC32VC.m */; };
 		B94D8F331EDF99EB0003D10A /* CRC32VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94D8F311EDF99EB0003D10A /* CRC32VC.xib */; };
 		B94DA31A1E8CB82B0072BECE /* MJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA3191E8CB82B0072BECE /* MJStudent.m */; };
@@ -271,6 +270,7 @@
 		B98505451E963CF5007C01CB /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B985053A1E963CF5007C01CB /* GestureViewController.m */; };
 		B98505461E963CF5007C01CB /* PCCircleInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B985053D1E963CF5007C01CB /* PCCircleInfoView.m */; };
 		B98505471E963CF5007C01CB /* PCLockLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B985053F1E963CF5007C01CB /* PCLockLabel.m */; };
+		B9851FA41EFD16CF00BCF8C2 /* NSData+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = B9851FA31EFD16CF00BCF8C2 /* NSData+FXW.m */; };
 		B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B985680E1EE7A11400FF9668 /* DesignModeVC.m */; };
 		B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B985680F1EE7A11400FF9668 /* DesignModeVC.xib */; };
 		B98568151EE7A16100FF9668 /* BLECoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98568131EE7A16100FF9668 /* BLECoreVC.m */; };
@@ -754,8 +754,6 @@
 		B94CD4AF1E9C7CF4003A889E /* UITextField+MFClearButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MFClearButton.m"; sourceTree = "<group>"; };
 		B94CD4B61E9C7D71003A889E /* CtrlCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CtrlCountDown.h; sourceTree = "<group>"; };
 		B94CD4B71E9C7D71003A889E /* CtrlCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CtrlCountDown.m; sourceTree = "<group>"; };
-		B94D8F2B1EDF99800003D10A /* NSData+CRC32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC32.h"; sourceTree = "<group>"; };
-		B94D8F2C1EDF99800003D10A /* NSData+CRC32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC32.m"; sourceTree = "<group>"; };
 		B94D8F2F1EDF99EB0003D10A /* CRC32VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRC32VC.h; sourceTree = "<group>"; };
 		B94D8F301EDF99EB0003D10A /* CRC32VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRC32VC.m; sourceTree = "<group>"; };
 		B94D8F311EDF99EB0003D10A /* CRC32VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRC32VC.xib; sourceTree = "<group>"; };
@@ -916,6 +914,8 @@
 		B985053D1E963CF5007C01CB /* PCCircleInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCircleInfoView.m; sourceTree = "<group>"; };
 		B985053E1E963CF5007C01CB /* PCLockLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLockLabel.h; sourceTree = "<group>"; };
 		B985053F1E963CF5007C01CB /* PCLockLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLockLabel.m; sourceTree = "<group>"; };
+		B9851FA21EFD16CF00BCF8C2 /* NSData+FXW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+FXW.h"; sourceTree = "<group>"; };
+		B9851FA31EFD16CF00BCF8C2 /* NSData+FXW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+FXW.m"; sourceTree = "<group>"; };
 		B985680D1EE7A11400FF9668 /* DesignModeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignModeVC.h; sourceTree = "<group>"; };
 		B985680E1EE7A11400FF9668 /* DesignModeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignModeVC.m; sourceTree = "<group>"; };
 		B985680F1EE7A11400FF9668 /* DesignModeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesignModeVC.xib; sourceTree = "<group>"; };
@@ -1857,8 +1857,8 @@
 				B92CCB3B1E7A88B900035A79 /* RegexUtil.m */,
 				B926420D1E83D4B500EEED61 /* NSString+Utils.h */,
 				B926420E1E83D4B500EEED61 /* NSString+Utils.m */,
-				B94D8F2B1EDF99800003D10A /* NSData+CRC32.h */,
-				B94D8F2C1EDF99800003D10A /* NSData+CRC32.m */,
+				B9851FA21EFD16CF00BCF8C2 /* NSData+FXW.h */,
+				B9851FA31EFD16CF00BCF8C2 /* NSData+FXW.m */,
 				B96528801EA598600044CA5F /* ImageUtil.h */,
 				B96528811EA598600044CA5F /* ImageUtil.m */,
 				B92CCB031E7A192100035A79 /* HDeviceIdentifierUtils */,
@@ -3781,7 +3781,6 @@
 				B9B9CECA1E9CB986008CC558 /* UIButton+WebCache.m in Sources */,
 				B915C2431E7F9DE10088A31F /* MDSwitch.m in Sources */,
 				B92CCB0E1E7A1AEB00035A79 /* README.md in Sources */,
-				B94D8F2D1EDF99800003D10A /* NSData+CRC32.m in Sources */,
 				B9B9CE981E9CB8EC008CC558 /* TAAbstractDotView.m in Sources */,
 				B9BD97451E810509009BB0D4 /* FXWUD.m in Sources */,
 				B910E2371EA880A500DFCC86 /* SDWebImageLoadGifVC.m in Sources */,
@@ -3884,6 +3883,7 @@
 				B910E24E1EA884F700DFCC86 /* MCSearchVC.m in Sources */,
 				B95ED6BA1E9474E200AD490B /* OrderFinishVC.m in Sources */,
 				B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */,
+				B9851FA41EFD16CF00BCF8C2 /* NSData+FXW.m in Sources */,
 				B915C2321E7F9DE10088A31F /* MDCircularProgressLayer.m in Sources */,
 				B915C2511E7F9DE10088A31F /* UIViewHelper.m in Sources */,
 				B906FC681E8B455500645C96 /* MJAd.m in Sources */,
