@@ -11,7 +11,9 @@
 #import "LockMasterAppVC.h"
 #import "KenshinAppVC.h"
 #import "MCClientVC.h"
+#import "MCServiceVC.h"
 #import "QYVC.h"
+
 
 @interface TwoVC ()
 
@@ -68,6 +70,13 @@
     if ([title isEqualToString:@"ddzm"])
     {
         DDZMVC *vc = [[DDZMVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"MC-Service"])
+    {
+        MCServiceVC *vc = [[MCServiceVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

@@ -23,12 +23,22 @@
 typedef void(^HSResultBlock) (BOOL success, NSDictionary *resultDic, NSString *errorMsg);
 
 /**
- post请求
+ POST 请求
  
  @param url         请求地址
  @param params      请求参数
  @param resultBlock 响应代码块
  */
 + (void)postWithUrl:(NSString *)url params:(NSDictionary *)params resultBlock:(HSResultBlock)resultBlock;
+
+
+/**
+ GET 请求 代码和POST请求一直 只是请求方式变了
+ 
+ @param url         请求地址
+ @param params      请求参数
+ @param resultBlock 响应代码块
+ */
++ (void)getWithUrl:(NSString *)url params:(NSDictionary *)params resultBlock:(HSResultBlock)resultBlock;
 
 @end

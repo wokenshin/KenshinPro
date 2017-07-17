@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSDataUtilsVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7L-9S-mQF">
+                    <rect key="frame" x="30" y="74" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="RjG-6g-bg8"/>
+                    </constraints>
+                    <state key="normal" title="16进制字符串-&gt;NSData">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="strToData:" destination="-1" eventType="touchUpInside" id="0hY-tI-Rpl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-oN-Fzr">
+                    <rect key="frame" x="30" y="120" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="DjO-D2-U2F"/>
+                    </constraints>
+                    <state key="normal" title="NSData-&gt;16进制字符串">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dataToStr:" destination="-1" eventType="touchUpInside" id="RnM-PA-Kxw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meA-ss-rU6">
+                    <rect key="frame" x="30" y="166" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="idz-bs-ZDD"/>
+                    </constraints>
+                    <state key="normal" title="获取subData">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getSubData:" destination="-1" eventType="touchUpInside" id="jhB-wj-eZC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7Y-td-vvp">
+                    <rect key="frame" x="30" y="212" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Cn8-s6-6xh"/>
+                    </constraints>
+                    <state key="normal" title="获取NSData中的数值">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getValueInData:" destination="-1" eventType="touchUpInside" id="nbT-tf-Br9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-tA-Ptx">
+                    <rect key="frame" x="30" y="350" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="0RM-Fg-nUq"/>
+                    </constraints>
+                    <state key="normal" title="高位补零">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addZeroInHigh:" destination="-1" eventType="touchUpInside" id="gBe-6D-Fg9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH3-je-10x">
+                    <rect key="frame" x="30" y="258" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="hhn-Fd-wyq"/>
+                    </constraints>
+                    <state key="normal" title="16/10进制转换">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="exchangeHex:" destination="-1" eventType="touchUpInside" id="JuT-pg-R6L"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4R-Kt-FYB">
+                    <rect key="frame" x="30" y="304" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Z5c-t6-DgM"/>
+                    </constraints>
+                    <state key="normal" title="获取bit中的前后位">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getBitBoth:" destination="-1" eventType="touchUpInside" id="cz7-Ic-PwL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M4R-Kt-FYB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="5ZY-6j-Mh7"/>
+                <constraint firstAttribute="trailing" secondItem="M4R-Kt-FYB" secondAttribute="trailing" constant="30" id="DgV-Ka-rRs"/>
+                <constraint firstItem="OJS-tA-Ptx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="HeU-g9-Gps"/>
+                <constraint firstAttribute="trailing" secondItem="HH3-je-10x" secondAttribute="trailing" constant="30" id="Ixh-mr-6pm"/>
+                <constraint firstItem="HH3-je-10x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="K7F-87-OGO"/>
+                <constraint firstItem="meA-ss-rU6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Kwe-Gg-rx1"/>
+                <constraint firstItem="HH3-je-10x" firstAttribute="top" secondItem="v7Y-td-vvp" secondAttribute="bottom" constant="10" id="Mh3-ZL-EhP"/>
+                <constraint firstAttribute="trailing" secondItem="v7Y-td-vvp" secondAttribute="trailing" constant="30" id="YWA-eA-w26"/>
+                <constraint firstItem="v7Y-td-vvp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="YtJ-s9-eiZ"/>
+                <constraint firstAttribute="trailing" secondItem="QMc-oN-Fzr" secondAttribute="trailing" constant="30" id="b92-Ai-iBE"/>
+                <constraint firstAttribute="trailing" secondItem="meA-ss-rU6" secondAttribute="trailing" constant="30" id="blf-rK-8U8"/>
+                <constraint firstItem="meA-ss-rU6" firstAttribute="top" secondItem="QMc-oN-Fzr" secondAttribute="bottom" constant="10" id="cZk-HZ-05j"/>
+                <constraint firstItem="j7L-9S-mQF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="ch9-cr-Juo"/>
+                <constraint firstItem="M4R-Kt-FYB" firstAttribute="top" secondItem="HH3-je-10x" secondAttribute="bottom" constant="10" id="eTV-sQ-0F8"/>
+                <constraint firstItem="v7Y-td-vvp" firstAttribute="top" secondItem="meA-ss-rU6" secondAttribute="bottom" constant="10" id="f1g-Ef-ezA"/>
+                <constraint firstItem="QMc-oN-Fzr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="gMR-vf-pg0"/>
+                <constraint firstAttribute="trailing" secondItem="j7L-9S-mQF" secondAttribute="trailing" constant="30" id="qym-lN-rJb"/>
+                <constraint firstItem="QMc-oN-Fzr" firstAttribute="top" secondItem="j7L-9S-mQF" secondAttribute="bottom" constant="10" id="rQx-ji-AMf"/>
+                <constraint firstAttribute="trailing" secondItem="OJS-tA-Ptx" secondAttribute="trailing" constant="30" id="sAl-qE-CTY"/>
+                <constraint firstItem="OJS-tA-Ptx" firstAttribute="top" secondItem="M4R-Kt-FYB" secondAttribute="bottom" constant="10" id="yle-53-IQG"/>
+                <constraint firstItem="j7L-9S-mQF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="zII-f0-cx9"/>
+            </constraints>
+            <point key="canvasLocation" x="-254" y="111"/>
+        </view>
+    </objects>
+</document>

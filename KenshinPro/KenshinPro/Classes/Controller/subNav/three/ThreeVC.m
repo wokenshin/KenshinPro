@@ -19,6 +19,7 @@
 #import "CRC32VC.h"
 #import "RegexVC.h"
 #import "SocketVC.h"
+#import "NSDataUtilsVC.h"
 
 @interface ThreeVC ()
 
@@ -49,6 +50,7 @@
     [self addDataWithTitle:@"CRC校验" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"正则表达式" andDetail:@"常用正则表达式，以及自定义正则表达式"];
     [self addDataWithTitle:@"Socket" andDetail:@"AnsycSocket"];
+    [self addDataWithTitle:@"NSData常用工具" andDetail:@"主要用于发送蓝牙消息等场景"];
     
 }
 
@@ -62,6 +64,13 @@
 - (void)clickCellWithTitle:(NSString *)title
 {
     
+    if ([title isEqualToString:@"NSData常用工具"])
+    {
+        NSDataUtilsVC *vc = [[NSDataUtilsVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"Socket"])
     {
         SocketVC *vc = [[SocketVC alloc] init];

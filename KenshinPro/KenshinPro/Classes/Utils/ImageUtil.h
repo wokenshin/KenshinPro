@@ -23,12 +23,12 @@
  @param image 图片
  @param size 新尺寸
  */
-+(UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)asize;
++(UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)size;
 
 /**原始图片压缩
  @param image 图片
  @param size 新尺寸
  */
-+(UIImage *)thumbnailWithImage:(UIImage *)image size:(CGSize)asize;
++(UIImage *)thumbnailWithImage:(UIImage *)image size:(CGSize)size;
 
 @end

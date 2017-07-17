@@ -65,8 +65,8 @@ CNContactPickerDelegate,//通讯录>=IOS10
      forBarPosition:UIBarPositionAny
      barMetrics:UIBarMetricsDefault];
      */
-    self.automaticallyAdjustsScrollViewInsets   = NO; //取消scrollview的自动像素下移
-    self.extendedLayoutIncludesOpaqueBars       = YES;//取消navigationbar导致的view层自动下移
+    self.automaticallyAdjustsScrollViewInsets = NO; //取消scrollview的自动像素下移
+    self.extendedLayoutIncludesOpaqueBars     = YES;//取消navigationbar导致的view层自动下移
     
 }
 

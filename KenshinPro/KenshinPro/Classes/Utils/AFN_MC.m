@@ -479,8 +479,13 @@
 + (void)postUploadImageWithFiles:(NSArray *)fileNames resultBlock:(MCResultBlock )resultblock
 {
     //封装请求参数
-    NSMutableDictionary *requestDic = [[NSMutableDictionary alloc] init];
-    [requestDic setObject:@"upload" forKey:@"module"];
+    /*
+     @{@"method":@"updatePicture",@"os":@"iOS",@"module":@"user",@"platform":@"client",@"parms":@{@"phoneNo":@"18159021786"},@"version":@1,@"token":@"5a03145b604eebed30e829d226a34696"}
+     */
+    NSDictionary *requestDic = @{@"method":@"updatePicture",@"os":@"iOS",@"module":@"user",@"platform":@"client",@"parms":@{@"phoneNo":@""},@"version":@1,@"token":@"5a03145b604eebed30e829d226a34696"};
+    
+    
+    
     
     NSError *error= nil;
     NSData *bodyData = [NSJSONSerialization dataWithJSONObject:requestDic options:0 error:&error];
@@ -491,7 +496,7 @@
     //加密签名
 //    NSString *sign = [AFN_MC jiaMiSignWithData:bodyData andVersion:AFN_MC_VERSION];
     
-    NSString *strUrl = @"http://119.23.129.169:8080/request/upload";//baseUrlMix;
+    NSString *strUrl = @"http://app.zhonglexiang.com:8080/reportapi/request/mixed";//baseUrlMix;
     
 //    NSDictionary *headers = @{@"sign": sign};
     NSDictionary *parameters = @{@"json":jsonString};
