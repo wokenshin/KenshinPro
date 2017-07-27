@@ -1,0 +1,32 @@
+//
+//  Kenshin.pch
+//  KenshinPro
+//
+//  Created by kenshin on 2017/7/27.
+//  Copyright © 2017年 Kenshin. All rights reserved.
+//
+
+#ifndef Kenshin_pch
+#define Kenshin_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/*
+ 使用方法
+ 1.创建pch文件 cmd+n 创建一个 pch文件
+ 2.配置文件 TARGET-->BuidlSetting--> Precompile Prefix Header设为YES 然后 Prefix Header 后面$(SRCROOT)/工程名字/pch文件名.pch
+ 
+ 将Precompile Prefix Header设为YES，预编译后的pch文件会被缓存起来，可以提高编译速度
+ 
+ 
+ 综上 即可使用pch文件
+ */
+
+//下面的代码是在pch文件中引入项目中的头文件
+#ifdef __OBJC__ // 只被object－c文件所引用
+#import "FXW_Define.h"
+
+#endif
+
+#endif /* Kenshin_pch */
+

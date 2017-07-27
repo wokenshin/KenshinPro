@@ -182,6 +182,8 @@
 		B94D8F331EDF99EB0003D10A /* CRC32VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94D8F311EDF99EB0003D10A /* CRC32VC.xib */; };
 		B94DA31A1E8CB82B0072BECE /* MJStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA3191E8CB82B0072BECE /* MJStudent.m */; };
 		B94DA31D1E8CCAF70072BECE /* MJBag.m in Sources */ = {isa = PBXBuildFile; fileRef = B94DA31C1E8CCAF70072BECE /* MJBag.m */; };
+		B94EDCEA1F282EC1004C5D2D /* DefineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94EDCE81F282EC1004C5D2D /* DefineVC.m */; };
+		B94EDCEB1F282EC1004C5D2D /* DefineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94EDCE91F282EC1004C5D2D /* DefineVC.xib */; };
 		B94F909B1EB2C6F40032FC0E /* MBProgressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F909A1EB2C6F40032FC0E /* MBProgressVC.m */; };
 		B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B94F909D1EB2E3560032FC0E /* NSStringVC.m */; };
 		B94F90A01EB2E3560032FC0E /* NSStringVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B94F909E1EB2E3560032FC0E /* NSStringVC.xib */; };
@@ -760,6 +762,9 @@
 		B94DA3191E8CB82B0072BECE /* MJStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJStudent.m; sourceTree = "<group>"; };
 		B94DA31B1E8CCAF70072BECE /* MJBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBag.h; sourceTree = "<group>"; };
 		B94DA31C1E8CCAF70072BECE /* MJBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBag.m; sourceTree = "<group>"; };
+		B94EDCE71F282EC1004C5D2D /* DefineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineVC.h; sourceTree = "<group>"; };
+		B94EDCE81F282EC1004C5D2D /* DefineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineVC.m; sourceTree = "<group>"; };
+		B94EDCE91F282EC1004C5D2D /* DefineVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefineVC.xib; sourceTree = "<group>"; };
 		B94F90991EB2C6F40032FC0E /* MBProgressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressVC.h; sourceTree = "<group>"; };
 		B94F909A1EB2C6F40032FC0E /* MBProgressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressVC.m; sourceTree = "<group>"; };
 		B94F909C1EB2E3560032FC0E /* NSStringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringVC.h; sourceTree = "<group>"; };
@@ -921,6 +926,7 @@
 		B98568121EE7A16100FF9668 /* BLECoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECoreVC.h; sourceTree = "<group>"; };
 		B98568131EE7A16100FF9668 /* BLECoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECoreVC.m; sourceTree = "<group>"; };
 		B98568141EE7A16100FF9668 /* BLECoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLECoreVC.xib; sourceTree = "<group>"; };
+		B98A01DC1F297473009B5AF8 /* Kenshin.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kenshin.pch; sourceTree = "<group>"; };
 		B98DF7011EA83FDF00296C2A /* SetUICornerRadiusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUICornerRadiusVC.h; sourceTree = "<group>"; };
 		B98DF7021EA83FDF00296C2A /* SetUICornerRadiusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUICornerRadiusVC.m; sourceTree = "<group>"; };
 		B98DF7031EA83FDF00296C2A /* SetUICornerRadiusVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUICornerRadiusVC.xib; sourceTree = "<group>"; };
@@ -1923,6 +1929,7 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				B94EDCE61F282EAC004C5D2D /* 宏定义 */,
 				B9B7C51B1F16FDEE0063BDAF /* NSData常用工具 */,
 				B9436F531EEE6E7300660C70 /* Socket */,
 				B98F396B1EE4EF820064468E /* 正则表达式 */,
@@ -1976,6 +1983,7 @@
 			children = (
 				B92CCB101E7A268B00035A79 /* AppDelegate.h */,
 				B92CCB111E7A268B00035A79 /* AppDelegate.m */,
+				B98A01DC1F297473009B5AF8 /* Kenshin.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -2120,6 +2128,16 @@
 				B94D8F311EDF99EB0003D10A /* CRC32VC.xib */,
 			);
 			path = "CRC校验";
+			sourceTree = "<group>";
+		};
+		B94EDCE61F282EAC004C5D2D /* 宏定义 */ = {
+			isa = PBXGroup;
+			children = (
+				B94EDCE71F282EC1004C5D2D /* DefineVC.h */,
+				B94EDCE81F282EC1004C5D2D /* DefineVC.m */,
+				B94EDCE91F282EC1004C5D2D /* DefineVC.xib */,
+			);
+			path = "宏定义";
 			sourceTree = "<group>";
 		};
 		B94F90981EB2C6DB0032FC0E /* 麻痹进度 */ = {
@@ -3648,6 +3666,7 @@
 				B98DF71D1EA8521300296C2A /* index1.css in Resources */,
 				B95ED6B31E9474E200AD490B /* WoYaoBianDaView.xib in Resources */,
 				B9BADB441EA5BB99000B3C1C /* VCN3.xib in Resources */,
+				B94EDCEB1F282EC1004C5D2D /* DefineVC.xib in Resources */,
 				B906B3D71EE94B7C0073E175 /* CellFXWTableMenu.xib in Resources */,
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
@@ -3865,6 +3884,7 @@
 				B9BD97571E810B68009BB0D4 /* BaseFunctionVC.m in Sources */,
 				B92CCAFF1E7A166100035A79 /* Tools.m in Sources */,
 				B9BD97521E81054C009BB0D4 /* README.mdown in Sources */,
+				B94EDCEA1F282EC1004C5D2D /* DefineVC.m in Sources */,
 				B90978841E95E7F300F5A0B5 /* UIView+Extend.m in Sources */,
 				B915C2481E7F9DE10088A31F /* MDTimePickerDialog.m in Sources */,
 				B915C24F1E7F9DE10088A31F /* UIFontHelper.m in Sources */,
@@ -4140,6 +4160,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LY2VT2N938;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4158,6 +4180,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LY2VT2N938;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

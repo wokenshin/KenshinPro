@@ -15,6 +15,7 @@
 #import <AddressBookUI/ABPeoplePickerNavigationController.h>
 #import <AddressBook/ABPerson.h>
 #import <AddressBookUI/ABPersonViewController.h>
+#import "RegexUtil.h"
 
 @interface SysContactsVC ()<ABPersonViewControllerDelegate, ABPeoplePickerNavigationControllerDelegate>
 
