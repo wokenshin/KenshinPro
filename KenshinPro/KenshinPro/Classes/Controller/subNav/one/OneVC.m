@@ -26,6 +26,7 @@
 #import "ArrayVC.h"
 #import "CountDownVC.h"
 #import "BigSmallVC.h"
+#import "TextContentVC.h"
 
 @interface OneVC ()
 
@@ -44,6 +45,7 @@
 #pragma mark 加载数据
 - (void)loadData
 {
+    [self addDataWithTitle:@"UITextField+自定义" andDetail:@"数据存储到内存地址中的顺序"];
     [self addDataWithTitle:@"网络状态实时监听" andDetail:@"通过AFN 在AppDelegate中实现"];
     [self addDataWithTitle:@"BaseVC" andDetail:@"包含BaseVC的全部功能演示"];
     [self addDataWithTitle:@"控制器之间的跳转" andDetail:@"push、pop、present、dismiss"];
@@ -66,6 +68,7 @@
     [self addDataWithTitle:@"高位补0" andDetail:@"C里面的方法"];
     [self addDataWithTitle:@"大小端转换" andDetail:@"数据存储到内存地址中的顺序"];
     
+    
 }
 
 #pragma mark 初始化UI
@@ -78,9 +81,9 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    if ([title isEqualToString:@"大小端转换"])
+    if ([title isEqualToString:@"UITextField+自定义"])
     {
-        BigSmallVC *vc = [[BigSmallVC alloc] init];
+        TextContentVC *vc = [[TextContentVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

@@ -13,7 +13,7 @@
 #import "MCClientVC.h"
 #import "MCServiceVC.h"
 #import "QYVC.h"
-
+#import "ZZGY_VC.h"
 
 @interface TwoVC ()
 
@@ -31,6 +31,7 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"ZZGY" andDetail:@"2017-07"];
     [self addDataWithTitle:@"QYApp" andDetail:@"智能锁 服务端 2017-06"];
     [self addDataWithTitle:@"锁匠App" andDetail:@"智能锁 服务端 2017-03"];
     [self addDataWithTitle:@"ddzm" andDetail:@"蓝牙+TCP 智能锁App 2016-11"];
@@ -41,6 +42,7 @@
     [self addDataWithTitle:@"遵移-红城先锋-不做演示" andDetail:@"协助开发 2015-11"];
     [self addDataWithTitle:@"今日红花岗-不做演示" andDetail:@"协助开发 2015-10"];
     [self addDataWithTitle:@"博文智控-不做演示" andDetail:@"第一个APP socket + 声纹码 2015-08"];
+    
     
 }
 
@@ -53,6 +55,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"ZZGY"])
+    {
+        ZZGY_VC *vc = [[ZZGY_VC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"QYApp"])
     {
         QYVC *vc = [[QYVC alloc] init];

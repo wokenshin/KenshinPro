@@ -26,7 +26,7 @@
 #ifdef __OBJC__ // 只被object－c文件所引用
 #import "FXW_Define.h"
 
-#endif
+#endif  //和 #ifdef __OBJC__ 对应
 
-#endif /* Kenshin_pch */
+#endif  //和  #ifndef Kenshin_pch 对应
 
