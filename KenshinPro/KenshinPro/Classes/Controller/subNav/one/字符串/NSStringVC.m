@@ -90,7 +90,43 @@
     
 }
 
+- (IBAction)clickBtnIsPureNum:(id)sender
+{
+    NSString *str1 = @"123";
+    NSString *str2 = @"-123";
+    NSString *str3 = @"12.3";
+    NSString *str4 = @"一二三";
+    
+    [self printStr:str1];
+    [self printStr:str2];
+    [self printStr:str3];
+    [self printStr:str4];
+    
+    
+}
 
+- (void)printStr:(NSString *)str
+{
+    if ([self m2m_isPuerNum:str]) {
+        NSLog(@"%@, 是纯数字", str);
+    }
+    else
+    {
+        NSLog(@"%@, 不是纯数字", str);
+    }
+}
+
+
+- (BOOL)m2m_isPuerNum:(NSString *)str
+{
+    NSString *regex = @"[0-9]*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    if ([pred evaluateWithObject:str]) {
+        return YES;
+    }
+    return NO;
+    
+}
 
 
 

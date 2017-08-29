@@ -226,4 +226,16 @@ typedef void (^MSMNoBlock)(BOOL sendSuccess);
  */
 - (void)callNo:(NSString *)no;
 
+
+/**
+ 切换根视图控制器
+
+ @param vc 控制器 or 导航控制器
+ */
+- (void)fxw_changeRootVCWithAnimation:(UIViewController *)vc;
+
+
+
+
+
 @end

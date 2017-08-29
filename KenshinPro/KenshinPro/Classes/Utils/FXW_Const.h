@@ -16,4 +16,7 @@ extern NSString * const STR_CONST;
 //定义整形常量
 extern int const INT_CONST;
 
+extern NSString * const NOTIFI_ONE;
+extern NSString * const NOTIFI_TWO;
+
 @end

@@ -13,13 +13,9 @@
 
 @interface BLEVC ()<CBCentralManagerDelegate, CBPeripheralDelegate>
 
-@property (nonatomic, strong) CBCentralManager              *centralManager;
-@property (nonatomic, strong) CBPeripheral                  *peripheral;
-
-//@property (nonatomic, strong) CBService                     *cbService;
+@property (nonatomic, strong) CBCentralManager              *centralManager;//中心
+@property (nonatomic, strong) CBPeripheral                  *peripheral;//外设
 @property (nonatomic, strong) NSMutableArray                *mArrService;//保存发现的Service
-
-//@property (nonatomic, strong) CBCharacteristic              *characteristic;
 @property (nonatomic, strong) NSMutableArray                *mArrCharacteristic;//保存发现的characteristic
 
 
@@ -278,7 +274,7 @@
 {
     NSLog(@"发现设备 DEV:%@ RSSI:%@", peripheral.name, RSSI);
     
-    if ([peripheral.name isEqualToString:@"fLock-1E25DDBFE760D"])
+    if ([peripheral.name isEqualToString:@"aLock-1EFC365FF7503"])
     {
         self.peripheral = peripheral;
         [self.centralManager stopScan];//停止扫描 节省电量 资源占用

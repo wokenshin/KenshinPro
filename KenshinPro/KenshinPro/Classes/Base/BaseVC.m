@@ -594,4 +594,20 @@ CNContactPickerDelegate,//通讯录>=IOS10
     
 }
 
+//当前根视图
+- (void)fxw_changeRootVCWithAnimation:(UIViewController *)vc
+{
+    //切换根控制器 有一个渐变的效果
+    // options是动画选项
+    [UIView transitionWithView:[UIApplication sharedApplication].keyWindow duration:0.5f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        
+        BOOL oldState = [UIView areAnimationsEnabled];
+        [UIView setAnimationsEnabled:NO];
+        [UIApplication sharedApplication].keyWindow.rootViewController = vc;
+        [UIView setAnimationsEnabled:oldState];
+        
+    } completion:^(BOOL finished) {}];
+    
+}
+
 @end

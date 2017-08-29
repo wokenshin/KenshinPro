@@ -9,8 +9,8 @@
 #import "FourVC.h"
 #import "DesignModeVC.h"
 #import "BLECoreVC.h"
-
-
+#import "ListCodesVC.h"
+#import "RespondCodesVC.h"
 
 
 
@@ -32,6 +32,8 @@
 {
     [self addDataWithTitle:@"设计模式" andDetail:@"常用的设计模式"];
     [self addDataWithTitle:@"BLE核心" andDetail:@"由浅入深"];
+    [self addDataWithTitle:@"链式编程" andDetail:@"小demo"];
+    [self addDataWithTitle:@"响应式编程" andDetail:@"待更新..."];
     
 }
 
@@ -54,6 +56,20 @@
     if ([title isEqualToString:@"BLE核心"])
     {
         BLECoreVC *vc = [[BLECoreVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"链式编程"])
+    {
+        ListCodesVC *vc = [[ListCodesVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"响应式编程"])
+    {
+        RespondCodesVC *vc = [[RespondCodesVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

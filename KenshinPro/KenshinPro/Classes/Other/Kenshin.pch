@@ -25,6 +25,7 @@
 //下面的代码是在pch文件中引入项目中的头文件
 #ifdef __OBJC__ // 只被object－c文件所引用
 #import "FXW_Define.h"
+#import "FXW_Const.h"
 
 #endif  //和 #ifdef __OBJC__ 对应
 

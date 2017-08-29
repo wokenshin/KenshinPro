@@ -7,7 +7,7 @@
 //
 
 #import "OneVC.h"
-
+#import "NSString+FXW.h"
 #import "BaseFunctionVC.h"
 #import "AFNManagerVC.h"
 #import "GetContactsVC.h"
@@ -27,6 +27,9 @@
 #import "CountDownVC.h"
 #import "BigSmallVC.h"
 #import "TextContentVC.h"
+#import "AddBorderVC.h"
+#import "PushModelStyleVC.h"
+#import "NotifiVC.h"
 
 @interface OneVC ()
 
@@ -42,6 +45,7 @@
     
 }
 
+
 #pragma mark 加载数据
 - (void)loadData
 {
@@ -50,13 +54,13 @@
     [self addDataWithTitle:@"BaseVC" andDetail:@"包含BaseVC的全部功能演示"];
     [self addDataWithTitle:@"控制器之间的跳转" andDetail:@"push、pop、present、dismiss"];
     [self addDataWithTitle:@"TableView布局控制器" andDetail:@"全部内容都方到tableView中展示"];
+    [self addDataWithTitle:@"各种UITableViewCell" andDetail:@"基本上包含了目前项目中使用的所有的cell"];
     [self addDataWithTitle:@"字符串" andDetail:@"字符串的基本操作"];
     [self addDataWithTitle:@"时间" andDetail:@"时间的基本操作"];
     [self addDataWithTitle:@"数组" andDetail:@"系统自带的排序方法等"];
     [self addDataWithTitle:@"AFN封装" andDetail:@"针对所在公司进行的封装"];
     [self addDataWithTitle:@"麻痹进度" andDetail:@"有些进度条出现的时候，nav返回按钮会失效哟"];
     [self addDataWithTitle:@"字典与模型的转换" andDetail:@"用到了MJExtension"];
-    [self addDataWithTitle:@"各种UITableViewCell" andDetail:@"基本上包含了目前项目中使用的所有的cell"];
     [self addDataWithTitle:@"各种菜单" andDetail:@"基本上包含了目前项目中使用的所有的菜单"];
     [self addDataWithTitle:@"广告-滚动视图" andDetail:@"MC的项目中使用到"];
     [self addDataWithTitle:@"各种UI的尺寸" andDetail:@"AppIcon，屏幕快照，导航栏、状态栏、tabBar等"];
@@ -67,7 +71,10 @@
     [self addDataWithTitle:@"倒计时按钮" andDetail:@"按钮内部判断时间"];
     [self addDataWithTitle:@"高位补0" andDetail:@"C里面的方法"];
     [self addDataWithTitle:@"大小端转换" andDetail:@"数据存储到内存地址中的顺序"];
-    
+    [self addDataWithTitle:@"生成随机数" andDetail:@"随机数字"];
+    [self addDataWithTitle:@"UIView 指定方向添加边框" andDetail:@"2017-08-10"];
+    [self addDataWithTitle:@"push时modal跳转动画" andDetail:@"从下往上推上"];
+    [self addDataWithTitle:@"通知" andDetail:@""];
     
 }
 
@@ -81,6 +88,53 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    
+    if ([title isEqualToString:@"通知"])
+    {
+        NotifiVC *vc = [[NotifiVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+
+    if ([title isEqualToString:@"push时modal跳转动画"])
+    {
+        PushModelStyleVC *vc = [[PushModelStyleVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        
+        //核心代码。。。
+        vc.view.backgroundColor  = [UIColor whiteColor];
+        CATransition* transition = [CATransition animation];
+        transition.duration      = 0.2f;
+        transition.type          = kCATransitionMoveIn;
+        transition.subtype       = kCATransitionFromTop;
+        [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+        
+        //注意 这里的动画要写成NO 不然就没有想要的效果了
+        [self.navigationController pushViewController:vc animated:NO];
+        //核心代码。。。
+        
+        return;
+    }
+    if ([title isEqualToString:@"生成随机数"])
+    {
+        [self toast:[NSString fxw_randomNumberWithLength:8]];
+        return;
+    }
+    if ([title isEqualToString:@"UIView 指定方向添加边框"])
+    {
+        AddBorderVC *vc = [[AddBorderVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"大小端转换"])
+    {
+        BigSmallVC *vc = [[BigSmallVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"UITextField+自定义"])
     {
         TextContentVC *vc = [[TextContentVC alloc] init];

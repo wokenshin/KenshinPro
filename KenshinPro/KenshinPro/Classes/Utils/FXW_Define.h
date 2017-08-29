@@ -37,6 +37,14 @@
 //适配系数 适配所有手机 根据屏幕的宽度来做适配 UI的 frame参数都乘以这个系数就可以了  下面的参数是以6s的宽度来做适配的
 #define coefficient (screenWidth/375.f)
 
+#ifdef DEBUG
+#define FXWLog(...) NSLog(__VA_ARGS__)// 调试状态
+#else
+#define FXWLog(...)// 发布状态
+#endif
+
+
+
 //全部按钮的背景
 #define imgBtnHighlighted [UIImage imageNamed:@"buddy_header_bg_highlighted"]
 
@@ -88,6 +96,21 @@
 
 //系统名称
 #define SystemName ([UIDevice currentDevice].systemName)
+
+//获取沙盒Document路径
+#define PathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+
+//获取沙盒Cache路径
+#define PathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+//通知
+//发送通知
+#define FXW_NOTIF_POST(n, o) [[NSNotificationCenter defaultCenter] postNotificationName:n object:o]
+//订阅通知
+#define FXW_NOTIF_ADD(n, f)  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(f) name:n object:nil]
+//删除订阅
+#define FXW_NOTIF_REMV(n)    [[NSNotificationCenter  defaultCenter] removeObserver:self name:n object:nil]
+
 
 
 //三禾项目 贵州华尚高科         主色 蓝色

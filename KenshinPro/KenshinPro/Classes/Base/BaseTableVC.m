@@ -65,7 +65,7 @@
 {
     NSDictionary *dic = [self.mArrData objectAtIndex:indexPath.row];
     NSString *title = [dic objectForKey:@"title"];
-    NSLog(@"click %@", title);
+//    NSLog(@"click %@", title);
     
     [self clickCellWithTitle:title];
 }

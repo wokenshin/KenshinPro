@@ -12,7 +12,7 @@
 
 +(NSString *)dateToString:(NSDate *)date{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"yyyy-MM-dd";// HH:mm"; // 设置时间和日期的格式yyyy-MM-dd HH:mm:ss
+    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";// HH:mm"; // 设置时间和日期的格式yyyy-MM-dd HH:mm:ss
     [dateFormatter setTimeZone:[NSTimeZone localTimeZone]];
     NSString *dateAndTime = [dateFormatter stringFromDate:date];
     return dateAndTime;
@@ -81,6 +81,7 @@
     
     return (long)[fromDate timeIntervalSince1970];
 }
+
 +(long)dateToTimespan{
     NSDate *date = [[NSDate alloc]init];
     NSString *strDate = [DateUtil dateToString:date];

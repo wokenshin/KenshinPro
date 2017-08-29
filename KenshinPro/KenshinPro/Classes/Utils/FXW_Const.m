@@ -14,4 +14,8 @@ NSString * const STR_CONST = @"这里只是做为演示";
 
 int const INT_CONST   = 9527;
 
+
+NSString * const NOTIFI_ONE = @"NOTIFI_ONE";
+NSString * const NOTIFI_TWO = @"NOTIFI_TWO";
+
 @end

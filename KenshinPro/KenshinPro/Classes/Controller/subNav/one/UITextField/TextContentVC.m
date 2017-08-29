@@ -8,6 +8,7 @@
 
 #import "TextContentVC.h"
 #import "TextImgVC.h"
+#import "TextDatePickerVC.h"
 
 @interface TextContentVC ()
 
@@ -36,11 +37,17 @@
 - (void)loadData
 {
     [self addDataWithTitle:@"带图片的文本框" andDetail:@""];
-
+    [self addDataWithTitle:@"带时间选择器的文本框" andDetail:@""];
 }
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"带时间选择器的文本框"])
+    {
+        TextDatePickerVC *vc = [[TextDatePickerVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"带图片的文本框"])
     {
         TextImgVC *vc = [[TextImgVC alloc] init];

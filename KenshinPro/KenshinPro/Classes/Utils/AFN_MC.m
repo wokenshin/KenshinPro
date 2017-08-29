@@ -8,7 +8,7 @@
 
 #import "AFN_MC.h"
 #import "AFNetworking.h"
-#import "NSString+Utils.h"//MD5
+#import "NSString+FXW.h"//MD5
 #import "Tools.h"
 
 @implementation AFN_MC
@@ -263,13 +263,13 @@
     //加密信息  MD5One = MD5(秘钥信息+接口版本号)==>转成小写
     //再次加密  MD5(请求参数信息+MD5One)==>转成小写
     NSString *plaintext = [NSString stringWithFormat:@"%@%@", signKey, version];
-    plaintext = [plaintext md5].lowercaseString;
+    plaintext = [plaintext fxw_md5].lowercaseString;
     
     //请求参数信息【请求体】
     NSString *jsonString = [[NSString alloc]initWithData:bodyData encoding:NSUTF8StringEncoding];
     
     plaintext = [NSString stringWithFormat:@"%@%@",jsonString, plaintext];
-    NSString *sign = [plaintext md5].lowercaseString;
+    NSString *sign = [plaintext fxw_md5].lowercaseString;
     return sign;
     
 }

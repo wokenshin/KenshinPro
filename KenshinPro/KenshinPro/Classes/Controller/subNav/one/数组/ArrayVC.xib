@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArrayVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqm-1m-Rry">
+                    <rect key="frame" x="30" y="74" width="315" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="sXP-sw-WeW"/>
+                    </constraints>
+                    <state key="normal" title="数组排序-系统方法"/>
+                    <connections>
+                        <action selector="clickButtonSortArrInSystemAPI:" destination="-1" eventType="touchUpInside" id="pAf-Lq-Hks"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yre-jy-YhD">
+                    <rect key="frame" x="30" y="120" width="315" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="ig5-QN-rhd"/>
+                    </constraints>
+                    <state key="normal" title="数组倒序"/>
+                    <connections>
+                        <action selector="clickBtnArrRes:" destination="-1" eventType="touchUpInside" id="kh9-g2-Mp2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.55294117649999996" green="0.80000000000000004" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lqm-1m-Rry" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="IEe-jC-gJq"/>
+                <constraint firstAttribute="trailing" secondItem="Lqm-1m-Rry" secondAttribute="trailing" constant="30" id="MhY-LT-axX"/>
+                <constraint firstItem="yre-jy-YhD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="aXd-mJ-qUm"/>
+                <constraint firstItem="yre-jy-YhD" firstAttribute="top" secondItem="Lqm-1m-Rry" secondAttribute="bottom" constant="10" id="cXj-b9-wUn"/>
+                <constraint firstAttribute="trailing" secondItem="yre-jy-YhD" secondAttribute="trailing" constant="30" id="id0-Hk-f7y"/>
+                <constraint firstItem="Lqm-1m-Rry" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="lXg-BN-BYy"/>
+            </constraints>
+            <point key="canvasLocation" x="-292" y="63"/>
+        </view>
+    </objects>
+</document>

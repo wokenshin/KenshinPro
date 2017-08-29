@@ -7,7 +7,8 @@
 //
 
 #import "NSDataUtilsVC.h"
-
+#import "NSString+FXW.h"
+#import "NSData+FXW.h"
 
 /**
  功能:
@@ -42,7 +43,7 @@
      */
     
     NSString *hexStr = @"e88c83e5b88ce69c9b";
-    NSData *data = [self toDataWithHexString:hexStr];
+    NSData *data = [hexStr fxw_hexStrToData];
     
     NSLog(@"hexStr %@", hexStr);
     NSLog(@"data %@", data);
@@ -53,8 +54,9 @@
 - (IBAction)dataToStr:(id)sender
 {
     NSString    *hexStr1    = @"e88c83e5b88ce69c9b";
-    NSData      *data       = [self toDataWithHexString:hexStr1];
-    NSString    *hexStr2    = [self toHexStringWithData:data];
+    NSData      *data       = [hexStr1 fxw_hexStrToData];
+    NSString    *hexStr2    = [data fxw_toHexStr];
+    
     
     NSLog(@"hexStr1 %@", hexStr1);
     NSLog(@"data    %@", data);
@@ -66,7 +68,7 @@
 - (IBAction)getSubData:(id)sender
 {
     NSString *hexStr1 = @"e88c83e5b88ce69c9b";
-    NSData   *data    = [self toDataWithHexString:hexStr1];
+    NSData   *data    = [hexStr1 fxw_hexStrToData];
     NSData   *subData = [data subdataWithRange:NSMakeRange(4, 3)];//从index4开始 取3个长度 每一个索引 对应两个二进制数
     
     NSLog(@"data %@", data);
@@ -104,100 +106,6 @@
     
     
 }
-
-
-//16进制字符串 转 NSData NSData就是16进制数据
-- (NSData *)toDataWithHexString:(NSString *)str
-{
-    //注意一定要是16进制字符串，必须是2的整数倍长度 不然计算出来的结果会高位补零 字符串中不要有空格
-    if (!str || [str length] == 0)
-    {
-        return nil;
-    }
-    
-    NSMutableData *hexData = [[NSMutableData alloc] initWithCapacity:8];
-    NSRange range;
-    
-    if ([str length] % 2 == 0)
-    {
-        range = NSMakeRange(0, 2);
-    }
-    else
-    {
-        range = NSMakeRange(0, 1);
-    }
-    
-    for (NSInteger i = range.location; i < [str length]; i += 2)
-    {
-        unsigned int anInt;
-        NSString *hexCharStr = [str substringWithRange:range];
-        NSScanner *scanner = [[NSScanner alloc] initWithString:hexCharStr];
-        
-        [scanner scanHexInt:&anInt];
-        NSData *entity = [[NSData alloc] initWithBytes:&anInt length:1];
-        [hexData appendData:entity];
-        
-        range.location += range.length;
-        range.length = 2;
-    }
-    
-    return hexData;
-    
-}
-
-
-- (NSString *)toHexStringWithData:(NSData *)data
-{
-    if (!data || [data length] == 0)
-    {
-        return @"";
-    }
-    
-    NSMutableString *string = [[NSMutableString alloc] initWithCapacity:[data length]];
-    
-    [data enumerateByteRangesUsingBlock:^(const void *bytes, NSRange byteRange, BOOL *stop)
-    {
-        unsigned char *dataBytes = (unsigned char*)bytes;
-        for (NSInteger i = 0; i < byteRange.length; i++)
-        {
-            NSString *hexStr = [NSString stringWithFormat:@"%x", (dataBytes[i]) & 0xff];
-            if ([hexStr length] == 2)
-            {
-                [string appendString:hexStr];
-            }
-            else
-            {
-                [string appendFormat:@"0%@", hexStr];
-            }
-        }
-    }];
-    
-    return string;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

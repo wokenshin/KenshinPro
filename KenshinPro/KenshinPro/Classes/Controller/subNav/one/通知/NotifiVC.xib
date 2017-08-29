@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotifiVC">
+            <connections>
+                <outlet property="labTips" destination="RfA-uh-j9q" id="0GL-IL-4Na"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收通知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfA-uh-j9q">
+                    <rect key="frame" x="30" y="74" width="315" height="120"/>
+                    <color key="backgroundColor" red="0.2055773528" green="0.59592234990000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="5AA-pG-tyn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4t-Zs-quW">
+                    <rect key="frame" x="30" y="214" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.11685005896261191" blue="0.38807425100903503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="xKF-RP-KN4"/>
+                    </constraints>
+                    <state key="normal" title="观察通知一">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnGC1:" destination="-1" eventType="touchUpInside" id="DiV-w1-mU0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvb-dB-tgW">
+                    <rect key="frame" x="30" y="260" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.11685005896261191" blue="0.38807425100903503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="P4i-yK-bUW"/>
+                    </constraints>
+                    <state key="normal" title="观察通知二">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnGC2:" destination="-1" eventType="touchUpInside" id="8lE-SN-bJP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71o-e3-tIm">
+                    <rect key="frame" x="30" y="306" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.11685005896261191" blue="0.38807425100903503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="ETI-DJ-MkE"/>
+                    </constraints>
+                    <state key="normal" title="取消观察一">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnCancelGC1:" destination="-1" eventType="touchUpInside" id="8RZ-7V-LTZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG4-EB-d9C">
+                    <rect key="frame" x="30" y="352" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.11685005896261191" blue="0.38807425100903503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="y7o-eI-box"/>
+                    </constraints>
+                    <state key="normal" title="取消观察二">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnCancelGC2:" destination="-1" eventType="touchUpInside" id="OBi-M2-EU2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGv-iu-vgg">
+                    <rect key="frame" x="30" y="398" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.11685005900000001" blue="0.38807425099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="iGE-lv-Zhs"/>
+                    </constraints>
+                    <state key="normal" title="下一页 发送通知">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnNext:" destination="-1" eventType="touchUpInside" id="QYb-RN-ZDP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tvb-dB-tgW" firstAttribute="top" secondItem="P4t-Zs-quW" secondAttribute="bottom" constant="10" id="0sn-9T-gK1"/>
+                <constraint firstItem="WG4-EB-d9C" firstAttribute="top" secondItem="71o-e3-tIm" secondAttribute="bottom" constant="10" id="BgS-ng-dTD"/>
+                <constraint firstAttribute="trailing" secondItem="71o-e3-tIm" secondAttribute="trailing" constant="30" id="HIT-W5-rH9"/>
+                <constraint firstAttribute="trailing" secondItem="P4t-Zs-quW" secondAttribute="trailing" constant="30" id="Hez-k7-Ix6"/>
+                <constraint firstAttribute="trailing" secondItem="RfA-uh-j9q" secondAttribute="trailing" constant="30" id="JBZ-iA-2z2"/>
+                <constraint firstItem="WG4-EB-d9C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="S29-Ko-dBr"/>
+                <constraint firstAttribute="trailing" secondItem="tvb-dB-tgW" secondAttribute="trailing" constant="30" id="WRv-uX-kmt"/>
+                <constraint firstItem="71o-e3-tIm" firstAttribute="top" secondItem="tvb-dB-tgW" secondAttribute="bottom" constant="10" id="Whz-7Y-C2l"/>
+                <constraint firstAttribute="trailing" secondItem="WG4-EB-d9C" secondAttribute="trailing" constant="30" id="Xld-jJ-7Zt"/>
+                <constraint firstItem="RfA-uh-j9q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Xos-T7-F7S"/>
+                <constraint firstItem="P4t-Zs-quW" firstAttribute="top" secondItem="RfA-uh-j9q" secondAttribute="bottom" constant="20" id="iUX-DK-FQG"/>
+                <constraint firstAttribute="trailing" secondItem="zGv-iu-vgg" secondAttribute="trailing" constant="30" id="oCv-2o-mPl"/>
+                <constraint firstItem="tvb-dB-tgW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="pQV-Jq-Acm"/>
+                <constraint firstItem="P4t-Zs-quW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="pTO-I1-50E"/>
+                <constraint firstItem="RfA-uh-j9q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="q9i-vl-Ugc"/>
+                <constraint firstItem="zGv-iu-vgg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="t6n-x0-wU2"/>
+                <constraint firstItem="71o-e3-tIm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="uOS-GO-E8L"/>
+                <constraint firstItem="zGv-iu-vgg" firstAttribute="top" secondItem="WG4-EB-d9C" secondAttribute="bottom" constant="10" id="yPy-8K-83b"/>
+            </constraints>
+            <point key="canvasLocation" x="-343" y="68"/>
+        </view>
+    </objects>
+</document>
