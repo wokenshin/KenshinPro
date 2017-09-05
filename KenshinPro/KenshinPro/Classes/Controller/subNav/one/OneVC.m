@@ -42,7 +42,7 @@
     [super viewDidLoad];
     [self loadData];
     [self initOneVCUI];
-    
+    //fucked a dog 2017-09-05
 }
 
 
