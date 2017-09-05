@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountDownVC">
+            <connections>
+                <outlet property="btnCountDown" destination="gIV-AS-hh0" id="Dyq-pa-rQf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBG-gt-O7a">
+                    <rect key="frame" x="20" y="74" width="335" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="0YT-wY-pb8"/>
+                    </constraints>
+                    <string key="text">红色按钮的原理：点击按钮后开始进行倒计时。倒计时过程工按钮将不可用。App进入后台后倒计时依然"继续" 其实没有继续。只是App进入后台时 程序记录了当前的时间A。等App进去前台后程序会去比较进入前台时的时间A和此时的时间B的时间差。如果这个时间差&gt;进入后台时剩余的时间，那么按钮的时间直接至为0，否则将减用进入后台时的时间C减去这个时间差 继续倒计时.倒计时按钮闪烁，将按钮type设置成custom就可以不闪烁了</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIV-AS-hh0">
+                    <rect key="frame" x="30" y="304" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="PCD-gE-53g"/>
+                    </constraints>
+                    <state key="normal" title="点击后开始倒计时">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickButtonCountDown:" destination="-1" eventType="touchUpInside" id="Cpb-ih-KLZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lBG-gt-O7a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4Y7-QN-979"/>
+                <constraint firstItem="gIV-AS-hh0" firstAttribute="top" secondItem="lBG-gt-O7a" secondAttribute="bottom" constant="30" id="Bdo-8i-idk"/>
+                <constraint firstItem="gIV-AS-hh0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="E7d-yp-Z73"/>
+                <constraint firstItem="lBG-gt-O7a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="Jm3-2l-uUv"/>
+                <constraint firstAttribute="trailing" secondItem="lBG-gt-O7a" secondAttribute="trailing" constant="20" id="fj2-gZ-RFo"/>
+                <constraint firstAttribute="trailing" secondItem="gIV-AS-hh0" secondAttribute="trailing" constant="30" id="ydt-PV-cLM"/>
+            </constraints>
+            <point key="canvasLocation" x="-695" y="-15"/>
+        </view>
+    </objects>
+</document>
