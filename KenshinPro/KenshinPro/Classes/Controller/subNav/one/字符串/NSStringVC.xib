@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,22 +21,105 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjQ-O5-aqN">
                     <rect key="frame" x="30" y="74" width="315" height="36"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.6588235294" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="miK-6K-KXP"/>
                     </constraints>
-                    <state key="normal" title="字符串转byte"/>
+                    <state key="normal" title="字符串转byte">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
                         <action selector="clickButtonStrToByte:" destination="-1" eventType="touchUpInside" id="lY6-hQ-b0l"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xoe-SZ-m9L">
+                    <rect key="frame" x="30" y="120" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.6588235294" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="gmB-W2-Yxg"/>
+                    </constraints>
+                    <state key="normal" title="增(插入字符)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="insertStr:" destination="-1" eventType="touchUpInside" id="P6h-mf-xfT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r5-MB-kUI">
+                    <rect key="frame" x="30" y="166" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.6588235294" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="tEg-eK-blf"/>
+                    </constraints>
+                    <state key="normal" title="删除指定字符">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteStr:" destination="-1" eventType="touchUpInside" id="9Kk-xe-znM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5r-57-yVD">
+                    <rect key="frame" x="30" y="212" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.6588235294" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="i3o-s6-v0b"/>
+                    </constraints>
+                    <state key="normal" title="修改指定字符">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeStr:" destination="-1" eventType="touchUpInside" id="GR5-Md-epl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-Fj-M3q">
+                    <rect key="frame" x="30" y="258" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.6588235294" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="b4E-eH-33I"/>
+                    </constraints>
+                    <state key="normal" title="查找(匹配)字符">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectStr:" destination="-1" eventType="touchUpInside" id="oiO-VZ-aG0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V25-fH-pIM">
+                    <rect key="frame" x="30" y="304" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.6588235294" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="wjw-10-Qws"/>
+                    </constraints>
+                    <state key="normal" title="判断字符串是否为纯数字">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnIsPureNum:" destination="-1" eventType="touchUpInside" id="xg6-w8-cHT"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.30196078430000001" green="0.71372549019999998" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xoe-SZ-m9L" secondAttribute="trailing" constant="30" id="26d-5I-5ov"/>
+                <constraint firstAttribute="trailing" secondItem="oB7-Fj-M3q" secondAttribute="trailing" constant="30" id="4YB-MJ-5N6"/>
+                <constraint firstItem="J5r-57-yVD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="5iZ-wd-YX4"/>
+                <constraint firstAttribute="trailing" secondItem="J5r-57-yVD" secondAttribute="trailing" constant="30" id="CxN-Aq-Rnv"/>
+                <constraint firstItem="V25-fH-pIM" firstAttribute="top" secondItem="oB7-Fj-M3q" secondAttribute="bottom" constant="10" id="Hzh-jI-88o"/>
+                <constraint firstItem="oB7-Fj-M3q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="N5z-Ta-jLb"/>
                 <constraint firstItem="XjQ-O5-aqN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="Nwb-dp-7T5"/>
+                <constraint firstItem="7r5-MB-kUI" firstAttribute="top" secondItem="Xoe-SZ-m9L" secondAttribute="bottom" constant="10" id="T5R-Wz-5FK"/>
+                <constraint firstItem="Xoe-SZ-m9L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="TaL-R9-7bq"/>
                 <constraint firstAttribute="trailing" secondItem="XjQ-O5-aqN" secondAttribute="trailing" constant="30" id="X0D-A3-OcN"/>
+                <constraint firstItem="oB7-Fj-M3q" firstAttribute="top" secondItem="J5r-57-yVD" secondAttribute="bottom" constant="10" id="c2K-B6-ss5"/>
+                <constraint firstItem="J5r-57-yVD" firstAttribute="top" secondItem="7r5-MB-kUI" secondAttribute="bottom" constant="10" id="d7q-me-ffP"/>
+                <constraint firstAttribute="trailing" secondItem="V25-fH-pIM" secondAttribute="trailing" constant="30" id="e7K-B4-3Ql"/>
+                <constraint firstItem="7r5-MB-kUI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="edB-s2-I4H"/>
                 <constraint firstItem="XjQ-O5-aqN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="pL2-8q-T1i"/>
+                <constraint firstItem="Xoe-SZ-m9L" firstAttribute="top" secondItem="XjQ-O5-aqN" secondAttribute="bottom" constant="10" id="vGu-cS-Vyt"/>
+                <constraint firstAttribute="trailing" secondItem="7r5-MB-kUI" secondAttribute="trailing" constant="30" id="wZm-dM-wbl"/>
+                <constraint firstItem="V25-fH-pIM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="wjF-ac-dCp"/>
             </constraints>
+            <point key="canvasLocation" x="-259" y="50"/>
         </view>
     </objects>
 </document>

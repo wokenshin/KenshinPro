@@ -18,34 +18,7 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yl-mS-1Wc">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRK-jy-gl7" userLabel="contentSizeView">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="604"/>
-                            <color key="backgroundColor" red="0.10862116515636444" green="0.62522661685943604" blue="0.59193968772888184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="604" id="GPz-Hy-1xb"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="dRK-jy-gl7" firstAttribute="centerX" secondItem="0yl-mS-1Wc" secondAttribute="centerX" id="MoO-5K-iU3"/>
-                        <constraint firstAttribute="trailing" secondItem="dRK-jy-gl7" secondAttribute="trailing" id="cxZ-4y-IYv"/>
-                        <constraint firstItem="dRK-jy-gl7" firstAttribute="top" secondItem="0yl-mS-1Wc" secondAttribute="top" id="foW-9o-dMK"/>
-                        <constraint firstItem="dRK-jy-gl7" firstAttribute="leading" secondItem="0yl-mS-1Wc" secondAttribute="leading" id="iOq-UW-wmh"/>
-                        <constraint firstAttribute="bottom" secondItem="dRK-jy-gl7" secondAttribute="bottom" id="raa-ZC-1fe"/>
-                    </constraints>
-                </scrollView>
-            </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="0yl-mS-1Wc" secondAttribute="bottom" id="LYz-5d-ILC"/>
-                <constraint firstItem="0yl-mS-1Wc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NUS-fg-JGd"/>
-                <constraint firstAttribute="trailing" secondItem="0yl-mS-1Wc" secondAttribute="trailing" id="Qi8-f6-mBB"/>
-                <constraint firstItem="0yl-mS-1Wc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nhU-YR-bXN"/>
-            </constraints>
+            <color key="backgroundColor" red="0.55294117649999996" green="0.80000000000000004" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
         </view>
     </objects>
 </document>
