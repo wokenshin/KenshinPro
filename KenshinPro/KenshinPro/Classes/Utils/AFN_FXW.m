@@ -100,6 +100,10 @@
  */
 + (NSString *)supportChineseWithJson:(id)responseObject
 {
+    if (responseObject == nil || [responseObject isEqual:[NSNull null]]) {
+        return @"响应数据为空";
+    }
+    
     NSDictionary *dictData = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
     
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictData

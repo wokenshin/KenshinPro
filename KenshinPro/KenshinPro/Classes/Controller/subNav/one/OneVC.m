@@ -30,6 +30,9 @@
 #import "AddBorderVC.h"
 #import "PushModelStyleVC.h"
 #import "NotifiVC.h"
+#import "YinDaoVC.h"
+#import "FXW_GuidePage.h"
+
 
 @interface OneVC ()
 
@@ -75,6 +78,8 @@
     [self addDataWithTitle:@"UIView 指定方向添加边框" andDetail:@"2017-08-10"];
     [self addDataWithTitle:@"push时modal跳转动画" andDetail:@"从下往上推上"];
     [self addDataWithTitle:@"通知" andDetail:@""];
+    [self addDataWithTitle:@"引导页1" andDetail:@"比较low的方式 用控制器"];
+    [self addDataWithTitle:@"引导页2" andDetail:@"比较好的方式 直接用view 放在window上"];
     
 }
 
@@ -89,6 +94,36 @@
 - (void)clickCellWithTitle:(NSString *)title
 {
     
+    if ([title isEqualToString:@"引导页1"])
+    {
+        YinDaoVC *vc = [[YinDaoVC alloc] init];
+        BOOL isOK = [vc initGuidePageWithImgNames:@[@"yinDaoYe1", @"yinDaoYe2", @"yinDaoYe3"]
+               pageControlColorNormal:nil
+             pageControlColorSelected:nil
+                       finishBtnTitle:@"立即体验"];
+        
+        if(isOK)
+        {
+            //要用模态的方式切换控制器 目的是隐藏导航栏 其实push过去再隐藏也可以的
+            [self.navigationController presentViewController:vc animated:NO completion:nil];
+        }
+        else
+        {
+            [self toast:@"加载启动页失败 请查看控制台"];
+        }
+        return;
+    }
+     if ([title isEqualToString:@"引导页2"])
+     {
+         BOOL isOK = [FXW_GuidePage fxw_showGuidePageWithImgNames:@[@"yinDaoYe1", @"yinDaoYe2", @"yinDaoYe3"]
+                           pageControlColorNormal:nil
+                         pageControlColorSelected:nil
+                                   finishBtnTitle:nil];
+         if (!isOK) {
+             [self toast:@"加载引导页失败"];
+         }
+         return;
+     }
     if ([title isEqualToString:@"通知"])
     {
         NotifiVC *vc = [[NotifiVC alloc] init];
@@ -96,7 +131,6 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
-
     if ([title isEqualToString:@"push时modal跳转动画"])
     {
         PushModelStyleVC *vc = [[PushModelStyleVC alloc] init];

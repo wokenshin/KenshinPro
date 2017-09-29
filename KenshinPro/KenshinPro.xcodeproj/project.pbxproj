@@ -332,8 +332,13 @@
 		B9B0D7921E820C29001C04FB /* FXW_TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D7901E820C29001C04FB /* FXW_TextView.m */; };
 		B9B0D7951E827B57001C04FB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D7941E827B57001C04FB /* BaseModel.m */; };
 		B9B0D7991E827BB9001C04FB /* TableViewCellsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B0D7981E827BB9001C04FB /* TableViewCellsVC.m */; };
+		B9B3D4641F7A279E00A30555 /* SmartDeviceContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B3D4621F7A279E00A30555 /* SmartDeviceContentVC.m */; };
+		B9B3D4651F7A279E00A30555 /* SmartDeviceContentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B3D4631F7A279E00A30555 /* SmartDeviceContentVC.xib */; };
+		B9B3D4681F7A290F00A30555 /* SmartWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B3D4671F7A290F00A30555 /* SmartWebVC.m */; };
 		B9B7C51F1F16FE810063BDAF /* NSDataUtilsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B7C51D1F16FE810063BDAF /* NSDataUtilsVC.m */; };
 		B9B7C5201F16FE810063BDAF /* NSDataUtilsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B7C51E1F16FE810063BDAF /* NSDataUtilsVC.xib */; };
+		B9B904A21F7E1D030072ABEA /* YinDaoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B904A11F7E1D030072ABEA /* YinDaoVC.m */; };
+		B9B904A51F7E31000072ABEA /* FXW_GuidePage.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B904A41F7E31000072ABEA /* FXW_GuidePage.m */; };
 		B9B9CE871E9CB859008CC558 /* ADVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B9CE861E9CB859008CC558 /* ADVC.m */; };
 		B9B9CE981E9CB8EC008CC558 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B9CE8B1E9CB8EC008CC558 /* TAAbstractDotView.m */; };
 		B9B9CE991E9CB8EC008CC558 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B9CE8D1E9CB8EC008CC558 /* TAAnimatedDotView.m */; };
@@ -436,6 +441,8 @@
 		B9EFE9601EDE4A63002C2758 /* JWTClaimsSetVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE94D1EDE4A62002C2758 /* JWTClaimsSetVerifier.m */; };
 		B9EFE9611EDE4A63002C2758 /* JWT.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE94F1EDE4A62002C2758 /* JWT.m */; };
 		B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9531EDE4A62002C2758 /* JWTTools.m */; };
+		B9EFFE6F1F74BAB600E5A871 /* MyXibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFFE6D1F74BAB600E5A871 /* MyXibVC.m */; };
+		B9EFFE701F74BAB600E5A871 /* MyXibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EFFE6E1F74BAB600E5A871 /* MyXibVC.xib */; };
 		B9FA829F1F1C809A00D8CD4C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B9FA829E1F1C809A00D8CD4C /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -1050,9 +1057,18 @@
 		B9B0D7941E827B57001C04FB /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		B9B0D7971E827BB9001C04FB /* TableViewCellsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellsVC.h; sourceTree = "<group>"; };
 		B9B0D7981E827BB9001C04FB /* TableViewCellsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellsVC.m; sourceTree = "<group>"; };
+		B9B3D4611F7A279E00A30555 /* SmartDeviceContentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartDeviceContentVC.h; sourceTree = "<group>"; };
+		B9B3D4621F7A279E00A30555 /* SmartDeviceContentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartDeviceContentVC.m; sourceTree = "<group>"; };
+		B9B3D4631F7A279E00A30555 /* SmartDeviceContentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SmartDeviceContentVC.xib; sourceTree = "<group>"; };
+		B9B3D4661F7A290F00A30555 /* SmartWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartWebVC.h; sourceTree = "<group>"; };
+		B9B3D4671F7A290F00A30555 /* SmartWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartWebVC.m; sourceTree = "<group>"; };
 		B9B7C51C1F16FE810063BDAF /* NSDataUtilsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataUtilsVC.h; sourceTree = "<group>"; };
 		B9B7C51D1F16FE810063BDAF /* NSDataUtilsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataUtilsVC.m; sourceTree = "<group>"; };
 		B9B7C51E1F16FE810063BDAF /* NSDataUtilsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSDataUtilsVC.xib; sourceTree = "<group>"; };
+		B9B904A01F7E1D030072ABEA /* YinDaoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YinDaoVC.h; sourceTree = "<group>"; };
+		B9B904A11F7E1D030072ABEA /* YinDaoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YinDaoVC.m; sourceTree = "<group>"; };
+		B9B904A31F7E31000072ABEA /* FXW_GuidePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_GuidePage.h; sourceTree = "<group>"; };
+		B9B904A41F7E31000072ABEA /* FXW_GuidePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXW_GuidePage.m; sourceTree = "<group>"; };
 		B9B9CE851E9CB859008CC558 /* ADVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADVC.h; sourceTree = "<group>"; };
 		B9B9CE861E9CB859008CC558 /* ADVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADVC.m; sourceTree = "<group>"; };
 		B9B9CE8A1E9CB8EC008CC558 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
@@ -1246,6 +1262,9 @@
 		B9EFE9511EDE4A62002C2758 /* JWTDeprecations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTDeprecations.h; sourceTree = "<group>"; };
 		B9EFE9521EDE4A62002C2758 /* JWTTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTTools.h; sourceTree = "<group>"; };
 		B9EFE9531EDE4A62002C2758 /* JWTTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTTools.m; sourceTree = "<group>"; };
+		B9EFFE6C1F74BAB600E5A871 /* MyXibVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyXibVC.h; sourceTree = "<group>"; };
+		B9EFFE6D1F74BAB600E5A871 /* MyXibVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyXibVC.m; sourceTree = "<group>"; };
+		B9EFFE6E1F74BAB600E5A871 /* MyXibVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyXibVC.xib; sourceTree = "<group>"; };
 		B9FA829E1F1C809A00D8CD4C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1869,6 +1888,8 @@
 				B9D856811E84A4960053697F /* FXWUI.h */,
 				B92641E71E83997300EEED61 /* FXW_Button.h */,
 				B92641E81E83997300EEED61 /* FXW_Button.m */,
+				B9B904A31F7E31000072ABEA /* FXW_GuidePage.h */,
+				B9B904A41F7E31000072ABEA /* FXW_GuidePage.m */,
 				B91748D81ECC49A4006C70F5 /* FXW_CountDownButton.h */,
 				B91748D91ECC49A4006C70F5 /* FXW_CountDownButton.m */,
 				B92641E91E83997300EEED61 /* FXW_Control.h */,
@@ -1986,6 +2007,8 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				B9B9049F1F7E1CF20072ABEA /* 引导页 */,
+				B9EFFE601F74B37E00E5A871 /* xib */,
 				B94A8C4E1F3D46AD002A6D51 /* 通知 */,
 				B94C54321F3C3634003AC71B /* Push的VC-model的效果 */,
 				B94C542C1F3C34CB003AC71B /* 数组 */,
@@ -2040,6 +2063,7 @@
 		B92CCAED1E7A151F00035A79 /* two */ = {
 			isa = PBXGroup;
 			children = (
+				B9B3D45F1F7A277500A30555 /* 公司蓝牙工具App部分 */,
 				B9A6010D1F2F0DA60032E765 /* 自主公寓 */,
 				B9EE6AD71EEA4A13000A06DA /* qy */,
 				B95ED6651E9474E200AD490B /* 锁匠App */,
@@ -3249,6 +3273,26 @@
 			path = "顶部菜单";
 			sourceTree = "<group>";
 		};
+		B9B3D45F1F7A277500A30555 /* 公司蓝牙工具App部分 */ = {
+			isa = PBXGroup;
+			children = (
+				B9B3D4601F7A277500A30555 /* 网页下载升级数据 */,
+				B9B3D4611F7A279E00A30555 /* SmartDeviceContentVC.h */,
+				B9B3D4621F7A279E00A30555 /* SmartDeviceContentVC.m */,
+				B9B3D4631F7A279E00A30555 /* SmartDeviceContentVC.xib */,
+			);
+			path = "公司蓝牙工具App部分";
+			sourceTree = "<group>";
+		};
+		B9B3D4601F7A277500A30555 /* 网页下载升级数据 */ = {
+			isa = PBXGroup;
+			children = (
+				B9B3D4661F7A290F00A30555 /* SmartWebVC.h */,
+				B9B3D4671F7A290F00A30555 /* SmartWebVC.m */,
+			);
+			path = "网页下载升级数据";
+			sourceTree = "<group>";
+		};
 		B9B7C51B1F16FDEE0063BDAF /* NSData常用工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3257,6 +3301,15 @@
 				B9B7C51E1F16FE810063BDAF /* NSDataUtilsVC.xib */,
 			);
 			path = "NSData常用工具";
+			sourceTree = "<group>";
+		};
+		B9B9049F1F7E1CF20072ABEA /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				B9B904A01F7E1D030072ABEA /* YinDaoVC.h */,
+				B9B904A11F7E1D030072ABEA /* YinDaoVC.m */,
+			);
+			path = "引导页";
 			sourceTree = "<group>";
 		};
 		B9B9CE841E9CB83C008CC558 /* 广告滚动视图 */ = {
@@ -3726,6 +3779,24 @@
 			path = Supplement;
 			sourceTree = "<group>";
 		};
+		B9EFFE601F74B37E00E5A871 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				B9EFFE611F74B37E00E5A871 /* 等比例UI */,
+				B9EFFE6C1F74BAB600E5A871 /* MyXibVC.h */,
+				B9EFFE6D1F74BAB600E5A871 /* MyXibVC.m */,
+				B9EFFE6E1F74BAB600E5A871 /* MyXibVC.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		B9EFFE611F74B37E00E5A871 /* 等比例UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "等比例UI";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3853,6 +3924,7 @@
 				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
 				B9E53C081F302ED600971C6B /* area.json in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
+				B9B3D4651F7A279E00A30555 /* SmartDeviceContentVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
@@ -3888,6 +3960,7 @@
 				B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */,
 				B9254BCA1EAEF20E00F82344 /* PlistVC.xib in Resources */,
 				B9BADB5B1EA5E5D6000B3C1C /* VCN5.xib in Resources */,
+				B9EFFE701F74BAB600E5A871 /* MyXibVC.xib in Resources */,
 				B964771C1EB04A5300A9A498 /* alert_error_icon@2x.png in Resources */,
 				B98DF7281EA8524B00296C2A /* call2.html in Resources */,
 				B95ED6EA1E94EEF200AD490B /* DeviceMenuView.xib in Resources */,
@@ -4024,6 +4097,7 @@
 				B93002371E8A3695000C0563 /* AFN_MC.m in Sources */,
 				B9EFE9551EDE4A62002C2758 /* JWTAlgorithmFactory.m in Sources */,
 				B93084301F3D5E0D0035DA42 /* ListCodesVC.m in Sources */,
+				B9B904A51F7E31000072ABEA /* FXW_GuidePage.m in Sources */,
 				B92641EF1E8399C900EEED61 /* PopSelect.m in Sources */,
 				B95AC88B1EADC94800806D1A /* BaseRichTextView.m in Sources */,
 				B9EFE9611EDE4A63002C2758 /* JWT.m in Sources */,
@@ -4083,6 +4157,7 @@
 				B915C2431E7F9DE10088A31F /* MDSwitch.m in Sources */,
 				B98730AF1F32CEFF000027D8 /* FXW_TextPikerOne.m in Sources */,
 				B9A4D14F1F130C350005B207 /* MCServiceVC.m in Sources */,
+				B9B3D4641F7A279E00A30555 /* SmartDeviceContentVC.m in Sources */,
 				B92CCB0E1E7A1AEB00035A79 /* README.md in Sources */,
 				B9B9CE981E9CB8EC008CC558 /* TAAbstractDotView.m in Sources */,
 				B9BD97451E810509009BB0D4 /* FXWUD.m in Sources */,
@@ -4112,6 +4187,7 @@
 				B9436F611EEE6F8B00660C70 /* GCDAsyncSocket.m in Sources */,
 				B9D626F11E7CC4D600593EC1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */,
+				B9B904A21F7E1D030072ABEA /* YinDaoVC.m in Sources */,
 				B906FC4E1E8B3BC000645C96 /* NSObject+MJClass.m in Sources */,
 				B915C22E1E7F9DE10088A31F /* MDCalendarDateHeader.m in Sources */,
 				B95ED6E41E94EDE700AD490B /* DDZM_BottomMenuVC.m in Sources */,
@@ -4240,12 +4316,14 @@
 				B915C23D1E7F9DE10088A31F /* MDSliderIcon.m in Sources */,
 				B915C2491E7F9DE10088A31F /* MDToast.m in Sources */,
 				B9D8569B1E84EF340053697F /* ViewControllerThree.m in Sources */,
+				B9EFFE6F1F74BAB600E5A871 /* MyXibVC.m in Sources */,
 				B9D8568E1E84B91C0053697F /* LSActionSheet.m in Sources */,
 				B9D626F21E7CC4D600593EC1 /* View+MASAdditions.m in Sources */,
 				B94CD49C1E9C65A5003A889E /* VCView.m in Sources */,
 				B96477131EB02DEB00A9A498 /* STUI.m in Sources */,
 				B9E53C0B1F302EFB00971C6B /* addressModel.m in Sources */,
 				B9EFE95D1EDE4A63002C2758 /* JWTClaim.m in Sources */,
+				B9B3D4681F7A290F00A30555 /* SmartWebVC.m in Sources */,
 				B950FC8D1E835C6C003D7376 /* AllUISizeVC.m in Sources */,
 				B92642061E83D3AF00EEED61 /* AFSecurityPolicy.m in Sources */,
 				B9EFE95E1EDE4A63002C2758 /* JWTClaimsSet.m in Sources */,
@@ -4379,7 +4457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -4420,7 +4498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -4437,7 +4515,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.pro.KenshinPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4457,7 +4535,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.pro.KenshinPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";

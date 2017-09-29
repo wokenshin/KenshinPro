@@ -69,7 +69,7 @@
     [self.view addSubview:_btnMenuAddApt];
     [self.view addSubview:_btnMenuAddRoom];
     
-#pragma mark +号按钮 菜单时间
+#pragma mark +号按钮 菜单事件
     [_btnMenuAddApt click:^(FXW_AptBtn *cuObj) {
         AddressPickerVC *vc = [[AddressPickerVC alloc] init];
         [ws.navigationController pushViewController:vc animated:YES];
