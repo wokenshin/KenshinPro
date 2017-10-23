@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FXW_DebugView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3N-nf-46W">
+                    <rect key="frame" x="0.0" y="40" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.14117647059999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="gf9-Df-nl8"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="我是用来显示调试信息的" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vy4-Xn-S4o">
+                    <rect key="frame" x="0.0" y="40.5" width="375" height="179.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReO-VN-V1r">
+                    <rect key="frame" x="0.0" y="0.0" width="41" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="清空"/>
+                    <connections>
+                        <action selector="clickLeftBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="6vt-TP-Q0h"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hia-wh-QiK">
+                    <rect key="frame" x="324" y="0.0" width="51" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="关闭">
+                        <color key="titleColor" red="0.98431372549999996" green="0.14117647059999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRightBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="IXH-FK-kga"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-4O-zUW">
+                    <rect key="frame" x="46" y="0.0" width="41" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="缩小">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickChangeZoom:" destination="iN0-l3-epB" eventType="touchUpInside" id="jVA-c8-Dqe"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uf9-MG-7bB">
+                    <rect key="frame" x="95" y="0.0" width="221" height="41"/>
+                    <connections>
+                        <action selector="dragSliderSetAlpah:" destination="iN0-l3-epB" eventType="valueChanged" id="MHq-qH-Lvv"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ReO-VN-V1r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0st-P4-hRN"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="top" secondItem="Uf9-MG-7bB" secondAttribute="bottom" id="4eJ-NN-iQd"/>
+                <constraint firstItem="vy4-Xn-S4o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5Kf-s1-p4x"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Ws-DN-HLh"/>
+                <constraint firstItem="hia-wh-QiK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AaM-2s-xsI"/>
+                <constraint firstItem="vy4-Xn-S4o" firstAttribute="top" secondItem="O3N-nf-46W" secondAttribute="bottom" id="D4M-31-b9K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hia-wh-QiK" secondAttribute="trailing" id="KlV-iu-HUL"/>
+                <constraint firstItem="Uf9-MG-7bB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="M5Z-FD-gkZ"/>
+                <constraint firstItem="Uf9-MG-7bB" firstAttribute="leading" secondItem="Ohf-4O-zUW" secondAttribute="trailing" constant="10" id="MuF-5Z-c1g"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="SUa-C3-GFs"/>
+                <constraint firstItem="ReO-VN-V1r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SUe-te-EiA"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="top" secondItem="hia-wh-QiK" secondAttribute="bottom" id="eAD-tP-w8l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vy4-Xn-S4o" secondAttribute="trailing" id="hVG-db-NQb"/>
+                <constraint firstItem="Ohf-4O-zUW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hh4-Av-x0W"/>
+                <constraint firstItem="hia-wh-QiK" firstAttribute="leading" secondItem="Uf9-MG-7bB" secondAttribute="trailing" constant="10" id="jQo-6w-vDZ"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="top" secondItem="Ohf-4O-zUW" secondAttribute="bottom" id="nCX-OG-OcC"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="top" secondItem="ReO-VN-V1r" secondAttribute="bottom" id="stj-RS-ze2"/>
+                <constraint firstItem="O3N-nf-46W" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="vpS-lW-Kop"/>
+                <constraint firstItem="Ohf-4O-zUW" firstAttribute="leading" secondItem="ReO-VN-V1r" secondAttribute="trailing" constant="5" id="wpO-Uz-m1O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vy4-Xn-S4o" secondAttribute="bottom" id="x2b-1Y-iC1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="txtView" destination="vy4-Xn-S4o" id="8Qz-Cc-PO2"/>
+            </connections>
+            <point key="canvasLocation" x="-829" y="-113"/>
+        </view>
+    </objects>
+</document>

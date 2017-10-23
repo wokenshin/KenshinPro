@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DelayShowImgVC">
+            <connections>
+                <outlet property="imgView" destination="rnR-vZ-0ea" id="zne-dR-lYS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ibT-jV-FWs">
+                    <rect key="frame" x="20" y="30" width="335" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="9vj-ho-GZe"/>
+                    </constraints>
+                    <string key="text">点击空白的地方一下，触发加载图片的方法。然后一直滑动文本。超过4s，任意时间结束后，发现图片才加载出来。这是为什么呢？这其实不是一个bug，这样做的目的是为了让UI在滑动的过程中不至于因为加载大量的图片而变得卡顿。所以这样做是有目的的 也是故意的。点击空白的地方一下，触发加载图片的方法。然后一直滑动文本。超过4s，任意时间结束后，发现图片才加载出来。这是为什么呢？这其实不是一个bug，这样做的目的是为了让UI在滑动的过程中不至于因为加载大量的图片而变得卡顿。所以这样做是有目的的 也是故意的。</string>
+                    <color key="textColor" red="0.98431372549999996" green="0.14117647059999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rnR-vZ-0ea">
+                    <rect key="frame" x="20" y="200" width="335" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="eoF-0z-WWR"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ibT-jV-FWs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="5K6-9K-uhK"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ibT-jV-FWs" secondAttribute="trailing" constant="20" id="6LC-hw-GEc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="rnR-vZ-0ea" secondAttribute="trailing" constant="20" id="7VW-2x-H9S"/>
+                <constraint firstItem="rnR-vZ-0ea" firstAttribute="top" secondItem="ibT-jV-FWs" secondAttribute="bottom" constant="20" id="lwA-SH-rLY"/>
+                <constraint firstItem="rnR-vZ-0ea" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="sRH-7P-YK0"/>
+                <constraint firstItem="ibT-jV-FWs" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="sRq-bA-XR6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

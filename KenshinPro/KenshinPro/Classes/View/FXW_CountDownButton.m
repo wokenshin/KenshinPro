@@ -51,7 +51,8 @@
                                                 selector:@selector(countDown) userInfo:nil repeats:YES];
         
         _startDate = [NSDate date];//记录倒计时时的时间
-//        [[NSRunLoop currentRunLoop]addTimer:_timer forMode:NSRunLoopCommonModes];
+        //使用Runloop的目的是为了避免滑动可滚动UI的时候 runLoopMode发生变化 影响timer运行
+        [[NSRunLoop currentRunLoop]addTimer:_timer forMode:NSRunLoopCommonModes];
         
     }
     

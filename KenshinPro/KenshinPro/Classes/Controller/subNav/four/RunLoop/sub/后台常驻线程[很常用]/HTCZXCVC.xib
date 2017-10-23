@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTCZXCVC">
+            <connections>
+                <outlet property="imgView" destination="TYH-Vc-Q6y" id="tui-KS-7QX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="TYH-Vc-Q6y">
+                    <rect key="frame" x="20" y="40" width="335" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="uAE-SX-dPd"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WP-ip-0pg">
+                    <rect key="frame" x="20" y="276" width="335" height="36"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.14117647059999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="lup-fm-R0O"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="RXy-aZ-F6g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TYH-Vc-Q6y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="0cQ-28-EXj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1WP-ip-0pg" secondAttribute="trailing" constant="20" id="9nl-uN-cmf"/>
+                <constraint firstItem="1WP-ip-0pg" firstAttribute="top" secondItem="TYH-Vc-Q6y" secondAttribute="bottom" constant="36" id="MoS-9P-QTp"/>
+                <constraint firstItem="TYH-Vc-Q6y" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="NnN-Hf-TOJ"/>
+                <constraint firstItem="1WP-ip-0pg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="hLd-DO-iyq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="TYH-Vc-Q6y" secondAttribute="trailing" constant="20" id="v3R-Tt-VK7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="h2" width="352" height="220"/>
+    </resources>
+</document>

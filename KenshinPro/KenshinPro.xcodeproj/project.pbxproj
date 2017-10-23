@@ -215,6 +215,9 @@
 		B95AC8991EADDC2600806D1A /* TextConnectWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B95AC8971EADDC2600806D1A /* TextConnectWebVC.m */; };
 		B95AC89A1EADDC2600806D1A /* TextConnectWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95AC8981EADDC2600806D1A /* TextConnectWebVC.xib */; };
 		B95AC89D1EADDEF100806D1A /* BaseWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B95AC89C1EADDEF100806D1A /* BaseWebVC.m */; };
+		B95B40AE1F8DEC1900A6658C /* GgzsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B40AC1F8DEC1900A6658C /* GgzsVC.m */; };
+		B95B40AF1F8DEC1900A6658C /* GgzsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B95B40AD1F8DEC1900A6658C /* GgzsVC.xib */; };
+		B95B40B31F8DEDDF00A6658C /* FTPopOverMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B40B21F8DECDF00A6658C /* FTPopOverMenu.m */; };
 		B95ED6AD1E9474E200AD490B /* LockMasterAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED6671E9474E200AD490B /* LockMasterAppVC.m */; };
 		B95ED6AE1E9474E200AD490B /* RFSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED66B1E9474E200AD490B /* RFSegmentView.m */; };
 		B95ED6AF1E9474E200AD490B /* YQYPiecewiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B95ED66E1E9474E200AD490B /* YQYPiecewiseView.m */; };
@@ -288,6 +291,8 @@
 		B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B985680F1EE7A11400FF9668 /* DesignModeVC.xib */; };
 		B98568151EE7A16100FF9668 /* BLECoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98568131EE7A16100FF9668 /* BLECoreVC.m */; };
 		B98568161EE7A16100FF9668 /* BLECoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98568141EE7A16100FF9668 /* BLECoreVC.xib */; };
+		B986FE961F974289001C5F0E /* RunLoopFXWVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B986FE941F974289001C5F0E /* RunLoopFXWVC.m */; };
+		B986FE971F974289001C5F0E /* RunLoopFXWVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986FE951F974289001C5F0E /* RunLoopFXWVC.xib */; };
 		B98730AF1F32CEFF000027D8 /* FXW_TextPikerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B98730AE1F32CEFF000027D8 /* FXW_TextPikerOne.m */; };
 		B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DF7021EA83FDF00296C2A /* SetUICornerRadiusVC.m */; };
 		B98DF7051EA83FDF00296C2A /* SetUICornerRadiusVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98DF7031EA83FDF00296C2A /* SetUICornerRadiusVC.xib */; };
@@ -316,6 +321,16 @@
 		B98DF74F1EA85D0800296C2A /* MaoBoLiVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98DF74D1EA85D0700296C2A /* MaoBoLiVC.xib */; };
 		B98F396F1EE4EFB60064468E /* RegexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98F396D1EE4EFB60064468E /* RegexVC.m */; };
 		B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98F396E1EE4EFB60064468E /* RegexVC.xib */; };
+		B99C84281F99918200952F3D /* DebugLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B99C84261F99918200952F3D /* DebugLogVC.m */; };
+		B99C84291F99918200952F3D /* DebugLogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B99C84271F99918200952F3D /* DebugLogVC.xib */; };
+		B99C842C1F99926B00952F3D /* FXW_DebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = B99C842B1F99926B00952F3D /* FXW_DebugView.m */; };
+		B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B99C842D1F9992EF00952F3D /* FXW_DebugView.xib */; };
+		B9A361ED1F9854B2003B04A2 /* RunloopStatusFXWVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A361EB1F9854B2003B04A2 /* RunloopStatusFXWVC.m */; };
+		B9A361EE1F9854B2003B04A2 /* RunloopStatusFXWVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A361EC1F9854B2003B04A2 /* RunloopStatusFXWVC.xib */; };
+		B9A361F31F987F05003B04A2 /* DelayShowImgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A361F11F987F05003B04A2 /* DelayShowImgVC.m */; };
+		B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A361F21F987F05003B04A2 /* DelayShowImgVC.xib */; };
+		B9A361F91F988793003B04A2 /* HTCZXCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A361F71F988793003B04A2 /* HTCZXCVC.m */; };
+		B9A361FA1F988793003B04A2 /* HTCZXCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A361F81F988793003B04A2 /* HTCZXCVC.xib */; };
 		B9A4D14F1F130C350005B207 /* MCServiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A4D14E1F130C350005B207 /* MCServiceVC.m */; };
 		B9A601111F2F0E740032E765 /* ZZGY_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A6010F1F2F0E740032E765 /* ZZGY_VC.m */; };
 		B9A601171F2F0ECE0032E765 /* FXW_AptBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A601151F2F0ECE0032E765 /* FXW_AptBtn.m */; };
@@ -854,6 +869,11 @@
 		B95AC8981EADDC2600806D1A /* TextConnectWebVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextConnectWebVC.xib; sourceTree = "<group>"; };
 		B95AC89B1EADDEF100806D1A /* BaseWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebVC.h; sourceTree = "<group>"; };
 		B95AC89C1EADDEF100806D1A /* BaseWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebVC.m; sourceTree = "<group>"; };
+		B95B40AB1F8DEC1900A6658C /* GgzsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GgzsVC.h; sourceTree = "<group>"; };
+		B95B40AC1F8DEC1900A6658C /* GgzsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GgzsVC.m; sourceTree = "<group>"; };
+		B95B40AD1F8DEC1900A6658C /* GgzsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GgzsVC.xib; sourceTree = "<group>"; };
+		B95B40B11F8DECDF00A6658C /* FTPopOverMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTPopOverMenu.h; sourceTree = "<group>"; };
+		B95B40B21F8DECDF00A6658C /* FTPopOverMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTPopOverMenu.m; sourceTree = "<group>"; };
 		B95ED6661E9474E200AD490B /* LockMasterAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockMasterAppVC.h; sourceTree = "<group>"; };
 		B95ED6671E9474E200AD490B /* LockMasterAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockMasterAppVC.m; sourceTree = "<group>"; };
 		B95ED66A1E9474E200AD490B /* RFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSegmentView.h; sourceTree = "<group>"; };
@@ -985,6 +1005,9 @@
 		B98568121EE7A16100FF9668 /* BLECoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLECoreVC.h; sourceTree = "<group>"; };
 		B98568131EE7A16100FF9668 /* BLECoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLECoreVC.m; sourceTree = "<group>"; };
 		B98568141EE7A16100FF9668 /* BLECoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLECoreVC.xib; sourceTree = "<group>"; };
+		B986FE931F974289001C5F0E /* RunLoopFXWVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopFXWVC.h; sourceTree = "<group>"; };
+		B986FE941F974289001C5F0E /* RunLoopFXWVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopFXWVC.m; sourceTree = "<group>"; };
+		B986FE951F974289001C5F0E /* RunLoopFXWVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunLoopFXWVC.xib; sourceTree = "<group>"; };
 		B98730AD1F32CEFF000027D8 /* FXW_TextPikerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_TextPikerOne.h; sourceTree = "<group>"; };
 		B98730AE1F32CEFF000027D8 /* FXW_TextPikerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_TextPikerOne.m; sourceTree = "<group>"; };
 		B98A01DC1F297473009B5AF8 /* Kenshin.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kenshin.pch; sourceTree = "<group>"; };
@@ -1028,6 +1051,21 @@
 		B98F396C1EE4EFB60064468E /* RegexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexVC.h; sourceTree = "<group>"; };
 		B98F396D1EE4EFB60064468E /* RegexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexVC.m; sourceTree = "<group>"; };
 		B98F396E1EE4EFB60064468E /* RegexVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegexVC.xib; sourceTree = "<group>"; };
+		B99C84251F99918200952F3D /* DebugLogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugLogVC.h; sourceTree = "<group>"; };
+		B99C84261F99918200952F3D /* DebugLogVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugLogVC.m; sourceTree = "<group>"; };
+		B99C84271F99918200952F3D /* DebugLogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DebugLogVC.xib; sourceTree = "<group>"; };
+		B99C842A1F99926B00952F3D /* FXW_DebugView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_DebugView.h; sourceTree = "<group>"; };
+		B99C842B1F99926B00952F3D /* FXW_DebugView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXW_DebugView.m; sourceTree = "<group>"; };
+		B99C842D1F9992EF00952F3D /* FXW_DebugView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FXW_DebugView.xib; sourceTree = "<group>"; };
+		B9A361EA1F9854B2003B04A2 /* RunloopStatusFXWVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopStatusFXWVC.h; sourceTree = "<group>"; };
+		B9A361EB1F9854B2003B04A2 /* RunloopStatusFXWVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopStatusFXWVC.m; sourceTree = "<group>"; };
+		B9A361EC1F9854B2003B04A2 /* RunloopStatusFXWVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunloopStatusFXWVC.xib; sourceTree = "<group>"; };
+		B9A361F01F987F05003B04A2 /* DelayShowImgVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelayShowImgVC.h; sourceTree = "<group>"; };
+		B9A361F11F987F05003B04A2 /* DelayShowImgVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelayShowImgVC.m; sourceTree = "<group>"; };
+		B9A361F21F987F05003B04A2 /* DelayShowImgVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelayShowImgVC.xib; sourceTree = "<group>"; };
+		B9A361F61F988793003B04A2 /* HTCZXCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTCZXCVC.h; sourceTree = "<group>"; };
+		B9A361F71F988793003B04A2 /* HTCZXCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTCZXCVC.m; sourceTree = "<group>"; };
+		B9A361F81F988793003B04A2 /* HTCZXCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTCZXCVC.xib; sourceTree = "<group>"; };
 		B9A4D14D1F130C350005B207 /* MCServiceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCServiceVC.h; sourceTree = "<group>"; };
 		B9A4D14E1F130C350005B207 /* MCServiceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCServiceVC.m; sourceTree = "<group>"; };
 		B9A6010E1F2F0E740032E765 /* ZZGY_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZGY_VC.h; sourceTree = "<group>"; };
@@ -1306,6 +1344,7 @@
 		B906B3CD1EE94B7C0073E175 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				B95B40B01F8DECDF00A6658C /* FTPopOverMenu */,
 				B906B3CE1EE94B7C0073E175 /* MenuTable */,
 			);
 			path = Menu;
@@ -1906,6 +1945,9 @@
 				B92641EE1E8399C900EEED61 /* PopSelect.m */,
 				B906FD561E8B66EF00645C96 /* NoDataView.h */,
 				B906FD571E8B66EF00645C96 /* NoDataView.m */,
+				B99C842A1F99926B00952F3D /* FXW_DebugView.h */,
+				B99C842B1F99926B00952F3D /* FXW_DebugView.m */,
+				B99C842D1F9992EF00952F3D /* FXW_DebugView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1994,6 +2036,8 @@
 		B92CCAEA1E7A151F00035A79 /* four */ = {
 			isa = PBXGroup;
 			children = (
+				B99C84241F99916000952F3D /* 日志视图调试工具 */,
+				B986FE921F974276001C5F0E /* RunLoop */,
 				B930842B1F3D5DFF0035DA42 /* 链式编程 */,
 				B930842C1F3D5DFF0035DA42 /* 响应式编程 */,
 				B985680C1EE7A0FD00FF9668 /* DesignMode */,
@@ -2063,6 +2107,7 @@
 		B92CCAED1E7A151F00035A79 /* two */ = {
 			isa = PBXGroup;
 			children = (
+				B95B40AA1F8DEBFE00A6658C /* 公寓助手 */,
 				B9B3D45F1F7A277500A30555 /* 公司蓝牙工具App部分 */,
 				B9A6010D1F2F0DA60032E765 /* 自主公寓 */,
 				B9EE6AD71EEA4A13000A06DA /* qy */,
@@ -2421,6 +2466,25 @@
 				B95AC8981EADDC2600806D1A /* TextConnectWebVC.xib */,
 			);
 			path = "文本链接网页";
+			sourceTree = "<group>";
+		};
+		B95B40AA1F8DEBFE00A6658C /* 公寓助手 */ = {
+			isa = PBXGroup;
+			children = (
+				B95B40AB1F8DEC1900A6658C /* GgzsVC.h */,
+				B95B40AC1F8DEC1900A6658C /* GgzsVC.m */,
+				B95B40AD1F8DEC1900A6658C /* GgzsVC.xib */,
+			);
+			path = "公寓助手";
+			sourceTree = "<group>";
+		};
+		B95B40B01F8DECDF00A6658C /* FTPopOverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B95B40B11F8DECDF00A6658C /* FTPopOverMenu.h */,
+				B95B40B21F8DECDF00A6658C /* FTPopOverMenu.m */,
+			);
+			path = FTPopOverMenu;
 			sourceTree = "<group>";
 		};
 		B95ED6651E9474E200AD490B /* 锁匠App */ = {
@@ -2967,6 +3031,17 @@
 			path = DesignMode;
 			sourceTree = "<group>";
 		};
+		B986FE921F974276001C5F0E /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				B9A361E81F985493003B04A2 /* sub */,
+				B986FE931F974289001C5F0E /* RunLoopFXWVC.h */,
+				B986FE941F974289001C5F0E /* RunLoopFXWVC.m */,
+				B986FE951F974289001C5F0E /* RunLoopFXWVC.xib */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
 		B98DF7001EA83FB300296C2A /* 在Xib或sb中为UI设置圆角 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3123,6 +3198,56 @@
 				B9C963431E9F0D1F00A9C0CF /* OCAndVC.xib */,
 			);
 			path = "OC调用Swift";
+			sourceTree = "<group>";
+		};
+		B99C84241F99916000952F3D /* 日志视图调试工具 */ = {
+			isa = PBXGroup;
+			children = (
+				B99C84251F99918200952F3D /* DebugLogVC.h */,
+				B99C84261F99918200952F3D /* DebugLogVC.m */,
+				B99C84271F99918200952F3D /* DebugLogVC.xib */,
+			);
+			path = "日志视图调试工具";
+			sourceTree = "<group>";
+		};
+		B9A361E81F985493003B04A2 /* sub */ = {
+			isa = PBXGroup;
+			children = (
+				B9A361E91F985493003B04A2 /* Runloop状态 */,
+				B9A361EF1F987EF0003B04A2 /* 延迟显示UIImageView */,
+				B9A361F51F98877F003B04A2 /* 后台常驻线程[很常用] */,
+			);
+			path = sub;
+			sourceTree = "<group>";
+		};
+		B9A361E91F985493003B04A2 /* Runloop状态 */ = {
+			isa = PBXGroup;
+			children = (
+				B9A361EA1F9854B2003B04A2 /* RunloopStatusFXWVC.h */,
+				B9A361EB1F9854B2003B04A2 /* RunloopStatusFXWVC.m */,
+				B9A361EC1F9854B2003B04A2 /* RunloopStatusFXWVC.xib */,
+			);
+			path = "Runloop状态";
+			sourceTree = "<group>";
+		};
+		B9A361EF1F987EF0003B04A2 /* 延迟显示UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				B9A361F01F987F05003B04A2 /* DelayShowImgVC.h */,
+				B9A361F11F987F05003B04A2 /* DelayShowImgVC.m */,
+				B9A361F21F987F05003B04A2 /* DelayShowImgVC.xib */,
+			);
+			path = "延迟显示UIImageView";
+			sourceTree = "<group>";
+		};
+		B9A361F51F98877F003B04A2 /* 后台常驻线程[很常用] */ = {
+			isa = PBXGroup;
+			children = (
+				B9A361F61F988793003B04A2 /* HTCZXCVC.h */,
+				B9A361F71F988793003B04A2 /* HTCZXCVC.m */,
+				B9A361F81F988793003B04A2 /* HTCZXCVC.xib */,
+			);
+			path = "后台常驻线程[很常用]";
 			sourceTree = "<group>";
 		};
 		B9A4D14C1F130C150005B207 /* 各种图表 */ = {
@@ -3921,10 +4046,12 @@
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
+				B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */,
 				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
 				B9E53C081F302ED600971C6B /* area.json in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
 				B9B3D4651F7A279E00A30555 /* SmartDeviceContentVC.xib in Resources */,
+				B9A361EE1F9854B2003B04A2 /* RunloopStatusFXWVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
@@ -3973,10 +4100,15 @@
 				B9BD97501E81054C009BB0D4 /* MBProgressHUD.bundle in Resources */,
 				B94C542B1F3C30C6003AC71B /* AddBorderVC.xib in Resources */,
 				B95ED6B91E9474E200AD490B /* CellOrderCtrling.xib in Resources */,
+				B95B40AF1F8DEC1900A6658C /* GgzsVC.xib in Resources */,
+				B9A361FA1F988793003B04A2 /* HTCZXCVC.xib in Resources */,
+				B99C84291F99918200952F3D /* DebugLogVC.xib in Resources */,
+				B986FE971F974289001C5F0E /* RunLoopFXWVC.xib in Resources */,
 				B985052B1E96371C007C01CB /* GestureLockVC.xib in Resources */,
 				B96180A91E8F4A6600ABCCF3 /* MBMJVC.xib in Resources */,
 				B910E2621EA8888C00DFCC86 /* ScanVC.xib in Resources */,
 				B910E24B1EA884F700DFCC86 /* NavBarCustomVC.xib in Resources */,
+				B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */,
 				B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */,
 				B98DF7271EA8524B00296C2A /* call.html in Resources */,
 				B9673FA11E78E22A006AB3DA /* Assets.xcassets in Resources */,
@@ -4028,6 +4160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95B40B31F8DEDDF00A6658C /* FTPopOverMenu.m in Sources */,
 				B9CF8C041EC2B16700C64D58 /* ThemeVC.m in Sources */,
 				B90978861E95E7F300F5A0B5 /* LeftMenuView.m in Sources */,
 				B98DF70F1EA8516100296C2A /* JSContentVC.m in Sources */,
@@ -4119,6 +4252,7 @@
 				B9EE6AE21EEA4B06000A06DA /* DeviceManageVC.m in Sources */,
 				B95ED6C41E9474E200AD490B /* CellCtrlDdzm.m in Sources */,
 				B95ED6DA1E94EA4F00AD490B /* CategoryCell.m in Sources */,
+				B986FE961F974289001C5F0E /* RunLoopFXWVC.m in Sources */,
 				B915C23B1E7F9DE10088A31F /* MDRippleLayer.m in Sources */,
 				B98DF7341EA852D100296C2A /* JSCallOCTWOVC.m in Sources */,
 				B915C2341E7F9DE10088A31F /* MDDatePicker.m in Sources */,
@@ -4126,6 +4260,7 @@
 				B9B0D7991E827BB9001C04FB /* TableViewCellsVC.m in Sources */,
 				B906FC511E8B3BC000645C96 /* NSObject+MJProperty.m in Sources */,
 				B9BADB541EA5DEE9000B3C1C /* VCM2.m in Sources */,
+				B9A361ED1F9854B2003B04A2 /* RunloopStatusFXWVC.m in Sources */,
 				B9B9CEC81E9CB986008CC558 /* SDWebImageManager.m in Sources */,
 				B906FD431E8B668F00645C96 /* MJRefreshBackFooter.m in Sources */,
 				B9BADB351EA5B6A1000B3C1C /* MainVC.m in Sources */,
@@ -4188,6 +4323,7 @@
 				B9D626F11E7CC4D600593EC1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */,
 				B9B904A21F7E1D030072ABEA /* YinDaoVC.m in Sources */,
+				B99C84281F99918200952F3D /* DebugLogVC.m in Sources */,
 				B906FC4E1E8B3BC000645C96 /* NSObject+MJClass.m in Sources */,
 				B915C22E1E7F9DE10088A31F /* MDCalendarDateHeader.m in Sources */,
 				B95ED6E41E94EDE700AD490B /* DDZM_BottomMenuVC.m in Sources */,
@@ -4195,6 +4331,7 @@
 				B9B9CEC21E9CB986008CC558 /* NSData+ImageContentType.m in Sources */,
 				B96E60671EA70DBF00BC0543 /* MCClientVC.m in Sources */,
 				B915C24E1E7F9DE10088A31F /* UIColorHelper.m in Sources */,
+				B95B40AE1F8DEC1900A6658C /* GgzsVC.m in Sources */,
 				B9D626EC1E7CC4D600593EC1 /* MASConstraintMaker.m in Sources */,
 				B96C9A9E1EF23BB400D35B9A /* BigSmallVC.m in Sources */,
 				B9B9CEC51E9CB986008CC558 /* SDWebImageDecoder.m in Sources */,
@@ -4213,6 +4350,7 @@
 				B94CD4A21E9C792A003A889E /* PureTableViewVC.m in Sources */,
 				B915C2391E7F9DE10088A31F /* MDProgress.m in Sources */,
 				B9B9CECB1E9CB986008CC558 /* UIImage+GIF.m in Sources */,
+				B9A361F31F987F05003B04A2 /* DelayShowImgVC.m in Sources */,
 				B906FC4B1E8B3BC000645C96 /* MJProperty.m in Sources */,
 				B915C2401E7F9DE10088A31F /* MDSnackbar.m in Sources */,
 				B92641EB1E83997300EEED61 /* FXW_Button.m in Sources */,
@@ -4259,6 +4397,7 @@
 				B9B9CE871E9CB859008CC558 /* ADVC.m in Sources */,
 				B906B3D61EE94B7C0073E175 /* CellFXWTableMenu.m in Sources */,
 				B9E53C191F30567700971C6B /* TextPickerVC.m in Sources */,
+				B9A361F91F988793003B04A2 /* HTCZXCVC.m in Sources */,
 				B94CD4B81E9C7D71003A889E /* CtrlCountDown.m in Sources */,
 				B9BD97511E81054C009BB0D4 /* MBProgressHUD.m in Sources */,
 				B98DF7431EA857DD00296C2A /* AFN_FXW.m in Sources */,
@@ -4337,6 +4476,7 @@
 				B94CD4B51E9C7CF4003A889E /* UITextField+MFClearButton.m in Sources */,
 				B98505411E963CF5007C01CB /* PCCircleView.m in Sources */,
 				B92CCB391E7A773C00035A79 /* CustomContactsVC.m in Sources */,
+				B99C842C1F99926B00952F3D /* FXW_DebugView.m in Sources */,
 				B915C2281E7F9DE10088A31F /* AutoResizeTextView.m in Sources */,
 				B9EFE95C1EDE4A63002C2758 /* JWTAlgorithmRSBase.m in Sources */,
 				B92CCAF61E7A157700035A79 /* TwoVC.m in Sources */,

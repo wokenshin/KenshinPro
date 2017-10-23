@@ -15,6 +15,7 @@
 #import "QYVC.h"
 #import "ZZGY_VC.h"
 #import "SmartDeviceContentVC.h"
+#import "GgzsVC.h"
 
 @interface TwoVC ()
 
@@ -32,6 +33,7 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"GYZS" andDetail:@"2017-10"];
     [self addDataWithTitle:@"SmartDevice" andDetail:@"2017-09"];
     [self addDataWithTitle:@"ZZGY" andDetail:@"2017-07"];
     [self addDataWithTitle:@"QYApp" andDetail:@"智能锁 服务端 2017-06"];
@@ -57,6 +59,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"GYZS"])
+    {
+        GgzsVC *vc = [[GgzsVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"SmartDevice"])
     {
         SmartDeviceContentVC *vc = [[SmartDeviceContentVC alloc] init];
