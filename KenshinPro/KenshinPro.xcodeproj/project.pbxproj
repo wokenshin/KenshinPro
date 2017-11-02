@@ -407,6 +407,8 @@
 		B9C9634A1E9F141A00A9C0CF /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C963491E9F141A00A9C0CF /* Test.swift */; };
 		B9C963921E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C963901E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m */; };
 		B9C963931E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C963911E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib */; };
+		B9C9F1211FAAA5BE00DB4057 /* FXW_SafeAreaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9F11F1FAAA5BE00DB4057 /* FXW_SafeAreaVC.m */; };
+		B9C9F1221FAAA5BE00DB4057 /* FXW_SafeAreaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C9F1201FAAA5BE00DB4057 /* FXW_SafeAreaVC.xib */; };
 		B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CF8BDA1EC2AF5500C64D58 /* FXW_Theme.m */; };
 		B9CF8C041EC2B16700C64D58 /* ThemeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CF8C021EC2B16700C64D58 /* ThemeVC.m */; };
 		B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CF8C031EC2B16700C64D58 /* ThemeVC.xib */; };
@@ -1200,6 +1202,9 @@
 		B9C9638F1E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallThirdSwiftLibVC.h; sourceTree = "<group>"; };
 		B9C963901E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallThirdSwiftLibVC.m; sourceTree = "<group>"; };
 		B9C963911E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallThirdSwiftLibVC.xib; sourceTree = "<group>"; };
+		B9C9F11E1FAAA5BE00DB4057 /* FXW_SafeAreaVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXW_SafeAreaVC.h; sourceTree = "<group>"; };
+		B9C9F11F1FAAA5BE00DB4057 /* FXW_SafeAreaVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXW_SafeAreaVC.m; sourceTree = "<group>"; };
+		B9C9F1201FAAA5BE00DB4057 /* FXW_SafeAreaVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FXW_SafeAreaVC.xib; sourceTree = "<group>"; };
 		B9CF8BD91EC2AF5500C64D58 /* FXW_Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_Theme.h; sourceTree = "<group>"; };
 		B9CF8BDA1EC2AF5500C64D58 /* FXW_Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_Theme.m; sourceTree = "<group>"; };
 		B9CF8C011EC2B16700C64D58 /* ThemeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeVC.h; sourceTree = "<group>"; };
@@ -2084,6 +2089,7 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				B9C9F11D1FAAA59700DB4057 /* safeArea */,
 				B94EDCE61F282EAC004C5D2D /* 宏定义 */,
 				B9B7C51B1F16FDEE0063BDAF /* NSData常用工具 */,
 				B9436F531EEE6E7300660C70 /* Socket */,
@@ -3612,6 +3618,16 @@
 			path = "Lib-Swift";
 			sourceTree = "<group>";
 		};
+		B9C9F11D1FAAA59700DB4057 /* safeArea */ = {
+			isa = PBXGroup;
+			children = (
+				B9C9F11E1FAAA5BE00DB4057 /* FXW_SafeAreaVC.h */,
+				B9C9F11F1FAAA5BE00DB4057 /* FXW_SafeAreaVC.m */,
+				B9C9F1201FAAA5BE00DB4057 /* FXW_SafeAreaVC.xib */,
+			);
+			path = safeArea;
+			sourceTree = "<group>";
+		};
 		B9D626CE1E7CC4D600593EC1 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -4073,6 +4089,7 @@
 				B95AC8941EADD63000806D1A /* TextMixPicVC.xib in Resources */,
 				B9BADB501EA5DED9000B3C1C /* VCM1.xib in Resources */,
 				B9E53C1A1F30567700971C6B /* TextPickerVC.xib in Resources */,
+				B9C9F1221FAAA5BE00DB4057 /* FXW_SafeAreaVC.xib in Resources */,
 				B9BADB551EA5DEE9000B3C1C /* VCM2.xib in Resources */,
 				B95ED6BE1E9474E200AD490B /* CellOrderWaitting.xib in Resources */,
 				B98DF7381EA852F300296C2A /* ocCallJs.html in Resources */,
@@ -4432,6 +4449,7 @@
 				B906FD4B1E8B668F00645C96 /* MJRefreshBackNormalFooter.m in Sources */,
 				B9436F571EEE6E8200660C70 /* SocketVC.m in Sources */,
 				B92641EC1E83997300EEED61 /* FXW_Control.m in Sources */,
+				B9C9F1211FAAA5BE00DB4057 /* FXW_SafeAreaVC.m in Sources */,
 				B94A8C521F3D46BF002A6D51 /* NotifiVC.m in Sources */,
 				B906FD581E8B66EF00645C96 /* NoDataView.m in Sources */,
 				B915C23E1E7F9DE10088A31F /* MDSliderThumbView.m in Sources */,

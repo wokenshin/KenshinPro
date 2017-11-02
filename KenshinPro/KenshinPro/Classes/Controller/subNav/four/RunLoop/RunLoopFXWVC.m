@@ -11,6 +11,15 @@
 #import "DelayShowImgVC.h"
 #import "HTCZXCVC.h"
 
+
+/**
+ 本界面全部内容来自 http://www.jianshu.com/p/d260d18dd551
+ 疑问
+ 1.图片延迟加载的方式还是最好的解决方案吗？，刷新UI是在主线程执行的，但是QQ的聊天列表在加载图片的时候并没有使用 延迟加载的方式，
+   同时 正在在滑动UI时ing，图片也陆续加载出来了，并没有出现卡顿现象。QQ是用的什么方法呢？图片的获取虽然网络请求是异步的，但是UI的部分要回到主线程中操作。
+ 2.线程常驻后台？？？
+ 
+ */
 @interface RunLoopFXWVC ()
 
 @property (nonatomic, strong) NSTimer                   *timer1;
