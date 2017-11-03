@@ -24,15 +24,6 @@
     [super viewDidLoad];
     [self initMainUI];
     
-    CGFloat fxw_h_top     = self.topLayoutGuide.length;
-    CGFloat fxw_h_bottom  = self.bottomLayoutGuide.length;
-    
-    NSString *tips_top    = [NSString stringWithFormat:@"topLayoutGuide : %f", fxw_h_top];
-    NSString *tips_bottom = [NSString stringWithFormat:@"bottomLayoutGuide : %f", fxw_h_bottom];
-    
-    NSLog(@"%@", tips_top);
-    NSLog(@"%@", tips_bottom);
-    
 }
 
 #pragma mark initMainUI

@@ -54,7 +54,7 @@
     [self addDataWithTitle:@"正则表达式" andDetail:@"常用正则表达式，以及自定义正则表达式"];
     [self addDataWithTitle:@"Socket" andDetail:@"AnsycSocket"];
     [self addDataWithTitle:@"NSData常用工具" andDetail:@"主要用于发送蓝牙消息等场景"];
-    [self addDataWithTitle:@"安全区 safe area" andDetail:@"2017-11-02"];
+    [self addDataWithTitle:@"安全区 Safe Area" andDetail:@"2017-11-02"];
     
     
 }
@@ -68,7 +68,7 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    if ([title isEqualToString:@"安全区 safe area"])
+    if ([title isEqualToString:@"安全区 Safe Area"])
     {
         FXW_SafeAreaVC *vc = [[FXW_SafeAreaVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

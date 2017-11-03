@@ -29,37 +29,13 @@
     [self realTimeCheckNetStatus];
     return YES;
     
-    
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    
-}
-
-
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    
-}
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    
-}
+- (void)applicationWillResignActive:(UIApplication *)application{}
+- (void)applicationDidEnterBackground:(UIApplication *)application{}
+- (void)applicationWillEnterForeground:(UIApplication *)application{}
+- (void)applicationDidBecomeActive:(UIApplication *)application{}
+- (void)applicationWillTerminate:(UIApplication *)application{}
 
 #pragma mark - 设置根控制器
 - (void)intoRootVC
@@ -105,28 +81,28 @@
             case AFNetworkReachabilityStatusUnknown://未知
             {
                 ws.netStatus = AFNetworkReachabilityStatusUnknown;
-                [ws toast:@"网络不可用-未知情况"];
+                [ws toastBottom:@"网络不可用-未知情况"];
             }
                 break;
                 
             case AFNetworkReachabilityStatusNotReachable://无连接
             {
                 ws.netStatus = AFNetworkReachabilityStatusNotReachable;
-                [ws toast:@"网络无连接"];
+                [ws toastBottom:@"网络无连接"];
             }
                 break;
                 
             case AFNetworkReachabilityStatusReachableViaWWAN://2G 3G 4G
             {
                 ws.netStatus = AFNetworkReachabilityStatusReachableViaWWAN;
-                [ws toast:@"当前使用流量联网"];
+                [ws toastBottom:@"当前使用流量联网"];
             }
                 break;
                 
             case AFNetworkReachabilityStatusReachableViaWiFi://WIFI
             {
                 ws.netStatus = AFNetworkReachabilityStatusReachableViaWiFi;
-                [ws toast:@"当前使用WiFi联网"];
+                [ws toastBottom:@"当前使用WiFi联网"];
             }
                 break;
                 
@@ -135,17 +111,6 @@
         }
     }];
 
-}
-
-- (void)toast:(NSString *)message
-{
-    MDToast *toast = [[MDToast alloc] initWithText:@"" duration:kMDToastDurationShort];
-    toast.textFont = [UIFont systemFontOfSize:14];
-    [toast setGravity:MDGravityCenterVertical | MDGravityCenterHorizontal];
-    
-    [toast setText:message];
-    [toast show];
-    
 }
 
 - (void)toastBottom:(NSString *)message

@@ -8,6 +8,7 @@
 
 #import "GgzsVC.h"
 #import "FTPopOverMenu.h"
+#import "GYZSCtrlVC.h"
 
 @interface GgzsVC ()
 
@@ -38,7 +39,6 @@
 - (void)clickRightNavBtn:(id)sender
 {
     //gitHub FTPopOverMenu [还可以添加图片]
-    
     [FTPopOverMenu showForSender:sender
                    withMenuArray:@[@"添加设备", @"添加员工", @"呵了个呵", @"阿呆"]
                        doneBlock:^(NSInteger selectedIndex) {
@@ -52,6 +52,14 @@
                        }];
 }
 
+#pragma mark - 公寓助手-控制界面
+- (IBAction)clickBtnPushGYZSCtrlVC:(id)sender
+{
+    GYZSCtrlVC *vc = [[GYZSCtrlVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+}
 
 - (void)dealloc
 {

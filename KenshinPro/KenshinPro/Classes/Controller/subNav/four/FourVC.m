@@ -35,8 +35,9 @@
     [self addDataWithTitle:@"BLE核心"  andDetail:@"由浅入深"];
     [self addDataWithTitle:@"链式编程"  andDetail:@"小demo"];
     [self addDataWithTitle:@"响应式编程" andDetail:@"待更新..."];
-    [self addDataWithTitle:@"RunLoop"  andDetail:@"2017-10-18"];
     [self addDataWithTitle:@"DebugView"  andDetail:@"2017-10-20"];
+    [self addDataWithTitle:@"RunLoop"  andDetail:@"2017-10-18"];
+    
     
 }
 
