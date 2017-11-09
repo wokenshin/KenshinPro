@@ -9,6 +9,7 @@
 #import "DataBaseVC.h"
 #import "NSUserDefaultsVC.h"
 #import "PlistVC.h"
+#import "NSCodingVC.h"
 
 @interface DataBaseVC ()
 
@@ -35,7 +36,9 @@
 {
     [self addDataWithTitle:@"NSUserDefault-沙盒" andDetail:@"项目里使用最频繁的数据存储方式"];
     [self addDataWithTitle:@"plist-属性列表" andDetail:@"个人感觉还是没有沙盒用着方便 移植kenshinApp中的内容"];
-    
+    [self addDataWithTitle:@"NSCoding自动归档解档" andDetail:@"参考 ddzm"];
+    [self addDataWithTitle:@"NSCache-Document等" andDetail:@"暂无"];
+    [self addDataWithTitle:@"sqlite3" andDetail:@"可参考 bwzk"];
     
 }
 
@@ -53,6 +56,13 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
+    if ([title isEqualToString:@"NSCoding自动归档解档"])
+    {
+        NSCodingVC *vc = [[NSCodingVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    [self toastBottom:@"暂无"];
     
 }
 

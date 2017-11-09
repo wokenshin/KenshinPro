@@ -341,6 +341,8 @@
 		B9A601111F2F0E740032E765 /* ZZGY_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A6010F1F2F0E740032E765 /* ZZGY_VC.m */; };
 		B9A601171F2F0ECE0032E765 /* FXW_AptBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A601151F2F0ECE0032E765 /* FXW_AptBtn.m */; };
 		B9A601181F2F0ECE0032E765 /* FXW_AptBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A601161F2F0ECE0032E765 /* FXW_AptBtn.xib */; };
+		B9A6820E1FB2DA0A00B05793 /* RuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A6820C1FB2DA0A00B05793 /* RuntimeVC.m */; };
+		B9A6820F1FB2DA0A00B05793 /* RuntimeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A6820D1FB2DA0A00B05793 /* RuntimeVC.xib */; };
 		B9A743CB1E95EE1400ABFD86 /* XibSelectedBtnImgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A743C61E95EE1400ABFD86 /* XibSelectedBtnImgVC.m */; };
 		B9A743CC1E95EE1400ABFD86 /* XibSelectedBtnImgVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9A743C71E95EE1400ABFD86 /* XibSelectedBtnImgVC.xib */; };
 		B9A743CD1E95EE1400ABFD86 /* SwitchModeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A743CA1E95EE1400ABFD86 /* SwitchModeVC.m */; };
@@ -466,6 +468,14 @@
 		B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE9531EDE4A62002C2758 /* JWTTools.m */; };
 		B9EFFE6F1F74BAB600E5A871 /* MyXibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFFE6D1F74BAB600E5A871 /* MyXibVC.m */; };
 		B9EFFE701F74BAB600E5A871 /* MyXibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EFFE6E1F74BAB600E5A871 /* MyXibVC.xib */; };
+		B9F3F8DC1FB3DC7700D98D37 /* UIImage+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8DB1FB3DC7700D98D37 /* UIImage+Runtime.m */; };
+		B9F3F8DF1FB3E30700D98D37 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8DE1FB3E30700D98D37 /* NSObject+Runtime.m */; };
+		B9F3F8E31FB3F65B00D98D37 /* ModelRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8E21FB3F65B00D98D37 /* ModelRuntime.m */; };
+		B9F3F8E61FB420E700D98D37 /* SubModelRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8E51FB420E700D98D37 /* SubModelRuntime.m */; };
+		B9F3F8E91FB43E3400D98D37 /* CodingRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8E81FB43E3400D98D37 /* CodingRuntime.m */; };
+		B9F3F8ED1FB4511800D98D37 /* NSCodingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8EB1FB4511800D98D37 /* NSCodingVC.m */; };
+		B9F3F8EE1FB4511800D98D37 /* NSCodingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F3F8EC1FB4511800D98D37 /* NSCodingVC.xib */; };
+		B9F3F8F11FB451D800D98D37 /* CusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9F3F8F01FB451D800D98D37 /* CusModel.m */; };
 		B9FA829F1F1C809A00D8CD4C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B9FA829E1F1C809A00D8CD4C /* Podfile */; };
 /* End PBXBuildFile section */
 
@@ -1091,6 +1101,9 @@
 		B9A601141F2F0ECE0032E765 /* FXW_AptBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_AptBtn.h; sourceTree = "<group>"; };
 		B9A601151F2F0ECE0032E765 /* FXW_AptBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_AptBtn.m; sourceTree = "<group>"; };
 		B9A601161F2F0ECE0032E765 /* FXW_AptBtn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FXW_AptBtn.xib; sourceTree = "<group>"; };
+		B9A6820B1FB2DA0A00B05793 /* RuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeVC.h; sourceTree = "<group>"; };
+		B9A6820C1FB2DA0A00B05793 /* RuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVC.m; sourceTree = "<group>"; };
+		B9A6820D1FB2DA0A00B05793 /* RuntimeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuntimeVC.xib; sourceTree = "<group>"; };
 		B9A743C51E95EE1400ABFD86 /* XibSelectedBtnImgVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibSelectedBtnImgVC.h; sourceTree = "<group>"; };
 		B9A743C61E95EE1400ABFD86 /* XibSelectedBtnImgVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibSelectedBtnImgVC.m; sourceTree = "<group>"; };
 		B9A743C71E95EE1400ABFD86 /* XibSelectedBtnImgVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibSelectedBtnImgVC.xib; sourceTree = "<group>"; };
@@ -1324,6 +1337,21 @@
 		B9EFFE6C1F74BAB600E5A871 /* MyXibVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyXibVC.h; sourceTree = "<group>"; };
 		B9EFFE6D1F74BAB600E5A871 /* MyXibVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyXibVC.m; sourceTree = "<group>"; };
 		B9EFFE6E1F74BAB600E5A871 /* MyXibVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyXibVC.xib; sourceTree = "<group>"; };
+		B9F3F8DA1FB3DC7700D98D37 /* UIImage+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Runtime.h"; sourceTree = "<group>"; };
+		B9F3F8DB1FB3DC7700D98D37 /* UIImage+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Runtime.m"; sourceTree = "<group>"; };
+		B9F3F8DD1FB3E30700D98D37 /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		B9F3F8DE1FB3E30700D98D37 /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		B9F3F8E11FB3F65B00D98D37 /* ModelRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelRuntime.h; sourceTree = "<group>"; };
+		B9F3F8E21FB3F65B00D98D37 /* ModelRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelRuntime.m; sourceTree = "<group>"; };
+		B9F3F8E41FB420E700D98D37 /* SubModelRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubModelRuntime.h; sourceTree = "<group>"; };
+		B9F3F8E51FB420E700D98D37 /* SubModelRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubModelRuntime.m; sourceTree = "<group>"; };
+		B9F3F8E71FB43E3400D98D37 /* CodingRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodingRuntime.h; sourceTree = "<group>"; };
+		B9F3F8E81FB43E3400D98D37 /* CodingRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodingRuntime.m; sourceTree = "<group>"; };
+		B9F3F8EA1FB4511800D98D37 /* NSCodingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCodingVC.h; sourceTree = "<group>"; };
+		B9F3F8EB1FB4511800D98D37 /* NSCodingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCodingVC.m; sourceTree = "<group>"; };
+		B9F3F8EC1FB4511800D98D37 /* NSCodingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSCodingVC.xib; sourceTree = "<group>"; };
+		B9F3F8EF1FB451D800D98D37 /* CusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusModel.h; sourceTree = "<group>"; };
+		B9F3F8F01FB451D800D98D37 /* CusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusModel.m; sourceTree = "<group>"; };
 		B9FA829E1F1C809A00D8CD4C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1842,6 +1870,11 @@
 		B9254BBB1EAED71A00F82344 /* 归档 */ = {
 			isa = PBXGroup;
 			children = (
+				B9F3F8EF1FB451D800D98D37 /* CusModel.h */,
+				B9F3F8F01FB451D800D98D37 /* CusModel.m */,
+				B9F3F8EA1FB4511800D98D37 /* NSCodingVC.h */,
+				B9F3F8EB1FB4511800D98D37 /* NSCodingVC.m */,
+				B9F3F8EC1FB4511800D98D37 /* NSCodingVC.xib */,
 			);
 			path = "归档";
 			sourceTree = "<group>";
@@ -2068,6 +2101,7 @@
 		B92CCAEA1E7A151F00035A79 /* four */ = {
 			isa = PBXGroup;
 			children = (
+				B9A6820A1FB2D9F800B05793 /* runtime */,
 				B99C84241F99916000952F3D /* 日志视图调试工具 */,
 				B986FE921F974276001C5F0E /* RunLoop */,
 				B930842B1F3D5DFF0035DA42 /* 链式编程 */,
@@ -3335,6 +3369,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B9A6820A1FB2D9F800B05793 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				B9F3F8E01FB3F64600D98D37 /* Model */,
+				B9F3F8DA1FB3DC7700D98D37 /* UIImage+Runtime.h */,
+				B9F3F8DB1FB3DC7700D98D37 /* UIImage+Runtime.m */,
+				B9F3F8DD1FB3E30700D98D37 /* NSObject+Runtime.h */,
+				B9F3F8DE1FB3E30700D98D37 /* NSObject+Runtime.m */,
+				B9F3F8E71FB43E3400D98D37 /* CodingRuntime.h */,
+				B9F3F8E81FB43E3400D98D37 /* CodingRuntime.m */,
+				B9A6820B1FB2DA0A00B05793 /* RuntimeVC.h */,
+				B9A6820C1FB2DA0A00B05793 /* RuntimeVC.m */,
+				B9A6820D1FB2DA0A00B05793 /* RuntimeVC.xib */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
 		B9A743C41E95EE1400ABFD86 /* 按钮设置选中图片-xib */ = {
 			isa = PBXGroup;
 			children = (
@@ -3988,6 +4039,17 @@
 			path = "等比例UI";
 			sourceTree = "<group>";
 		};
+		B9F3F8E01FB3F64600D98D37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9F3F8E11FB3F65B00D98D37 /* ModelRuntime.h */,
+				B9F3F8E21FB3F65B00D98D37 /* ModelRuntime.m */,
+				B9F3F8E41FB420E700D98D37 /* SubModelRuntime.h */,
+				B9F3F8E51FB420E700D98D37 /* SubModelRuntime.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4055,7 +4117,7 @@
 				TargetAttributes = {
 					B9673F901E78E22A006AB3DA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = LY2VT2N938;
+						DevelopmentTeam = YDSVT3R6A3;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -4124,6 +4186,7 @@
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
 				B906B3DC1EE94B9F0073E175 /* BottomTableMenuVC.xib in Resources */,
 				B9254BC51EAED92E00F82344 /* NSUserDefaultsVC.xib in Resources */,
+				B9F3F8EE1FB4511800D98D37 /* NSCodingVC.xib in Resources */,
 				B95ED6DB1E94EA4F00AD490B /* CategoryCell.xib in Resources */,
 				B95ED6D51E94DC4600AD490B /* FXW_BLECtrlDemoVC.xib in Resources */,
 				B94A8C531F3D46BF002A6D51 /* NotifiVC.xib in Resources */,
@@ -4199,6 +4262,7 @@
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
 				B94CD49E1E9C65B1003A889E /* VCView.xib in Resources */,
 				B94F90A01EB2E3560032FC0E /* NSStringVC.xib in Resources */,
+				B9A6820F1FB2DA0A00B05793 /* RuntimeVC.xib in Resources */,
 				B98DF72E1EA852AC00296C2A /* jsCallOC.html in Resources */,
 				B9A743CC1E95EE1400ABFD86 /* XibSelectedBtnImgVC.xib in Resources */,
 				B94F90AC1EB31B1A0032FC0E /* HideNavDividingLineVC.xib in Resources */,
@@ -4251,6 +4315,7 @@
 				B96180A81E8F4A6600ABCCF3 /* MBMJVC.m in Sources */,
 				B9D626F01E7CC4D600593EC1 /* NSArray+MASAdditions.m in Sources */,
 				B91748D61ECC3FDD006C70F5 /* CountDownVC.m in Sources */,
+				B9A6820E1FB2DA0A00B05793 /* RuntimeVC.m in Sources */,
 				B94C54301F3C34CB003AC71B /* ArrayVC.m in Sources */,
 				B96477101EB02DEB00A9A498 /* STAlertView.m in Sources */,
 				B98505401E963CF5007C01CB /* PCCircle.m in Sources */,
@@ -4309,6 +4374,7 @@
 				B95ED6C61E9474E200AD490B /* ControlMenuVC.m in Sources */,
 				B98DF74E1EA85D0800296C2A /* MaoBoLiVC.m in Sources */,
 				B96528821EA598600044CA5F /* ImageUtil.m in Sources */,
+				B9F3F8F11FB451D800D98D37 /* CusModel.m in Sources */,
 				B93084391F3D5F700035DA42 /* Person.m in Sources */,
 				B9D626EE1E7CC4D600593EC1 /* MASViewAttribute.m in Sources */,
 				B92642041E83D3AF00EEED61 /* AFHTTPSessionManager.m in Sources */,
@@ -4322,6 +4388,7 @@
 				B9EE6AE21EEA4B06000A06DA /* DeviceManageVC.m in Sources */,
 				B95ED6C41E9474E200AD490B /* CellCtrlDdzm.m in Sources */,
 				B95ED6DA1E94EA4F00AD490B /* CategoryCell.m in Sources */,
+				B9F3F8E31FB3F65B00D98D37 /* ModelRuntime.m in Sources */,
 				B986FE961F974289001C5F0E /* RunLoopFXWVC.m in Sources */,
 				B915C23B1E7F9DE10088A31F /* MDRippleLayer.m in Sources */,
 				B98DF7341EA852D100296C2A /* JSCallOCTWOVC.m in Sources */,
@@ -4356,6 +4423,7 @@
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
 				B91748DA1ECC49A4006C70F5 /* FXW_CountDownButton.m in Sources */,
 				B9B9CEC61E9CB986008CC558 /* SDWebImageDownloader.m in Sources */,
+				B9F3F8DC1FB3DC7700D98D37 /* UIImage+Runtime.m in Sources */,
 				B98DF7291EA8524B00296C2A /* JSTWOVC.m in Sources */,
 				B95ED6AD1E9474E200AD490B /* LockMasterAppVC.m in Sources */,
 				B9B9CECA1E9CB986008CC558 /* UIButton+WebCache.m in Sources */,
@@ -4371,6 +4439,7 @@
 				B94D8F321EDF99EB0003D10A /* CRC32VC.m in Sources */,
 				B906B3D51EE94B7C0073E175 /* FXW_TableMenu.m in Sources */,
 				B94B6F451F55173800683389 /* TextDatePickerVC.m in Sources */,
+				B9F3F8E61FB420E700D98D37 /* SubModelRuntime.m in Sources */,
 				B906FD531E8B668F00645C96 /* UIScrollView+MJExtension.m in Sources */,
 				B9254BC41EAED92E00F82344 /* NSUserDefaultsVC.m in Sources */,
 				B906FC621E8B450100645C96 /* MJStatusResult.m in Sources */,
@@ -4426,6 +4495,7 @@
 				B92641EB1E83997300EEED61 /* FXW_Button.m in Sources */,
 				B94C54351F3C3648003AC71B /* PushModelStyleVC.m in Sources */,
 				B94AA0471F556F78009C333E /* FXW_TextDatePicker.m in Sources */,
+				B9F3F8ED1FB4511800D98D37 /* NSCodingVC.m in Sources */,
 				B915C23C1E7F9DE10088A31F /* MDSlider.m in Sources */,
 				B915C2301E7F9DE10088A31F /* MDCalendarYearSelector.m in Sources */,
 				B915C24B1E7F9DE10088A31F /* NSCalendarHelper.m in Sources */,
@@ -4491,6 +4561,7 @@
 				B96477141EB02DEB00A9A498 /* UIView+ST.m in Sources */,
 				B9A601111F2F0E740032E765 /* ZZGY_VC.m in Sources */,
 				B9B9CE9D1E9CB8EC008CC558 /* SDCycleScrollView.m in Sources */,
+				B9F3F8E91FB43E3400D98D37 /* CodingRuntime.m in Sources */,
 				B915C22C1E7F9DE10088A31F /* MDCalendar.m in Sources */,
 				B985052A1E96371C007C01CB /* GestureLockVC.m in Sources */,
 				B9BADB5E1EA5F47B000B3C1C /* AFN_HS.m in Sources */,
@@ -4549,6 +4620,7 @@
 				B94CD4B51E9C7CF4003A889E /* UITextField+MFClearButton.m in Sources */,
 				B98505411E963CF5007C01CB /* PCCircleView.m in Sources */,
 				B92CCB391E7A773C00035A79 /* CustomContactsVC.m in Sources */,
+				B9F3F8DF1FB3E30700D98D37 /* NSObject+Runtime.m in Sources */,
 				B99C842C1F99926B00952F3D /* FXW_DebugView.m in Sources */,
 				B915C2281E7F9DE10088A31F /* AutoResizeTextView.m in Sources */,
 				B9EFE95C1EDE4A63002C2758 /* JWTAlgorithmRSBase.m in Sources */,
@@ -4725,7 +4797,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LY2VT2N938;
+				DEVELOPMENT_TEAM = YDSVT3R6A3;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
@@ -4745,7 +4818,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = LY2VT2N938;
+				DEVELOPMENT_TEAM = YDSVT3R6A3;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;

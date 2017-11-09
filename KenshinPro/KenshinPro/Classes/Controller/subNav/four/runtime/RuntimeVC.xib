@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RuntimeVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hu-y7-Q9z">
+                    <rect key="frame" x="30" y="40" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.06737075617283951" green="0.34041266685185184" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="UWz-Jd-KGq"/>
+                    </constraints>
+                    <state key="normal" title="调用私有方法">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickCallPrivateFunction:" destination="-1" eventType="touchUpInside" id="lEI-8J-YJi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owm-P3-5Yh">
+                    <rect key="frame" x="30" y="86" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.06737075617283951" green="0.34041266685185184" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="ENF-cj-XrD"/>
+                    </constraints>
+                    <state key="normal" title="runtime 交换方法">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickCallExchangeFunction:" destination="-1" eventType="touchUpInside" id="nBe-cW-jmG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEN-2L-gWd">
+                    <rect key="frame" x="30" y="132" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.06737075617283951" green="0.34041266685185184" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="XzL-AD-GvP"/>
+                    </constraints>
+                    <state key="normal" title="runtime 给分类动态添加属性">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickRuntimeDynamicAddPro:" destination="-1" eventType="touchUpInside" id="aVu-e5-WAq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j1-3b-k4H">
+                    <rect key="frame" x="30" y="178" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.06737075617283951" green="0.34041266685185184" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="06o-Ea-J9V"/>
+                    </constraints>
+                    <state key="normal" title="runtime 字典转模型">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDicToModelByRuntime:" destination="-1" eventType="touchUpInside" id="XhY-ht-Fkq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBA-HF-EDx">
+                    <rect key="frame" x="30" y="224" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.067370756170000004" green="0.34041266689999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="GXE-A0-OBa"/>
+                    </constraints>
+                    <state key="normal" title="自动归档和解档">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickGDJDByRuntime:" destination="-1" eventType="touchUpInside" id="P7W-RJ-91I"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7hu-y7-Q9z" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="0x8-WQ-Pbg"/>
+                <constraint firstItem="4j1-3b-k4H" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="3dO-V5-6BN"/>
+                <constraint firstItem="hBA-HF-EDx" firstAttribute="top" secondItem="4j1-3b-k4H" secondAttribute="bottom" constant="10" id="4J6-e6-Mbw"/>
+                <constraint firstItem="kEN-2L-gWd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="ExX-St-4oc"/>
+                <constraint firstItem="hBA-HF-EDx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="Guk-Xc-MYB"/>
+                <constraint firstItem="Owm-P3-5Yh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="Thi-1w-r1E"/>
+                <constraint firstItem="4j1-3b-k4H" firstAttribute="top" secondItem="kEN-2L-gWd" secondAttribute="bottom" constant="10" id="W3M-Sr-7E6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7hu-y7-Q9z" secondAttribute="trailing" constant="30" id="Wi2-5I-GZl"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kEN-2L-gWd" secondAttribute="trailing" constant="30" id="Zce-f8-Veo"/>
+                <constraint firstItem="Owm-P3-5Yh" firstAttribute="top" secondItem="7hu-y7-Q9z" secondAttribute="bottom" constant="10" id="aV8-NH-qn1"/>
+                <constraint firstItem="kEN-2L-gWd" firstAttribute="top" secondItem="Owm-P3-5Yh" secondAttribute="bottom" constant="10" id="fZ7-Uy-wbC"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hBA-HF-EDx" secondAttribute="trailing" constant="30" id="ihi-5I-XXf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Owm-P3-5Yh" secondAttribute="trailing" constant="30" id="jKY-TI-RrZ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4j1-3b-k4H" secondAttribute="trailing" constant="30" id="pNN-MG-gLK"/>
+                <constraint firstItem="7hu-y7-Q9z" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="yax-PX-eo3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-296" y="62"/>
+        </view>
+    </objects>
+</document>

@@ -30,6 +30,11 @@
 
 
 /**
+ 是否禁用pop手势 仅在当前控制器中有效 默认值为NO 即为不禁用
+ */
+@property (nonatomic, assign) BOOL                  fxw_isDisablePopGesture;
+
+/**
  初始化方法 可以让子类继承父类的xibVC
 
  @return VC实例
@@ -46,7 +51,7 @@ typedef void(^VoidBlock) ();
 /**
  关闭软键盘[点击空白处时会触发该方法]
  */
-- (void)closeKeyBoard;
+- (void)fxw_closeKeyBoard;
 
 #pragma mark - 获取指定的控制器 从控制器数组中
 

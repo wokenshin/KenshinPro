@@ -13,6 +13,7 @@
 #import "RespondCodesVC.h"
 #import "RunLoopFXWVC.h"
 #import "DebugLogVC.h"
+#import "RuntimeVC.h"
 
 @interface FourVC ()
 
@@ -35,8 +36,9 @@
     [self addDataWithTitle:@"BLE核心"  andDetail:@"由浅入深"];
     [self addDataWithTitle:@"链式编程"  andDetail:@"小demo"];
     [self addDataWithTitle:@"响应式编程" andDetail:@"待更新..."];
-    [self addDataWithTitle:@"DebugView"  andDetail:@"2017-10-20"];
+    [self addDataWithTitle:@"DebugView" andDetail:@"2017-10-20"];
     [self addDataWithTitle:@"RunLoop"  andDetail:@"2017-10-18"];
+    [self addDataWithTitle:@"runtime"  andDetail:@"2017-11-08"];
     
     
 }
@@ -50,6 +52,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"runtime"])
+    {
+        RuntimeVC *vc = [[RuntimeVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"DebugView"])
     {
         DebugLogVC *vc = [[DebugLogVC alloc] init];

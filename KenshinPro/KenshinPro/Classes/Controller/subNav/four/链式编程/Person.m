@@ -49,4 +49,16 @@
     };
     return block;
 }
+
+#pragma mark - 用于runtime 的 私有方法
+- (void)fxw_eat
+{
+    NSLog(@"kenshin 正在吃午饭");
+}
+
+- (void)fxw_run:(NSString *)str
+{
+    NSLog(@"kenshin 和 %@ 一起跑步", str);
+}
+
 @end

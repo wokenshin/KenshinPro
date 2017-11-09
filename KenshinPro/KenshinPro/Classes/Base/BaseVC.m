@@ -42,6 +42,31 @@ CNContactPickerDelegate,//通讯录>=IOS10
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (_fxw_isDisablePopGesture)//禁用返回手势
+    {
+        if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)])
+        {
+            self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+        }
+    }
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    //可用返回手势[注意这里如果写在 didDis方法内 这里的if是不会触发的]
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)])
+    {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -91,14 +116,14 @@ CNContactPickerDelegate,//通讯录>=IOS10
 {
     //添加手势 点击空白关闭软键盘 -> closeKeyBoard
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self
-                                                                         action:@selector(closeKeyBoard)];
+                                                                         action:@selector(fxw_closeKeyBoard)];
     tap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:tap];
     
 }
 
 //关闭软键盘
-- (void)closeKeyBoard
+- (void)fxw_closeKeyBoard
 {
     [self.view endEditing:YES];
     

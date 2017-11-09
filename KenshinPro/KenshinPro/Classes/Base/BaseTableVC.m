@@ -23,7 +23,7 @@
 - (void)addDataWithTitle:(NSString *)title andDetail:(NSString *)detail
 {
     NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
-    [mDic setObject:title forKey:@"title"];
+    [mDic setObject:title  forKey:@"title"];
     [mDic setObject:detail forKey:@"detail"];
     [self.mArrData addObject:mDic];
     
@@ -46,13 +46,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"kenshin"];
-    NSDictionary *dic = [self.mArrData objectAtIndex:indexPath.row];
+    NSDictionary *dic     = [self.mArrData objectAtIndex:indexPath.row];
     
     
-    cell.textLabel.text  = [dic objectForKey:@"title"];
+    cell.textLabel.text       = [dic objectForKey:@"title"];
     cell.detailTextLabel.text = [dic objectForKey:@"detail"];
     
-    cell.textLabel.textColor = [UIColor redColor];
+    cell.textLabel.textColor       = [UIColor redColor];
     cell.detailTextLabel.textColor = [UIColor blueColor];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//设置箭头
     
@@ -64,7 +64,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *dic = [self.mArrData objectAtIndex:indexPath.row];
-    NSString *title = [dic objectForKey:@"title"];
+    NSString *title   = [dic objectForKey:@"title"];
 //    NSLog(@"click %@", title);
     
     [self clickCellWithTitle:title];

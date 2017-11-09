@@ -56,6 +56,7 @@
 - (IBAction)clickBtnPushGYZSCtrlVC:(id)sender
 {
     GYZSCtrlVC *vc = [[GYZSCtrlVC alloc] init];
+    vc.fxw_isDisablePopGesture = YES;
     [self.navigationController pushViewController:vc animated:YES];
     
     

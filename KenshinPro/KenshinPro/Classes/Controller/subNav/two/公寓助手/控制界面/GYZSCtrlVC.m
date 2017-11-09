@@ -75,8 +75,8 @@ static NSString *CtrlHeader     = @"CtrlHeader";
         layout.minimumInteritemSpacing = 0;//同一行相邻两个cell的最小间距
         layout.minimumLineSpacing      = 0;//最小两行之间的间距
         
-        //fxw_coreCode 头部视图 1/2 这里必须设置好frame
-        layout.headerReferenceSize     = CGSizeMake(self.view.frame.size.width, Height_TopView); //设置collectionView头视图的大小
+        //fxw_coreCode 头部视图 1/2 这里必须设置好frame 还需要实现代理
+        layout.headerReferenceSize     = CGSizeMake(screenWidth, Height_TopView);
         
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)
                                             collectionViewLayout:layout];
@@ -92,6 +92,11 @@ static NSString *CtrlHeader     = @"CtrlHeader";
         //注册xib cell
         UINib *cellNib = [UINib nibWithNibName:@"CellLockCtrl" bundle:nil];
         [_collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CellLockCtrl"];
+        
+//        if (@available(iOS 11.0, *))
+//        {
+//            _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//        }
     }
     return _collectionView;
 }
@@ -127,12 +132,25 @@ static NSString *CtrlHeader     = @"CtrlHeader";
         model6.imgName = @"btn_lock_del";
         model6.title   = @"解绑";
         
+        LockCtrlModel *model7 = [[LockCtrlModel alloc] init];
+        model7.imgName = @"btn_lock_del";
+        model7.title   = @"test";
+        
         [_mArrData addObject:model1];
         [_mArrData addObject:model2];
         [_mArrData addObject:model3];
         [_mArrData addObject:model4];
         [_mArrData addObject:model5];
         [_mArrData addObject:model6];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
+        [_mArrData addObject:model7];
         
     }
     return _mArrData;
@@ -186,30 +204,7 @@ static NSString *CtrlHeader     = @"CtrlHeader";
     LockCtrlModel *model = _mArrData[indexPath.row];
     NSString      *title = model.title;
     
-    if ([title isEqualToString:@"开锁"])
-    {
-        [self toastBottom:title];
-    }
-    else if([title isEqualToString:@"密码管理"])
-    {
-        [self toastBottom:title];
-    }
-    else if([title isEqualToString:@"钥匙管理"])
-    {
-        [self toastBottom:title];
-    }
-    else if([title isEqualToString:@"同步时间"])
-    {
-        [self toastBottom:title];
-    }
-    else if([title isEqualToString:@"换锁"])
-    {
-        [self toastBottom:title];
-    }
-    else if([title isEqualToString:@"解绑"])
-    {
-        [self toastBottom:title];
-    }
+    [self toastBottom:title];
     
 }
 
@@ -223,7 +218,7 @@ static NSString *CtrlHeader     = @"CtrlHeader";
         UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                               withReuseIdentifier:CtrlHeader
                                                                                      forIndexPath:indexPath];
-        
+
         //头视图添加view
         [header addSubview:self.myHeaderView];
         return header;

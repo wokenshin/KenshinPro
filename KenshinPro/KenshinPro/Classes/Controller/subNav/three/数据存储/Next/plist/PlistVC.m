@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
     [self initPlistVCUI];
+    [self toastBottom:@"毛都没有"];
     
 }
 
