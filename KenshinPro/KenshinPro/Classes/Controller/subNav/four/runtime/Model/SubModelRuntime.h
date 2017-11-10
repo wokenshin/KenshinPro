@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+//用于KVC
 @interface SubModelRuntime : NSObject
 
 @property (nonatomic, strong) NSString                  *big;

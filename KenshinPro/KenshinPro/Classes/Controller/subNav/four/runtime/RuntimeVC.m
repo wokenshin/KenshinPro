@@ -15,6 +15,7 @@
 #import "UIImage+Runtime.h"
 #import "NSObject+Runtime.h"
 #import "ModelRuntime.h"
+#import "CodingRuntime.h"
 
 @interface RuntimeVC ()
 
@@ -57,11 +58,16 @@
     
 }
 
-#pragma mark runtime 自动归档和解档
-- (IBAction)clickGDJDByRuntime:(id)sender
+#pragma mark runtime 自动归档
+- (IBAction)clickGDByRuntime:(id)sender
 {
-    [self runtimeGDJD];
-    
+    [self runtimeGD];
+}
+
+#pragma mark runtime 自动解档
+- (IBAction)clickJDByRuntime:(id)sender
+{
+    [self runtimeJD];
 }
 
 #pragma mark - 调用私有函数
@@ -156,10 +162,44 @@
     
 }
 
-#pragma mark 自动归档和解档
-- (void)runtimeGDJD
+#pragma mark 自动归档
+- (void)runtimeGD
 {
+    CodingRuntime *model = [[CodingRuntime alloc] init];
+    model.name   = @"きぼう";
+    model.gender = @"男";
+    model.age    = 18;
     
+    // 2.归档模型对象
+    // 2.1.获得Documents的全路径
+    NSString *doc  = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [doc stringByAppendingPathComponent:@"CodingRuntime.data"];// 2.2.获得文件的全路径
+    BOOL flag      = [NSKeyedArchiver archiveRootObject:model toFile:path];// 2.3.将对象归档
+    if (flag)
+    {
+        [self toastBottom:@"归档成功"];
+    }
+    else
+    {
+        [self toastBottom:@"归档失败"];
+    }
+}
+
+#pragma mark 自动解档
+- (void)runtimeJD
+{
+    NSString     *doc  = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];// 1.获得Documents的全路径
+    NSString     *path = [doc stringByAppendingPathComponent:@"CodingRuntime.data"];// 2.获得文件的全路径
+    CodingRuntime *stu = [NSKeyedUnarchiver unarchiveObjectWithFile:path];// 3.从文件中读取CusModel对象
+    if (stu)
+    {
+        [self toastBottom:stu.name];
+        NSLog(@"%@", stu.name);
+    }
+    else
+    {
+        [self toastBottom:@"请先归档后再解档"];
+    }
     
 }
 

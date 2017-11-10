@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SubModelRuntime.h"
 
+//用于KVC
 @interface ModelRuntime : NSObject
 
 

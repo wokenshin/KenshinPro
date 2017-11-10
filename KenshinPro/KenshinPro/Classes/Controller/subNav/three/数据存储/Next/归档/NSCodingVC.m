@@ -8,6 +8,8 @@
 
 #import "NSCodingVC.h"
 #import "CusModel.h"
+#import "RuntimeVC.h"
+
 /*
  
  参考:http://blog.csdn.net/codywangziham01/article/details/25325557
@@ -47,8 +49,15 @@
     // 2.1.获得Documents的全路径
     NSString *doc  = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *path = [doc stringByAppendingPathComponent:@"cusModel.data"];// 2.2.获得文件的全路径
-    [NSKeyedArchiver archiveRootObject:model toFile:path];// 2.3.将对象归档
-    
+    BOOL flag = [NSKeyedArchiver archiveRootObject:model toFile:path];// 2.3.将对象归档
+    if (flag)
+    {
+        [self toastBottom:@"归档成功"];
+    }
+    else
+    {
+        [self toastBottom:@"归档失败"];
+    }
 }
 
 #pragma mark 读取
@@ -59,7 +68,24 @@
     NSString *path = [doc stringByAppendingPathComponent:@"cusModel.data"];// 2.获得文件的全路径
     CusModel *stu  = [NSKeyedUnarchiver unarchiveObjectWithFile:path];// 3.从文件中读取CusModel对象
     
-    NSLog(@"%@ %d %f", stu.name, stu.age, stu.height);
+    if (stu)
+    {
+        [self toastBottom:stu.name];
+        NSLog(@"%@ %d %f", stu.name, stu.age, stu.height);
+    }
+    else
+    {
+        [self toastBottom:@"请先归档后 在解档"];
+    }
+    
+    
+}
+
+#pragma mark runtime的实现
+- (IBAction)clickGJDByRuntime:(id)sender
+{
+    RuntimeVC *vc = [[RuntimeVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

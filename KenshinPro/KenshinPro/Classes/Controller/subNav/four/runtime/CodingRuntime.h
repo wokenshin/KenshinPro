@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+//用于归档 解档
 @interface CodingRuntime : NSObject<NSCoding>
 
 @property (nonatomic, strong) NSString                                      *country;
 @property (nonatomic, strong) NSString                                      *name;
 @property (nonatomic, strong) NSString                                      *gender;
-
+@property (nonatomic, assign) int                                           age;
 
 @end

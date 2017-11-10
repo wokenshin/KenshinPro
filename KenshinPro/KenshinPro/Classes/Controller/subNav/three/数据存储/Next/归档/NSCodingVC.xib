@@ -46,11 +46,27 @@
                         <action selector="clickRead:" destination="-1" eventType="touchUpInside" id="shd-1y-eD7"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgP-iy-dlt">
+                    <rect key="frame" x="30" y="142" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.14117647059999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Gmx-2M-5Wp"/>
+                    </constraints>
+                    <state key="normal" title="runtime实现">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickGJDByRuntime:" destination="-1" eventType="touchUpInside" id="9lm-Pj-vrK"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="ZgP-iy-dlt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="3na-XI-Ebg"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Auh-2k-gNN" secondAttribute="trailing" constant="30" id="ES6-Uu-HRx"/>
                 <constraint firstItem="3eb-xC-oMA" firstAttribute="top" secondItem="Auh-2k-gNN" secondAttribute="bottom" constant="10" id="Ezy-5d-rkQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ZgP-iy-dlt" secondAttribute="trailing" constant="30" id="Ua0-wB-Vlx"/>
+                <constraint firstItem="ZgP-iy-dlt" firstAttribute="top" secondItem="3eb-xC-oMA" secondAttribute="bottom" constant="20" id="aN4-d5-WRC"/>
                 <constraint firstItem="Auh-2k-gNN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="bA2-cw-E4y"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3eb-xC-oMA" secondAttribute="trailing" constant="30" id="lbC-89-dbz"/>
                 <constraint firstItem="3eb-xC-oMA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="pc8-yJ-rMz"/>
