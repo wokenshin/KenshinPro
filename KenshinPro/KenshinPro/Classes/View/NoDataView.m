@@ -24,26 +24,27 @@
 
 + (UIView *)tipsNoDataViewWithImgName:(NSString *)imgName andContent:(NSString *)content
 {
-    CGFloat hTips = screenHeight - 64 - 60;
-    CGFloat sizeImg = 120;
-    CGFloat xTipsImg = screenWidth/2 - sizeImg/2;
-    CGFloat yTipsImg = hTips/2 - sizeImg/2 - 50;
+    CGFloat hTips      = screenHeight - 64 - 60;
+    CGFloat sizeImg    = 120;
+    CGFloat xTipsImg   = screenWidth/2 - sizeImg/2;
+    CGFloat yTipsImg   = hTips/2 - sizeImg/2 - 50;
     UIView *tipsNoData = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, hTips)];
     
     UIImageView *noDataImgV = [[UIImageView alloc] initWithFrame:CGRectMake(xTipsImg, yTipsImg, sizeImg, sizeImg)];
-    noDataImgV.image = [UIImage imageNamed:imgName];
+    noDataImgV.image        = [UIImage imageNamed:imgName];
     
-    CGFloat yLab = CGRectGetMaxY(noDataImgV.frame);
+    CGFloat yLab       = CGRectGetMaxY(noDataImgV.frame);
     UILabel *labNoData = [[UILabel alloc] initWithFrame:CGRectMake(0, yLab, screenWidth, 30)];
-    labNoData.text = content;
     labNoData.textAlignment = NSTextAlignmentCenter;
-    labNoData.textColor = colorTextGray;
-    labNoData.font = Font7;
+    labNoData.textColor     = colorTextGray;
+    labNoData.font          = Font7;
+    labNoData.text          = content;
     
     [tipsNoData addSubview:noDataImgV];
     [tipsNoData addSubview:labNoData];
     
     return tipsNoData;
+    
 }
 
 + (UIView *)tipsNoDataViewWithImgName:(NSString *)imgName andContent:(NSString *)content andHeight:(CGFloat)height

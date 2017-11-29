@@ -39,6 +39,7 @@
     [self addDataWithTitle:@"NSCoding自动归档解档" andDetail:@"参考 ddzm"];
     [self addDataWithTitle:@"NSCache-Document等" andDetail:@"暂无"];
     [self addDataWithTitle:@"sqlite3" andDetail:@"可参考 bwzk"];
+    [self addDataWithTitle:@"Couchbase-Lite" andDetail:@"数据同步 json/二进制数据"];
     
 }
 
@@ -62,7 +63,8 @@
         [self.navigationController pushViewController:vc animated:YES];
         return;
     }
-    [self toastBottom:@"暂无"];
+    
+    [self toastBottom:@"不做演示"];
     
 }
 

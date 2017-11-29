@@ -24,4 +24,8 @@
 //- (void)fxw_eat;
 //- (void)fxw_run:(NSString *)str;
 
+//2017_11_10
++ (void)classFunction;
+- (void)instanceFunction;
+
 @end

@@ -5,11 +5,14 @@
 //  Created by kenshin on 2017/11/8.
 //  Copyright © 2017年 Kenshin. All rights reserved.
 /*
- 本文资源来自：http://www.jianshu.com/p/19f280afcb24
+ 本文资源来自：http://www.jianshu.com/p/19f280afcb24 【iOS 模块详解—「Runtime面试、工作」看我就 🐒 了 ^_^.】
+ 
+ 另外资源：http://www.jianshu.com/p/6b905584f536 【Runtime完整总结】
+ 
  */
 
 #import "RuntimeVC.h"
-#import <objc/message.h>//我们导入系统的头文件，一般用尖括号
+#import <objc/message.h>//导入系统的头文件，一般用尖括号
 //消息机制方法提示默认是没有的 需要进行配置【查找build setting -> 搜索msg -> objc_msgSend（YES --> NO）】
 #import "Person.h"
 #import "UIImage+Runtime.h"
@@ -17,7 +20,7 @@
 #import "ModelRuntime.h"
 #import "CodingRuntime.h"
 
-@interface RuntimeVC ()
+@interface RuntimeVC ()<UITableViewDelegate>//这里的协议仅仅是为了让 runtime获取当亲类的协议而设置
 
 @end
 
@@ -68,6 +71,62 @@
 - (IBAction)clickJDByRuntime:(id)sender
 {
     [self runtimeJD];
+}
+
+#pragma mark runtime 获取类的属性名称列表
+- (IBAction)clickGetPropertyListInClass:(id)sender
+{
+    unsigned int count;
+    objc_property_t *propertyList = class_copyPropertyList([self class], &count);
+    for (unsigned int i = 0; i<count; i++)
+    {
+        const char *propertyName = property_getName(propertyList[i]);
+        NSLog(@"property---->%@", [NSString stringWithUTF8String:propertyName]);
+    }
+    
+}
+
+#pragma mark 获取方法列表
+- (IBAction)clickgetFunctionList:(id)sender
+{
+    //如果方法没有实现，那么及时声明了 runtime也获取不到该方法【都没实现 获取来有毛用】
+    unsigned int count;
+    Method *methodList = class_copyMethodList([self class], &count);
+    for (unsigned int i; i<count; i++)
+    {
+        Method method = methodList[i];
+        NSLog(@"method---->%@", NSStringFromSelector(method_getName(method)));
+    }
+    
+}
+
+#pragma mark 获取成员变量列表
+- (IBAction)clickget_proList:(id)sender
+{
+    unsigned int count;
+    Ivar *ivarList = class_copyIvarList([self class], &count);
+    for (unsigned int i; i<count; i++)
+    {
+        Ivar myIvar = ivarList[i];
+        const char *ivarName = ivar_getName(myIvar);
+        NSLog(@"Ivar---->%@", [NSString stringWithUTF8String:ivarName]);
+    }
+    
+}
+
+#pragma mark 获取协议列表
+- (IBAction)clickgetProtocolList:(id)sender
+{
+    unsigned int count;
+    __unsafe_unretained Protocol **protocolList = class_copyProtocolList([self class], &count);
+    
+    for (unsigned int i; i<count; i++)
+    {
+        Protocol *myProtocal     = protocolList[i];
+        const char *protocolName = protocol_getName(myProtocal);
+        NSLog(@"protocol---->%@", [NSString stringWithUTF8String:protocolName]);
+    }
+
 }
 
 #pragma mark - 调用私有函数
@@ -203,6 +262,8 @@
     
 }
 
+//如果方法没有实现，那么及时声明了 runtime也获取不到该方法【都没实现 获取来有毛用】
+- (void)test1{}
 
 - (void)dealloc
 {
@@ -211,3 +272,4 @@
 }
 
 @end
+

@@ -83,7 +83,7 @@
         const char *name = ivar_getName(ivar);// 查看成员变量
         NSString *key    = [NSString stringWithUTF8String:name];// 归档
         id value         = [self valueForKey:key];
-        [aCoder encodeObject:value forKey:key];
+        [aCoder encodeObject:value forKey:key];//这里可以用encodeObj 但是在非runtime情况下 只能使用encode对应类型 否是类型不匹配时 会报运行时错误
     }
     free(ivars);
     

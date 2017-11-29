@@ -80,6 +80,7 @@
     [self addDataWithTitle:@"通知" andDetail:@""];
     [self addDataWithTitle:@"引导页1" andDetail:@"比较low的方式 用控制器"];
     [self addDataWithTitle:@"引导页2" andDetail:@"比较好的方式 直接用view 放在window上"];
+    [self addDataWithTitle:@"视频播放" andDetail:@"2017-11-15 本地-远程"];
     
 }
 
@@ -97,10 +98,10 @@
     if ([title isEqualToString:@"引导页1"])
     {
         YinDaoVC *vc = [[YinDaoVC alloc] init];
-        BOOL isOK = [vc initGuidePageWithImgNames:@[@"yinDaoYe1", @"yinDaoYe2", @"yinDaoYe3"]
-               pageControlColorNormal:nil
-             pageControlColorSelected:nil
-                       finishBtnTitle:@"立即体验"];
+        BOOL isOK    = [vc initGuidePageWithImgNames:@[@"yinDaoYe1", @"yinDaoYe2", @"yinDaoYe3"]
+                              pageControlColorNormal:nil
+                            pageControlColorSelected:nil
+                                      finishBtnTitle:@"立即体验"];
         
         if(isOK)
         {
@@ -116,9 +117,9 @@
      if ([title isEqualToString:@"引导页2"])
      {
          BOOL isOK = [FXW_GuidePage fxw_showGuidePageWithImgNames:@[@"yinDaoYe1", @"yinDaoYe2", @"yinDaoYe3"]
-                           pageControlColorNormal:nil
-                         pageControlColorSelected:nil
-                                   finishBtnTitle:nil];
+                                           pageControlColorNormal:nil
+                                         pageControlColorSelected:nil
+                                                   finishBtnTitle:nil];
          if (!isOK) {
              [self toast:@"加载引导页失败"];
          }

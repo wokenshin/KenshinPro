@@ -98,14 +98,71 @@
                         <action selector="clickJDByRuntime:" destination="-1" eventType="touchUpInside" id="WZs-1a-46t"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qf-em-XdC">
+                    <rect key="frame" x="30" y="316" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="0lY-hG-N4w"/>
+                    </constraints>
+                    <state key="normal" title="获取类属性名称列表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickGetPropertyListInClass:" destination="-1" eventType="touchUpInside" id="pn1-MB-uSx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-Mo-OpD">
+                    <rect key="frame" x="30" y="362" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Jq5-KG-0sT"/>
+                    </constraints>
+                    <state key="normal" title="获取方法列表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickgetFunctionList:" destination="-1" eventType="touchUpInside" id="C1o-2I-b3n"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-gF-chP">
+                    <rect key="frame" x="30" y="408" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Dkd-rT-Z3d"/>
+                    </constraints>
+                    <state key="normal" title="获取成员变量列表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickget_proList:" destination="-1" eventType="touchUpInside" id="6o9-x3-MjW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwx-eh-vhR">
+                    <rect key="frame" x="30" y="454" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="b09-DA-OxJ"/>
+                    </constraints>
+                    <state key="normal" title="获取协议列表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickgetProtocolList:" destination="-1" eventType="touchUpInside" id="Xgd-J7-Jul"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="5Qf-em-XdC" firstAttribute="top" secondItem="fvx-mP-MAW" secondAttribute="bottom" constant="10" id="0uW-l0-QAm"/>
                 <constraint firstItem="7hu-y7-Q9z" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="0x8-WQ-Pbg"/>
                 <constraint firstItem="4j1-3b-k4H" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="3dO-V5-6BN"/>
                 <constraint firstItem="hBA-HF-EDx" firstAttribute="top" secondItem="4j1-3b-k4H" secondAttribute="bottom" constant="10" id="4J6-e6-Mbw"/>
+                <constraint firstItem="xwx-eh-vhR" firstAttribute="top" secondItem="Cyy-gF-chP" secondAttribute="bottom" constant="10" id="4Ma-KU-Vfh"/>
+                <constraint firstItem="Cyy-gF-chP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="6LR-Cs-w0w"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5Qf-em-XdC" secondAttribute="trailing" constant="30" id="ETs-sg-xnL"/>
                 <constraint firstItem="kEN-2L-gWd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="ExX-St-4oc"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fvx-mP-MAW" secondAttribute="trailing" constant="30" id="GDU-DY-hMr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fWH-Mo-OpD" secondAttribute="trailing" constant="30" id="Gnb-A8-2rS"/>
                 <constraint firstItem="hBA-HF-EDx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="Guk-Xc-MYB"/>
                 <constraint firstItem="Owm-P3-5Yh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="Thi-1w-r1E"/>
                 <constraint firstItem="fvx-mP-MAW" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="UjF-Ze-nYb"/>
@@ -113,15 +170,22 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="7hu-y7-Q9z" secondAttribute="trailing" constant="30" id="Wi2-5I-GZl"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kEN-2L-gWd" secondAttribute="trailing" constant="30" id="Zce-f8-Veo"/>
                 <constraint firstItem="Owm-P3-5Yh" firstAttribute="top" secondItem="7hu-y7-Q9z" secondAttribute="bottom" constant="10" id="aV8-NH-qn1"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xwx-eh-vhR" secondAttribute="trailing" constant="30" id="dnv-9i-eR2"/>
                 <constraint firstItem="fvx-mP-MAW" firstAttribute="top" secondItem="hBA-HF-EDx" secondAttribute="bottom" constant="10" id="eVt-Yw-q1o"/>
                 <constraint firstItem="kEN-2L-gWd" firstAttribute="top" secondItem="Owm-P3-5Yh" secondAttribute="bottom" constant="10" id="fZ7-Uy-wbC"/>
+                <constraint firstItem="fWH-Mo-OpD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="h6h-d2-eLd"/>
+                <constraint firstItem="xwx-eh-vhR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="hYC-G6-OPD"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hBA-HF-EDx" secondAttribute="trailing" constant="30" id="ihi-5I-XXf"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Owm-P3-5Yh" secondAttribute="trailing" constant="30" id="jKY-TI-RrZ"/>
+                <constraint firstItem="Cyy-gF-chP" firstAttribute="top" secondItem="fWH-Mo-OpD" secondAttribute="bottom" constant="10" id="lmf-Id-tBC"/>
+                <constraint firstItem="fWH-Mo-OpD" firstAttribute="top" secondItem="5Qf-em-XdC" secondAttribute="bottom" constant="10" id="pDE-x0-iLN"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4j1-3b-k4H" secondAttribute="trailing" constant="30" id="pNN-MG-gLK"/>
+                <constraint firstItem="5Qf-em-XdC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="uSY-YR-zwJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Cyy-gF-chP" secondAttribute="trailing" constant="30" id="xf0-IY-fwA"/>
                 <constraint firstItem="7hu-y7-Q9z" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="yax-PX-eo3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-296" y="62"/>
+            <point key="canvasLocation" x="-590" y="52"/>
         </view>
     </objects>
 </document>

@@ -278,6 +278,10 @@
 		B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96C9A9D1EF23BB400D35B9A /* BigSmallVC.xib */; };
 		B96E60671EA70DBF00BC0543 /* MCClientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E60661EA70DBF00BC0543 /* MCClientVC.m */; };
 		B96E606B1EA70E5900BC0543 /* EvaluateStarsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B96E606A1EA70E5900BC0543 /* EvaluateStarsVC.m */; };
+		B97940B81FC3EF8E0039458A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97940B71FC3EF870039458A /* CFNetwork.framework */; };
+		B97940BA1FC3EFA50039458A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97940B91FC3EF9D0039458A /* Security.framework */; };
+		B97940BC1FC3EFB30039458A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B97940BB1FC3EFAD0039458A /* SystemConfiguration.framework */; };
+		B97940BE1FC3EFBD0039458A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B97940BD1FC3EFBD0039458A /* libsqlite3.tbd */; };
 		B985052A1E96371C007C01CB /* GestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98505281E96371C007C01CB /* GestureLockVC.m */; };
 		B985052B1E96371C007C01CB /* GestureLockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98505291E96371C007C01CB /* GestureLockVC.xib */; };
 		B98505401E963CF5007C01CB /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = B985052F1E963CF5007C01CB /* PCCircle.m */; };
@@ -295,6 +299,8 @@
 		B986FE961F974289001C5F0E /* RunLoopFXWVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B986FE941F974289001C5F0E /* RunLoopFXWVC.m */; };
 		B986FE971F974289001C5F0E /* RunLoopFXWVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B986FE951F974289001C5F0E /* RunLoopFXWVC.xib */; };
 		B98730AF1F32CEFF000027D8 /* FXW_TextPikerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B98730AE1F32CEFF000027D8 /* FXW_TextPikerOne.m */; };
+		B98A10881FBD22A800556A00 /* CJJMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A10861FBD22A800556A00 /* CJJMVC.m */; };
+		B98A10891FBD22A800556A00 /* CJJMVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98A10871FBD22A800556A00 /* CJJMVC.xib */; };
 		B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DF7021EA83FDF00296C2A /* SetUICornerRadiusVC.m */; };
 		B98DF7051EA83FDF00296C2A /* SetUICornerRadiusVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98DF7031EA83FDF00296C2A /* SetUICornerRadiusVC.xib */; };
 		B98DF7091EA8481F00296C2A /* AnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B98DF7081EA8481F00296C2A /* AnimationVC.m */; };
@@ -438,6 +444,8 @@
 		B9D856951E84EEFA0053697F /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D856941E84EEFA0053697F /* ViewControllerOne.m */; };
 		B9D856981E84EF230053697F /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D856971E84EF230053697F /* ViewControllerTwo.m */; };
 		B9D8569B1E84EF340053697F /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8569A1E84EF340053697F /* ViewControllerThree.m */; };
+		B9D898381FCE3CEE00B7E994 /* FPDistinguishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D898361FCE3CEE00B7E994 /* FPDistinguishVC.m */; };
+		B9D898391FCE3CEE00B7E994 /* FPDistinguishVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9D898371FCE3CEE00B7E994 /* FPDistinguishVC.xib */; };
 		B9E53C081F302ED600971C6B /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = B9E53C071F302ED600971C6B /* area.json */; };
 		B9E53C0B1F302EFB00971C6B /* addressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E53C0A1F302EFB00971C6B /* addressModel.m */; };
 		B9E53C101F302F4D00971C6B /* AddressPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E53C0E1F302F4D00971C6B /* AddressPickerVC.m */; };
@@ -999,6 +1007,10 @@
 		B96E60661EA70DBF00BC0543 /* MCClientVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClientVC.m; sourceTree = "<group>"; };
 		B96E60691EA70E5900BC0543 /* EvaluateStarsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluateStarsVC.h; sourceTree = "<group>"; };
 		B96E606A1EA70E5900BC0543 /* EvaluateStarsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateStarsVC.m; sourceTree = "<group>"; };
+		B97940B71FC3EF870039458A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B97940B91FC3EF9D0039458A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B97940BB1FC3EFAD0039458A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B97940BD1FC3EFBD0039458A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B98505081E961F1C007C01CB /* KenshinPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KenshinPro.entitlements; sourceTree = "<group>"; };
 		B98505271E96371C007C01CB /* GestureLockVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureLockVC.h; sourceTree = "<group>"; };
 		B98505281E96371C007C01CB /* GestureLockVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureLockVC.m; sourceTree = "<group>"; };
@@ -1031,6 +1043,10 @@
 		B98730AD1F32CEFF000027D8 /* FXW_TextPikerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXW_TextPikerOne.h; sourceTree = "<group>"; };
 		B98730AE1F32CEFF000027D8 /* FXW_TextPikerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXW_TextPikerOne.m; sourceTree = "<group>"; };
 		B98A01DC1F297473009B5AF8 /* Kenshin.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kenshin.pch; sourceTree = "<group>"; };
+		B98A10851FBD22A800556A00 /* CJJMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJJMVC.h; sourceTree = "<group>"; };
+		B98A10861FBD22A800556A00 /* CJJMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJJMVC.m; sourceTree = "<group>"; };
+		B98A10871FBD22A800556A00 /* CJJMVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJJMVC.xib; sourceTree = "<group>"; };
+		B98A108F1FBD27F700556A00 /* FXWCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWCode.h; sourceTree = "<group>"; };
 		B98DF7011EA83FDF00296C2A /* SetUICornerRadiusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetUICornerRadiusVC.h; sourceTree = "<group>"; };
 		B98DF7021EA83FDF00296C2A /* SetUICornerRadiusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetUICornerRadiusVC.m; sourceTree = "<group>"; };
 		B98DF7031EA83FDF00296C2A /* SetUICornerRadiusVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetUICornerRadiusVC.xib; sourceTree = "<group>"; };
@@ -1279,6 +1295,9 @@
 		B9D856971E84EF230053697F /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
 		B9D856991E84EF340053697F /* ViewControllerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
 		B9D8569A1E84EF340053697F /* ViewControllerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
+		B9D898351FCE3CEE00B7E994 /* FPDistinguishVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPDistinguishVC.h; sourceTree = "<group>"; };
+		B9D898361FCE3CEE00B7E994 /* FPDistinguishVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPDistinguishVC.m; sourceTree = "<group>"; };
+		B9D898371FCE3CEE00B7E994 /* FPDistinguishVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FPDistinguishVC.xib; sourceTree = "<group>"; };
 		B9E53C071F302ED600971C6B /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
 		B9E53C091F302EFB00971C6B /* addressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addressModel.h; sourceTree = "<group>"; };
 		B9E53C0A1F302EFB00971C6B /* addressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addressModel.m; sourceTree = "<group>"; };
@@ -1360,6 +1379,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B97940BE1FC3EFBD0039458A /* libsqlite3.tbd in Frameworks */,
+				B97940BC1FC3EFB30039458A /* SystemConfiguration.framework in Frameworks */,
+				B97940BA1FC3EFA50039458A /* Security.framework in Frameworks */,
+				B97940B81FC3EF8E0039458A /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2101,6 +2124,7 @@
 		B92CCAEA1E7A151F00035A79 /* four */ = {
 			isa = PBXGroup;
 			children = (
+				B98A10841FBD227800556A00 /* C语言加解密 */,
 				B9A6820A1FB2D9F800B05793 /* runtime */,
 				B99C84241F99916000952F3D /* 日志视图调试工具 */,
 				B986FE921F974276001C5F0E /* RunLoop */,
@@ -2150,6 +2174,7 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				B9D898301FCE3C8E00B7E994 /* 指纹识别 */,
 				B9C9F11D1FAAA59700DB4057 /* safeArea */,
 				B94EDCE61F282EAC004C5D2D /* 宏定义 */,
 				B9B7C51B1F16FDEE0063BDAF /* NSData常用工具 */,
@@ -2907,6 +2932,7 @@
 				B9673FAD1E78E22A006AB3DA /* KenshinProTests */,
 				B9673FB81E78E22A006AB3DA /* KenshinProUITests */,
 				B9673F921E78E22A006AB3DA /* Products */,
+				B97940B61FC3EF870039458A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2993,6 +3019,17 @@
 				B96E606A1EA70E5900BC0543 /* EvaluateStarsVC.m */,
 			);
 			path = "星星评级";
+			sourceTree = "<group>";
+		};
+		B97940B61FC3EF870039458A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B97940BD1FC3EFBD0039458A /* libsqlite3.tbd */,
+				B97940BB1FC3EFAD0039458A /* SystemConfiguration.framework */,
+				B97940B91FC3EF9D0039458A /* Security.framework */,
+				B97940B71FC3EF870039458A /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B98436FF1E9B71C100E3273C /* 字符串 */ = {
@@ -3108,6 +3145,17 @@
 				B986FE951F974289001C5F0E /* RunLoopFXWVC.xib */,
 			);
 			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		B98A10841FBD227800556A00 /* C语言加解密 */ = {
+			isa = PBXGroup;
+			children = (
+				B98A108F1FBD27F700556A00 /* FXWCode.h */,
+				B98A10851FBD22A800556A00 /* CJJMVC.h */,
+				B98A10861FBD22A800556A00 /* CJJMVC.m */,
+				B98A10871FBD22A800556A00 /* CJJMVC.xib */,
+			);
+			path = "C语言加解密";
 			sourceTree = "<group>";
 		};
 		B98DF7001EA83FB300296C2A /* 在Xib或sb中为UI设置圆角 */ = {
@@ -3813,6 +3861,16 @@
 			path = "获取指定的VC演示";
 			sourceTree = "<group>";
 		};
+		B9D898301FCE3C8E00B7E994 /* 指纹识别 */ = {
+			isa = PBXGroup;
+			children = (
+				B9D898351FCE3CEE00B7E994 /* FPDistinguishVC.h */,
+				B9D898361FCE3CEE00B7E994 /* FPDistinguishVC.m */,
+				B9D898371FCE3CEE00B7E994 /* FPDistinguishVC.xib */,
+			);
+			path = "指纹识别";
+			sourceTree = "<group>";
+		};
 		B9E53C061F302ED600971C6B /* 省市区数据 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4176,6 +4234,7 @@
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
 				B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */,
 				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
+				B98A10891FBD22A800556A00 /* CJJMVC.xib in Resources */,
 				B9E53C081F302ED600971C6B /* area.json in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
 				B99036791FABF60100CFE633 /* LockCtrlHeaderView.xib in Resources */,
@@ -4236,6 +4295,7 @@
 				B99C84291F99918200952F3D /* DebugLogVC.xib in Resources */,
 				B986FE971F974289001C5F0E /* RunLoopFXWVC.xib in Resources */,
 				B985052B1E96371C007C01CB /* GestureLockVC.xib in Resources */,
+				B9D898391FCE3CEE00B7E994 /* FPDistinguishVC.xib in Resources */,
 				B96180A91E8F4A6600ABCCF3 /* MBMJVC.xib in Resources */,
 				B910E2621EA8888C00DFCC86 /* ScanVC.xib in Resources */,
 				B910E24B1EA884F700DFCC86 /* NavBarCustomVC.xib in Resources */,
@@ -4597,6 +4657,7 @@
 				B92CCB3C1E7A88B900035A79 /* RegexUtil.m in Sources */,
 				B9BADB3E1EA5BB82000B3C1C /* VCN2.m in Sources */,
 				B915C23D1E7F9DE10088A31F /* MDSliderIcon.m in Sources */,
+				B9D898381FCE3CEE00B7E994 /* FPDistinguishVC.m in Sources */,
 				B915C2491E7F9DE10088A31F /* MDToast.m in Sources */,
 				B9D8569B1E84EF340053697F /* ViewControllerThree.m in Sources */,
 				B9EFFE6F1F74BAB600E5A871 /* MyXibVC.m in Sources */,
@@ -4641,6 +4702,7 @@
 				B930023C1E8A3BBA000C0563 /* AFNManagerVC.m in Sources */,
 				B92CCB401E7A895900035A79 /* SysContactsVC.m in Sources */,
 				B95AC8871EADA05400806D1A /* BaseRichTextVC.m in Sources */,
+				B98A10881FBD22A800556A00 /* CJJMVC.m in Sources */,
 				B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */,
 				B906FD421E8B668F00645C96 /* MJRefreshAutoFooter.m in Sources */,
 				B906FC5C1E8B3ED900645C96 /* User.m in Sources */,
@@ -4799,11 +4861,20 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YDSVT3R6A3;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KenshinPro/Classes/Controller/subNav/three/数据存储/Next/CouchbaseLite",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KenshinPro/Classes/Controller/subNav/four/C语言加解密",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.pro.KenshinPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KenshinPro/Classes/Controller/subNav/three/OC调用Swift/KenshinPro-Bridging-Header.h";
@@ -4820,11 +4891,20 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = YDSVT3R6A3;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KenshinPro/Classes/Controller/subNav/three/数据存储/Next/CouchbaseLite",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
 				INFOPLIST_FILE = KenshinPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KenshinPro/Classes/Controller/subNav/four/C语言加解密",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kenshin.pro.KenshinPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "KenshinPro/Classes/Controller/subNav/three/OC调用Swift/KenshinPro-Bridging-Header.h";

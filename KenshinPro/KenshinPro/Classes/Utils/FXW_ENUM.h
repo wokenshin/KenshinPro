@@ -13,9 +13,9 @@
 #pragma mark - 参考 可以写负数
 typedef NS_ENUM(NSInteger, LOCK_TYPE)
 {
-    LOCK_TYPE_SLOCK1               = 4,
-    LOCK_TYPE_SLOCK3               = 3,
-    LOCK_TYPE_SLOCK2               = 5,
+    LOCK_TYPE_SLOCK1               = 1,
+    LOCK_TYPE_SLOCK3               = 2,
+    LOCK_TYPE_SLOCK2               = 4,
     
 };
 

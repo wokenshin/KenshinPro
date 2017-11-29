@@ -22,6 +22,12 @@
 #import "NSDataUtilsVC.h"
 #import "DefineVC.h"
 #import "FXW_SafeAreaVC.h"
+#import "FPDistinguishVC.h"
+
+
+
+
+
 
 @interface ThreeVC ()
 
@@ -39,6 +45,7 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"指纹识别" andDetail:@"支付宝验证-解锁"];
     [self addDataWithTitle:@"数据存储" andDetail:@"沙盒、数据库、归档、属性列表等"];
     [self addDataWithTitle:@"OC+Swift 混编" andDetail:@"OC下调用Swift，Swift下调用OC"];
     [self addDataWithTitle:@"OC调用Swift三方库" andDetail:@"这个就爽了"];
@@ -56,7 +63,6 @@
     [self addDataWithTitle:@"NSData常用工具" andDetail:@"主要用于发送蓝牙消息等场景"];
     [self addDataWithTitle:@"安全区 Safe Area" andDetail:@"2017-11-02"];
     
-    
 }
 
 - (void)initThreeVCUI
@@ -68,6 +74,14 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    
+    if ([title isEqualToString:@"指纹识别"])
+    {
+        FPDistinguishVC *vc = [[FPDistinguishVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"安全区 Safe Area"])
     {
         FXW_SafeAreaVC *vc = [[FXW_SafeAreaVC alloc] init];

@@ -14,6 +14,7 @@
 #import "RunLoopFXWVC.h"
 #import "DebugLogVC.h"
 #import "RuntimeVC.h"
+#import "CJJMVC.h"
 
 @interface FourVC ()
 
@@ -39,7 +40,7 @@
     [self addDataWithTitle:@"DebugView" andDetail:@"2017-10-20"];
     [self addDataWithTitle:@"RunLoop"  andDetail:@"2017-10-18"];
     [self addDataWithTitle:@"runtime"  andDetail:@"2017-11-08"];
-    
+    [self addDataWithTitle:@"C语言实现加解密-生成库文件"  andDetail:@"让安卓iOS都可以调用"];
     
 }
 
@@ -52,6 +53,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"C语言实现加解密-生成库文件"])
+    {
+        CJJMVC *vc = [[CJJMVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"runtime"])
     {
         RuntimeVC *vc = [[RuntimeVC alloc] init];
