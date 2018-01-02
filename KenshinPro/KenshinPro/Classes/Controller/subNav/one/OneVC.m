@@ -32,7 +32,8 @@
 #import "NotifiVC.h"
 #import "YinDaoVC.h"
 #import "FXW_GuidePage.h"
-
+#import "GestureVC.h"
+#import "BadgeViewVC.h"
 
 @interface OneVC ()
 
@@ -45,13 +46,14 @@
     [super viewDidLoad];
     [self loadData];
     [self initOneVCUI];
-    //fucked a dog 2017-09-05
+    [self test2017_12_22];
 }
-
 
 #pragma mark 加载数据
 - (void)loadData
 {
+    [self addDataWithTitle:@"徽章" andDetail:@"2017_12_25-第三方_无动画效果"];
+    [self addDataWithTitle:@"手势+录音" andDetail:@"2017.12.29-手势-录音-wav<-->amr"];
     [self addDataWithTitle:@"UITextField+自定义" andDetail:@"数据存储到内存地址中的顺序"];
     [self addDataWithTitle:@"网络状态实时监听" andDetail:@"通过AFN 在AppDelegate中实现"];
     [self addDataWithTitle:@"BaseVC" andDetail:@"包含BaseVC的全部功能演示"];
@@ -80,7 +82,7 @@
     [self addDataWithTitle:@"通知" andDetail:@""];
     [self addDataWithTitle:@"引导页1" andDetail:@"比较low的方式 用控制器"];
     [self addDataWithTitle:@"引导页2" andDetail:@"比较好的方式 直接用view 放在window上"];
-    [self addDataWithTitle:@"视频播放" andDetail:@"2017-11-15 本地-远程"];
+    [self addDataWithTitle:@"视频播放" andDetail:@"2017-11-15 本地-远程-未完成"];
     
 }
 
@@ -95,6 +97,13 @@
 - (void)clickCellWithTitle:(NSString *)title
 {
     
+    if ([title isEqualToString:@"手势+录音"])
+    {
+        GestureVC *vc = [[GestureVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"引导页1"])
     {
         YinDaoVC *vc = [[YinDaoVC alloc] init];
@@ -125,6 +134,13 @@
          }
          return;
      }
+    if ([title isEqualToString:@"徽章"])
+    {
+        BadgeViewVC *vc = [[BadgeViewVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"通知"])
     {
         NotifiVC *vc = [[NotifiVC alloc] init];
@@ -331,6 +347,16 @@
     
 }
 
+- (void)test2017_12_22
+{
+    NSMutableDictionary *dicTest = [[NSMutableDictionary alloc] init];
+    [dicTest setObject:@"蟑螂" forKey:@"小强"];
+    
+    id obj = dicTest[@"小强"];//脑袋短路了 看代码的时候没看懂 id<ProXxx> api  = _dicApi[responseKey];
+    NSLog(@"上面语法的意思是：找出字典中 key为 小强 的 value");
+    obj = nil;
+    
+}
 
 - (void)dealloc
 {

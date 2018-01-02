@@ -25,18 +25,18 @@
     NSString *jsonString = [[NSString alloc]initWithData:bodyData encoding:NSUTF8StringEncoding];
     
     //加密签名
-    //    NSString *sign = [AFN_MC jiaMiSignWithData:bodyData andVersion:AFN_MC_VERSION];
+    //NSString *sign = [AFN_MC jiaMiSignWithData:bodyData andVersion:AFN_MC_VERSION];
     
     NSString *strUrl = @"http://119.23.129.169:8080/request/upload";
     
-    //    NSDictionary *headers = @{@"sign": sign};
+    //NSDictionary *headers = @{@"sign": sign};
     NSDictionary *parameters = @{@"json":jsonString};
     
     if(AFN_FXW_IS_PRINT_LOG)
     {
         NSLog(@"request==>url=%@", strUrl);
         NSLog(@"request==>json=%@", jsonString);
-        //        NSLog(@"request==>sign=%@", sign);
+        //NSLog(@"request==>sign=%@", sign);
     }
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -49,8 +49,8 @@
         for (NSString * fileName in fileNames)
         {
             NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-            NSString *filePath = [documentsPath stringByAppendingPathComponent:fileName];
-            NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+            NSString *filePath      = [documentsPath stringByAppendingPathComponent:fileName];
+            NSURL    *fileURL       = [NSURL fileURLWithPath:filePath];
             
             NSError *error = nil;
             [formData appendPartWithFileURL:fileURL name:@"files" error:&error];
@@ -78,7 +78,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NSDictionary *errorInfo = error.userInfo;
-        NSString *errorMsg = [errorInfo objectForKey:@"NSLocalizedDescription"];
+        NSString     *errorMsg  = [errorInfo objectForKey:@"NSLocalizedDescription"];
         if (errorMsg)
         {
             resultblock(NO, nil, errorMsg);
@@ -105,12 +105,10 @@
     }
     
     NSDictionary *dictData = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+    NSData       *jsonData = [NSJSONSerialization dataWithJSONObject:dictData
+                                                             options:NSJSONWritingPrettyPrinted error:nil];
     
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictData
-                                                       options:NSJSONWritingPrettyPrinted error:nil];
-    
-    // NSData转为NSString
-    NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSString *jsonStr      = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     return jsonStr;
     
 }

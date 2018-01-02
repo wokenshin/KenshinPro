@@ -18,13 +18,13 @@
 #import "JWTVC.h"
 #import "CRC32VC.h"
 #import "RegexVC.h"
-#import "SocketVC.h"
+#import "SocketBaseVC.h"
 #import "NSDataUtilsVC.h"
 #import "DefineVC.h"
 #import "FXW_SafeAreaVC.h"
 #import "FPDistinguishVC.h"
-
-
+#import "SDWebImgVC.h"
+#import "BlockVC.h"
 
 
 
@@ -59,10 +59,11 @@
     [self addDataWithTitle:@"CRC校验" andDetail:@"关于这货是什么 自己百度去"];
     [self addDataWithTitle:@"宏定义" andDetail:@""];
     [self addDataWithTitle:@"正则表达式" andDetail:@"常用正则表达式，以及自定义正则表达式"];
-    [self addDataWithTitle:@"Socket" andDetail:@"AnsycSocket"];
+    [self addDataWithTitle:@"Socket" andDetail:@"AnsycSocket 2017_12_22"];
     [self addDataWithTitle:@"NSData常用工具" andDetail:@"主要用于发送蓝牙消息等场景"];
     [self addDataWithTitle:@"安全区 Safe Area" andDetail:@"2017-11-02"];
-    
+    [self addDataWithTitle:@"SDWebImage" andDetail:@"解决url有逗号无法加载"];
+    [self addDataWithTitle:@"代码块" andDetail:@"部分内容"];
 }
 
 - (void)initThreeVCUI
@@ -74,7 +75,20 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    
+    if ([title isEqualToString:@"代码块"])
+    {
+        BlockVC *vc = [[BlockVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"SDWebImage"])
+    {
+        SDWebImgVC *vc = [[SDWebImgVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"指纹识别"])
     {
         FPDistinguishVC *vc = [[FPDistinguishVC alloc] init];
@@ -105,7 +119,7 @@
     }
     if ([title isEqualToString:@"Socket"])
     {
-        SocketVC *vc = [[SocketVC alloc] init];
+        SocketBaseVC *vc = [[SocketBaseVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

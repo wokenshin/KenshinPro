@@ -16,6 +16,7 @@
 #import "ZZGY_VC.h"
 #import "SmartDeviceContentVC.h"
 #import "GgzsVC.h"
+#import "GYZJVC.h"
 
 @interface TwoVC ()
 
@@ -33,11 +34,12 @@
 
 - (void)loadData
 {
-    [self addDataWithTitle:@"GYZS" andDetail:@"2017-10"];
-    [self addDataWithTitle:@"SmartDevice" andDetail:@"2017-09"];
-    [self addDataWithTitle:@"ZZGY" andDetail:@"2017-07"];
-    [self addDataWithTitle:@"QYApp" andDetail:@"智能锁 服务端 2017-06"];
-    [self addDataWithTitle:@"锁匠App" andDetail:@"智能锁 服务端 2017-03"];
+    [self addDataWithTitle:@"GYZJ" andDetail:@"2017-12-27"];
+    [self addDataWithTitle:@"GYZS" andDetail:@"公寓助手-CollectionView+popMenu"];
+    [self addDataWithTitle:@"SmartDevice" andDetail:@"2017-09-局域网下载升级包"];
+    [self addDataWithTitle:@"ZZGY" andDetail:@"智能公寓-菜单-文本选择器"];
+    [self addDataWithTitle:@"QYApp" andDetail:@"巧寓-CollectionView"];
+    [self addDataWithTitle:@"锁匠App" andDetail:@"2017-03-分页栏"];
     [self addDataWithTitle:@"ddzm" andDetail:@"蓝牙+TCP 智能锁App 2016-11"];
     [self addDataWithTitle:@"MC-Service" andDetail:@"GY-像样一点的电商App 2016-07"];
     [self addDataWithTitle:@"MC-Client" andDetail:@"GY-像样一点的电商App 2016-06"];
@@ -59,6 +61,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"GYZJ"])
+    {
+        GYZJVC *vc = [[GYZJVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"GYZS"])
     {
         GgzsVC *vc = [[GgzsVC alloc] init];

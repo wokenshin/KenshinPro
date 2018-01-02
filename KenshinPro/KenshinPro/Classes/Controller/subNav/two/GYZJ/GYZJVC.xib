@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GYZJVC">
+            <connections>
+                <outlet property="imgView" destination="EGf-CG-9rr" id="yxR-cT-oqj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-SV-PbP">
+                    <rect key="frame" x="30" y="40" width="315" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.41148721440000002" blue="0.26599101260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Hnv-nr-OfD"/>
+                    </constraints>
+                    <state key="normal" title="上传头像">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadPic:" destination="-1" eventType="touchUpInside" id="LEZ-iP-SBX"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biaoqing" translatesAutoresizingMaskIntoConstraints="NO" id="EGf-CG-9rr">
+                    <rect key="frame" x="87" y="96" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="8rA-5x-EIE"/>
+                        <constraint firstAttribute="width" constant="200" id="vPU-iT-nPI"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EGf-CG-9rr" firstAttribute="top" secondItem="ipn-SV-PbP" secondAttribute="bottom" constant="20" id="2tA-iV-XP0"/>
+                <constraint firstItem="ipn-SV-PbP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="XAB-pN-uQ6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ipn-SV-PbP" secondAttribute="trailing" constant="30" id="czB-D8-mDu"/>
+                <constraint firstItem="EGf-CG-9rr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fMH-Cx-mtL"/>
+                <constraint firstItem="ipn-SV-PbP" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="joC-rP-WtL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-316" y="-132"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="biaoqing" width="23" height="26"/>
+    </resources>
+</document>

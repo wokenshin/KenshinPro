@@ -10,6 +10,7 @@
 #import "NSUserDefaultsVC.h"
 #import "PlistVC.h"
 #import "NSCodingVC.h"
+#import "FMDBVC.h"
 
 @interface DataBaseVC ()
 
@@ -38,13 +39,19 @@
     [self addDataWithTitle:@"plist-属性列表" andDetail:@"个人感觉还是没有沙盒用着方便 移植kenshinApp中的内容"];
     [self addDataWithTitle:@"NSCoding自动归档解档" andDetail:@"参考 ddzm"];
     [self addDataWithTitle:@"NSCache-Document等" andDetail:@"暂无"];
-    [self addDataWithTitle:@"sqlite3" andDetail:@"可参考 bwzk"];
+    [self addDataWithTitle:@"sqlite3" andDetail:@"可参考 bwzk, FMDB"];
     [self addDataWithTitle:@"Couchbase-Lite" andDetail:@"数据同步 json/二进制数据"];
     
 }
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"sqlite3"])
+    {
+        FMDBVC *vc = [[FMDBVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"NSUserDefault-沙盒"])
     {
         NSUserDefaultsVC *vc = [[NSUserDefaultsVC alloc] init];

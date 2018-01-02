@@ -240,7 +240,20 @@ typedef void (^MSMNoBlock)(BOOL sendSuccess);
 - (void)fxw_changeRootVCWithAnimation:(UIViewController *)vc;
 
 
+#pragma mark -【单张】获取相册图片 or 获取拍照图片
 
+/**
+ 获取照片的回调
 
+ @param imgData 图片数据
+ @param imgPath 图片路径
+ */
+typedef void(^BlockPhoto) (NSData *imgData, NSString *imgPath);
+
+//获取本地相册图片
+- (void)fxw_photoLocalWithResultBlock:(BlockPhoto)resultBlock;
+
+//获取拍照时的图片
+- (void)fxw_photoTakeWithResultBlock:(BlockPhoto)resultBlock;
 
 @end

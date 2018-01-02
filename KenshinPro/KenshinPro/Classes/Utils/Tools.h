@@ -256,4 +256,7 @@
 
 - (void)swiftCallObjFunc;
 + (void)swiftCallClassFunc;
+
+//获取沙盒路径
++ (NSString *)fxw_getPathDoc;
 @end

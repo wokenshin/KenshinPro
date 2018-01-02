@@ -17,8 +17,8 @@
 
 
 /**
- from http://blog.csdn.net/www_131374/article/details/70303311【只有代码】funcOne
- rom http://www.jianshu.com/p/67fd93408517                    【这篇更详细】funcTwo
+ from http://blog.csdn.net/www_131374/article/details/70303311【只有代码】 funcOne
+ from http://www.jianshu.com/p/67fd93408517                   【差强人意】 funcTwo
  from http://www.jianshu.com/p/d44b7d85e0a6                   【目前最好的一篇文章】
  补充：在 连续5次输入指纹错误之后，将无法使用touchID 此时 authError.code = -8， 但是并非设备不支持touchID 经测试 6P 不支持指纹 返回 authError.code = -7
  

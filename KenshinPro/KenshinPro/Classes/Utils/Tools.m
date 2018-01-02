@@ -1144,4 +1144,11 @@
     NSLog(@"swift 调用了 OC 的 类方法");
     
 }
+
++ (NSString *)fxw_getPathDoc
+{
+    NSArray  *dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docsDir  = [dirPaths objectAtIndex:0];
+    return docsDir;
+}
 @end

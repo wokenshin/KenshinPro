@@ -14,7 +14,7 @@
 #define screenWidth  [[UIScreen mainScreen] bounds].size.width
 #define screenHeight [[UIScreen mainScreen] bounds].size.height
 
-//获取状态栏高度 貌似都是20
+//获取状态栏高度 20pt or 44pt
 #define statusHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 
 //导航条高度 44

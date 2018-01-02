@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BadgeViewVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd7-6U-6rK">
+                    <rect key="frame" x="30" y="40" width="260" height="36"/>
+                    <color key="backgroundColor" red="0.071553446349999994" green="0.69847744700000003" blue="0.9388793111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="gdo-xP-3Gy"/>
+                    </constraints>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="65n-nA-Nn2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Tw-jU-8fU">
+                    <rect key="frame" x="30" y="86" width="260" height="36"/>
+                    <color key="backgroundColor" red="0.071553446349999994" green="0.69847744700000003" blue="0.9388793111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="vKl-fE-a4b"/>
+                    </constraints>
+                    <state key="normal" title="-">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reduce:" destination="-1" eventType="touchUpInside" id="vwj-4A-zEO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-le-ybC">
+                    <rect key="frame" x="30" y="132" width="260" height="36"/>
+                    <color key="backgroundColor" red="0.071553446349999994" green="0.69847744700000003" blue="0.9388793111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Wyl-gb-rHP"/>
+                    </constraints>
+                    <state key="normal" title="clean">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clean:" destination="-1" eventType="touchUpInside" id="TbH-8z-V49"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Tw-jU-8fU" firstAttribute="top" secondItem="jd7-6U-6rK" secondAttribute="bottom" constant="10" id="3Jm-1Q-BAV"/>
+                <constraint firstItem="jd7-6U-6rK" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="FUN-PP-nGx"/>
+                <constraint firstItem="jd7-6U-6rK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="GXO-UD-X7L"/>
+                <constraint firstItem="eVT-le-ybC" firstAttribute="top" secondItem="9Tw-jU-8fU" secondAttribute="bottom" constant="10" id="Lkm-0X-oVZ"/>
+                <constraint firstItem="9Tw-jU-8fU" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="Ym6-c8-l2i"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jd7-6U-6rK" secondAttribute="trailing" constant="30" id="cE7-Ly-3QV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="9Tw-jU-8fU" secondAttribute="trailing" constant="30" id="dNd-0f-hGB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="eVT-le-ybC" secondAttribute="trailing" constant="30" id="iGF-hU-GzD"/>
+                <constraint firstItem="eVT-le-ybC" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="ynZ-Nc-IZr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-79" y="-9"/>
+        </view>
+    </objects>
+</document>

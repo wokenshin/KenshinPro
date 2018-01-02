@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMDBVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8y-Lz-e8b">
+                    <rect key="frame" x="20" y="40" width="335" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.41148721440000002" blue="0.26599101260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="5M2-sB-NAa"/>
+                    </constraints>
+                    <state key="normal" title="创建表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createTable:" destination="-1" eventType="touchUpInside" id="WMQ-MC-EZM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9p-55-kxm">
+                    <rect key="frame" x="20" y="86" width="335" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.41148721440000002" blue="0.26599101260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="YIl-6y-pU6"/>
+                    </constraints>
+                    <state key="normal" title="插入数据到表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addDataToTable:" destination="-1" eventType="touchUpInside" id="qKn-Ub-6sB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sba-kX-1bE">
+                    <rect key="frame" x="20" y="132" width="335" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.41148721440000002" blue="0.26599101260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="tZ2-Ao-eeM"/>
+                    </constraints>
+                    <state key="normal" title="删除表中指定数据">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="delDataInTable:" destination="-1" eventType="touchUpInside" id="OfP-Qc-cwy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-7n-RiD">
+                    <rect key="frame" x="20" y="178" width="335" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.41148721440000002" blue="0.26599101260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="xL8-9R-OWs"/>
+                    </constraints>
+                    <state key="normal" title="修改表中数据">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="updateInTable:" destination="-1" eventType="touchUpInside" id="K8k-Rp-Jb9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQu-nM-Rqr">
+                    <rect key="frame" x="20" y="224" width="335" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.41148721440000002" blue="0.26599101260000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="3pt-tb-CX2"/>
+                    </constraints>
+                    <state key="normal" title="查询表中数据">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="readDataInTable:" destination="-1" eventType="touchUpInside" id="SKO-Hl-LkI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-tR-X0Z">
+                    <rect key="frame" x="20" y="280" width="335" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="iTU-Nm-T9D"/>
+                    </constraints>
+                    <state key="normal" title="删除表">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="delTableInDB:" destination="-1" eventType="touchUpInside" id="N8b-OU-EHA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-69-dyl">
+                    <rect key="frame" x="20" y="336" width="335" height="36"/>
+                    <color key="backgroundColor" red="0.071553446349999994" green="0.69847744700000003" blue="0.9388793111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="gcB-5z-QZ5"/>
+                    </constraints>
+                    <state key="normal" title="实际应用">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dbInPro:" destination="-1" eventType="touchUpInside" id="Zbf-6g-bVV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="E6T-tR-X0Z" firstAttribute="top" secondItem="xQu-nM-Rqr" secondAttribute="bottom" constant="20" id="1cz-bw-w5K"/>
+                <constraint firstItem="e9p-55-kxm" firstAttribute="top" secondItem="b8y-Lz-e8b" secondAttribute="bottom" constant="10" id="2DY-QO-arg"/>
+                <constraint firstItem="b8y-Lz-e8b" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="6Nk-Np-z9R"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="e9p-55-kxm" secondAttribute="trailing" constant="20" id="8sf-55-Zqr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xQu-nM-Rqr" secondAttribute="trailing" constant="20" id="Kah-ni-haJ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="b8y-Lz-e8b" secondAttribute="trailing" constant="20" id="Lyf-vW-vCA"/>
+                <constraint firstItem="Sba-kX-1bE" firstAttribute="top" secondItem="e9p-55-kxm" secondAttribute="bottom" constant="10" id="PHy-oF-AgP"/>
+                <constraint firstItem="b8y-Lz-e8b" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="RhU-b2-eI6"/>
+                <constraint firstItem="E6T-tR-X0Z" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="UZJ-kv-k81"/>
+                <constraint firstItem="bVw-7n-RiD" firstAttribute="top" secondItem="Sba-kX-1bE" secondAttribute="bottom" constant="10" id="Uww-lj-AtX"/>
+                <constraint firstItem="xQu-nM-Rqr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="YZ2-qO-vco"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="E6T-tR-X0Z" secondAttribute="trailing" constant="20" id="ZWg-Ts-zLx"/>
+                <constraint firstItem="bVw-7n-RiD" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="b6A-YV-6GW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bVw-7n-RiD" secondAttribute="trailing" constant="20" id="cDd-FD-5WR"/>
+                <constraint firstItem="e9p-55-kxm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="cJn-1I-VhZ"/>
+                <constraint firstItem="Sba-kX-1bE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="eH5-nK-FSU"/>
+                <constraint firstItem="Hjh-69-dyl" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="g4Z-vF-rHs"/>
+                <constraint firstItem="Hjh-69-dyl" firstAttribute="top" secondItem="E6T-tR-X0Z" secondAttribute="bottom" constant="20" id="j8L-jg-yuY"/>
+                <constraint firstItem="xQu-nM-Rqr" firstAttribute="top" secondItem="bVw-7n-RiD" secondAttribute="bottom" constant="10" id="lX9-pU-Ddd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Hjh-69-dyl" secondAttribute="trailing" constant="20" id="oJs-FI-QmL"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Sba-kX-1bE" secondAttribute="trailing" constant="20" id="uDx-M1-BSH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-1118" y="-169"/>
+        </view>
+    </objects>
+</document>

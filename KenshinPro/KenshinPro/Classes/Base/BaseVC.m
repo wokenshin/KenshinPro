@@ -21,7 +21,8 @@
 @interface BaseVC ()<ABPersonViewControllerDelegate,
 ABPeoplePickerNavigationControllerDelegate,//通讯录代理<IOS10
 CNContactPickerDelegate,//通讯录>=IOS10
-                    MFMessageComposeViewControllerDelegate>//发短信代理>
+                    MFMessageComposeViewControllerDelegate,//发短信代理
+UINavigationControllerDelegate, UIImagePickerControllerDelegate>//获取相册 or 拍照中的图片
 
 
 @property (nonatomic, copy) VoidBlock                           clickRightBtnCallback;//导航栏右边的按钮block
@@ -29,6 +30,9 @@ CNContactPickerDelegate,//通讯录>=IOS10
 
 @property (nonatomic, copy) PhoneNoBlock                        phoneNoCallback;
 @property (nonatomic, copy) MSMNoBlock                          sendMsmCallback;
+
+@property (nonatomic, strong) UIImagePickerController           *imgPicker;//拍照获取图片 和 选中本地图片
+@property (nonatomic, copy)   BlockPhoto                        photoCallback;
 
 @end
 
@@ -42,10 +46,19 @@ CNContactPickerDelegate,//通讯录>=IOS10
     
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+//    self.view.backgroundColor = [UIColor whiteColor];//设置背景色
+    [self addTapClickBackCloseKeyBoard];
+    [self setBackButtonNoTitle];//隐藏导航栏返回按钮的标题 只显示返回按钮的箭头
+    [self cancelAutoDownMove];//取消自动下移
+    
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     if (_fxw_isDisablePopGesture)//禁用返回手势
     {
         if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)])
@@ -59,7 +72,6 @@ CNContactPickerDelegate,//通讯录>=IOS10
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
     //可用返回手势[注意这里如果写在 didDis方法内 这里的if是不会触发的]
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)])
     {
@@ -67,13 +79,10 @@ CNContactPickerDelegate,//通讯录>=IOS10
     }
 }
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-//    self.view.backgroundColor = [UIColor whiteColor];//设置背景色
-    [self addTapClickBackCloseKeyBoard];
-    [self setBackButtonNoTitle];//隐藏导航栏返回按钮的标题 只显示返回按钮的箭头
-    [self cancelAutoDownMove];//取消自动下移
+    [super viewDidAppear:animated];
+    NSLog(@"currentVC_is.....%@.....%@", NSStringFromClass([self class]), self.navigationItem.title);
     
 }
 
@@ -265,7 +274,7 @@ CNContactPickerDelegate,//通讯录>=IOS10
     
     [toast setText:message];
     [toast show];
-    
+    NSLog(@"%@", message);
 }
 
 - (void)toastBottom:(NSString *)message
@@ -274,7 +283,7 @@ CNContactPickerDelegate,//通讯录>=IOS10
     toast.textFont = [UIFont systemFontOfSize:14];
     [toast setText:message];
     [toast show];
-    
+    NSLog(@"%@", message);
 }
 
 
@@ -632,6 +641,92 @@ CNContactPickerDelegate,//通讯录>=IOS10
         [UIView setAnimationsEnabled:oldState];
         
     } completion:^(BOOL finished) {}];
+    
+}
+
+#pragma mark - 获取相册 or 拍照
+//懒加载
+- (UIImagePickerController *)imgPicker
+{
+    if (_imgPicker == nil)
+    {
+        _imgPicker = [[UIImagePickerController alloc] init];
+        _imgPicker.delegate      = self;//实现委托，委托必须实现UIImagePickerControllerDelegate协议，来对用户在图片选取器中的动作进行监听
+        _imgPicker.allowsEditing = YES;//在选定图片之前，用户可以简单编辑要选的图片。包括上下移动改变图片的选取范围，用手捏合动作改变图片的大小等。
+    }
+    return _imgPicker;
+    
+}
+
+#pragma mark 获取本地图片
+- (void)fxw_photoLocalWithResultBlock:(BlockPhoto)resultBlock
+{
+    _photoCallback = resultBlock;
+    
+    //创建图片选择器
+    self.imgPicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;//指定源的类型
+    //设置完iamgePicker后，就可以启动了。用以下方法将图像选取器的视图“推”出来
+    [self presentViewController:self.imgPicker animated:YES completion:nil];
+    
+}
+
+#pragma mark 拍照获取图片
+- (void)fxw_photoTakeWithResultBlock:(BlockPhoto)resultBlock
+{
+    _photoCallback = resultBlock;
+    
+    if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera])
+    {
+        self.imgPicker.sourceType = UIImagePickerControllerSourceTypeCamera;//指定源的类型
+        [self presentViewController:self.imgPicker animated:YES completion:nil];
+    }
+    else
+    {
+        [Tools toast:@"模拟其中无法打开照相机" andCuView:self.view];
+    }
+    
+}
+
+#pragma mark 拍照or选择本地图片 选择后 进入本函数
+-(void)imagePickerController:(UIImagePickerController*)ImgPicker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    
+    NSString *type = [info objectForKey:UIImagePickerControllerMediaType];
+    //当选择的类型是图片
+    if ([type isEqualToString:@"public.image"])
+    {
+        //先把图片转成NSData   UIImagePickerControllerReferenceURL
+        UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+        //其实这里可以根据需求判断大小 然后再做压缩处理
+        NSData  *data  = UIImageJPEGRepresentation(image, 0.6);//压缩比例 默认值为：1
+        
+        //图片保存的路径
+        //这里将图片放在沙盒的documents文件夹中
+        NSString *pathDoc = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+        //文件管理器
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        
+        //把刚刚图片转换的data对象拷贝至沙盒中 并保存为image.png【保存为 xxx.png】
+        NSString *headerPng = @"/用户头像.png";
+        NSString *imgPath   = [pathDoc stringByAppendingString:headerPng];
+        //将图片保存到Documents 中
+        [fileManager createDirectoryAtPath:pathDoc withIntermediateDirectories:YES attributes:nil error:nil];
+        [fileManager createFileAtPath:imgPath contents:data attributes:nil];
+        
+        //关闭相册界面
+        [ImgPicker dismissViewControllerAnimated:YES completion:nil];
+        NSLog(@"保存图片成功， path:%@/%@", pathDoc, headerPng);
+        
+        if (_photoCallback) {
+            _photoCallback(data, imgPath);
+            _photoCallback = nil;//避免两个地方的回调出现错误
+        }
+        
+    }
+    else
+    {
+        NSLog(@"父类 imgPicker 出错了");
+    }
     
 }
 
