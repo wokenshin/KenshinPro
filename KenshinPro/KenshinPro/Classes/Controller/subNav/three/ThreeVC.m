@@ -25,7 +25,7 @@
 #import "FPDistinguishVC.h"
 #import "SDWebImgVC.h"
 #import "BlockVC.h"
-
+#import "CopyVC.h"
 
 
 
@@ -64,6 +64,7 @@
     [self addDataWithTitle:@"安全区 Safe Area" andDetail:@"2017-11-02"];
     [self addDataWithTitle:@"SDWebImage" andDetail:@"解决url有逗号无法加载"];
     [self addDataWithTitle:@"代码块" andDetail:@"部分内容"];
+    [self addDataWithTitle:@"深拷贝-浅拷贝" andDetail:@"部分内容"];
 }
 
 - (void)initThreeVCUI
@@ -75,6 +76,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"深拷贝-浅拷贝"])
+    {
+        CopyVC *vc = [[CopyVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"代码块"])
     {
         BlockVC *vc = [[BlockVC alloc] init];

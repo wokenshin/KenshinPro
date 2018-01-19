@@ -7,6 +7,8 @@
 //
 
 #import "RecodePlayVC.h"
+#import "JJSJRecodeVoiceVC.h"
+
 #import <AVFoundation/AVFoundation.h>//录音+播放录音
 #import "VoiceConvert.h"//wav arm 格式互换
 
@@ -230,6 +232,13 @@ NSString  *const PATH_AMR_TO_WAV = @"amrToWav.wav";
     
 }
 
+#pragma mark 封装后的操作
+- (IBAction)clickBtnNextVC:(id)sender
+{
+    JJSJRecodeVoiceVC *vc = [[JJSJRecodeVoiceVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 
 - (void)dealloc
 {

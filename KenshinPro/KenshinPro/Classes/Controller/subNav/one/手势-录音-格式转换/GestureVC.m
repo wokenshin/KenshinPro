@@ -57,6 +57,8 @@
     [_img addGestureRecognizer:recognizer];
     _img.userInteractionEnabled = YES;
     
+    
+    
 }
 
 //点按事件
@@ -248,5 +250,6 @@
 {
     NSLog(@"——————————————%s 已释放", object_getClassName(self));
 }
+
 
 @end

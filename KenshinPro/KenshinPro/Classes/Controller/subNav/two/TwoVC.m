@@ -16,8 +16,7 @@
 #import "ZZGY_VC.h"
 #import "SmartDeviceContentVC.h"
 #import "GgzsVC.h"
-#import "GYZJVC.h"
-
+#import "JJSJVC.h"
 @interface TwoVC ()
 
 @end
@@ -34,7 +33,7 @@
 
 - (void)loadData
 {
-    [self addDataWithTitle:@"GYZJ" andDetail:@"2017-12-27"];
+    [self addDataWithTitle:@"JJSJ" andDetail:@"2017-12-27"];
     [self addDataWithTitle:@"GYZS" andDetail:@"公寓助手-CollectionView+popMenu"];
     [self addDataWithTitle:@"SmartDevice" andDetail:@"2017-09-局域网下载升级包"];
     [self addDataWithTitle:@"ZZGY" andDetail:@"智能公寓-菜单-文本选择器"];
@@ -61,9 +60,9 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    if ([title isEqualToString:@"GYZJ"])
+    if ([title isEqualToString:@"JJSJ"])
     {
-        GYZJVC *vc = [[GYZJVC alloc] init];
+        JJSJVC *vc = [[JJSJVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
         return;

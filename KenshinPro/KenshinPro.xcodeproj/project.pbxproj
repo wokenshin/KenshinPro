@@ -34,10 +34,19 @@
 		9D6FD2AE1FE75C430032CA36 /* FMDBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6FD2AC1FE75C430032CA36 /* FMDBVC.xib */; };
 		9D7357821FE2AB7100BE3EFF /* SDWebImgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7357801FE2AB7100BE3EFF /* SDWebImgVC.m */; };
 		9D7357831FE2AB7100BE3EFF /* SDWebImgVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7357811FE2AB7100BE3EFF /* SDWebImgVC.xib */; };
+		9D7C4056200F1DE300017937 /* LayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C4054200F1DE300017937 /* LayerVC.m */; };
+		9D7C4057200F1DE300017937 /* LayerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7C4055200F1DE300017937 /* LayerVC.xib */; };
+		9D7C409A200F419100017937 /* JJSJRecodeVoiceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C4098200F419100017937 /* JJSJRecodeVoiceVC.m */; };
+		9D7C409B200F419100017937 /* JJSJRecodeVoiceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D7C4099200F419100017937 /* JJSJRecodeVoiceVC.xib */; };
+		9D7C409E200F41EA00017937 /* FXWRecodeVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C409D200F41EA00017937 /* FXWRecodeVoice.m */; };
+		9D8638BD200C475400007CEE /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8638BB200C475400007CEE /* CopyVC.m */; };
+		9D8638BE200C475400007CEE /* CopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8638BC200C475400007CEE /* CopyVC.xib */; };
 		9D8D34751FFB26F200CB5F01 /* VoiceConvert.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D346B1FFB26F200CB5F01 /* VoiceConvert.mm */; };
 		9D8D34761FFB26F200CB5F01 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8D346D1FFB26F200CB5F01 /* libopencore-amrwb.a */; };
 		9D8D34771FFB26F200CB5F01 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8D346E1FFB26F200CB5F01 /* libopencore-amrnb.a */; };
 		9D8D34781FFB26F200CB5F01 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D34731FFB26F200CB5F01 /* amrFileCodec.mm */; };
+		9DA3A8532010417E003641A7 /* JJSJVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA3A8512010417E003641A7 /* JJSJVC.m */; };
+		9DA3A8542010417E003641A7 /* JJSJVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA3A8522010417E003641A7 /* JJSJVC.xib */; };
 		9DDD5E671FE9105800844205 /* SmartSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDD5E661FE9105800844205 /* SmartSocketManager.m */; };
 		9DE9456A1FEA052A001D0C6A /* BlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE945681FEA052A001D0C6A /* BlockVC.m */; };
 		9DE9456B1FEA052A001D0C6A /* BlockVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE945691FEA052A001D0C6A /* BlockVC.xib */; };
@@ -589,6 +598,17 @@
 		9D73577F1FE2AB7100BE3EFF /* SDWebImgVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImgVC.h; sourceTree = "<group>"; };
 		9D7357801FE2AB7100BE3EFF /* SDWebImgVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImgVC.m; sourceTree = "<group>"; };
 		9D7357811FE2AB7100BE3EFF /* SDWebImgVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImgVC.xib; sourceTree = "<group>"; };
+		9D7C4053200F1DE300017937 /* LayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerVC.h; sourceTree = "<group>"; };
+		9D7C4054200F1DE300017937 /* LayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerVC.m; sourceTree = "<group>"; };
+		9D7C4055200F1DE300017937 /* LayerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayerVC.xib; sourceTree = "<group>"; };
+		9D7C4097200F419100017937 /* JJSJRecodeVoiceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSJRecodeVoiceVC.h; sourceTree = "<group>"; };
+		9D7C4098200F419100017937 /* JJSJRecodeVoiceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSJRecodeVoiceVC.m; sourceTree = "<group>"; };
+		9D7C4099200F419100017937 /* JJSJRecodeVoiceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JJSJRecodeVoiceVC.xib; sourceTree = "<group>"; };
+		9D7C409C200F41E900017937 /* FXWRecodeVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXWRecodeVoice.h; sourceTree = "<group>"; };
+		9D7C409D200F41EA00017937 /* FXWRecodeVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXWRecodeVoice.m; sourceTree = "<group>"; };
+		9D8638BA200C475400007CEE /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
+		9D8638BB200C475400007CEE /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
+		9D8638BC200C475400007CEE /* CopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CopyVC.xib; sourceTree = "<group>"; };
 		9D8D34671FFB26F200CB5F01 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
 		9D8D34681FFB26F200CB5F01 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
 		9D8D346A1FFB26F200CB5F01 /* VoiceConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConvert.h; sourceTree = "<group>"; };
@@ -599,6 +619,9 @@
 		9D8D34711FFB26F200CB5F01 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
 		9D8D34731FFB26F200CB5F01 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
 		9D8D34741FFB26F200CB5F01 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		9DA3A8502010417E003641A7 /* JJSJVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSJVC.h; sourceTree = "<group>"; };
+		9DA3A8512010417E003641A7 /* JJSJVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSJVC.m; sourceTree = "<group>"; };
+		9DA3A8522010417E003641A7 /* JJSJVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JJSJVC.xib; sourceTree = "<group>"; };
 		9DDD5E651FE9105800844205 /* SmartSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartSocketManager.h; sourceTree = "<group>"; };
 		9DDD5E661FE9105800844205 /* SmartSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartSocketManager.m; sourceTree = "<group>"; };
 		9DE945671FEA052A001D0C6A /* BlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVC.h; sourceTree = "<group>"; };
@@ -1608,6 +1631,26 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		9D7C4052200F1DC800017937 /* 图层 */ = {
+			isa = PBXGroup;
+			children = (
+				9D7C4053200F1DE300017937 /* LayerVC.h */,
+				9D7C4054200F1DE300017937 /* LayerVC.m */,
+				9D7C4055200F1DE300017937 /* LayerVC.xib */,
+			);
+			path = "图层";
+			sourceTree = "<group>";
+		};
+		9D8638B9200C473A00007CEE /* 深拷贝-浅拷贝 */ = {
+			isa = PBXGroup;
+			children = (
+				9D8638BA200C475400007CEE /* CopyVC.h */,
+				9D8638BB200C475400007CEE /* CopyVC.m */,
+				9D8638BC200C475400007CEE /* CopyVC.xib */,
+			);
+			path = "深拷贝-浅拷贝";
+			sourceTree = "<group>";
+		};
 		9D8D34651FFB26F200CB5F01 /* 音频格式转换caf-arm */ = {
 			isa = PBXGroup;
 			children = (
@@ -1665,6 +1708,17 @@
 			path = amrwapper;
 			sourceTree = "<group>";
 		};
+		9DA3A84F2010415B003641A7 /* JJSJ */ = {
+			isa = PBXGroup;
+			children = (
+				9D2BEAD51FF38389002D2EE3 /* GYZJ */,
+				9DA3A8502010417E003641A7 /* JJSJVC.h */,
+				9DA3A8512010417E003641A7 /* JJSJVC.m */,
+				9DA3A8522010417E003641A7 /* JJSJVC.xib */,
+			);
+			path = JJSJ;
+			sourceTree = "<group>";
+		};
 		9DE945661FEA050C001D0C6A /* 代码块 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1682,6 +1736,9 @@
 				9DED18911FF4D06700C8BD29 /* RecodePlayVC.h */,
 				9DED18921FF4D06700C8BD29 /* RecodePlayVC.m */,
 				9DED18931FF4D06700C8BD29 /* RecodePlayVC.xib */,
+				9D7C4097200F419100017937 /* JJSJRecodeVoiceVC.h */,
+				9D7C4098200F419100017937 /* JJSJRecodeVoiceVC.m */,
+				9D7C4099200F419100017937 /* JJSJRecodeVoiceVC.xib */,
 			);
 			path = "录音+播放+格式转换";
 			sourceTree = "<group>";
@@ -2393,6 +2450,8 @@
 				B92CCB3B1E7A88B900035A79 /* RegexUtil.m */,
 				B96528801EA598600044CA5F /* ImageUtil.h */,
 				B96528811EA598600044CA5F /* ImageUtil.m */,
+				9D7C409C200F41E900017937 /* FXWRecodeVoice.h */,
+				9D7C409D200F41EA00017937 /* FXWRecodeVoice.m */,
 				B92CCB031E7A192100035A79 /* HDeviceIdentifierUtils */,
 			);
 			path = Utils;
@@ -2429,6 +2488,7 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				9D7C4052200F1DC800017937 /* 图层 */,
 				9D42749C1FF094DB00745A81 /* 徽章 */,
 				9D42874F1FEBA3720015FC4A /* 手势-录音-格式转换 */,
 				B9B9049F1F7E1CF20072ABEA /* 引导页 */,
@@ -2464,6 +2524,7 @@
 		B92CCAEC1E7A151F00035A79 /* three */ = {
 			isa = PBXGroup;
 			children = (
+				9D8638B9200C473A00007CEE /* 深拷贝-浅拷贝 */,
 				9DE945661FEA050C001D0C6A /* 代码块 */,
 				9D73577E1FE2AB3900BE3EFF /* SDWebImage */,
 				B9D898301FCE3C8E00B7E994 /* 指纹识别 */,
@@ -2491,7 +2552,7 @@
 		B92CCAED1E7A151F00035A79 /* two */ = {
 			isa = PBXGroup;
 			children = (
-				9D2BEAD51FF38389002D2EE3 /* GYZJ */,
+				9DA3A84F2010415B003641A7 /* JJSJ */,
 				B95B40AA1F8DEBFE00A6658C /* 公寓助手 */,
 				B9B3D45F1F7A277500A30555 /* 公司蓝牙工具App部分 */,
 				B9A6010D1F2F0DA60032E765 /* 自主公寓 */,
@@ -4602,16 +4663,19 @@
 				B9D898391FCE3CEE00B7E994 /* FPDistinguishVC.xib in Resources */,
 				B96180A91E8F4A6600ABCCF3 /* MBMJVC.xib in Resources */,
 				B910E2621EA8888C00DFCC86 /* ScanVC.xib in Resources */,
+				9D8638BE200C475400007CEE /* CopyVC.xib in Resources */,
 				B910E24B1EA884F700DFCC86 /* NavBarCustomVC.xib in Resources */,
 				9D564C1D1FE790DB000A4DDA /* UserInfoVC.xib in Resources */,
 				B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */,
 				B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */,
 				B98DF7271EA8524B00296C2A /* call.html in Resources */,
 				9D4274A11FF094F500745A81 /* BadgeViewVC.xib in Resources */,
+				9D7C4057200F1DE300017937 /* LayerVC.xib in Resources */,
 				B9673FA11E78E22A006AB3DA /* Assets.xcassets in Resources */,
 				B99036771FABF60100CFE633 /* CellLockCtrl.xib in Resources */,
 				B9ACEC3B1F3983F700009B5E /* TextImgVC.xib in Resources */,
 				B98DF74F1EA85D0800296C2A /* MaoBoLiVC.xib in Resources */,
+				9DA3A8542010417E003641A7 /* JJSJVC.xib in Resources */,
 				B910E24F1EA884F700DFCC86 /* MCSearchVC.xib in Resources */,
 				B9A601181F2F0ECE0032E765 /* FXW_AptBtn.xib in Resources */,
 				B9EE6AE41EEA4B06000A06DA /* CellDeviceManage.xib in Resources */,
@@ -4625,6 +4689,7 @@
 				9D6FD2AE1FE75C430032CA36 /* FMDBVC.xib in Resources */,
 				B906B3D71EE94B7C0073E175 /* CellFXWTableMenu.xib in Resources */,
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
+				9D7C409B200F419100017937 /* JJSJRecodeVoiceVC.xib in Resources */,
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
 				B94A8C591F3D46ED002A6D51 /* Notifi2VC.xib in Resources */,
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
@@ -4795,13 +4860,16 @@
 				B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */,
 				B93002271E89FB41000C0563 /* FXW_TextFieldVC.m in Sources */,
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
+				9D7C409A200F419100017937 /* JJSJRecodeVoiceVC.m in Sources */,
 				B91748DA1ECC49A4006C70F5 /* FXW_CountDownButton.m in Sources */,
 				B9B9CEC61E9CB986008CC558 /* SDWebImageDownloader.m in Sources */,
 				B9F3F8DC1FB3DC7700D98D37 /* UIImage+Runtime.m in Sources */,
+				9D8638BD200C475400007CEE /* CopyVC.m in Sources */,
 				B98DF7291EA8524B00296C2A /* JSTWOVC.m in Sources */,
 				B95ED6AD1E9474E200AD490B /* LockMasterAppVC.m in Sources */,
 				B9B9CECA1E9CB986008CC558 /* UIButton+WebCache.m in Sources */,
 				B915C2431E7F9DE10088A31F /* MDSwitch.m in Sources */,
+				9DA3A8532010417E003641A7 /* JJSJVC.m in Sources */,
 				B98730AF1F32CEFF000027D8 /* FXW_TextPikerOne.m in Sources */,
 				B9A4D14F1F130C350005B207 /* MCServiceVC.m in Sources */,
 				B9B3D4641F7A279E00A30555 /* SmartDeviceContentVC.m in Sources */,
@@ -4849,6 +4917,7 @@
 				B96E60671EA70DBF00BC0543 /* MCClientVC.m in Sources */,
 				B915C24E1E7F9DE10088A31F /* UIColorHelper.m in Sources */,
 				B95B40AE1F8DEC1900A6658C /* GgzsVC.m in Sources */,
+				9D7C409E200F41EA00017937 /* FXWRecodeVoice.m in Sources */,
 				B9D626EC1E7CC4D600593EC1 /* MASConstraintMaker.m in Sources */,
 				B96C9A9E1EF23BB400D35B9A /* BigSmallVC.m in Sources */,
 				B9B9CEC51E9CB986008CC558 /* SDWebImageDecoder.m in Sources */,
@@ -5014,6 +5083,7 @@
 				B99C842C1F99926B00952F3D /* FXW_DebugView.m in Sources */,
 				B915C2281E7F9DE10088A31F /* AutoResizeTextView.m in Sources */,
 				B9EFE95C1EDE4A63002C2758 /* JWTAlgorithmRSBase.m in Sources */,
+				9D7C4056200F1DE300017937 /* LayerVC.m in Sources */,
 				B92CCAF61E7A157700035A79 /* TwoVC.m in Sources */,
 				B906FD541E8B668F00645C96 /* UIScrollView+MJRefresh.m in Sources */,
 				B930842A1F3D58290035DA42 /* README.md in Sources */,

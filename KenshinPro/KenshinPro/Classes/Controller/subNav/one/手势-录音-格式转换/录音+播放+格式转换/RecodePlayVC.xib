@@ -109,15 +109,31 @@
                         <action selector="clickBtnPlayAmarToCaf:" destination="-1" eventType="touchUpInside" id="wuf-Yd-iJh"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEP-dx-1ds">
+                    <rect key="frame" x="20" y="390" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.74117647060000003" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="QlY-N2-fDh"/>
+                    </constraints>
+                    <state key="normal" title="封装后的操作">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnNextVC:" destination="-1" eventType="touchUpInside" id="IEp-qF-ikv"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="mSo-zB-syu" firstAttribute="top" secondItem="9ub-Yr-cuT" secondAttribute="bottom" constant="10" id="0i5-bP-Gj2"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="0ex-9t-0Ye" secondAttribute="trailing" constant="20" id="1bl-AT-Zzy"/>
                 <constraint firstItem="Bbp-OD-wUJ" firstAttribute="width" secondItem="9ub-Yr-cuT" secondAttribute="width" id="2aF-At-bA1"/>
+                <constraint firstItem="gEP-dx-1ds" firstAttribute="top" secondItem="mSo-zB-syu" secondAttribute="bottom" constant="10" id="2v3-51-hCb"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Bbp-OD-wUJ" secondAttribute="trailing" constant="30" id="4qO-Io-CqT"/>
                 <constraint firstItem="mSo-zB-syu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="8ka-TG-LUi"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="i3S-Rv-HUC" secondAttribute="trailing" constant="20" id="HZc-KY-YqH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gEP-dx-1ds" secondAttribute="trailing" constant="20" id="LWe-n5-Q0z"/>
+                <constraint firstItem="gEP-dx-1ds" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="MUL-Ga-Gk6"/>
                 <constraint firstItem="9ub-Yr-cuT" firstAttribute="top" secondItem="sXu-rk-lDc" secondAttribute="bottom" constant="20" id="Opl-F8-hyK"/>
                 <constraint firstItem="tot-zN-dL1" firstAttribute="top" secondItem="0ex-9t-0Ye" secondAttribute="bottom" constant="10" id="Opv-Zh-Je6"/>
                 <constraint firstItem="0ex-9t-0Ye" firstAttribute="top" secondItem="i3S-Rv-HUC" secondAttribute="bottom" constant="20" id="PxQ-Hl-e3k"/>

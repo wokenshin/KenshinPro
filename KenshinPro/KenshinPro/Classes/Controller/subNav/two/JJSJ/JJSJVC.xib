@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JJSJVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0i-Lg-X1C">
+                    <rect key="frame" x="20" y="40" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="WM6-g0-GXJ"/>
+                    </constraints>
+                    <state key="normal" title="获取图片-裁剪">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnGetPic:" destination="-1" eventType="touchUpInside" id="kru-Bk-oEj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rba-Ni-ZDw">
+                    <rect key="frame" x="20" y="86" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="z95-dH-AqJ"/>
+                    </constraints>
+                    <state key="normal" title="录音工具类[格式转换]">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnRecodeVoiceToolsShow:" destination="-1" eventType="touchUpInside" id="BVK-3F-lhN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-x9-wC8">
+                    <rect key="frame" x="20" y="132" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="iDd-5V-b8B"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-3z-eIq">
+                    <rect key="frame" x="20" y="178" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="xE1-jq-Ldk"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P0i-Lg-X1C" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="257-F4-97j"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Rba-Ni-ZDw" secondAttribute="trailing" constant="20" id="5x9-Sr-NbF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WdM-3z-eIq" secondAttribute="trailing" constant="20" id="Gr6-tU-WsQ"/>
+                <constraint firstItem="WdM-3z-eIq" firstAttribute="top" secondItem="Ok0-x9-wC8" secondAttribute="bottom" constant="10" id="IXk-00-hUX"/>
+                <constraint firstItem="P0i-Lg-X1C" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="K3b-9M-9q1"/>
+                <constraint firstItem="Ok0-x9-wC8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="PQE-YZ-pBK"/>
+                <constraint firstItem="WdM-3z-eIq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="gpg-uB-pyO"/>
+                <constraint firstItem="Rba-Ni-ZDw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="iBv-oE-vN8"/>
+                <constraint firstItem="Ok0-x9-wC8" firstAttribute="top" secondItem="Rba-Ni-ZDw" secondAttribute="bottom" constant="10" id="kuB-Qk-xA3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="P0i-Lg-X1C" secondAttribute="trailing" constant="20" id="mrV-RT-rPz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ok0-x9-wC8" secondAttribute="trailing" constant="20" id="vsn-jr-Swk"/>
+                <constraint firstItem="Rba-Ni-ZDw" firstAttribute="top" secondItem="P0i-Lg-X1C" secondAttribute="bottom" constant="10" id="zcU-Di-f7U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-103" y="13"/>
+        </view>
+    </objects>
+</document>

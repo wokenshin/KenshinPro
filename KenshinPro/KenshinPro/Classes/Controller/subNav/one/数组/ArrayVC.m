@@ -18,6 +18,60 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"数组";
+    [self sortArrTest];
+    
+}
+
+//升序or降序
+- (void)sortArrTest
+{
+    NSMutableArray *mArr = [[NSMutableArray alloc] init];
+    [mArr addObject:[self dicWithName:@"张三" age:10]];
+    [mArr addObject:[self dicWithName:@"李四" age:11]];
+    [mArr addObject:[self dicWithName:@"王五" age:9]];
+    [mArr addObject:[self dicWithName:@"羊肉粉" age:2]];
+    [mArr addObject:[self dicWithName:@"阿拉蕾" age:8]];
+    [mArr addObject:[self dicWithName:@"卡卡罗特" age:1]];
+    [mArr addObject:[self dicWithName:@"贝吉塔" age:1]];
+    
+    //根据年龄排序 从小到大 升序
+    [mArr sortUsingComparator:^(NSDictionary *obj1, NSDictionary *obj2){
+        
+        if (obj1[@"age"] < obj2[@"age"])
+        {
+            return NSOrderedAscending;
+        }
+        
+        if (obj1[@"age"] > obj2[@"age"])
+        {
+            return NSOrderedDescending;
+        }
+        return NSOrderedSame;
+    }];
+    
+    NSLog(@"升序 %@", mArr);
+    
+    //根据年龄排序 从大到小 降序
+    [mArr sortUsingComparator:^(NSDictionary *obj1, NSDictionary *obj2){
+        
+        if (obj1[@"age"] < obj2[@"age"])
+        {
+            return NSOrderedDescending;
+        }
+        
+        if (obj1[@"age"] > obj2[@"age"])
+        {
+            return NSOrderedAscending;
+        }
+        return NSOrderedSame;
+    }];
+    NSLog(@"降序 %@", mArr);
+    
+}
+
+- (NSDictionary *)dicWithName:(NSString *)name age:(int)age
+{
+    return @{@"name":name,@"age":[NSNumber numberWithInt:age]};
 }
 
 #pragma mark 数组排序 系统方法

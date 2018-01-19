@@ -34,6 +34,7 @@
 #import "FXW_GuidePage.h"
 #import "GestureVC.h"
 #import "BadgeViewVC.h"
+#import "LayerVC.h"
 
 @interface OneVC ()
 
@@ -83,6 +84,7 @@
     [self addDataWithTitle:@"引导页1" andDetail:@"比较low的方式 用控制器"];
     [self addDataWithTitle:@"引导页2" andDetail:@"比较好的方式 直接用view 放在window上"];
     [self addDataWithTitle:@"视频播放" andDetail:@"2017-11-15 本地-远程-未完成"];
+    [self addDataWithTitle:@"图层测试" andDetail:@"test"];
     
 }
 
@@ -96,7 +98,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    
+    if ([title isEqualToString:@"图层测试"])
+    {
+        LayerVC *vc = [[LayerVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"手势+录音"])
     {
         GestureVC *vc = [[GestureVC alloc] init];
