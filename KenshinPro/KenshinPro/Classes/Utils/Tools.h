@@ -259,4 +259,7 @@
 
 //获取沙盒路径
 + (NSString *)fxw_getPathDoc;
+
+#pragma mark App 跳转
++ (void)jumpMyAppSeetingPage;
 @end

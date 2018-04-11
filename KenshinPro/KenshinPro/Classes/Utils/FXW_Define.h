@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+//意思是:只在debug的时候输出, release的时候不输出
+#ifdef DEBUG
+//输出 当前 类名 方法名 行数
+#define KLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define KLog(...)
+#endif
+
 #define AppDel    ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 //获取手机屏幕的宽、高

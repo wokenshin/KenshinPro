@@ -1151,4 +1151,9 @@
     NSString *docsDir  = [dirPaths objectAtIndex:0];
     return docsDir;
 }
+
++ (void)jumpMyAppSeetingPage
+{
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+}
 @end

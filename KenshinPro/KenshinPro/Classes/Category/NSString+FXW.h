@@ -63,4 +63,11 @@
 -(NSString *)fxw_URLDecodedString;
 
 
+/**
+ 清空字符串中的空格
+
+ @return 字符串
+ */
+- (NSString *)fxw_cleanSpace;
+
 @end

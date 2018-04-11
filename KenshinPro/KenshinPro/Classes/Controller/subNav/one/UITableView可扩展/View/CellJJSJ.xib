@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="CellJJSJ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLA-Lx-8p2">
+                        <rect key="frame" x="0.0" y="69" width="320" height="0.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="RnZ-pc-HfF"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bjqs" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-qn-Pk9">
+                        <rect key="frame" x="16" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="MPb-Ia-ZBd"/>
+                            <constraint firstAttribute="width" constant="50" id="whQ-Km-MI7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这仅仅是一个展示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5z-Gc-a4E">
+                        <rect key="frame" x="76" y="25" width="139" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O2H-qn-Pk9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B85-Bx-CQ9"/>
+                    <constraint firstItem="I5z-Gc-a4E" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FKA-A9-SY9"/>
+                    <constraint firstAttribute="bottom" secondItem="nLA-Lx-8p2" secondAttribute="bottom" id="GDw-tr-KUP"/>
+                    <constraint firstItem="O2H-qn-Pk9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="P0S-1p-iP5"/>
+                    <constraint firstItem="I5z-Gc-a4E" firstAttribute="leading" secondItem="O2H-qn-Pk9" secondAttribute="trailing" constant="10" id="TUi-eG-EJX"/>
+                    <constraint firstItem="nLA-Lx-8p2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eOR-bc-mX5"/>
+                    <constraint firstAttribute="trailing" secondItem="nLA-Lx-8p2" secondAttribute="trailing" id="owv-GN-cgI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="-33" y="-8"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bjqs" width="670" height="645"/>
+    </resources>
+</document>

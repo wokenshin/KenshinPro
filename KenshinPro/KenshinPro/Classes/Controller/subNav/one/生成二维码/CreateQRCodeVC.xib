@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateQRCodeVC">
+            <connections>
+                <outlet property="imgView" destination="uD7-5U-3gk" id="heH-ru-gTp"/>
+                <outlet property="txtContent" destination="LE4-EK-XHv" id="i4h-Uv-Gb4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uD7-5U-3gk">
+                    <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="3fx-O2-m6G"/>
+                        <constraint firstAttribute="height" constant="200" id="VKK-k8-Pfz"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入内容" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="LE4-EK-XHv">
+                    <rect key="frame" x="10" y="40" width="355" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="FB7-FO-aBK"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY3-NH-kaV">
+                    <rect key="frame" x="20" y="96" width="335" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="WbM-gu-IaK"/>
+                    </constraints>
+                    <state key="normal" title="生成二维码">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnCreateQRCode:" destination="-1" eventType="touchUpInside" id="wBb-1k-10X"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LE4-EK-XHv" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="1er-5k-Kxv"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LY3-NH-kaV" secondAttribute="trailing" constant="20" id="I1I-oI-8ri"/>
+                <constraint firstItem="uD7-5U-3gk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W2J-O7-NbH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LE4-EK-XHv" secondAttribute="trailing" constant="10" id="ioi-Jq-wRF"/>
+                <constraint firstItem="LY3-NH-kaV" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="mpr-DT-VFP"/>
+                <constraint firstItem="LY3-NH-kaV" firstAttribute="top" secondItem="LE4-EK-XHv" secondAttribute="bottom" constant="20" id="n6S-5B-qXp"/>
+                <constraint firstItem="LE4-EK-XHv" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="wSS-gA-gef"/>
+                <constraint firstItem="uD7-5U-3gk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xOg-Vz-a54"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-133" y="43"/>
+        </view>
+    </objects>
+</document>

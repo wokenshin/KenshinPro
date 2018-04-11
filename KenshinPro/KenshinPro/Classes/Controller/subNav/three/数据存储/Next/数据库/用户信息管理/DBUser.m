@@ -116,11 +116,11 @@ NSString * const TABLE_USERINFO = @"t_userInfo";
     
     //检验参数合法性
     NSString *errLog = @"保存用户信息失败，参数不合法";
-    if (name   == nil ||
-        number == nil ||
-        gender == nil ||
-        age <=0       ||
-        [gender isEqualToString:@""])
+    if (name   == nil
+        || number == nil
+        || gender == nil
+        || age <=0
+        || [gender isEqualToString:@""])
     {
         NSLog(@"%@", errLog);
         return NO;
@@ -188,10 +188,10 @@ NSString * const TABLE_USERINFO = @"t_userInfo";
     NSString *gender    = model.gender;
     int age             = model.age;
     
-    if (name      == nil ||
-        numberNew == nil ||
-        gender    == nil ||
-        age <= 0){
+    if (name == nil
+        || numberNew == nil
+        || gender    == nil
+        || age <= 0){
         NSLog(@"%@", errLog);
         return NO;
     }

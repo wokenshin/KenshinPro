@@ -113,4 +113,99 @@
     
 }
 
+//参考 https://www.jianshu.com/p/68a3c916b372
+#pragma mark 下载文件
++ (void)postDownloadFileWithUrl:(NSString *)urlStr resultBlock:(FXWResultBlock )resultblock
+{
+    //判断url地址的合法性 最好是使用正则表达式
+    if ([urlStr isEqual:[NSNull null]]
+        || urlStr == nil
+        || [urlStr isEqualToString:@""]
+        || ![urlStr hasPrefix:@"http"])
+    {
+        resultblock(NO, nil, @"请求地址错误");
+        return;
+    }
+    
+    //1,创建会话管理者对象
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //2,创建请求对象
+    NSURL *url = [NSURL URLWithString:urlStr];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    /*
+     第一个参数:请求对象
+     第二个参数:progress 进度回调
+     第三个参数:destination--(downloadTask-)
+     在该block中告诉AFN应该把文件存放在什么位置,AFN内部会自动的完成文件的剪切处理
+     targetPath:文件的临时存储路径(tmp)
+     response:响应头信息
+     返回值:文件的最终存储路径
+     第四个参数:completionHandler 完成之后的回调
+     filePath:文件路径 == 返回值
+     */
+    NSURLSessionDownloadTask *download = [manager downloadTaskWithRequest:request progress:
+                                          ^(NSProgress * _Nonnull downloadProgress) {
+                                              
+                                              //进度回调,可在此监听下载进度(已经下载的大小/文件总大小)
+                                              NSLog(@"%f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
+                                              
+                                          } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+                                              
+                                              //获取缓存路径 - 大量的文件的话 建议创建 新的文件路径 保存到自己创建的路径下方便管理
+                                              NSString *pathCache = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+                                              NSString *fullPath  = [NSString stringWithFormat:@"%@/test.jpg", pathCache];
+                                              
+                                              NSLog(@"targetPath:%@",targetPath);
+                                              NSLog(@"fullPath:%@",fullPath);
+                                              
+                                              return [NSURL fileURLWithPath:fullPath];
+                                              
+                                          } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath,
+                                                                NSError * _Nullable error) {
+                                              
+                                              NSLog(@"filePath:%@",filePath);
+                                              
+                                          }];
+    
+    [download resume];
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @end

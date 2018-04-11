@@ -128,4 +128,8 @@
     
 }
 
+- (NSString *)fxw_cleanSpace
+{
+    return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+}
 @end

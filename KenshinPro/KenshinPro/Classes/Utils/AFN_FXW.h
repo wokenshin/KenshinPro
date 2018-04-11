@@ -33,4 +33,12 @@ typedef void(^FXWResultBlock) (BOOL success, NSDictionary *resultDic, NSString *
 
 //还有一种上传图片的方式是 base64， 就是把图片转成字符串，直接放到请求的参数里面 hb的项目里面有实现
 
+/**
+ 下载文件保存到沙盒 Caches/xxx
+
+ @param url 下载地址
+ @param resultblock FXWResultBlock
+ */
++ (void)postDownloadFileWithUrl:(NSString *)url resultBlock:(FXWResultBlock )resultblock;
+
 @end

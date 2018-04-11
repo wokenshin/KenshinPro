@@ -1,0 +1,6 @@
+framework module JJSJIM {
+  umbrella header "JJSJIM.h"
+
+  export *
+  module * { export * }
+}

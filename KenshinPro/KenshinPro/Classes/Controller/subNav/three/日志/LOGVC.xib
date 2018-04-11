@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LOGVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSa-iy-jDi">
+                    <rect key="frame" x="20" y="40" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.74117647060000003" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="SHr-CJ-tFg"/>
+                    </constraints>
+                    <state key="normal" title="方法输出">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="functionLog:" destination="-1" eventType="touchUpInside" id="JL0-pA-Kz3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1y-2c-Cf9">
+                    <rect key="frame" x="20" y="86" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.74117647060000003" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="1YT-lR-Rp8"/>
+                    </constraints>
+                    <state key="normal" title="宏定义输出">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="defineLog:" destination="-1" eventType="touchUpInside" id="d0e-57-nl1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iSa-iy-jDi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="72N-yl-KKS"/>
+                <constraint firstItem="U1y-2c-Cf9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="S8y-7G-A3A"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iSa-iy-jDi" secondAttribute="trailing" constant="20" id="U5r-MI-LrX"/>
+                <constraint firstItem="U1y-2c-Cf9" firstAttribute="top" secondItem="iSa-iy-jDi" secondAttribute="bottom" constant="10" id="ZDP-yH-OLR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="U1y-2c-Cf9" secondAttribute="trailing" constant="20" id="jyD-0y-b89"/>
+                <constraint firstItem="iSa-iy-jDi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="t0F-LJ-qLj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-111" y="37"/>
+        </view>
+    </objects>
+</document>

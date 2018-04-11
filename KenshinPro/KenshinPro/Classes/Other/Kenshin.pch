@@ -14,7 +14,7 @@
 /*
  使用方法
  1.创建pch文件 cmd+n 创建一个 pch文件
- 2.配置文件 TARGET-->BuidlSetting--> Precompile Prefix Header设为YES 然后 Prefix Header 后面$(SRCROOT)/工程名字/pch文件名.pch
+ 2.配置文件 TARGET-->BuidlSetting--> Precompile Prefix Header设为YES 然后 Prefix Header 后面添加 $(SRCROOT)/工程名字/pch文件名.pch
  
  将Precompile Prefix Header设为YES，预编译后的pch文件会被缓存起来，可以提高编译速度
  

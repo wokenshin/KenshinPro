@@ -8,6 +8,7 @@
 
 #import "AFNManagerVC.h"
 #import "AFNMCVC.h"
+#import "AFN_FXWDemoVC.h"
 
 @interface AFNManagerVC ()
 
@@ -25,9 +26,10 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"AFN_FXW" andDetail:@"通用的AFN 网络请求 from kenshin"];
     [self addDataWithTitle:@"AFN_MC" andDetail:@"在MC工作的时候对AFN的封装"];
     [self addDataWithTitle:@"AFN_HS" andDetail:@"在HS工作的时候对AFN的封装"];
-    [self addDataWithTitle:@"AFN_FXW" andDetail:@"通用的AFN 网络请求 from kenshin"];
+    
     
 }
 
@@ -54,7 +56,8 @@
     }
     if ([title isEqualToString:@"AFN_FXW"])
     {
-        [self toast:@"下次添加... AFN_FXW"];
+        AFN_FXWDemoVC *vc = [[AFN_FXWDemoVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         return;
     }
     

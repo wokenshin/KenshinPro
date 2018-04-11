@@ -22,11 +22,13 @@
 //@property (nonatomic, strong) NSString *age;
 //@property (nonatomic, strong) NSString *gender;
 
-//方式二 这种写法其实也不好
+//方式二 这种写法其实也不好 将数据放在字典里面
 //@property (nonatomic, strong) NSDictionary *dicUserInfo;
 
 //方式三 定义一个模型数据类 如 UserInfo
 @property (nonatomic, strong) UserInfo  *userInfo;
+
+//方法四 定义一个id类型数据  然后在内部判断id的类型 做对应的解析
 
 //获取单例[在单例中 创建数据库]
 + (DBUser *)share;

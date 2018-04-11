@@ -179,6 +179,13 @@
     
 }
 
+#pragma mark 实际应用2
+- (IBAction)clickApplication:(id)sender
+{
+    
+    
+}
+
 - (void)dealloc
 {
     NSLog(@"——————————————%s 已释放", object_getClassName(self));

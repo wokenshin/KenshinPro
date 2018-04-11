@@ -26,7 +26,7 @@
 #import "SDWebImgVC.h"
 #import "BlockVC.h"
 #import "CopyVC.h"
-
+#import "LOGVC.h"
 
 
 @interface ThreeVC ()
@@ -65,6 +65,7 @@
     [self addDataWithTitle:@"SDWebImage" andDetail:@"解决url有逗号无法加载"];
     [self addDataWithTitle:@"代码块" andDetail:@"部分内容"];
     [self addDataWithTitle:@"深拷贝-浅拷贝" andDetail:@"部分内容"];
+    [self addDataWithTitle:@"输出日志" andDetail:@"输出日志"];
 }
 
 - (void)initThreeVCUI
@@ -76,6 +77,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"输出日志"])
+    {
+        LOGVC *vc = [[LOGVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"深拷贝-浅拷贝"])
     {
         CopyVC *vc = [[CopyVC alloc] init];

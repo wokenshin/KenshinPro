@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JJSJVC">
             <connections>
+                <outlet property="imgAnima" destination="nNh-7h-7he" id="fWO-AS-uj7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,9 +53,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="iDd-5V-b8B"/>
                     </constraints>
-                    <state key="normal" title="Button">
+                    <state key="normal" title="开始图片动画">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="clickBtnStartAnimatioon:" destination="-1" eventType="touchUpInside" id="Zfj-xq-cAo"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-3z-eIq">
                     <rect key="frame" x="20" y="178" width="280" height="36"/>
@@ -62,28 +66,75 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="xE1-jq-Ldk"/>
                     </constraints>
-                    <state key="normal" title="Button">
+                    <state key="normal" title="结束图片动画">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="clickBtnStopAnimatioon:" destination="-1" eventType="touchUpInside" id="1zE-GM-LHG"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wechatvoice4" translatesAutoresizingMaskIntoConstraints="NO" id="nNh-7h-7he">
+                    <rect key="frame" x="154.5" y="234" width="11" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="UO5-QW-2be"/>
+                        <constraint firstAttribute="width" constant="11" id="djd-1l-NZs"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-3s-Sd1">
+                    <rect key="frame" x="20" y="522" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.36078431370000003" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="htB-Jp-09D"/>
+                    </constraints>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnMore:" destination="-1" eventType="touchUpInside" id="7GF-JD-9IK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLO-2K-7lE">
+                    <rect key="frame" x="20" y="476" width="280" height="36"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.36078431370000003" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="3uQ-0g-ZTG"/>
+                    </constraints>
+                    <state key="normal" title="IM UI的封装">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnIMUI:" destination="-1" eventType="touchUpInside" id="X84-Za-LFd"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="P0i-Lg-X1C" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="257-F4-97j"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Rba-Ni-ZDw" secondAttribute="trailing" constant="20" id="5x9-Sr-NbF"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Eaa-3s-Sd1" secondAttribute="trailing" constant="20" id="9yy-Wg-RS8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="bLO-2K-7lE" secondAttribute="trailing" constant="20" id="BX7-Ei-qq3"/>
+                <constraint firstItem="bLO-2K-7lE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Cvd-2Q-D0V"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WdM-3z-eIq" secondAttribute="trailing" constant="20" id="Gr6-tU-WsQ"/>
                 <constraint firstItem="WdM-3z-eIq" firstAttribute="top" secondItem="Ok0-x9-wC8" secondAttribute="bottom" constant="10" id="IXk-00-hUX"/>
                 <constraint firstItem="P0i-Lg-X1C" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="K3b-9M-9q1"/>
+                <constraint firstItem="Eaa-3s-Sd1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Lz6-dO-e6s"/>
                 <constraint firstItem="Ok0-x9-wC8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="PQE-YZ-pBK"/>
                 <constraint firstItem="WdM-3z-eIq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="gpg-uB-pyO"/>
                 <constraint firstItem="Rba-Ni-ZDw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="iBv-oE-vN8"/>
                 <constraint firstItem="Ok0-x9-wC8" firstAttribute="top" secondItem="Rba-Ni-ZDw" secondAttribute="bottom" constant="10" id="kuB-Qk-xA3"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="P0i-Lg-X1C" secondAttribute="trailing" constant="20" id="mrV-RT-rPz"/>
+                <constraint firstItem="nNh-7h-7he" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rDk-JB-LI4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Eaa-3s-Sd1" secondAttribute="bottom" constant="10" id="rto-OF-5LT"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ok0-x9-wC8" secondAttribute="trailing" constant="20" id="vsn-jr-Swk"/>
+                <constraint firstItem="Eaa-3s-Sd1" firstAttribute="top" secondItem="bLO-2K-7lE" secondAttribute="bottom" constant="10" id="wEX-M2-65o"/>
+                <constraint firstItem="nNh-7h-7he" firstAttribute="top" secondItem="WdM-3z-eIq" secondAttribute="bottom" constant="20" id="xGF-lC-R1t"/>
                 <constraint firstItem="Rba-Ni-ZDw" firstAttribute="top" secondItem="P0i-Lg-X1C" secondAttribute="bottom" constant="10" id="zcU-Di-f7U"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="-103" y="13"/>
+            <point key="canvasLocation" x="-374" y="-57"/>
         </view>
     </objects>
+    <resources>
+        <image name="wechatvoice4" width="11" height="15"/>
+    </resources>
 </document>

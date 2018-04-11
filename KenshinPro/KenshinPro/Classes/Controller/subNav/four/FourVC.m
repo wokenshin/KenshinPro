@@ -15,6 +15,7 @@
 #import "DebugLogVC.h"
 #import "RuntimeVC.h"
 #import "CJJMVC.h"
+#import <JJSJIM/JJSJIM.h>
 
 @interface FourVC ()
 
@@ -41,7 +42,7 @@
     [self addDataWithTitle:@"RunLoop"  andDetail:@"2017-10-18"];
     [self addDataWithTitle:@"runtime"  andDetail:@"2017-11-08"];
     [self addDataWithTitle:@"C语言实现加解密-生成库文件"  andDetail:@"让安卓iOS都可以调用"];
-    
+    [self addDataWithTitle:@"mySDK test"  andDetail:@"2018-2-27"];
 }
 
 - (void)initFourVCUI
@@ -53,6 +54,11 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"mySDK test"])
+    {
+        [self test];
+        return;
+    }
     if ([title isEqualToString:@"C语言实现加解密-生成库文件"])
     {
         CJJMVC *vc = [[CJJMVC alloc] init];
@@ -111,6 +117,11 @@
     }
     [self toastBottom:@"没有实现该功能"];
     
+}
+
+- (void)test
+{
+    [Test print:@"难道这就搞定了？"];
 }
 
 - (void)dealloc

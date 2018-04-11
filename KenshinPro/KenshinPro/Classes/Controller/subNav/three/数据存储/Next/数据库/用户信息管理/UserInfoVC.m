@@ -105,7 +105,7 @@
     }
 }
 
-#pragma mark 多线程操作 插入100条数据
+#pragma mark 多线程操作 插入3000条数据
 - (IBAction)mThreadInsertManyData:(id)sender
 {
     [_user testMThread];

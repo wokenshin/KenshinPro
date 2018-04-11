@@ -88,7 +88,6 @@
                                                 forState:UIControlStateSelected];
     
     //设置Tab未选中时颜色
-    
     [navViewController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:RGB2Color(179, 179, 179)}
                                                 forState:UIControlStateNormal];
     

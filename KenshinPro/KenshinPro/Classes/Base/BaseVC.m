@@ -82,7 +82,7 @@ UINavigationControllerDelegate, UIImagePickerControllerDelegate>//获取相册 o
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    NSLog(@"currentVC_is.....%@.....%@", NSStringFromClass([self class]), self.navigationItem.title);
+    NSLog(@"tips-------->>>当前控制器是:%@ 标题:%@", NSStringFromClass([self class]), self.navigationItem.title);
     
 }
 
