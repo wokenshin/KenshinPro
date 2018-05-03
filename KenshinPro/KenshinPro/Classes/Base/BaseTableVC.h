@@ -32,4 +32,12 @@
  */
 - (void)clickCellWithTitle:(NSString *)title;
 
+
+/**
+ push
+
+ @param pushVC push到的vc
+ */
+- (void)fxw_pushVC:(UIViewController *)pushVC;
+
 @end

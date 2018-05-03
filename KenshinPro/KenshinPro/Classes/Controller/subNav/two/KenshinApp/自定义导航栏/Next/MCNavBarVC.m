@@ -113,7 +113,7 @@
     placeLab.text = @"搜索大神或服务";
     placeLab.font = FontSearch;
     
-    placeLab.textColor = colorGraySearch;
+    placeLab.textColor = [UIColor blackColor];
     [searchCtrl addSubview:placeLab];
     
     self.navigationItem.titleView = searchCtrl;

@@ -40,7 +40,7 @@
     
     
     _btn = [[FXW_CountDownButton alloc] initWithFrame:CGRectMake(30, 350, screenWidth - 60, 36)];
-    _btn.countDownSecond = 100;
+    _btn.countDownSecond = 60;
     _btn.backgroundColor = colorHomeBlue;
     [self.view addSubview:_btn];
     [_btn setTitle:@"封装倒计时按钮" forState:UIControlStateNormal];

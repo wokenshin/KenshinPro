@@ -26,9 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self loadData];
     [self initFourVCUI];
+    [self loadData];
     
+}
+
+- (void)initFourVCUI
+{
+    self.navigationItem.title = @"高级";
+    [self.view addSubview:self.tableView];
     
 }
 
@@ -43,13 +49,6 @@
     [self addDataWithTitle:@"runtime"  andDetail:@"2017-11-08"];
     [self addDataWithTitle:@"C语言实现加解密-生成库文件"  andDetail:@"让安卓iOS都可以调用"];
     [self addDataWithTitle:@"mySDK test"  andDetail:@"2018-2-27"];
-}
-
-- (void)initFourVCUI
-{
-    self.navigationItem.title = @"高级";
-    [self.view addSubview:self.tableView];
-    
 }
 
 - (void)clickCellWithTitle:(NSString *)title
@@ -127,7 +126,6 @@
 - (void)dealloc
 {
     [Tools NSLogClassDestroy:self];
-    
 }
 
 @end

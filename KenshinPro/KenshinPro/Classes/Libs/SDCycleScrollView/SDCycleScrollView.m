@@ -173,6 +173,7 @@ NSString * const ID = @"cycleCell";
         TAPageControl *pageContol = (TAPageControl *)_pageControl;
         pageContol.dotSize = pageControlDotSize;
     }
+    
 }
 
 - (void)setShowPageControl:(BOOL)showPageControl

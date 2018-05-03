@@ -42,6 +42,7 @@
 #import "BundleVC.h"
 #import "CreateQRCodeVC.h"
 
+
 @interface OneVC ()
 
 @end
@@ -110,7 +111,6 @@
     [self addDataWithTitle:@"PureLayout" andDetail:@"2018.02.24"];
     [self addDataWithTitle:@"Bundle"     andDetail:@"2018.04.04"];
     [self addDataWithTitle:@"生成二维码-原生" andDetail:@"2018.04.11"];
-    
     
 }
 

@@ -12,6 +12,7 @@
 #import "TwoVC.h"
 #import "ThreeVC.h"
 #import "FourVC.h"
+#import "FiveVC.h"
 
 @interface MainTabBarVC ()
 
@@ -37,31 +38,37 @@
     TwoVC       *twoVC      = [[TwoVC alloc] init];
     ThreeVC     *threeVC    = [[ThreeVC alloc] init];
     FourVC      *fourVC     = [[FourVC alloc] init];
+    FiveVC      *fiveVC     = [[FiveVC alloc] init];
     
     //返回四个导航控制器
-    UINavigationController *navHome      = [self subNavOfTabBarVCWith:@"基础"
+    UINavigationController *nav1      = [self subNavOfTabBarVCWith:@"基础"
                                                        viewController:oneVC
                                                             imageName:@"wb_home"
                                                     selectedImageName:@"wb_home_selected"];
     
-    UINavigationController *navExpert    = [self subNavOfTabBarVCWith:@"App"
+    UINavigationController *nav2    = [self subNavOfTabBarVCWith:@"App"
                                                        viewController:twoVC
                                                             imageName:@"wb_message_center"
                                                     selectedImageName:@"wb_message_center_selected"];
     
-    UINavigationController *navQuestions = [self subNavOfTabBarVCWith:@"进阶"
+    UINavigationController *nav3 = [self subNavOfTabBarVCWith:@"进阶"
                                                        viewController:threeVC
                                                             imageName:@"wb_discover"
                                                     selectedImageName:@"wb_discover_selected"];
     
-    UINavigationController *navMine      = [self subNavOfTabBarVCWith:@"高级"
+    UINavigationController *nav4      = [self subNavOfTabBarVCWith:@"高级"
                                                        viewController:fourVC
+                                                            imageName:@"wb_profile"
+                                                    selectedImageName:@"wb_profile_selected"];
+    
+    UINavigationController *nav5      = [self subNavOfTabBarVCWith:@"复用"
+                                                       viewController:fiveVC
                                                             imageName:@"wb_profile"
                                                     selectedImageName:@"wb_profile_selected"];
     
     
     //设置TabBarVC的四个子控制器
-    self.viewControllers = [NSArray arrayWithObjects:navHome, navExpert, navQuestions, navMine, nil];
+    self.viewControllers = [NSArray arrayWithObjects:nav1, nav2, nav3, nav4, nav5, nil];
     
 }
 

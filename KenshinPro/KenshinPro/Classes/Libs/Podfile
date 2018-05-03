@@ -10,5 +10,5 @@ pod 'MBProgressHUD'
 pod 'IQKeyboardManager'
 pod 'TZImagePickerController'
 pod 'Bugly'
-
+pod 'UITableView+FDTemplateLayoutCell'
 end
