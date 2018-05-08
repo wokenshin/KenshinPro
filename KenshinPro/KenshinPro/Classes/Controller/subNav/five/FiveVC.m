@@ -13,6 +13,7 @@
 #import "JJSJHomeVC.h"
 #import "PuerTCellVC.h"
 #import "PureCodeViewVC.h"
+#import "ShowDateVC.h"
 
 @interface FiveVC ()
 
@@ -42,11 +43,17 @@
     [self addDataWithTitle:@"应用-JJSJ首页" andDetail:@""];
     [self addDataWithTitle:@"纯代码TableCell" andDetail:@"JJSJUISDK"];
     [self addDataWithTitle:@"纯代码View" andDetail:@"JJSJUISDK"];
+    [self addDataWithTitle:@"显示时间" andDetail:@"JJSJUISDK"];
     
 }
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"显示时间"])
+    {
+        [self fxw_pushVC:[[ShowDateVC alloc] init]];
+        return;
+    }
     if ([title isEqualToString:@"纯代码View"])
     {
         [self fxw_pushVC:[[PureCodeViewVC alloc] init]];
