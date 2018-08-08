@@ -34,7 +34,7 @@
     long cuSystemTime  = [NSDate fxw_cuSystemTime]/1000;
     long day           = 60*60*24;
     
-    //将时间戳转换成 刚刚，今天 12:30 昨天 11:30 星期几 2018.04.23
+    //将时间戳转换成 刚刚，[今天]12:30 昨天 11:30 星期几 2018.04.23
     NSString *strTime0  = [NSDate fxw_wxsjWithTimespan:cuSystemTime];
     NSString *strTime1  = [NSDate fxw_wxsjWithTimespan:cuSystemTime - 60*10];
     NSString *strTime2  = [NSDate fxw_wxsjWithTimespan:cuSystemTime - day];

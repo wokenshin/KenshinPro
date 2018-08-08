@@ -40,11 +40,11 @@
     UIImage *image = [UIImage ln_imageNamed:name];
     if (image)
     {
-        NSLog(@"runtime添加额外功能--加载成功");
+//        NSLog(@"runtime添加额外功能--加载成功");
     }
     else
     {
-        NSLog(@"runtime添加额外功能--加载失败");
+//        NSLog(@"runtime添加额外功能--加载失败");
     }
     return image;
     

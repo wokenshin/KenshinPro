@@ -55,6 +55,7 @@
     [self loadData];
     [self initOneVCUI];
     [self test2017_12_22];
+    
 }
 
 
@@ -64,6 +65,7 @@
 {
     [self addDataWithTitle:@"网络状态实时监听" andDetail:@"通过AFN 在AppDelegate中实现"];
     [self addDataWithTitle:@"AFN封装" andDetail:@"针对所在公司进行的封装"];
+    [self addDataWithTitle:@"测试崩溃" andDetail:@"bugly"];
     
     [self addDataWithTitle:@"控制器之间的跳转" andDetail:@"push、pop、present、dismiss"];
     [self addDataWithTitle:@"字符串" andDetail:@"字符串的基本操作"];
@@ -112,6 +114,7 @@
     [self addDataWithTitle:@"Bundle"     andDetail:@"2018.04.04"];
     [self addDataWithTitle:@"生成二维码-原生" andDetail:@"2018.04.11"];
     
+    
 }
 
 #pragma mark 初始化UI
@@ -124,6 +127,12 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    
+    if ([title isEqualToString:@"测试崩溃"]) {
+        NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
+        [mDic setObject:nil forKey:@"aaa"];
+        return;
+    }
     if ([title isEqualToString:@"生成二维码-原生"])
     {
         CreateQRCodeVC *vc = [[CreateQRCodeVC alloc] init];
@@ -434,7 +443,7 @@
     [dicTest setObject:@"蟑螂" forKey:@"小强"];
     
     id obj = dicTest[@"小强"];//脑袋短路了 看代码的时候没看懂 id<ProXxx> api  = _dicApi[responseKey];
-    NSLog(@"上面语法的意思是：找出字典中 key为 小强 的 value");
+//    NSLog(@"上面语法的意思是：找出字典中 key为 小强 的 value");
     obj = nil;
     
 }
@@ -443,7 +452,7 @@
 {
     //先从沙盒里面取一遍时间差
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSInteger tdOld = [userDefaults integerForKey:@"TimeDifference"];
+//    NSInteger tdOld = [userDefaults integerForKey:@"TimeDifference"];
     
     NSInteger serverTime = 1517449098275;
     
@@ -465,6 +474,8 @@
      -->服务器时间S = 本地时间L - 时间差TD(正数or负数)
      */
 }
+
+
 
 - (void)dealloc
 {

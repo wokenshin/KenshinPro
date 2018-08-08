@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1803E592207DF72C00F7ACA6 /* FiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803E591207DF72C00F7ACA6 /* FiveVC.m */; };
 		1803E596207DFA1C00F7ACA6 /* FYScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803E595207DFA1C00F7ACA6 /* FYScrollViewVC.m */; };
+		1805A692211A723E003BE425 /* FXWWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805A691211A723E003BE425 /* FXWWebVC.m */; };
+		18064E7F20A04AD3001AB33F /* ShowDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064E7D20A04AD3001AB33F /* ShowDateVC.m */; };
+		18064E8020A04AD3001AB33F /* ShowDateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18064E7E20A04AD3001AB33F /* ShowDateVC.xib */; };
+		18064E8320A04CD6001AB33F /* NSDate+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064E8220A04CD6001AB33F /* NSDate+FXW.m */; };
 		180758342063A97E000A8A3B /* UITextViewBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180758322063A97E000A8A3B /* UITextViewBaseVC.m */; };
 		180848C1207F3B3800C2D91B /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180848B9207F3B3700C2D91B /* UITableView+FDIndexPathHeightCache.m */; };
 		180848C2207F3B3800C2D91B /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 180848BA207F3B3800C2D91B /* UITableView+FDTemplateLayoutCellDebug.m */; };
@@ -40,9 +44,12 @@
 		183896A9207EE74F0008A3B2 /* FYMenu2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A8207EE74F0008A3B2 /* FYMenu2VC.m */; };
 		183896AD207EEAB10008A3B2 /* FXWMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896AC207EEAB10008A3B2 /* FXWMenuScrollView.m */; };
 		183896B1207EEE720008A3B2 /* JJSJHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896B0207EEE720008A3B2 /* JJSJHomeVC.m */; };
+		189A734B20A92837003D3439 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A734A20A92837003D3439 /* Bugly.framework */; };
 		18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C53756207E4F8C00959AF8 /* ModelItem.m */; };
 		18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5375A207E55B800959AF8 /* FXWMenuGridView.m */; };
 		18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C5F680207C9D8800884CFC /* TestBundle.bundle */; };
+		18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E983C020A97525002249F3 /* JavaLearnVC.m */; };
+		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
 		9D094E2A201192B40088636C /* LOGVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D094E28201192B40088636C /* LOGVC.xib */; };
 		9D2BEAD91FF3839D002D2EE3 /* GYZJVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D2BEAD71FF3839D002D2EE3 /* GYZJVC.m */; };
@@ -604,10 +611,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B765F29EAD76CABC176E56 /* Pods-KenshinPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinPro/Pods-KenshinPro.release.xcconfig"; sourceTree = "<group>"; };
 		1803E590207DF72C00F7ACA6 /* FiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveVC.h; sourceTree = "<group>"; };
 		1803E591207DF72C00F7ACA6 /* FiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveVC.m; sourceTree = "<group>"; };
 		1803E594207DFA1C00F7ACA6 /* FYScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYScrollViewVC.h; sourceTree = "<group>"; };
 		1803E595207DFA1C00F7ACA6 /* FYScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYScrollViewVC.m; sourceTree = "<group>"; };
+		1805A690211A723E003BE425 /* FXWWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWWebVC.h; sourceTree = "<group>"; };
+		1805A691211A723E003BE425 /* FXWWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWWebVC.m; sourceTree = "<group>"; };
+		18064E7C20A04AD3001AB33F /* ShowDateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowDateVC.h; sourceTree = "<group>"; };
+		18064E7D20A04AD3001AB33F /* ShowDateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowDateVC.m; sourceTree = "<group>"; };
+		18064E7E20A04AD3001AB33F /* ShowDateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowDateVC.xib; sourceTree = "<group>"; };
+		18064E8120A04CD6001AB33F /* NSDate+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FXW.h"; sourceTree = "<group>"; };
+		18064E8220A04CD6001AB33F /* NSDate+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FXW.m"; sourceTree = "<group>"; };
 		180758312063A97E000A8A3B /* UITextViewBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewBaseVC.h; sourceTree = "<group>"; };
 		180758322063A97E000A8A3B /* UITextViewBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewBaseVC.m; sourceTree = "<group>"; };
 		180848B9207F3B3700C2D91B /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
@@ -665,11 +680,19 @@
 		183896AC207EEAB10008A3B2 /* FXWMenuScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWMenuScrollView.m; sourceTree = "<group>"; };
 		183896AF207EEE720008A3B2 /* JJSJHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSJHomeVC.h; sourceTree = "<group>"; };
 		183896B0207EEE720008A3B2 /* JJSJHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSJHomeVC.m; sourceTree = "<group>"; };
+		189A734720A92801003D3439 /* BuglyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuglyConfig.h; sourceTree = "<group>"; };
+		189A734820A92801003D3439 /* Bugly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bugly.h; sourceTree = "<group>"; };
+		189A734920A92801003D3439 /* BuglyLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuglyLog.h; sourceTree = "<group>"; };
+		189A734A20A92837003D3439 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugly.framework; path = Pods/Bugly/Bugly.framework; sourceTree = "<group>"; };
 		18C53755207E4F8C00959AF8 /* ModelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelItem.h; sourceTree = "<group>"; };
 		18C53756207E4F8C00959AF8 /* ModelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelItem.m; sourceTree = "<group>"; };
 		18C53759207E55B800959AF8 /* FXWMenuGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWMenuGridView.h; sourceTree = "<group>"; };
 		18C5375A207E55B800959AF8 /* FXWMenuGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWMenuGridView.m; sourceTree = "<group>"; };
 		18C5F680207C9D8800884CFC /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
+		18E983BF20A97525002249F3 /* JavaLearnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaLearnVC.h; sourceTree = "<group>"; };
+		18E983C020A97525002249F3 /* JavaLearnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaLearnVC.m; sourceTree = "<group>"; };
+		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCA21273B25DD35F01740D7 /* Pods-KenshinPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinPro/Pods-KenshinPro.debug.xcconfig"; sourceTree = "<group>"; };
 		9D094E26201192B40088636C /* LOGVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOGVC.h; sourceTree = "<group>"; };
 		9D094E27201192B40088636C /* LOGVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOGVC.m; sourceTree = "<group>"; };
 		9D094E28201192B40088636C /* LOGVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LOGVC.xib; sourceTree = "<group>"; };
@@ -1665,6 +1688,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189A734B20A92837003D3439 /* Bugly.framework in Frameworks */,
 				B97940BE1FC3EFBD0039458A /* libsqlite3.tbd in Frameworks */,
 				9D8D34771FFB26F200CB5F01 /* libopencore-amrnb.a in Frameworks */,
 				9D8D34761FFB26F200CB5F01 /* libopencore-amrwb.a in Frameworks */,
@@ -1672,6 +1696,7 @@
 				B97940BA1FC3EFA50039458A /* Security.framework in Frameworks */,
 				180B6D0E2047998900B4CACB /* JJSJIM.framework in Frameworks */,
 				B97940B81FC3EF8E0039458A /* CFNetwork.framework in Frameworks */,
+				2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1695,6 +1720,8 @@
 		1803E58C207DF6CB00F7ACA6 /* five */ = {
 			isa = PBXGroup;
 			children = (
+				1805A68F211A721D003BE425 /* 网页 */,
+				18064E7B20A04AAA001AB33F /* 显示时间 */,
 				1813567D209AAF34000D1F42 /* 纯代码View */,
 				180900B4209A908600DBCF1D /* 纯代码TableCell */,
 				183896AE207EEE590008A3B2 /* 用用-JJSJ首页 */,
@@ -1714,6 +1741,25 @@
 				1803E595207DFA1C00F7ACA6 /* FYScrollViewVC.m */,
 			);
 			path = "滚动视图";
+			sourceTree = "<group>";
+		};
+		1805A68F211A721D003BE425 /* 网页 */ = {
+			isa = PBXGroup;
+			children = (
+				1805A690211A723E003BE425 /* FXWWebVC.h */,
+				1805A691211A723E003BE425 /* FXWWebVC.m */,
+			);
+			path = "网页";
+			sourceTree = "<group>";
+		};
+		18064E7B20A04AAA001AB33F /* 显示时间 */ = {
+			isa = PBXGroup;
+			children = (
+				18064E7C20A04AD3001AB33F /* ShowDateVC.h */,
+				18064E7D20A04AD3001AB33F /* ShowDateVC.m */,
+				18064E7E20A04AD3001AB33F /* ShowDateVC.xib */,
+			);
+			path = "显示时间";
 			sourceTree = "<group>";
 		};
 		1807582B2063A89D000A8A3B /* UItextView */ = {
@@ -1929,6 +1975,17 @@
 			path = MySDK;
 			sourceTree = "<group>";
 		};
+		189A734620A92801003D3439 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				189A734720A92801003D3439 /* BuglyConfig.h */,
+				189A734820A92801003D3439 /* Bugly.h */,
+				189A734920A92801003D3439 /* BuglyLog.h */,
+			);
+			name = Headers;
+			path = Pods/Bugly/Bugly.framework/Headers;
+			sourceTree = "<group>";
+		};
 		18C53754207E4F6600959AF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1945,6 +2002,24 @@
 				18C5375A207E55B800959AF8 /* FXWMenuGridView.m */,
 			);
 			path = FXWMenuGridView;
+			sourceTree = "<group>";
+		};
+		18E983BE20A974FC002249F3 /* Java后端学习 */ = {
+			isa = PBXGroup;
+			children = (
+				18E983BF20A97525002249F3 /* JavaLearnVC.h */,
+				18E983C020A97525002249F3 /* JavaLearnVC.m */,
+			);
+			path = "Java后端学习";
+			sourceTree = "<group>";
+		};
+		3059B0E58BB77C855BF590F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CCA21273B25DD35F01740D7 /* Pods-KenshinPro.debug.xcconfig */,
+				01B765F29EAD76CABC176E56 /* Pods-KenshinPro.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9D094E252011929B0088636C /* 日志 */ = {
@@ -2946,6 +3021,7 @@
 		B92CCAE51E7A140A00035A79 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B92CCB031E7A192100035A79 /* HDeviceIdentifierUtils */,
 				B92CCAFD1E7A166100035A79 /* Tools.h */,
 				B92CCAFE1E7A166100035A79 /* Tools.m */,
 				B92CCB041E7A192100035A79 /* DateUtil.h */,
@@ -2972,7 +3048,6 @@
 				B96528811EA598600044CA5F /* ImageUtil.m */,
 				9D7C409C200F41E900017937 /* FXWRecodeVoice.h */,
 				9D7C409D200F41EA00017937 /* FXWRecodeVoice.m */,
-				B92CCB031E7A192100035A79 /* HDeviceIdentifierUtils */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -2992,6 +3067,7 @@
 		B92CCAEA1E7A151F00035A79 /* four */ = {
 			isa = PBXGroup;
 			children = (
+				18E983BE20A974FC002249F3 /* Java后端学习 */,
 				B98A10841FBD227800556A00 /* C语言加解密 */,
 				B9A6820A1FB2D9F800B05793 /* runtime */,
 				B99C84241F99916000952F3D /* 日志视图调试工具 */,
@@ -3816,6 +3892,7 @@
 		B9673F881E78E22A006AB3DA = {
 			isa = PBXGroup;
 			children = (
+				189A734620A92801003D3439 /* Headers */,
 				B9673F931E78E22A006AB3DA /* KenshinPro */,
 				B9673FAD1E78E22A006AB3DA /* KenshinProTests */,
 				B9673FB81E78E22A006AB3DA /* KenshinProUITests */,
@@ -3823,6 +3900,7 @@
 				181AFEF9207480A30071DC86 /* TestBundle */,
 				B9673F921E78E22A006AB3DA /* Products */,
 				B97940B61FC3EF870039458A /* Frameworks */,
+				3059B0E58BB77C855BF590F1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3915,10 +3993,12 @@
 		B97940B61FC3EF870039458A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189A734A20A92837003D3439 /* Bugly.framework */,
 				B97940BD1FC3EFBD0039458A /* libsqlite3.tbd */,
 				B97940BB1FC3EFAD0039458A /* SystemConfiguration.framework */,
 				B97940B91FC3EF9D0039458A /* Security.framework */,
 				B97940B71FC3EF870039458A /* CFNetwork.framework */,
+				4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4804,6 +4884,8 @@
 				B9EB829A1F3A9438000574F7 /* NSString+FXW.m */,
 				B9EB829C1F3A9530000574F7 /* NSData+FXW.h */,
 				B9EB829D1F3A9530000574F7 /* NSData+FXW.m */,
+				18064E8120A04CD6001AB33F /* NSDate+FXW.h */,
+				18064E8220A04CD6001AB33F /* NSDate+FXW.m */,
 				B94C541A1F3BF1A6003AC71B /* UIView+FXW.h */,
 				B94C541B1F3BF1A6003AC71B /* UIView+FXW.m */,
 				B94C541D1F3BF1DF003AC71B /* UIImage+ImageEffects.h */,
@@ -5025,9 +5107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9673FBE1E78E22A006AB3DA /* Build configuration list for PBXNativeTarget "KenshinPro" */;
 			buildPhases = (
+				615573DF1FC046650CB6C61B /* [CP] Check Pods Manifest.lock */,
 				B9673F8D1E78E22A006AB3DA /* Sources */,
 				B9673F8E1E78E22A006AB3DA /* Frameworks */,
 				B9673F8F1E78E22A006AB3DA /* Resources */,
+				23A308A501D42BC7E7C4A414 /* [CP] Embed Pods Frameworks */,
+				A72EBD5DDA6AEE0EECF9A9D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -5215,6 +5300,7 @@
 				B9BADB5B1EA5E5D6000B3C1C /* VCN5.xib in Resources */,
 				B9EFFE701F74BAB600E5A871 /* MyXibVC.xib in Resources */,
 				B964771C1EB04A5300A9A498 /* alert_error_icon@2x.png in Resources */,
+				18064E8020A04AD3001AB33F /* ShowDateVC.xib in Resources */,
 				B98DF7281EA8524B00296C2A /* call2.html in Resources */,
 				B95ED6EA1E94EEF200AD490B /* DeviceMenuView.xib in Resources */,
 				B9C963451E9F0D1F00A9C0CF /* OCAndVC.xib in Resources */,
@@ -5298,6 +5384,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23A308A501D42BC7E7C4A414 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KenshinPro/Pods-KenshinPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		615573DF1FC046650CB6C61B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KenshinPro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72EBD5DDA6AEE0EECF9A9D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KenshinPro/Pods-KenshinPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181AFEF4207480A30071DC86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -5311,6 +5448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE9456A1FEA052A001D0C6A /* BlockVC.m in Sources */,
+				18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */,
 				B95B40B31F8DEDDF00A6658C /* FTPopOverMenu.m in Sources */,
 				B9CF8C041EC2B16700C64D58 /* ThemeVC.m in Sources */,
 				B90978861E95E7F300F5A0B5 /* LeftMenuView.m in Sources */,
@@ -5400,6 +5538,7 @@
 				B95ED6C61E9474E200AD490B /* ControlMenuVC.m in Sources */,
 				B98DF74E1EA85D0800296C2A /* MaoBoLiVC.m in Sources */,
 				B96528821EA598600044CA5F /* ImageUtil.m in Sources */,
+				18064E8320A04CD6001AB33F /* NSDate+FXW.m in Sources */,
 				B9F3F8F11FB451D800D98D37 /* CusModel.m in Sources */,
 				B93084391F3D5F700035DA42 /* Person.m in Sources */,
 				B9D626EE1E7CC4D600593EC1 /* MASViewAttribute.m in Sources */,
@@ -5453,6 +5592,7 @@
 				9D8D34751FFB26F200CB5F01 /* VoiceConvert.mm in Sources */,
 				B9BD974F1E81054C009BB0D4 /* MBProgressHUD+MJ.m in Sources */,
 				B9673F961E78E22A006AB3DA /* main.m in Sources */,
+				1805A692211A723E003BE425 /* FXWWebVC.m in Sources */,
 				B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */,
 				B93002271E89FB41000C0563 /* FXW_TextFieldVC.m in Sources */,
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
@@ -5545,6 +5685,7 @@
 				B9B9CECB1E9CB986008CC558 /* UIImage+GIF.m in Sources */,
 				B9A361F31F987F05003B04A2 /* DelayShowImgVC.m in Sources */,
 				9D2BEAD91FF3839D002D2EE3 /* GYZJVC.m in Sources */,
+				18064E7F20A04AD3001AB33F /* ShowDateVC.m in Sources */,
 				B906FC4B1E8B3BC000645C96 /* MJProperty.m in Sources */,
 				B915C2401E7F9DE10088A31F /* MDSnackbar.m in Sources */,
 				180848C4207F3B3800C2D91B /* UITableView+FDTemplateLayoutCell.m in Sources */,
@@ -5942,6 +6083,7 @@
 		};
 		B9673FBF1E78E22A006AB3DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CCA21273B25DD35F01740D7 /* Pods-KenshinPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -5955,6 +6097,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/KenshinPro/Classes/Controller/subNav/three/数据存储/Next/CouchbaseLite",
 					"$(PROJECT_DIR)/KenshinPro/Classes/Libs/MySDK",
+					"$(PROJECT_DIR)/Pods/Bugly",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";
@@ -5980,6 +6123,7 @@
 		};
 		B9673FC01E78E22A006AB3DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B765F29EAD76CABC176E56 /* Pods-KenshinPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -5993,6 +6137,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/KenshinPro/Classes/Controller/subNav/three/数据存储/Next/CouchbaseLite",
 					"$(PROJECT_DIR)/KenshinPro/Classes/Libs/MySDK",
+					"$(PROJECT_DIR)/Pods/Bugly",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KenshinPro/Classes/Other/Kenshin.pch";

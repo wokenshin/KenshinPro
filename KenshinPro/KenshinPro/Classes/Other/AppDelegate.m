@@ -12,8 +12,10 @@
 #import "MainTabBarVC.h"
 #import "FXW_Define.h"
 #import "AFN_HS.h"
-
 #import "MDToast.h"
+
+//第三方 腾讯的 bug日志
+#import <Bugly/Bugly.h>
 
 @interface AppDelegate ()
 
@@ -27,6 +29,14 @@
     [self intoRootVC];
     [self setNavigationBarStyle];
     [self realTimeCheckNetStatus];
+    
+    /*
+     初始化Bugly
+     配置好之后 可以在平台上查看 App的崩溃等异常情况 https://bugly.qq.com/
+     进行部分配置之后 能够更加快速直观的定位到错误
+     */
+    [Bugly startWithAppId:@"af50443407"];//只需要这一行代码即可 更高级的用法请参考官网
+    
     return YES;
     
 }

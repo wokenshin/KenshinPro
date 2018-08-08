@@ -34,8 +34,10 @@
     //设置属性
     self.webView.scalesPageToFit = YES;//自动对页面进行缩放以适应屏幕
     
-    //加载网页:
-    NSURL* url = [NSURL URLWithString:@"http://192.168.1.236:81/downloads/"];//创建URL
+    //加载网页:帮 远方 妹子测试bug
+    NSString *test = @"http://cs.haoaj.com.cn/Mapi/Member/carpayrecharge?token=e16874e7e65f593a985be539ec828393&TransAmt=100&rechargeType=speed";
+    NSURL* url = [NSURL URLWithString:test];//创建URL
+    //NSURL* url = [NSURL URLWithString:@"http://192.168.1.236:81/downloads/"];//创建URL
     NSURLRequest* request = [NSURLRequest requestWithURL:url];//创建NSURLRequest
     [self.webView loadRequest:request];//加载
     

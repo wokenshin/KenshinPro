@@ -133,7 +133,6 @@
     UILabel *manyLineLab = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 300, labSize.height)];
     manyLineLab.numberOfLines = 0;
     manyLineLab.text = contents;
-    
     return manyLineLab;
     
 }

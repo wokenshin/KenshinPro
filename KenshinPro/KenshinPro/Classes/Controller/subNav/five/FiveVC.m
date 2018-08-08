@@ -14,6 +14,7 @@
 #import "PuerTCellVC.h"
 #import "PureCodeViewVC.h"
 #import "ShowDateVC.h"
+#import "FXWWebVC.h"
 
 @interface FiveVC ()
 
@@ -44,11 +45,19 @@
     [self addDataWithTitle:@"纯代码TableCell" andDetail:@"JJSJUISDK"];
     [self addDataWithTitle:@"纯代码View" andDetail:@"JJSJUISDK"];
     [self addDataWithTitle:@"显示时间" andDetail:@"JJSJUISDK"];
+    [self addDataWithTitle:@"网页控制器" andDetail:@"2008.8.8"];
     
 }
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"网页控制器"])
+    {
+        FXWWebVC *webVC = [[FXWWebVC alloc] init];
+        [webVC loadUrl:@"https://www.jianshu.com/"];
+        [self fxw_pushVC:webVC];
+        return;
+    }
     if ([title isEqualToString:@"显示时间"])
     {
         [self fxw_pushVC:[[ShowDateVC alloc] init]];

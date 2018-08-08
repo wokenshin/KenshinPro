@@ -16,6 +16,7 @@
 #import "RuntimeVC.h"
 #import "CJJMVC.h"
 #import <JJSJIM/JJSJIM.h>
+#import "JavaLearnVC.h"
 
 @interface FourVC ()
 
@@ -49,10 +50,17 @@
     [self addDataWithTitle:@"runtime"  andDetail:@"2017-11-08"];
     [self addDataWithTitle:@"C语言实现加解密-生成库文件"  andDetail:@"让安卓iOS都可以调用"];
     [self addDataWithTitle:@"mySDK test"  andDetail:@"2018-2-27"];
+    [self addDataWithTitle:@"Java后端学习"  andDetail:@"2018-5-14"];
+    
 }
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"Java后端学习"])
+    {
+        [self fxw_pushVC:[[JavaLearnVC alloc] init]];
+        return;
+    }
     if ([title isEqualToString:@"mySDK test"])
     {
         [self test];
@@ -60,16 +68,12 @@
     }
     if ([title isEqualToString:@"C语言实现加解密-生成库文件"])
     {
-        CJJMVC *vc = [[CJJMVC alloc] init];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
+        [self fxw_pushVC:[[CJJMVC alloc] init]];
         return;
     }
     if ([title isEqualToString:@"runtime"])
     {
-        RuntimeVC *vc = [[RuntimeVC alloc] init];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
+        [self fxw_pushVC:[[RuntimeVC alloc] init]];
         return;
     }
     if ([title isEqualToString:@"DebugView"])
