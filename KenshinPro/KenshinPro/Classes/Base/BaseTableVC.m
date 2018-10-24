@@ -83,7 +83,7 @@
         _tableView.dataSource = self;
         _tableView.delegate   = self;
         
-        //隐藏都偶遇分割线【注释掉 可看效果】
+        //隐藏多余遇分割线【注释掉 可看效果】
         UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
         [_tableView setTableFooterView:v];
         

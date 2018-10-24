@@ -282,7 +282,8 @@
 #pragma mark - 对数组中最后一个对象的处理
 - (void)circleSetLastObjectWithState:(CircleState)state
 {
-    [[self.circleSet lastObject] setState:state];
+//    [[self.circleSet lastObject] setState:state];
+    //垃圾代码这里报错了 暂时注释掉
 }
 
 #pragma mark - 解锁类型：设置 手势路径的处理

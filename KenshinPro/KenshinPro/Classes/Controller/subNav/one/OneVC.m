@@ -41,6 +41,8 @@
 #import "UITextViewBaseVC.h"
 #import "BundleVC.h"
 #import "CreateQRCodeVC.h"
+#import "DelegateDemoVC.h"
+#import "SQCopyVC.h"
 
 
 @interface OneVC ()
@@ -54,6 +56,7 @@
     [super viewDidLoad];
     [self loadData];
     [self initOneVCUI];
+    
     [self test2017_12_22];
     
 }
@@ -63,6 +66,8 @@
 #pragma mark 加载数据
 - (void)loadData
 {
+    [self addDataWithTitle:@"深浅拷贝" andDetail:@"2018.8.22"];
+    [self addDataWithTitle:@"代理demo" andDetail:@"基础语法和格式"];
     [self addDataWithTitle:@"网络状态实时监听" andDetail:@"通过AFN 在AppDelegate中实现"];
     [self addDataWithTitle:@"AFN封装" andDetail:@"针对所在公司进行的封装"];
     [self addDataWithTitle:@"测试崩溃" andDetail:@"bugly"];
@@ -127,10 +132,22 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    
+    if ([title isEqualToString:@"深浅拷贝"]) {
+        SQCopyVC *vc = [[SQCopyVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"代理demo"]) {
+        DelegateDemoVC *vc = [[DelegateDemoVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"测试崩溃"]) {
         NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
-        [mDic setObject:nil forKey:@"aaa"];
+        NSString *aaa = nil;
+        [mDic setObject:aaa forKey:@"aaa"];
         return;
     }
     if ([title isEqualToString:@"生成二维码-原生"])
@@ -474,8 +491,6 @@
      -->服务器时间S = 本地时间L - 时间差TD(正数or负数)
      */
 }
-
-
 
 - (void)dealloc
 {

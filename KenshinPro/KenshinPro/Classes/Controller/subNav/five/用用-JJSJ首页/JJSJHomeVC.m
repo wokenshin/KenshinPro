@@ -219,8 +219,7 @@
     [_headerView addSubview:_gongGaoView];
     [_gongGaoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(_gridView.mas_bottom).offset(_margin);
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
+        make.left.right.mas_equalTo(0);//多个约束相同可以写在一行
         make.height.mas_equalTo(_heightGongGao);
     }];
     

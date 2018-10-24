@@ -22,26 +22,19 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"图层测试";
-    
-    
-    
 }
 
 //文本最前
 - (IBAction)clickBtnShowTxt:(id)sender
 {
     [self.view bringSubviewToFront:_txt];
-    
 }
 
 //按钮最前
 - (IBAction)clickBtnShowBtn:(id)sender
 {
     [self.view bringSubviewToFront:_btn];
-    
 }
-
-
 
 - (IBAction)clickBtnAction:(id)sender
 {

@@ -15,6 +15,8 @@
 #import "PureCodeViewVC.h"
 #import "ShowDateVC.h"
 #import "FXWWebVC.h"
+#import "RSAVC.h"
+
 
 @interface FiveVC ()
 
@@ -45,16 +47,67 @@
     [self addDataWithTitle:@"纯代码TableCell" andDetail:@"JJSJUISDK"];
     [self addDataWithTitle:@"纯代码View" andDetail:@"JJSJUISDK"];
     [self addDataWithTitle:@"显示时间" andDetail:@"JJSJUISDK"];
-    [self addDataWithTitle:@"网页控制器" andDetail:@"2008.8.8"];
+    [self addDataWithTitle:@"网页控制器-远端" andDetail:@"2018.8.8"];
+    [self addDataWithTitle:@"网页控制器-本地" andDetail:@"2018.8.9"];
+    [self addDataWithTitle:@"RSA 加解密 base64" andDetail:@"2018.9.7"];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
+    //[self addDataWithTitle:@"" andDetail:@""];
     
 }
 
 - (void)clickCellWithTitle:(NSString *)title
 {
-    if ([title isEqualToString:@"网页控制器"])
+    if ([title isEqualToString:@""]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@""]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@""]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@""]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@""]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@""]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@"RSA 加解密 base64"]) {
+        RSAVC *vc = [[RSAVC alloc] init];
+        [self fxw_pushVC:vc];
+        return;
+    }
+    if ([title isEqualToString:@"网页控制器-本地"])
     {
+        //加载本地html
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"userHelp" ofType:@"html"];
+        NSString *htmlString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+        
         FXWWebVC *webVC = [[FXWWebVC alloc] init];
-        [webVC loadUrl:@"https://www.jianshu.com/"];
+        [webVC loadLocalContent:htmlString];
+        [self fxw_pushVC:webVC];
+        return;
+    }
+    if ([title isEqualToString:@"网页控制器-远端"])
+    {
+        //加载远端web
+        FXWWebVC *webVC = [[FXWWebVC alloc] init];
+        [webVC loadUrl:@"http://39.104.230.77:8888/map/view"];
         [self fxw_pushVC:webVC];
         return;
     }

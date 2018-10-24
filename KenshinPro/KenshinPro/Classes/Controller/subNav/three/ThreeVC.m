@@ -27,7 +27,7 @@
 #import "BlockVC.h"
 #import "CopyVC.h"
 #import "LOGVC.h"
-
+#import "MethodSwizzingDemoVC.h"
 
 @interface ThreeVC ()
 
@@ -45,6 +45,7 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"MethodSwizzing" andDetail:@"2018.8.30"];
     [self addDataWithTitle:@"指纹识别" andDetail:@"支付宝验证-解锁"];
     [self addDataWithTitle:@"数据存储" andDetail:@"沙盒、数据库、归档、属性列表等"];
     [self addDataWithTitle:@"OC+Swift 混编" andDetail:@"OC下调用Swift，Swift下调用OC"];
@@ -77,6 +78,13 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"MethodSwizzing"])
+    {
+        MethodSwizzingDemoVC *vc = [[MethodSwizzingDemoVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"输出日志"])
     {
         LOGVC *vc = [[LOGVC alloc] init];

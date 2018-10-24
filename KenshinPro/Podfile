@@ -1,0 +1,8 @@
+platform :ios, '9.0'
+target 'KenshinPro' do
+# 我是注释
+
+pod 'Bugly'
+end
+
+

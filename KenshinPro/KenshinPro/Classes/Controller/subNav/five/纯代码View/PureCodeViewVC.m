@@ -20,8 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self test1];
-    [self test2];
+    [self test1];
+//    [self test2];
     
 }
 

@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) UIWebView                 *webView;
 @property (nonatomic, strong) UIActivityIndicatorView   *juHua;
-
+@property (nonatomic, strong) UIButton                  *btnNextPage;
 
 @end
 
@@ -23,15 +23,15 @@
     [super viewDidLoad];
     
     //添加右上角返回上一级网页的按钮
-    UIButton *rightBtn= [UIButton buttonWithType:UIButtonTypeCustom];
+    _btnNextPage = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    [rightBtn setTitle:@"上一页" forState:UIControlStateNormal];
-    [rightBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    rightBtn.frame = CGRectMake(0, 0, 80, 44);
+    [_btnNextPage setTitle:@"上一页" forState:UIControlStateNormal];
+    [_btnNextPage setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    _btnNextPage.frame = CGRectMake(0, 0, 80, 44);
     
     //事件
-    [rightBtn addTarget:self action:@selector(clickRightNavBtn) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem* rightBtnItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
+    [_btnNextPage addTarget:self action:@selector(clickRightNavBtn) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBtnItem = [[UIBarButtonItem alloc]initWithCustomView:_btnNextPage];
     [self.navigationItem setRightBarButtonItem:rightBtnItem];
     
 }
@@ -48,31 +48,53 @@
     
 }
 
-#pragma mark 加载指定的网页
-- (void)loadUrl:(NSString *)url{
-    
-    //需要判断一下网址是否合法
+- (void)initWebVC{
     
     //初始化网页视图
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
     _webView.delegate = self;
     [self.view addSubview:_webView];
     
+    //菊花
     _juHua = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     _juHua.center = self.view.center;
     _juHua.hidesWhenStopped = YES;
-    
-    //加载网页
-    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-    [_webView loadRequest:request];
     [_webView addSubview:_juHua];
+}
+
+#pragma mark - [接口]加载指定的网页
+- (void)loadUrl:(NSString *)url{
+    
+    //需要判断一下网址是否合法
+    
+    [self initWebVC];
+    NSURLRequest *request=[NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    [_webView loadRequest:request];//加载网页
     
 }
 
+#pragma mark [接口]加载本地网页
+- (void)loadLocalContent:(NSString *)content{
+    
+    [self initWebVC];
+    [self.webView loadHTMLString:content baseURL:nil];//加载本地网页
+    
+}
+
+- (void)showBackBt{
+    _btnNextPage.hidden = !_webView.canGoBack;//如果有上一页才显示 按钮
+}
 
 #pragma mark - webview
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     NSLog(@">>> webViewDidFinishLoad");
+    
+    //加载标题[等页面加载完毕后 再去获取页面的标题]
+    NSString *theTitle = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    if (theTitle) {
+        self.title = theTitle;
+    }
+    
     [self.juHua stopAnimating];
 }
 
@@ -84,12 +106,6 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     NSLog(@">>> webViewDidStartLoad");
     
-    //加载标题
-    NSString *theTitle = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-    if (theTitle) {
-        self.title = theTitle;
-    }
-    
     [self.juHua startAnimating];
     
 }
@@ -100,10 +116,9 @@
     if (UIWebViewNavigationTypeFormSubmitted == navigationType) {
         return YES;
     }
+    
     return YES;
 }
-
-
 
 - (void)dealloc
 {

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RSAVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJO-Ng-kna">
+                    <rect key="frame" x="20" y="40" width="335" height="44"/>
+                    <color key="backgroundColor" red="0.067293860019999999" green="0.71805506939999997" blue="0.95864397290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MOv-pf-QhM"/>
+                    </constraints>
+                    <state key="normal" title="用私钥——解密">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickBtnDecrypt:" destination="-1" eventType="touchUpInside" id="LPm-Af-Wmc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adD-10-vRA">
+                    <rect key="frame" x="20" y="104" width="335" height="44"/>
+                    <color key="backgroundColor" red="0.2901960784" green="0.60392156860000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NDo-uN-IsJ"/>
+                    </constraints>
+                    <state key="normal" title="加解密">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickJiaJieMi:" destination="-1" eventType="touchUpInside" id="Q21-zK-CFz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="adD-10-vRA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="5Kr-7Z-ZTl"/>
+                <constraint firstItem="fJO-Ng-kna" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="CEy-YU-rvX"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="adD-10-vRA" secondAttribute="trailing" constant="20" id="dBk-we-tBI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fJO-Ng-kna" secondAttribute="trailing" constant="20" id="eQq-lC-vHP"/>
+                <constraint firstItem="adD-10-vRA" firstAttribute="top" secondItem="fJO-Ng-kna" secondAttribute="bottom" constant="20" id="jrS-mG-GIV"/>
+                <constraint firstItem="fJO-Ng-kna" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="yUl-ZX-Uho"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

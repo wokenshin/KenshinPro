@@ -64,8 +64,7 @@
 {
     //设置系统状态栏颜色，在plist文件中设置View controller-based status bar appearance 为 NO才能起效
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-    //设置NavBar背景和前景颜色
+    //设置NavBar背景和前景颜色 'setStatusBarStyle:' is deprecated: first deprecated in iOS 9.0 - Use -[UIViewController preferredStatusBarStyle]
     [[UINavigationBar appearance] setBarTintColor:colorDdzmBlueNavBar];
     
     //设置返回文字和图标颜色[系统默认返回按钮]
