@@ -66,6 +66,7 @@
 #pragma mark 加载数据
 - (void)loadData
 {
+    [self addDataWithTitle:@"代码块" andDetail:@"2018.11.26"];
     [self addDataWithTitle:@"深浅拷贝" andDetail:@"2018.8.22"];
     [self addDataWithTitle:@"代理demo" andDetail:@"基础语法和格式"];
     [self addDataWithTitle:@"网络状态实时监听" andDetail:@"通过AFN 在AppDelegate中实现"];
@@ -132,6 +133,26 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"代码块"]) {//内容来自 《OC基础教程》 222页
+        
+        typedef double (^FXWBlock)(void);
+        
+        double c = 10, d = 20;
+        FXWBlock mmp = ^(void){return c*d;};
+        NSLog(@"%f", mmp());
+        c = 20;
+        d = 50;
+        NSLog(@"%f", mmp());//因为变量是本地的，代码块会在定义时复制并保存他们的状态 所以这里输出的还是 200
+        
+        //全局变量 即 静态变量
+        static double a = 10, b = 20;
+        FXWBlock tmp = ^(void){return a*b;};
+        NSLog(@"%f", tmp());
+        a = 20;
+        b = 50;
+        NSLog(@"%f", tmp());//因为获取的是静态变量 所以两次输出的结果不同
+        return;
+    }
     if ([title isEqualToString:@"深浅拷贝"]) {
         SQCopyVC *vc = [[SQCopyVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
