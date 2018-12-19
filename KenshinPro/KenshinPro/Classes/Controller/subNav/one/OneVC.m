@@ -43,7 +43,8 @@
 #import "CreateQRCodeVC.h"
 #import "DelegateDemoVC.h"
 #import "SQCopyVC.h"
-
+#import "ARCVC.h"
+#import "JTiOSDevVC.h"
 
 @interface OneVC ()
 
@@ -66,6 +67,13 @@
 #pragma mark 加载数据
 - (void)loadData
 {
+    
+    [self addDataWithTitle:@"《精通iOS开发第6版本》" andDetail:@"2018-12-18"];
+    [self addDataWithTitle:@"Block-1" andDetail:@"2018-12-11"];
+    [self addDataWithTitle:@"ARC Demo3" andDetail:@"2018-12-10"];
+    [self addDataWithTitle:@"ARC Demo2" andDetail:@"2018-11-30"];
+    [self addDataWithTitle:@"ARC Demo1" andDetail:@"2018-11-30"];
+    [self addDataWithTitle:@"非自己生成的对象，自己也能持有" andDetail:@"2018.11.28"];
     [self addDataWithTitle:@"代码块" andDetail:@"2018.11.26"];
     [self addDataWithTitle:@"深浅拷贝" andDetail:@"2018.8.22"];
     [self addDataWithTitle:@"代理demo" andDetail:@"基础语法和格式"];
@@ -133,6 +141,57 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"《精通iOS开发第6版本》"]) {
+        JTiOSDevVC *vc = [[JTiOSDevVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"Block-1"]) {
+        void (^blk)(void) = ^{(printf("Block\n"));};
+        blk();
+        return;
+    }
+    if ([title isEqualToString:@"ARC Demo3"]) {
+        {
+            //编译器判断 生成的对象不能继续持有 所以发出警告
+            id __weak obj = [[NSObject alloc] init];
+            NSLog(@"%@", obj);//输出 null 即 nil
+            
+            //同上 生成的对象不能继续持有 所以发出警告
+            id __unsafe_unretained obj2 = [[NSObject alloc] init];
+            NSLog(@"%@", obj2);//崩溃 悬垂指针
+            
+            (void)[[NSObject alloc] init];
+            return;
+        }
+    }
+    if ([title isEqualToString:@"ARC Demo2"]) {
+        id __unsafe_unretained obj1 = nil;
+        {
+            id __strong obj0 = [[NSObject alloc] init];
+            obj1 = obj0;
+            NSLog(@"A:%@", obj1);
+        }
+        NSLog(@"B:%@", obj1);//这里很可能会崩，悬垂指针
+        return;
+    }
+    if ([title isEqualToString:@"ARC Demo1"]) {
+        id __weak obj1 = nil;
+        {
+            id __strong obj0 = [[NSObject alloc] init];
+            obj1 = obj0;
+            NSLog(@"A:%@", obj1);
+        }
+        NSLog(@"B:%@", obj1);
+        return;
+    }
+    if ([title isEqualToString:@"非自己生成的对象，自己也能持有"]) {//from 《OC高级编程》
+        ARCVC *vc = [[ARCVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"代码块"]) {//内容来自 《OC基础教程》 222页
         
         typedef double (^FXWBlock)(void);

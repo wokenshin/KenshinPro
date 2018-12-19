@@ -50,6 +50,7 @@
 #pragma mark - 设置根控制器
 - (void)intoRootVC
 {
+    [[UITabBar appearance] setTranslucent:NO];//fxw_修复bug iOS12.1 tabbar pop时为止偏移
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     

@@ -54,13 +54,19 @@
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
+		1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894709D21C8CE88006010D9 /* XibBaseVC.m */; };
+		189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1894709E21C8CE88006010D9 /* XibBaseVC.xib */; };
 		189A734B20A92837003D3439 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A734A20A92837003D3439 /* Bugly.framework */; };
 		18B397F52137F36D00BDDE31 /* MethodSwizzingDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */; };
 		18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */; };
+		18BB876321C9EBD900C55E54 /* XibTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB876121C9EBD900C55E54 /* XibTwoVC.m */; };
+		18BB876421C9EBD900C55E54 /* XibTwoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BB876221C9EBD900C55E54 /* XibTwoVC.xib */; };
+		18BB876821C9EEBD00C55E54 /* JTiOSDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB876721C9EEBC00C55E54 /* JTiOSDevVC.m */; };
 		18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C53756207E4F8C00959AF8 /* ModelItem.m */; };
 		18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5375A207E55B800959AF8 /* FXWMenuGridView.m */; };
 		18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C5F680207C9D8800884CFC /* TestBundle.bundle */; };
 		18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E983C020A97525002249F3 /* JavaLearnVC.m */; };
+		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
 		9D094E2A201192B40088636C /* LOGVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D094E28201192B40088636C /* LOGVC.xib */; };
@@ -708,6 +714,9 @@
 		186D059D212D0F3100BED61B /* SQCopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQCopyVC.m; sourceTree = "<group>"; };
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
 		18934C78211BC75C007BD44F /* userHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = userHelp.html; sourceTree = "<group>"; };
+		1894709C21C8CE88006010D9 /* XibBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibBaseVC.h; sourceTree = "<group>"; };
+		1894709D21C8CE88006010D9 /* XibBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibBaseVC.m; sourceTree = "<group>"; };
+		1894709E21C8CE88006010D9 /* XibBaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibBaseVC.xib; sourceTree = "<group>"; };
 		189A734720A92801003D3439 /* BuglyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuglyConfig.h; sourceTree = "<group>"; };
 		189A734820A92801003D3439 /* Bugly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bugly.h; sourceTree = "<group>"; };
 		189A734920A92801003D3439 /* BuglyLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuglyLog.h; sourceTree = "<group>"; };
@@ -715,6 +724,11 @@
 		18B397F22137F36D00BDDE31 /* MethodSwizzingDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzingDemoVC.h; sourceTree = "<group>"; };
 		18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzingDemoVC.m; sourceTree = "<group>"; };
 		18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodSwizzingDemoVC.xib; sourceTree = "<group>"; };
+		18BB876021C9EBD900C55E54 /* XibTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibTwoVC.h; sourceTree = "<group>"; };
+		18BB876121C9EBD900C55E54 /* XibTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTwoVC.m; sourceTree = "<group>"; };
+		18BB876221C9EBD900C55E54 /* XibTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTwoVC.xib; sourceTree = "<group>"; };
+		18BB876621C9EEBC00C55E54 /* JTiOSDevVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTiOSDevVC.h; sourceTree = "<group>"; };
+		18BB876721C9EEBC00C55E54 /* JTiOSDevVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTiOSDevVC.m; sourceTree = "<group>"; };
 		18C53755207E4F8C00959AF8 /* ModelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelItem.h; sourceTree = "<group>"; };
 		18C53756207E4F8C00959AF8 /* ModelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelItem.m; sourceTree = "<group>"; };
 		18C53759207E55B800959AF8 /* FXWMenuGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWMenuGridView.h; sourceTree = "<group>"; };
@@ -722,6 +736,8 @@
 		18C5F680207C9D8800884CFC /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
 		18E983BF20A97525002249F3 /* JavaLearnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaLearnVC.h; sourceTree = "<group>"; };
 		18E983C020A97525002249F3 /* JavaLearnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaLearnVC.m; sourceTree = "<group>"; };
+		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
+		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
 		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCA21273B25DD35F01740D7 /* Pods-KenshinPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinPro/Pods-KenshinPro.debug.xcconfig"; sourceTree = "<group>"; };
 		9D094E26201192B40088636C /* LOGVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOGVC.h; sourceTree = "<group>"; };
@@ -2039,6 +2055,16 @@
 			path = "深浅拷贝";
 			sourceTree = "<group>";
 		};
+		1894709B21C8CE61006010D9 /* xib基础 */ = {
+			isa = PBXGroup;
+			children = (
+				1894709C21C8CE88006010D9 /* XibBaseVC.h */,
+				1894709D21C8CE88006010D9 /* XibBaseVC.m */,
+				1894709E21C8CE88006010D9 /* XibBaseVC.xib */,
+			);
+			path = "xib基础";
+			sourceTree = "<group>";
+		};
 		189A734620A92801003D3439 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2062,6 +2088,27 @@
 				18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */,
 			);
 			path = "黑魔法";
+			sourceTree = "<group>";
+		};
+		18BB875F21C9EBBC00C55E54 /* xib基础2 */ = {
+			isa = PBXGroup;
+			children = (
+				18BB876021C9EBD900C55E54 /* XibTwoVC.h */,
+				18BB876121C9EBD900C55E54 /* XibTwoVC.m */,
+				18BB876221C9EBD900C55E54 /* XibTwoVC.xib */,
+			);
+			path = "xib基础2";
+			sourceTree = "<group>";
+		};
+		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
+			isa = PBXGroup;
+			children = (
+				1894709B21C8CE61006010D9 /* xib基础 */,
+				18BB875F21C9EBBC00C55E54 /* xib基础2 */,
+				18BB876621C9EEBC00C55E54 /* JTiOSDevVC.h */,
+				18BB876721C9EEBC00C55E54 /* JTiOSDevVC.m */,
+			);
+			path = "精通iOS开发第6版本";
 			sourceTree = "<group>";
 		};
 		18C53754207E4F6600959AF8 /* Model */ = {
@@ -2089,6 +2136,15 @@
 				18E983C020A97525002249F3 /* JavaLearnVC.m */,
 			);
 			path = "Java后端学习";
+			sourceTree = "<group>";
+		};
+		18FCF08521AFBEAA009045C2 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				18FCF08621AFBECB009045C2 /* ARCVC.h */,
+				18FCF08721AFBECB009045C2 /* ARCVC.m */,
+			);
+			path = ARC;
 			sourceTree = "<group>";
 		};
 		3059B0E58BB77C855BF590F1 /* Pods */ = {
@@ -3161,6 +3217,8 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */,
+				18FCF08521AFBEAA009045C2 /* ARC */,
 				186D059B212D0F1300BED61B /* 深浅拷贝 */,
 				18053E52212A99970007A3DC /* 代理demo */,
 				181E36DA207DAB58005675C1 /* 生成二维码 */,
@@ -5244,6 +5302,7 @@
 		B9673F891E78E22A006AB3DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Kenshin;
 				TargetAttributes = {
@@ -5357,6 +5416,7 @@
 				18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */,
 				9D7357831FE2AB7100BE3EFF /* SDWebImgVC.xib in Resources */,
 				B92641F51E83C5E100EEED61 /* SendSMSVC.xib in Resources */,
+				18BB876421C9EBD900C55E54 /* XibTwoVC.xib in Resources */,
 				B98DF7051EA83FDF00296C2A /* SetUICornerRadiusVC.xib in Resources */,
 				B910E2361EA880A500DFCC86 /* testXiDaBian.gif in Resources */,
 				B98568161EE7A16100FF9668 /* BLECoreVC.xib in Resources */,
@@ -5371,6 +5431,7 @@
 				B98DF7211EA8521300296C2A /* JSONEVC.xib in Resources */,
 				B906FD501E8B668F00645C96 /* MJRefresh.bundle in Resources */,
 				B9BADB361EA5B6A1000B3C1C /* MainVC.xib in Resources */,
+				189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */,
 				B906FC581E8B3C6500645C96 /* DicAndModelVC.xib in Resources */,
 				B910E23D1EA880D700DFCC86 /* GifContentVC.xib in Resources */,
 				186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */,
@@ -5659,6 +5720,7 @@
 				B9A361ED1F9854B2003B04A2 /* RunloopStatusFXWVC.m in Sources */,
 				B9B9CEC81E9CB986008CC558 /* SDWebImageManager.m in Sources */,
 				181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */,
+				18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */,
 				B906FD431E8B668F00645C96 /* MJRefreshBackFooter.m in Sources */,
 				B9BADB351EA5B6A1000B3C1C /* MainVC.m in Sources */,
 				B915C23F1E7F9DE10088A31F /* MDSliderTickMarksView.m in Sources */,
@@ -5683,12 +5745,15 @@
 				1805A692211A723E003BE425 /* FXWWebVC.m in Sources */,
 				B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */,
 				B93002271E89FB41000C0563 /* FXW_TextFieldVC.m in Sources */,
+				18BB876321C9EBD900C55E54 /* XibTwoVC.m in Sources */,
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
 				9D7C409A200F419100017937 /* JJSJRecodeVoiceVC.m in Sources */,
+				18BB876821C9EEBD00C55E54 /* JTiOSDevVC.m in Sources */,
 				B91748DA1ECC49A4006C70F5 /* FXW_CountDownButton.m in Sources */,
 				B9B9CEC61E9CB986008CC558 /* SDWebImageDownloader.m in Sources */,
 				B9F3F8DC1FB3DC7700D98D37 /* UIImage+Runtime.m in Sources */,
 				9D8638BD200C475400007CEE /* CopyVC.m in Sources */,
+				1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */,
 				B98DF7291EA8524B00296C2A /* JSTWOVC.m in Sources */,
 				B95ED6AD1E9474E200AD490B /* LockMasterAppVC.m in Sources */,
 				B9B9CECA1E9CB986008CC558 /* UIButton+WebCache.m in Sources */,
