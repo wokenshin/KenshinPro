@@ -725,7 +725,7 @@
 		18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzingDemoVC.m; sourceTree = "<group>"; };
 		18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodSwizzingDemoVC.xib; sourceTree = "<group>"; };
 		18BB876021C9EBD900C55E54 /* XibTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibTwoVC.h; sourceTree = "<group>"; };
-		18BB876121C9EBD900C55E54 /* XibTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTwoVC.m; sourceTree = "<group>"; };
+		18BB876121C9EBD900C55E54 /* XibTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTwoVC.m; sourceTree = "<group>"; wrapsLines = 0; };
 		18BB876221C9EBD900C55E54 /* XibTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTwoVC.xib; sourceTree = "<group>"; };
 		18BB876621C9EEBC00C55E54 /* JTiOSDevVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTiOSDevVC.h; sourceTree = "<group>"; };
 		18BB876721C9EEBC00C55E54 /* JTiOSDevVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTiOSDevVC.m; sourceTree = "<group>"; };

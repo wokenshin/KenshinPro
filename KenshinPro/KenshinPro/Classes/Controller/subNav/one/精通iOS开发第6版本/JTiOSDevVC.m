@@ -34,8 +34,7 @@
     [self addDataWithTitle:@"xib基础_1" andDetail:@"2018-12-18"];
 }
 
-- (void)clickCellWithTitle:(NSString *)title
-{
+- (void)clickCellWithTitle:(NSString *)title{
     
     if([title isEqualToString:@"xib基础_2"]){
         XibTwoVC *vc = [[XibTwoVC alloc] init];
