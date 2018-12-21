@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibTwoVC">
             <connections>
+                <outlet property="btn" destination="vfU-Is-I0R" id="0Nj-cB-p4X"/>
                 <outlet property="labSlider" destination="Jcr-iJ-M0H" id="l95-Ek-Aqj"/>
                 <outlet property="switchLeft" destination="XWy-18-jr2" id="UPi-Fk-UJM"/>
                 <outlet property="switchRight" destination="FcA-w5-Hci" id="QGM-rv-pGc"/>
@@ -118,13 +119,16 @@
                         <action selector="switchChangeAction:" destination="-1" eventType="valueChanged" id="3fL-8s-T80"/>
                     </connections>
                 </switch>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfU-Is-I0R">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfU-Is-I0R">
                     <rect key="frame" x="30" y="497" width="315" height="30"/>
-                    <color key="backgroundColor" red="0.31372549020000001" green="0.70196078429999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.47706741094589233" green="0.5595170259475708" blue="0.27444759011268616" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="y8Y-6d-2ac"/>
                     </constraints>
                     <state key="normal" title="Do something"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="izu-kq-ecS"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

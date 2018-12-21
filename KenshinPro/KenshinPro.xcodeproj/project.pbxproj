@@ -66,6 +66,8 @@
 		18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5375A207E55B800959AF8 /* FXWMenuGridView.m */; };
 		18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C5F680207C9D8800884CFC /* TestBundle.bundle */; };
 		18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E983C020A97525002249F3 /* JavaLearnVC.m */; };
+		18F91B2621CCCABB007621C8 /* OrientationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F91B2421CCCABB007621C8 /* OrientationsVC.m */; };
+		18F91B2721CCCABB007621C8 /* OrientationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F91B2521CCCABB007621C8 /* OrientationsVC.xib */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
@@ -736,6 +738,9 @@
 		18C5F680207C9D8800884CFC /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
 		18E983BF20A97525002249F3 /* JavaLearnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaLearnVC.h; sourceTree = "<group>"; };
 		18E983C020A97525002249F3 /* JavaLearnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaLearnVC.m; sourceTree = "<group>"; };
+		18F91B2321CCCABB007621C8 /* OrientationsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationsVC.h; sourceTree = "<group>"; };
+		18F91B2421CCCABB007621C8 /* OrientationsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationsVC.m; sourceTree = "<group>"; };
+		18F91B2521CCCABB007621C8 /* OrientationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrientationsVC.xib; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
 		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2103,6 +2108,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				18F91B2221CCCAA0007621C8 /* 旋转 */,
 				1894709B21C8CE61006010D9 /* xib基础 */,
 				18BB875F21C9EBBC00C55E54 /* xib基础2 */,
 				18BB876621C9EEBC00C55E54 /* JTiOSDevVC.h */,
@@ -2136,6 +2142,16 @@
 				18E983C020A97525002249F3 /* JavaLearnVC.m */,
 			);
 			path = "Java后端学习";
+			sourceTree = "<group>";
+		};
+		18F91B2221CCCAA0007621C8 /* 旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				18F91B2321CCCABB007621C8 /* OrientationsVC.h */,
+				18F91B2421CCCABB007621C8 /* OrientationsVC.m */,
+				18F91B2521CCCABB007621C8 /* OrientationsVC.xib */,
+			);
+			path = "旋转";
 			sourceTree = "<group>";
 		};
 		18FCF08521AFBEAA009045C2 /* ARC */ = {
@@ -5456,6 +5472,7 @@
 				B95ED6B91E9474E200AD490B /* CellOrderCtrling.xib in Resources */,
 				B95B40AF1F8DEC1900A6658C /* GgzsVC.xib in Resources */,
 				B9A361FA1F988793003B04A2 /* HTCZXCVC.xib in Resources */,
+				18F91B2721CCCABB007621C8 /* OrientationsVC.xib in Resources */,
 				B99C84291F99918200952F3D /* DebugLogVC.xib in Resources */,
 				B986FE971F974289001C5F0E /* RunLoopFXWVC.xib in Resources */,
 				B985052B1E96371C007C01CB /* GestureLockVC.xib in Resources */,
@@ -5954,6 +5971,7 @@
 				9D4FFC611FF4943B004741FA /* RecodeVoiceVC.m in Sources */,
 				B9D626EF1E7CC4D600593EC1 /* MASViewConstraint.m in Sources */,
 				B90978781E95E7D200F5A0B5 /* DdzmLeftMenuVC.m in Sources */,
+				18F91B2621CCCABB007621C8 /* OrientationsVC.m in Sources */,
 				B95ED6B61E9474E200AD490B /* ModelOrderCtrling.m in Sources */,
 				B910E2671EA8888C00DFCC86 /* VScanErWeiMaTwoVC.m in Sources */,
 				B9EB829B1F3A9438000574F7 /* NSString+FXW.m in Sources */,
