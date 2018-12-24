@@ -10,6 +10,8 @@
 #import "XibBaseVC.h"
 #import "XibTwoVC.h"
 #import "OrientationsVC.h"
+#import "RestructureVC.h"
+#import "SwitchViewVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -34,10 +36,24 @@
     [self addDataWithTitle:@"xib基础_1" andDetail:@"2018-12-18"];
     [self addDataWithTitle:@"xib基础_2" andDetail:@"2018-12-19"];
     [self addDataWithTitle:@"旋转" andDetail:@"2018-12-21"];
+    [self addDataWithTitle:@"旋转2" andDetail:@"2018-12-24"];
+    [self addDataWithTitle:@"多视图" andDetail:@"2018-12-18"];
 }
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"多视图"]) {
+        SwitchViewVC *vc = [[SwitchViewVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"旋转2"]) {
+        RestructureVC *vc = [[RestructureVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"旋转"]) {
         OrientationsVC *vc = [[OrientationsVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

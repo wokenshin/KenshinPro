@@ -20,14 +20,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上左" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-lV-Cxe">
-                    <rect key="frame" x="16" y="20" width="35" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上左" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-lV-Cxe">
+                    <rect key="frame" x="16" y="20" width="161.5" height="21"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.70196078429999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上右" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehv-me-z6o">
-                    <rect key="frame" x="324" y="20" width="35" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="上右" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehv-me-z6o">
+                    <rect key="frame" x="197.5" y="20" width="161.5" height="21"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.70196078429999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -39,13 +41,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下右" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvD-II-l9z">
-                    <rect key="frame" x="324" y="626" width="35" height="21"/>
+                    <rect key="frame" x="197.5" y="626" width="35" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTr-Hj-xm6">
                     <rect key="frame" x="16" y="323" width="25" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J00-sr-cYF">
+                    <rect key="frame" x="319" y="323" width="40" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -61,8 +69,12 @@
                 <constraint firstItem="hBi-lV-Cxe" firstAttribute="leading" secondItem="udI-jM-rGS" secondAttribute="leading" id="Ruy-CA-GoD"/>
                 <constraint firstItem="hBi-lV-Cxe" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="TUA-aL-4OP"/>
                 <constraint firstItem="xTr-Hj-xm6" firstAttribute="leading" secondItem="hBi-lV-Cxe" secondAttribute="leading" id="V8N-YN-d95"/>
+                <constraint firstItem="J00-sr-cYF" firstAttribute="trailing" secondItem="Ehv-me-z6o" secondAttribute="trailing" id="a7o-4Q-EWb"/>
                 <constraint firstItem="Ehv-me-z6o" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="akB-tA-Yzz"/>
                 <constraint firstItem="udI-jM-rGS" firstAttribute="baseline" secondItem="bvD-II-l9z" secondAttribute="baseline" id="cax-3Y-fQC"/>
+                <constraint firstItem="J00-sr-cYF" firstAttribute="baseline" secondItem="xTr-Hj-xm6" secondAttribute="baseline" id="kPs-fz-DVq"/>
+                <constraint firstItem="Ehv-me-z6o" firstAttribute="leading" secondItem="hBi-lV-Cxe" secondAttribute="trailing" constant="20" id="nJL-GP-lHd"/>
+                <constraint firstItem="hBi-lV-Cxe" firstAttribute="width" secondItem="Ehv-me-z6o" secondAttribute="width" id="zs8-gs-3f4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="-143" y="-90"/>

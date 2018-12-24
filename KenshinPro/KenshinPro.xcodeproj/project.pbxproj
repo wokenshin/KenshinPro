@@ -66,8 +66,16 @@
 		18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5375A207E55B800959AF8 /* FXWMenuGridView.m */; };
 		18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C5F680207C9D8800884CFC /* TestBundle.bundle */; };
 		18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E983C020A97525002249F3 /* JavaLearnVC.m */; };
+		18EA3D0F21D0774400BDAF99 /* RestructureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA3D0D21D0774400BDAF99 /* RestructureVC.m */; };
+		18EA3D1021D0774400BDAF99 /* RestructureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */; };
 		18F91B2621CCCABB007621C8 /* OrientationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F91B2421CCCABB007621C8 /* OrientationsVC.m */; };
 		18F91B2721CCCABB007621C8 /* OrientationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F91B2521CCCABB007621C8 /* OrientationsVC.xib */; };
+		18F9B77021D0CE0F005D40E0 /* SwitchViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9B76E21D0CE0F005D40E0 /* SwitchViewVC.m */; };
+		18F9B77121D0CE0F005D40E0 /* SwitchViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9B76F21D0CE0F005D40E0 /* SwitchViewVC.xib */; };
+		18F9B77521D0CE20005D40E0 /* BlueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9B77321D0CE20005D40E0 /* BlueVC.m */; };
+		18F9B77621D0CE20005D40E0 /* BlueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9B77421D0CE20005D40E0 /* BlueVC.xib */; };
+		18F9B77A21D0CE2F005D40E0 /* YellowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9B77821D0CE2F005D40E0 /* YellowVC.m */; };
+		18F9B77B21D0CE2F005D40E0 /* YellowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9B77921D0CE2F005D40E0 /* YellowVC.xib */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
@@ -738,9 +746,21 @@
 		18C5F680207C9D8800884CFC /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
 		18E983BF20A97525002249F3 /* JavaLearnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaLearnVC.h; sourceTree = "<group>"; };
 		18E983C020A97525002249F3 /* JavaLearnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaLearnVC.m; sourceTree = "<group>"; };
+		18EA3D0C21D0774400BDAF99 /* RestructureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestructureVC.h; sourceTree = "<group>"; };
+		18EA3D0D21D0774400BDAF99 /* RestructureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestructureVC.m; sourceTree = "<group>"; };
+		18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestructureVC.xib; sourceTree = "<group>"; };
 		18F91B2321CCCABB007621C8 /* OrientationsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationsVC.h; sourceTree = "<group>"; };
 		18F91B2421CCCABB007621C8 /* OrientationsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationsVC.m; sourceTree = "<group>"; };
 		18F91B2521CCCABB007621C8 /* OrientationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrientationsVC.xib; sourceTree = "<group>"; };
+		18F9B76D21D0CE0F005D40E0 /* SwitchViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewVC.h; sourceTree = "<group>"; };
+		18F9B76E21D0CE0F005D40E0 /* SwitchViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewVC.m; sourceTree = "<group>"; };
+		18F9B76F21D0CE0F005D40E0 /* SwitchViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchViewVC.xib; sourceTree = "<group>"; };
+		18F9B77221D0CE20005D40E0 /* BlueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueVC.h; sourceTree = "<group>"; };
+		18F9B77321D0CE20005D40E0 /* BlueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueVC.m; sourceTree = "<group>"; };
+		18F9B77421D0CE20005D40E0 /* BlueVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueVC.xib; sourceTree = "<group>"; };
+		18F9B77721D0CE2F005D40E0 /* YellowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowVC.h; sourceTree = "<group>"; };
+		18F9B77821D0CE2F005D40E0 /* YellowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowVC.m; sourceTree = "<group>"; };
+		18F9B77921D0CE2F005D40E0 /* YellowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YellowVC.xib; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
 		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2108,6 +2128,8 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				18F9B76C21D0C931005D40E0 /* 多视图 */,
+				18EA3D0B21D0771E00BDAF99 /* 旋转2 */,
 				18F91B2221CCCAA0007621C8 /* 旋转 */,
 				1894709B21C8CE61006010D9 /* xib基础 */,
 				18BB875F21C9EBBC00C55E54 /* xib基础2 */,
@@ -2144,6 +2166,16 @@
 			path = "Java后端学习";
 			sourceTree = "<group>";
 		};
+		18EA3D0B21D0771E00BDAF99 /* 旋转2 */ = {
+			isa = PBXGroup;
+			children = (
+				18EA3D0C21D0774400BDAF99 /* RestructureVC.h */,
+				18EA3D0D21D0774400BDAF99 /* RestructureVC.m */,
+				18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */,
+			);
+			path = "旋转2";
+			sourceTree = "<group>";
+		};
 		18F91B2221CCCAA0007621C8 /* 旋转 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2152,6 +2184,22 @@
 				18F91B2521CCCABB007621C8 /* OrientationsVC.xib */,
 			);
 			path = "旋转";
+			sourceTree = "<group>";
+		};
+		18F9B76C21D0C931005D40E0 /* 多视图 */ = {
+			isa = PBXGroup;
+			children = (
+				18F9B76D21D0CE0F005D40E0 /* SwitchViewVC.h */,
+				18F9B76E21D0CE0F005D40E0 /* SwitchViewVC.m */,
+				18F9B76F21D0CE0F005D40E0 /* SwitchViewVC.xib */,
+				18F9B77221D0CE20005D40E0 /* BlueVC.h */,
+				18F9B77321D0CE20005D40E0 /* BlueVC.m */,
+				18F9B77421D0CE20005D40E0 /* BlueVC.xib */,
+				18F9B77721D0CE2F005D40E0 /* YellowVC.h */,
+				18F9B77821D0CE2F005D40E0 /* YellowVC.m */,
+				18F9B77921D0CE2F005D40E0 /* YellowVC.xib */,
+			);
+			path = "多视图";
 			sourceTree = "<group>";
 		};
 		18FCF08521AFBEAA009045C2 /* ARC */ = {
@@ -5397,6 +5445,7 @@
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
+				18F9B77621D0CE20005D40E0 /* BlueVC.xib in Resources */,
 				B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */,
 				9D43700C201EAE210027F6C6 /* AFN_FXWDemoVC.xib in Resources */,
 				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
@@ -5411,6 +5460,7 @@
 				B9A361EE1F9854B2003B04A2 /* RunloopStatusFXWVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
+				18F9B77B21D0CE2F005D40E0 /* YellowVC.xib in Resources */,
 				9D5FD63C203148430071827F /* CellJJSJ.xib in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
 				B906B3DC1EE94B9F0073E175 /* BottomTableMenuVC.xib in Resources */,
@@ -5445,6 +5495,7 @@
 				B98DF7381EA852F300296C2A /* ocCallJs.html in Resources */,
 				B92CCB411E7A895900035A79 /* SysContactsVC.xib in Resources */,
 				B98DF7211EA8521300296C2A /* JSONEVC.xib in Resources */,
+				18F9B77121D0CE0F005D40E0 /* SwitchViewVC.xib in Resources */,
 				B906FD501E8B668F00645C96 /* MJRefresh.bundle in Resources */,
 				B9BADB361EA5B6A1000B3C1C /* MainVC.xib in Resources */,
 				189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */,
@@ -5510,6 +5561,7 @@
 				18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */,
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
 				9D7C409B200F419100017937 /* JJSJRecodeVoiceVC.xib in Resources */,
+				18EA3D1021D0774400BDAF99 /* RestructureVC.xib in Resources */,
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
 				18199DFC2142599300175D61 /* RSAVC.xib in Resources */,
 				B94A8C591F3D46ED002A6D51 /* Notifi2VC.xib in Resources */,
@@ -5766,6 +5818,7 @@
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
 				9D7C409A200F419100017937 /* JJSJRecodeVoiceVC.m in Sources */,
 				18BB876821C9EEBD00C55E54 /* JTiOSDevVC.m in Sources */,
+				18EA3D0F21D0774400BDAF99 /* RestructureVC.m in Sources */,
 				B91748DA1ECC49A4006C70F5 /* FXW_CountDownButton.m in Sources */,
 				B9B9CEC61E9CB986008CC558 /* SDWebImageDownloader.m in Sources */,
 				B9F3F8DC1FB3DC7700D98D37 /* UIImage+Runtime.m in Sources */,
@@ -5866,6 +5919,7 @@
 				B9F3F8ED1FB4511800D98D37 /* NSCodingVC.m in Sources */,
 				B915C23C1E7F9DE10088A31F /* MDSlider.m in Sources */,
 				B915C2301E7F9DE10088A31F /* MDCalendarYearSelector.m in Sources */,
+				18F9B77A21D0CE2F005D40E0 /* YellowVC.m in Sources */,
 				B915C24B1E7F9DE10088A31F /* NSCalendarHelper.m in Sources */,
 				B9BD97571E810B68009BB0D4 /* BaseFunctionVC.m in Sources */,
 				180848C3207F3B3800C2D91B /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -5880,6 +5934,7 @@
 				180848C1207F3B3800C2D91B /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				B99036781FABF60100CFE633 /* LockCtrlHeaderView.m in Sources */,
 				B95ED6DF1E94EA6900AD490B /* BaiDuBottomMenu.m in Sources */,
+				18F9B77021D0CE0F005D40E0 /* SwitchViewVC.m in Sources */,
 				B910E2631EA8888C00DFCC86 /* ScanErWeiMaOneVC.m in Sources */,
 				B93084351F3D5E1F0035DA42 /* RespondCodesVC.m in Sources */,
 				B9B9CEC41E9CB986008CC558 /* SDWebImageCompat.m in Sources */,
@@ -5969,6 +6024,7 @@
 				180848D5207F44CD00C2D91B /* CellMyGX.m in Sources */,
 				B906FD4D1E8B668F00645C96 /* MJRefreshGifHeader.m in Sources */,
 				9D4FFC611FF4943B004741FA /* RecodeVoiceVC.m in Sources */,
+				18F9B77521D0CE20005D40E0 /* BlueVC.m in Sources */,
 				B9D626EF1E7CC4D600593EC1 /* MASViewConstraint.m in Sources */,
 				B90978781E95E7D200F5A0B5 /* DdzmLeftMenuVC.m in Sources */,
 				18F91B2621CCCABB007621C8 /* OrientationsVC.m in Sources */,

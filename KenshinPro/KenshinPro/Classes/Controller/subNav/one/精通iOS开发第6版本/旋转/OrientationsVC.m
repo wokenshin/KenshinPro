@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"99页";
 }
 
 //【注意】如果项目中 应用级 没有勾选支持的方向，那么下面返回任何方向都是无效的
