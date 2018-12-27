@@ -19,14 +19,16 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)clickBtnYellow:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yellow view button pressed"
+                                                    message:@"You pressed the button on the yellow view"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Yep, I did."
+                                          otherButtonTitles:nil];
+    [alert show];
+    
 }
-*/
+
 
 @end

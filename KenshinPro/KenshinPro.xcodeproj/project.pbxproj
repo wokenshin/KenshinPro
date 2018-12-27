@@ -51,6 +51,7 @@
 		183896A9207EE74F0008A3B2 /* FYMenu2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A8207EE74F0008A3B2 /* FYMenu2VC.m */; };
 		183896AD207EEAB10008A3B2 /* FXWMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896AC207EEAB10008A3B2 /* FXWMenuScrollView.m */; };
 		183896B1207EEE720008A3B2 /* JJSJHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896B0207EEE720008A3B2 /* JJSJHomeVC.m */; };
+		18629C1621D2051F00B14394 /* MainTabPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18629C1521D2051F00B14394 /* MainTabPickerVC.m */; };
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
@@ -76,6 +77,16 @@
 		18F9B77621D0CE20005D40E0 /* BlueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9B77421D0CE20005D40E0 /* BlueVC.xib */; };
 		18F9B77A21D0CE2F005D40E0 /* YellowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9B77821D0CE2F005D40E0 /* YellowVC.m */; };
 		18F9B77B21D0CE2F005D40E0 /* YellowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9B77921D0CE2F005D40E0 /* YellowVC.xib */; };
+		18F9EAAB21D1DDB7005DE74F /* DatePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EAA921D1DDB7005DE74F /* DatePickerVC.m */; };
+		18F9EAAC21D1DDB7005DE74F /* DatePickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAAA21D1DDB7005DE74F /* DatePickerVC.xib */; };
+		18F9EAB021D1DDEC005DE74F /* SingleComponentPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EAAE21D1DDEC005DE74F /* SingleComponentPickerVC.m */; };
+		18F9EAB121D1DDEC005DE74F /* SingleComponentPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAAF21D1DDEC005DE74F /* SingleComponentPickerVC.xib */; };
+		18F9EAB521D1DE06005DE74F /* DoubleComponentPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EAB321D1DE06005DE74F /* DoubleComponentPickerVC.m */; };
+		18F9EAB621D1DE06005DE74F /* DoubleComponentPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAB421D1DE06005DE74F /* DoubleComponentPickerVC.xib */; };
+		18F9EABA21D1DE26005DE74F /* DependentComponentPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EAB821D1DE26005DE74F /* DependentComponentPickerVC.m */; };
+		18F9EABB21D1DE26005DE74F /* DependentComponentPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAB921D1DE26005DE74F /* DependentComponentPickerVC.xib */; };
+		18F9EABF21D1DE3D005DE74F /* CustomPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */; };
+		18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
@@ -720,6 +731,8 @@
 		183896AC207EEAB10008A3B2 /* FXWMenuScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWMenuScrollView.m; sourceTree = "<group>"; };
 		183896AF207EEE720008A3B2 /* JJSJHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSJHomeVC.h; sourceTree = "<group>"; };
 		183896B0207EEE720008A3B2 /* JJSJHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSJHomeVC.m; sourceTree = "<group>"; };
+		18629C1421D2051F00B14394 /* MainTabPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabPickerVC.h; sourceTree = "<group>"; };
+		18629C1521D2051F00B14394 /* MainTabPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabPickerVC.m; sourceTree = "<group>"; };
 		186D059C212D0F3100BED61B /* SQCopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQCopyVC.h; sourceTree = "<group>"; };
 		186D059D212D0F3100BED61B /* SQCopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQCopyVC.m; sourceTree = "<group>"; };
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
@@ -761,6 +774,21 @@
 		18F9B77721D0CE2F005D40E0 /* YellowVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowVC.h; sourceTree = "<group>"; };
 		18F9B77821D0CE2F005D40E0 /* YellowVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowVC.m; sourceTree = "<group>"; };
 		18F9B77921D0CE2F005D40E0 /* YellowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YellowVC.xib; sourceTree = "<group>"; };
+		18F9EAA821D1DDB7005DE74F /* DatePickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerVC.h; sourceTree = "<group>"; };
+		18F9EAA921D1DDB7005DE74F /* DatePickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerVC.m; sourceTree = "<group>"; };
+		18F9EAAA21D1DDB7005DE74F /* DatePickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerVC.xib; sourceTree = "<group>"; };
+		18F9EAAD21D1DDEC005DE74F /* SingleComponentPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleComponentPickerVC.h; sourceTree = "<group>"; };
+		18F9EAAE21D1DDEC005DE74F /* SingleComponentPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleComponentPickerVC.m; sourceTree = "<group>"; };
+		18F9EAAF21D1DDEC005DE74F /* SingleComponentPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleComponentPickerVC.xib; sourceTree = "<group>"; };
+		18F9EAB221D1DE06005DE74F /* DoubleComponentPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleComponentPickerVC.h; sourceTree = "<group>"; };
+		18F9EAB321D1DE06005DE74F /* DoubleComponentPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleComponentPickerVC.m; sourceTree = "<group>"; };
+		18F9EAB421D1DE06005DE74F /* DoubleComponentPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoubleComponentPickerVC.xib; sourceTree = "<group>"; };
+		18F9EAB721D1DE26005DE74F /* DependentComponentPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DependentComponentPickerVC.h; sourceTree = "<group>"; };
+		18F9EAB821D1DE26005DE74F /* DependentComponentPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DependentComponentPickerVC.m; sourceTree = "<group>"; };
+		18F9EAB921D1DE26005DE74F /* DependentComponentPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DependentComponentPickerVC.xib; sourceTree = "<group>"; };
+		18F9EABC21D1DE3D005DE74F /* CustomPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPickerVC.h; sourceTree = "<group>"; };
+		18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerVC.m; sourceTree = "<group>"; };
+		18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerVC.xib; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
 		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2128,6 +2156,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				18F9EAA721D1DBEB005DE74F /* 选取器 */,
 				18F9B76C21D0C931005D40E0 /* 多视图 */,
 				18EA3D0B21D0771E00BDAF99 /* 旋转2 */,
 				18F91B2221CCCAA0007621C8 /* 旋转 */,
@@ -2200,6 +2229,30 @@
 				18F9B77921D0CE2F005D40E0 /* YellowVC.xib */,
 			);
 			path = "多视图";
+			sourceTree = "<group>";
+		};
+		18F9EAA721D1DBEB005DE74F /* 选取器 */ = {
+			isa = PBXGroup;
+			children = (
+				18629C1421D2051F00B14394 /* MainTabPickerVC.h */,
+				18629C1521D2051F00B14394 /* MainTabPickerVC.m */,
+				18F9EAA821D1DDB7005DE74F /* DatePickerVC.h */,
+				18F9EAA921D1DDB7005DE74F /* DatePickerVC.m */,
+				18F9EAAA21D1DDB7005DE74F /* DatePickerVC.xib */,
+				18F9EAAD21D1DDEC005DE74F /* SingleComponentPickerVC.h */,
+				18F9EAAE21D1DDEC005DE74F /* SingleComponentPickerVC.m */,
+				18F9EAAF21D1DDEC005DE74F /* SingleComponentPickerVC.xib */,
+				18F9EAB221D1DE06005DE74F /* DoubleComponentPickerVC.h */,
+				18F9EAB321D1DE06005DE74F /* DoubleComponentPickerVC.m */,
+				18F9EAB421D1DE06005DE74F /* DoubleComponentPickerVC.xib */,
+				18F9EAB721D1DE26005DE74F /* DependentComponentPickerVC.h */,
+				18F9EAB821D1DE26005DE74F /* DependentComponentPickerVC.m */,
+				18F9EAB921D1DE26005DE74F /* DependentComponentPickerVC.xib */,
+				18F9EABC21D1DE3D005DE74F /* CustomPickerVC.h */,
+				18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */,
+				18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */,
+			);
+			path = "选取器";
 			sourceTree = "<group>";
 		};
 		18FCF08521AFBEAA009045C2 /* ARC */ = {
@@ -5457,6 +5510,7 @@
 				B99036791FABF60100CFE633 /* LockCtrlHeaderView.xib in Resources */,
 				B9B3D4651F7A279E00A30555 /* SmartDeviceContentVC.xib in Resources */,
 				9DA74571204153E3006FEA5E /* PureLayoutVC.xib in Resources */,
+				18F9EAAC21D1DDB7005DE74F /* DatePickerVC.xib in Resources */,
 				B9A361EE1F9854B2003B04A2 /* RunloopStatusFXWVC.xib in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
@@ -5515,6 +5569,7 @@
 				B9C963451E9F0D1F00A9C0CF /* OCAndVC.xib in Resources */,
 				B9E53C111F302F4D00971C6B /* AddressPickerVC.xib in Resources */,
 				B94D8F331EDF99EB0003D10A /* CRC32VC.xib in Resources */,
+				18F9EAB121D1DDEC005DE74F /* SingleComponentPickerVC.xib in Resources */,
 				B9BADB4A1EA5BF57000B3C1C /* VCN4.xib in Resources */,
 				B9BADB3F1EA5BB82000B3C1C /* VCN2.xib in Resources */,
 				B98DF7331EA852D100296C2A /* jsCallOC2.html in Resources */,
@@ -5562,16 +5617,19 @@
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
 				9D7C409B200F419100017937 /* JJSJRecodeVoiceVC.xib in Resources */,
 				18EA3D1021D0774400BDAF99 /* RestructureVC.xib in Resources */,
+				18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */,
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
 				18199DFC2142599300175D61 /* RSAVC.xib in Resources */,
 				B94A8C591F3D46ED002A6D51 /* Notifi2VC.xib in Resources */,
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
+				18F9EABB21D1DE26005DE74F /* DependentComponentPickerVC.xib in Resources */,
 				9D763A4C202BF9D700A6FFC1 /* CPFVC.xib in Resources */,
 				B94CD49E1E9C65B1003A889E /* VCView.xib in Resources */,
 				B94F90A01EB2E3560032FC0E /* NSStringVC.xib in Resources */,
 				B9A6820F1FB2DA0A00B05793 /* RuntimeVC.xib in Resources */,
 				B98DF72E1EA852AC00296C2A /* jsCallOC.html in Resources */,
 				B9A743CC1E95EE1400ABFD86 /* XibSelectedBtnImgVC.xib in Resources */,
+				18F9EAB621D1DE06005DE74F /* DoubleComponentPickerVC.xib in Resources */,
 				180848D6207F44CD00C2D91B /* CellMyGX.xib in Resources */,
 				B94F90AC1EB31B1A0032FC0E /* HideNavDividingLineVC.xib in Resources */,
 				183896A6207EE67F0008A3B2 /* CellJJSJYY.xib in Resources */,
@@ -5680,11 +5738,13 @@
 				B96BF32D1E9B0E10008ADB3D /* KenshinAppVC.m in Sources */,
 				B92CCAFC1E7A159300035A79 /* FourVC.m in Sources */,
 				B94DA31A1E8CB82B0072BECE /* MJStudent.m in Sources */,
+				18F9EABF21D1DE3D005DE74F /* CustomPickerVC.m in Sources */,
 				B92CCB0A1E7A192100035A79 /* DateUtil.m in Sources */,
 				B915C2471E7F9DE10088A31F /* MDTextField.m in Sources */,
 				B98505441E963CF5007C01CB /* GestureVerifyViewController.m in Sources */,
 				B9EB829E1F3A9530000574F7 /* NSData+FXW.m in Sources */,
 				B96180A81E8F4A6600ABCCF3 /* MBMJVC.m in Sources */,
+				18629C1621D2051F00B14394 /* MainTabPickerVC.m in Sources */,
 				B9D626F01E7CC4D600593EC1 /* NSArray+MASAdditions.m in Sources */,
 				B91748D61ECC3FDD006C70F5 /* CountDownVC.m in Sources */,
 				180900BF209A945400DBCF1D /* JJModelFriend.m in Sources */,
@@ -5815,6 +5875,7 @@
 				B98DF7041EA83FDF00296C2A /* SetUICornerRadiusVC.m in Sources */,
 				B93002271E89FB41000C0563 /* FXW_TextFieldVC.m in Sources */,
 				18BB876321C9EBD900C55E54 /* XibTwoVC.m in Sources */,
+				18F9EAB021D1DDEC005DE74F /* SingleComponentPickerVC.m in Sources */,
 				B915C22B1E7F9DE10088A31F /* MDButton.m in Sources */,
 				9D7C409A200F419100017937 /* JJSJRecodeVoiceVC.m in Sources */,
 				18BB876821C9EEBD00C55E54 /* JTiOSDevVC.m in Sources */,
@@ -5875,8 +5936,10 @@
 				B9B904A21F7E1D030072ABEA /* YinDaoVC.m in Sources */,
 				B99C84281F99918200952F3D /* DebugLogVC.m in Sources */,
 				B906FC4E1E8B3BC000645C96 /* NSObject+MJClass.m in Sources */,
+				18F9EABA21D1DE26005DE74F /* DependentComponentPickerVC.m in Sources */,
 				B915C22E1E7F9DE10088A31F /* MDCalendarDateHeader.m in Sources */,
 				B95ED6E41E94EDE700AD490B /* DDZM_BottomMenuVC.m in Sources */,
+				18F9EAB521D1DE06005DE74F /* DoubleComponentPickerVC.m in Sources */,
 				B98505461E963CF5007C01CB /* PCCircleInfoView.m in Sources */,
 				B9B9CEC21E9CB986008CC558 /* NSData+ImageContentType.m in Sources */,
 				B96E60671EA70DBF00BC0543 /* MCClientVC.m in Sources */,
@@ -6101,6 +6164,7 @@
 				B95AC8871EADA05400806D1A /* BaseRichTextVC.m in Sources */,
 				B98A10881FBD22A800556A00 /* CJJMVC.m in Sources */,
 				B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */,
+				18F9EAAB21D1DDB7005DE74F /* DatePickerVC.m in Sources */,
 				B906FD421E8B668F00645C96 /* MJRefreshAutoFooter.m in Sources */,
 				B906FC5C1E8B3ED900645C96 /* User.m in Sources */,
 				B906B3DB1EE94B9F0073E175 /* BottomTableMenuVC.m in Sources */,

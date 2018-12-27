@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoubleComponentPickerVC">
+            <connections>
+                <outlet property="pickerView" destination="cuC-MF-SN1" id="Kwi-07-mgM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuC-MF-SN1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="svI-KK-bsL"/>
+                        <outlet property="delegate" destination="-1" id="Awg-7B-d2n"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQa-KU-Flc">
+                    <rect key="frame" x="30" y="256" width="315" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="zOG-oW-i0f"/>
+                    </constraints>
+                    <state key="normal" title="Select"/>
+                    <connections>
+                        <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="Tgv-fO-zv2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.067293860019999999" green="0.71805506939999997" blue="0.95864397290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cuC-MF-SN1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="ahx-0h-s3c"/>
+                <constraint firstItem="gQa-KU-Flc" firstAttribute="top" secondItem="cuC-MF-SN1" secondAttribute="bottom" constant="40" id="fGX-Kt-11p"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="gQa-KU-Flc" secondAttribute="trailing" constant="30" id="fXw-zT-WtN"/>
+                <constraint firstItem="gQa-KU-Flc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="p6V-I6-mHd"/>
+                <constraint firstItem="cuC-MF-SN1" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="uBO-iy-531"/>
+                <constraint firstItem="cuC-MF-SN1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zZc-ar-oA5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
