@@ -36,6 +36,7 @@
 		1817EAAC207E1A10009DD645 /* CellJJSJMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1817EAAA207E1A10009DD645 /* CellJJSJMenu.xib */; };
 		18182CCC213E7C640097EFA8 /* UIViewController+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 18182CCB213E7C640097EFA8 /* UIViewController+FXW.m */; };
 		18182CCF213E84B30097EFA8 /* NSArray+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 18182CCE213E84B30097EFA8 /* NSArray+FXW.m */; };
+		18188C9921D4663200AD1E3E /* pickerDic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18188C9821D4663200AD1E3E /* pickerDic.plist */; };
 		18199DFB2142599300175D61 /* RSAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18199DF92142599300175D61 /* RSAVC.m */; };
 		18199DFC2142599300175D61 /* RSAVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18199DFA2142599300175D61 /* RSAVC.xib */; };
 		18199DFF21425A3600175D61 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 18199DFE21425A3600175D61 /* RSA.m */; };
@@ -87,6 +88,7 @@
 		18F9EABB21D1DE26005DE74F /* DependentComponentPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAB921D1DE26005DE74F /* DependentComponentPickerVC.xib */; };
 		18F9EABF21D1DE3D005DE74F /* CustomPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */; };
 		18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */; };
+		18FC7A2721D4B7430075FF9E /* pickerPlay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FC7A2621D4B7430075FF9E /* pickerPlay.wav */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
@@ -703,6 +705,7 @@
 		18182CCB213E7C640097EFA8 /* UIViewController+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FXW.m"; sourceTree = "<group>"; };
 		18182CCD213E84B30097EFA8 /* NSArray+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+FXW.h"; sourceTree = "<group>"; };
 		18182CCE213E84B30097EFA8 /* NSArray+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FXW.m"; sourceTree = "<group>"; };
+		18188C9821D4663200AD1E3E /* pickerDic.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = pickerDic.plist; sourceTree = "<group>"; };
 		18199DF82142599300175D61 /* RSAVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAVC.h; sourceTree = "<group>"; };
 		18199DF92142599300175D61 /* RSAVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAVC.m; sourceTree = "<group>"; };
 		18199DFA2142599300175D61 /* RSAVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSAVC.xib; sourceTree = "<group>"; };
@@ -789,6 +792,7 @@
 		18F9EABC21D1DE3D005DE74F /* CustomPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPickerVC.h; sourceTree = "<group>"; };
 		18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerVC.m; sourceTree = "<group>"; };
 		18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerVC.xib; sourceTree = "<group>"; };
+		18FC7A2621D4B7430075FF9E /* pickerPlay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickerPlay.wav; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
 		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2234,6 +2238,7 @@
 		18F9EAA721D1DBEB005DE74F /* 选取器 */ = {
 			isa = PBXGroup;
 			children = (
+				18FC7A2621D4B7430075FF9E /* pickerPlay.wav */,
 				18629C1421D2051F00B14394 /* MainTabPickerVC.h */,
 				18629C1521D2051F00B14394 /* MainTabPickerVC.m */,
 				18F9EAA821D1DDB7005DE74F /* DatePickerVC.h */,
@@ -2248,6 +2253,7 @@
 				18F9EAB721D1DE26005DE74F /* DependentComponentPickerVC.h */,
 				18F9EAB821D1DE26005DE74F /* DependentComponentPickerVC.m */,
 				18F9EAB921D1DE26005DE74F /* DependentComponentPickerVC.xib */,
+				18188C9821D4663200AD1E3E /* pickerDic.plist */,
 				18F9EABC21D1DE3D005DE74F /* CustomPickerVC.h */,
 				18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */,
 				18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */,
@@ -5530,6 +5536,7 @@
 				B95ED6E01E94EA6900AD490B /* BaiDuBottomMenu.xib in Resources */,
 				B95AC89A1EADDC2600806D1A /* TextConnectWebVC.xib in Resources */,
 				B98DF7101EA8516100296C2A /* JSContentVC.xib in Resources */,
+				18188C9921D4663200AD1E3E /* pickerDic.plist in Resources */,
 				9DED18951FF4D06700C8BD29 /* RecodePlayVC.xib in Resources */,
 				B9B7C5201F16FE810063BDAF /* NSDataUtilsVC.xib in Resources */,
 				9D4287541FEBA3870015FC4A /* GestureVC.xib in Resources */,
@@ -5563,6 +5570,7 @@
 				B9BADB5B1EA5E5D6000B3C1C /* VCN5.xib in Resources */,
 				B9EFFE701F74BAB600E5A871 /* MyXibVC.xib in Resources */,
 				B964771C1EB04A5300A9A498 /* alert_error_icon@2x.png in Resources */,
+				18FC7A2721D4B7430075FF9E /* pickerPlay.wav in Resources */,
 				18064E8020A04AD3001AB33F /* ShowDateVC.xib in Resources */,
 				B98DF7281EA8524B00296C2A /* call2.html in Resources */,
 				B95ED6EA1E94EEF200AD490B /* DeviceMenuView.xib in Resources */,

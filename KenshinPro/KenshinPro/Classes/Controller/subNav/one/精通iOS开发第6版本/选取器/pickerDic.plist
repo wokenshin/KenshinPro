@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>幼稚园</key>
+	<array>
+		<string>卢西</string>
+		<string>孟多多</string>
+		<string>松海河</string>
+	</array>
+	<key>小学</key>
+	<array>
+		<string>陈思倩</string>
+		<string>王能红</string>
+		<string>肖凌洁</string>
+		<string>莫丽</string>
+		<string>曾勇</string>
+	</array>
+	<key>初中</key>
+	<array>
+		<string>郑娟</string>
+		<string>杨晨</string>
+		<string>刁仁伟</string>
+		<string>尹欢</string>
+		<string>吴桂华</string>
+	</array>
+	<key>高中</key>
+	<array>
+		<string>李意俊</string>
+		<string>胡发亮</string>
+		<string>杨龙居</string>
+		<string>杨田甜</string>
+		<string>欧玲玲</string>
+		<string>贾宝玉</string>
+	</array>
+	<key>大学</key>
+	<array>
+		<string>肖传楠</string>
+		<string>武瑞丰</string>
+		<string>陈文</string>
+		<string>尹峰</string>
+		<string>宫铭忆</string>
+		<string>陈良普</string>
+	</array>
+</dict>
+</plist>

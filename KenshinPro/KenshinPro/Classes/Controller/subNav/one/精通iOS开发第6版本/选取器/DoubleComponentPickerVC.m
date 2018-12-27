@@ -8,9 +8,7 @@
 
 #import "DoubleComponentPickerVC.h"
 
-@interface DoubleComponentPickerVC ()
-
-<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface DoubleComponentPickerVC ()<UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (nonatomic, strong) NSArray   *arrLeft;
