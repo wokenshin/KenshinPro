@@ -43,6 +43,13 @@
 		181AFEE620747D210071DC86 /* BundleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181AFEE420747D210071DC86 /* BundleVC.m */; };
 		181AFEE720747D210071DC86 /* BundleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181AFEE520747D210071DC86 /* BundleVC.xib */; };
 		181AFF00207482190071DC86 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 181AFEFF207482190071DC86 /* heart.jpg */; };
+		181DEBEE21D71E73005D2827 /* CustomTCellTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DEBEC21D71E73005D2827 /* CustomTCellTwoVC.m */; };
+		181DEBEF21D71E73005D2827 /* CustomTCellTwoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181DEBED21D71E73005D2827 /* CustomTCellTwoVC.xib */; };
+		181DEBF321D71E92005D2827 /* CellCusTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DEBF121D71E92005D2827 /* CellCusTwo.m */; };
+		181DEBF421D71E92005D2827 /* CellCusTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181DEBF221D71E92005D2827 /* CellCusTwo.xib */; };
+		181DEBF921D72882005D2827 /* SectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DEBF721D72882005D2827 /* SectionVC.m */; };
+		181DEBFA21D72882005D2827 /* SectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181DEBF821D72882005D2827 /* SectionVC.xib */; };
+		181DEBFC21D72A01005D2827 /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = 181DEBFB21D72A01005D2827 /* sortednames.plist */; };
 		181E36DE207DAB8A005675C1 /* CreateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36DC207DAB8A005675C1 /* CreateQRCodeVC.m */; };
 		181E36DF207DAB8A005675C1 /* CreateQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */; };
 		181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36E1207DAD42005675C1 /* UIImage+FXW.m */; };
@@ -55,10 +62,14 @@
 		18629C1621D2051F00B14394 /* MainTabPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18629C1521D2051F00B14394 /* MainTabPickerVC.m */; };
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
+		188D746721DCBEE8008CF254 /* FontsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D746521DCBEE8008CF254 /* FontsVC.m */; };
+		188D746821DCBEE8008CF254 /* FontsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188D746621DCBEE8008CF254 /* FontsVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
 		1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894709D21C8CE88006010D9 /* XibBaseVC.m */; };
 		189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1894709E21C8CE88006010D9 /* XibBaseVC.xib */; };
 		189A734B20A92837003D3439 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A734A20A92837003D3439 /* Bugly.framework */; };
+		18A008FE21D5B3F700C48342 /* SimpleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A008FC21D5B3F700C48342 /* SimpleTableVC.m */; };
+		18A008FF21D5B3F700C48342 /* SimpleTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A008FD21D5B3F700C48342 /* SimpleTableVC.xib */; };
 		18B397F52137F36D00BDDE31 /* MethodSwizzingDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */; };
 		18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */; };
 		18BB876321C9EBD900C55E54 /* XibTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB876121C9EBD900C55E54 /* XibTwoVC.m */; };
@@ -70,6 +81,9 @@
 		18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E983C020A97525002249F3 /* JavaLearnVC.m */; };
 		18EA3D0F21D0774400BDAF99 /* RestructureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA3D0D21D0774400BDAF99 /* RestructureVC.m */; };
 		18EA3D1021D0774400BDAF99 /* RestructureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */; };
+		18EA72DB21D5FBDF00BE39F4 /* CustomTCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA72D921D5FBDF00BE39F4 /* CustomTCellVC.m */; };
+		18EA72DC21D5FBDF00BE39F4 /* CustomTCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA72DA21D5FBDF00BE39F4 /* CustomTCellVC.xib */; };
+		18EA72E121D6041900BE39F4 /* CellCus.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA72E021D6041900BE39F4 /* CellCus.m */; };
 		18F91B2621CCCABB007621C8 /* OrientationsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F91B2421CCCABB007621C8 /* OrientationsVC.m */; };
 		18F91B2721CCCABB007621C8 /* OrientationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F91B2521CCCABB007621C8 /* OrientationsVC.xib */; };
 		18F9B77021D0CE0F005D40E0 /* SwitchViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9B76E21D0CE0F005D40E0 /* SwitchViewVC.m */; };
@@ -718,6 +732,16 @@
 		181AFEF8207480A30071DC86 /* TestBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		181AFEFA207480A30071DC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181AFEFF207482190071DC86 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heart.jpg; sourceTree = "<group>"; };
+		181DEBEB21D71E73005D2827 /* CustomTCellTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTCellTwoVC.h; sourceTree = "<group>"; };
+		181DEBEC21D71E73005D2827 /* CustomTCellTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTCellTwoVC.m; sourceTree = "<group>"; };
+		181DEBED21D71E73005D2827 /* CustomTCellTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTCellTwoVC.xib; sourceTree = "<group>"; };
+		181DEBF021D71E92005D2827 /* CellCusTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellCusTwo.h; sourceTree = "<group>"; };
+		181DEBF121D71E92005D2827 /* CellCusTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellCusTwo.m; sourceTree = "<group>"; };
+		181DEBF221D71E92005D2827 /* CellCusTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCusTwo.xib; sourceTree = "<group>"; };
+		181DEBF621D72882005D2827 /* SectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionVC.h; sourceTree = "<group>"; };
+		181DEBF721D72882005D2827 /* SectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionVC.m; sourceTree = "<group>"; };
+		181DEBF821D72882005D2827 /* SectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionVC.xib; sourceTree = "<group>"; };
+		181DEBFB21D72A01005D2827 /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sortednames.plist; sourceTree = "<group>"; };
 		181E36DB207DAB8A005675C1 /* CreateQRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateQRCodeVC.h; sourceTree = "<group>"; };
 		181E36DC207DAB8A005675C1 /* CreateQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeVC.m; sourceTree = "<group>"; };
 		181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQRCodeVC.xib; sourceTree = "<group>"; };
@@ -739,6 +763,9 @@
 		186D059C212D0F3100BED61B /* SQCopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQCopyVC.h; sourceTree = "<group>"; };
 		186D059D212D0F3100BED61B /* SQCopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQCopyVC.m; sourceTree = "<group>"; };
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
+		188D746421DCBEE8008CF254 /* FontsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontsVC.h; sourceTree = "<group>"; };
+		188D746521DCBEE8008CF254 /* FontsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsVC.m; sourceTree = "<group>"; };
+		188D746621DCBEE8008CF254 /* FontsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontsVC.xib; sourceTree = "<group>"; };
 		18934C78211BC75C007BD44F /* userHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = userHelp.html; sourceTree = "<group>"; };
 		1894709C21C8CE88006010D9 /* XibBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibBaseVC.h; sourceTree = "<group>"; };
 		1894709D21C8CE88006010D9 /* XibBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibBaseVC.m; sourceTree = "<group>"; };
@@ -747,6 +774,9 @@
 		189A734820A92801003D3439 /* Bugly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bugly.h; sourceTree = "<group>"; };
 		189A734920A92801003D3439 /* BuglyLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuglyLog.h; sourceTree = "<group>"; };
 		189A734A20A92837003D3439 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugly.framework; path = Pods/Bugly/Bugly.framework; sourceTree = "<group>"; };
+		18A008FB21D5B3F700C48342 /* SimpleTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableVC.h; sourceTree = "<group>"; };
+		18A008FC21D5B3F700C48342 /* SimpleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableVC.m; sourceTree = "<group>"; };
+		18A008FD21D5B3F700C48342 /* SimpleTableVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableVC.xib; sourceTree = "<group>"; };
 		18B397F22137F36D00BDDE31 /* MethodSwizzingDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzingDemoVC.h; sourceTree = "<group>"; };
 		18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzingDemoVC.m; sourceTree = "<group>"; };
 		18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodSwizzingDemoVC.xib; sourceTree = "<group>"; };
@@ -765,6 +795,11 @@
 		18EA3D0C21D0774400BDAF99 /* RestructureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestructureVC.h; sourceTree = "<group>"; };
 		18EA3D0D21D0774400BDAF99 /* RestructureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestructureVC.m; sourceTree = "<group>"; };
 		18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestructureVC.xib; sourceTree = "<group>"; };
+		18EA72D821D5FBDF00BE39F4 /* CustomTCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTCellVC.h; sourceTree = "<group>"; };
+		18EA72D921D5FBDF00BE39F4 /* CustomTCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTCellVC.m; sourceTree = "<group>"; };
+		18EA72DA21D5FBDF00BE39F4 /* CustomTCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTCellVC.xib; sourceTree = "<group>"; };
+		18EA72DF21D6041900BE39F4 /* CellCus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellCus.h; sourceTree = "<group>"; };
+		18EA72E021D6041900BE39F4 /* CellCus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellCus.m; sourceTree = "<group>"; };
 		18F91B2321CCCABB007621C8 /* OrientationsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationsVC.h; sourceTree = "<group>"; };
 		18F91B2421CCCABB007621C8 /* OrientationsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationsVC.m; sourceTree = "<group>"; };
 		18F91B2521CCCABB007621C8 /* OrientationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrientationsVC.xib; sourceTree = "<group>"; };
@@ -2033,6 +2068,30 @@
 			path = TestBundle;
 			sourceTree = "<group>";
 		};
+		181DEBEA21D71E49005D2827 /* 制定表视图单元2 */ = {
+			isa = PBXGroup;
+			children = (
+				181DEBEB21D71E73005D2827 /* CustomTCellTwoVC.h */,
+				181DEBEC21D71E73005D2827 /* CustomTCellTwoVC.m */,
+				181DEBED21D71E73005D2827 /* CustomTCellTwoVC.xib */,
+				181DEBF021D71E92005D2827 /* CellCusTwo.h */,
+				181DEBF121D71E92005D2827 /* CellCusTwo.m */,
+				181DEBF221D71E92005D2827 /* CellCusTwo.xib */,
+			);
+			path = "制定表视图单元2";
+			sourceTree = "<group>";
+		};
+		181DEBF521D72865005D2827 /* 分组分区 */ = {
+			isa = PBXGroup;
+			children = (
+				181DEBFB21D72A01005D2827 /* sortednames.plist */,
+				181DEBF621D72882005D2827 /* SectionVC.h */,
+				181DEBF721D72882005D2827 /* SectionVC.m */,
+				181DEBF821D72882005D2827 /* SectionVC.xib */,
+			);
+			path = "分组分区";
+			sourceTree = "<group>";
+		};
 		181E36DA207DAB58005675C1 /* 生成二维码 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2112,6 +2171,16 @@
 			path = "深浅拷贝";
 			sourceTree = "<group>";
 		};
+		188D746321DCBEAE008CF254 /* 导航控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				188D746421DCBEE8008CF254 /* FontsVC.h */,
+				188D746521DCBEE8008CF254 /* FontsVC.m */,
+				188D746621DCBEE8008CF254 /* FontsVC.xib */,
+			);
+			path = "导航控制器";
+			sourceTree = "<group>";
+		};
 		1894709B21C8CE61006010D9 /* xib基础 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2131,6 +2200,17 @@
 			);
 			name = Headers;
 			path = Pods/Bugly/Bugly.framework/Headers;
+			sourceTree = "<group>";
+		};
+		18A008FA21D5B3D500C48342 /* 表 */ = {
+			isa = PBXGroup;
+			children = (
+				18EA72DD21D5FC7000BE39F4 /* 简单表 */,
+				18EA72DE21D5FC9000BE39F4 /* 制定表视图单元 */,
+				181DEBEA21D71E49005D2827 /* 制定表视图单元2 */,
+				181DEBF521D72865005D2827 /* 分组分区 */,
+			);
+			path = "表";
 			sourceTree = "<group>";
 		};
 		18B397F12137F34900BDDE31 /* 黑魔法 */ = {
@@ -2160,6 +2240,8 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				188D746321DCBEAE008CF254 /* 导航控制器 */,
+				18A008FA21D5B3D500C48342 /* 表 */,
 				18F9EAA721D1DBEB005DE74F /* 选取器 */,
 				18F9B76C21D0C931005D40E0 /* 多视图 */,
 				18EA3D0B21D0771E00BDAF99 /* 旋转2 */,
@@ -2207,6 +2289,28 @@
 				18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */,
 			);
 			path = "旋转2";
+			sourceTree = "<group>";
+		};
+		18EA72DD21D5FC7000BE39F4 /* 简单表 */ = {
+			isa = PBXGroup;
+			children = (
+				18A008FB21D5B3F700C48342 /* SimpleTableVC.h */,
+				18A008FC21D5B3F700C48342 /* SimpleTableVC.m */,
+				18A008FD21D5B3F700C48342 /* SimpleTableVC.xib */,
+			);
+			path = "简单表";
+			sourceTree = "<group>";
+		};
+		18EA72DE21D5FC9000BE39F4 /* 制定表视图单元 */ = {
+			isa = PBXGroup;
+			children = (
+				18EA72D821D5FBDF00BE39F4 /* CustomTCellVC.h */,
+				18EA72D921D5FBDF00BE39F4 /* CustomTCellVC.m */,
+				18EA72DA21D5FBDF00BE39F4 /* CustomTCellVC.xib */,
+				18EA72DF21D6041900BE39F4 /* CellCus.h */,
+				18EA72E021D6041900BE39F4 /* CellCus.m */,
+			);
+			path = "制定表视图单元";
 			sourceTree = "<group>";
 		};
 		18F91B2221CCCAA0007621C8 /* 旋转 */ = {
@@ -5497,10 +5601,12 @@
 				B95ED6CC1E947FCF00AD490B /* BLEVC.xib in Resources */,
 				B9D8568D1E84B91C0053697F /* AlertVC2.xib in Resources */,
 				B91748D71ECC3FDD006C70F5 /* CountDownVC.xib in Resources */,
+				181DEBFA21D72882005D2827 /* SectionVC.xib in Resources */,
 				B964771D1EB04A5300A9A498 /* alert_success_icon@2x.png in Resources */,
 				9D2BEADA1FF3839D002D2EE3 /* GYZJVC.xib in Resources */,
 				B95ED6C51E9474E200AD490B /* CellCtrlDdzm.xib in Resources */,
 				B98DF71E1EA8521300296C2A /* index1.html in Resources */,
+				18A008FF21D5B3F700C48342 /* SimpleTableVC.xib in Resources */,
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
@@ -5557,13 +5663,16 @@
 				B92CCB411E7A895900035A79 /* SysContactsVC.xib in Resources */,
 				B98DF7211EA8521300296C2A /* JSONEVC.xib in Resources */,
 				18F9B77121D0CE0F005D40E0 /* SwitchViewVC.xib in Resources */,
+				181DEBF421D71E92005D2827 /* CellCusTwo.xib in Resources */,
 				B906FD501E8B668F00645C96 /* MJRefresh.bundle in Resources */,
 				B9BADB361EA5B6A1000B3C1C /* MainVC.xib in Resources */,
+				18EA72DC21D5FBDF00BE39F4 /* CustomTCellVC.xib in Resources */,
 				189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */,
 				B906FC581E8B3C6500645C96 /* DicAndModelVC.xib in Resources */,
 				B910E23D1EA880D700DFCC86 /* GifContentVC.xib in Resources */,
 				186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */,
 				B9C963931E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib in Resources */,
+				181DEBEF21D71E73005D2827 /* CustomTCellTwoVC.xib in Resources */,
 				B9BADB381EA5B703000B3C1C /* VCPush.png in Resources */,
 				B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */,
 				B9254BCA1EAEF20E00F82344 /* PlistVC.xib in Resources */,
@@ -5581,6 +5690,7 @@
 				B9BADB4A1EA5BF57000B3C1C /* VCN4.xib in Resources */,
 				B9BADB3F1EA5BB82000B3C1C /* VCN2.xib in Resources */,
 				B98DF7331EA852D100296C2A /* jsCallOC2.html in Resources */,
+				181DEBFC21D72A01005D2827 /* sortednames.plist in Resources */,
 				B9BD97501E81054C009BB0D4 /* MBProgressHUD.bundle in Resources */,
 				B94C542B1F3C30C6003AC71B /* AddBorderVC.xib in Resources */,
 				B95ED6B91E9474E200AD490B /* CellOrderCtrling.xib in Resources */,
@@ -5611,6 +5721,7 @@
 				B9EE6AE41EEA4B06000A06DA /* CellDeviceManage.xib in Resources */,
 				B98DF72A1EA8524B00296C2A /* JSTWOVC.xib in Resources */,
 				B90978791E95E7D200F5A0B5 /* DdzmLeftMenuVC.xib in Resources */,
+				188D746821DCBEE8008CF254 /* FontsVC.xib in Resources */,
 				B98DF71D1EA8521300296C2A /* index1.css in Resources */,
 				9D094E2A201192B40088636C /* LOGVC.xib in Resources */,
 				B95ED6B31E9474E200AD490B /* WoYaoBianDaView.xib in Resources */,
@@ -5771,6 +5882,7 @@
 				B906FCEA1E8B553600645C96 /* FXW_Const.m in Sources */,
 				180758342063A97E000A8A3B /* UITextViewBaseVC.m in Sources */,
 				B98505421E963CF5007C01CB /* PCCircleViewConst.m in Sources */,
+				181DEBF921D72882005D2827 /* SectionVC.m in Sources */,
 				9D4274AF1FF0972C00745A81 /* UIView+PPBadgeView.m in Sources */,
 				B9B9CE9A1E9CB8EC008CC558 /* TADotView.m in Sources */,
 				1803E596207DFA1C00F7ACA6 /* FYScrollViewVC.m in Sources */,
@@ -5810,6 +5922,7 @@
 				B9D626EA1E7CC4D600593EC1 /* MASCompositeConstraint.m in Sources */,
 				B906FD471E8B668F00645C96 /* MJRefreshAutoGifFooter.m in Sources */,
 				B95ED6BC1E9474E200AD490B /* OrderWaittingVC.m in Sources */,
+				181DEBEE21D71E73005D2827 /* CustomTCellTwoVC.m in Sources */,
 				B93002371E8A3695000C0563 /* AFN_MC.m in Sources */,
 				B9EFE9551EDE4A62002C2758 /* JWTAlgorithmFactory.m in Sources */,
 				B93084301F3D5E0D0035DA42 /* ListCodesVC.m in Sources */,
@@ -5926,6 +6039,7 @@
 				B96477121EB02DEB00A9A498 /* STConst.m in Sources */,
 				B92CCAF91E7A158500035A79 /* ThreeVC.m in Sources */,
 				B98F396F1EE4EFB60064468E /* RegexVC.m in Sources */,
+				188D746721DCBEE8008CF254 /* FontsVC.m in Sources */,
 				B93F58651ED2844200393292 /* JWTVC.m in Sources */,
 				B915C2371E7F9DE10088A31F /* MDLinearProgressLayer.m in Sources */,
 				B92642071E83D3AF00EEED61 /* AFURLRequestSerialization.m in Sources */,
@@ -6004,6 +6118,7 @@
 				B915C24F1E7F9DE10088A31F /* UIFontHelper.m in Sources */,
 				180848C1207F3B3800C2D91B /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				B99036781FABF60100CFE633 /* LockCtrlHeaderView.m in Sources */,
+				18A008FE21D5B3F700C48342 /* SimpleTableVC.m in Sources */,
 				B95ED6DF1E94EA6900AD490B /* BaiDuBottomMenu.m in Sources */,
 				18F9B77021D0CE0F005D40E0 /* SwitchViewVC.m in Sources */,
 				B910E2631EA8888C00DFCC86 /* ScanErWeiMaOneVC.m in Sources */,
@@ -6071,6 +6186,7 @@
 				B985052A1E96371C007C01CB /* GestureLockVC.m in Sources */,
 				B9BADB5E1EA5F47B000B3C1C /* AFN_HS.m in Sources */,
 				B92642051E83D3AF00EEED61 /* AFNetworkReachabilityManager.m in Sources */,
+				181DEBF321D71E92005D2827 /* CellCusTwo.m in Sources */,
 				B94A8C581F3D46ED002A6D51 /* Notifi2VC.m in Sources */,
 				B906FC4F1E8B3BC000645C96 /* NSObject+MJCoding.m in Sources */,
 				181E36DE207DAB8A005675C1 /* CreateQRCodeVC.m in Sources */,
@@ -6122,6 +6238,7 @@
 				B9D8568E1E84B91C0053697F /* LSActionSheet.m in Sources */,
 				B9D626F21E7CC4D600593EC1 /* View+MASAdditions.m in Sources */,
 				9DA7457C20415510006FEA5E /* NSLayoutConstraint+PureLayout.m in Sources */,
+				18EA72DB21D5FBDF00BE39F4 /* CustomTCellVC.m in Sources */,
 				9D4274AD1FF0972C00745A81 /* PPBadgeLabel.m in Sources */,
 				B94CD49C1E9C65A5003A889E /* VCView.m in Sources */,
 				9D5FD640203162560071827F /* ModelJJSJ.m in Sources */,
@@ -6174,6 +6291,7 @@
 				B9CF8BDB1EC2AF5500C64D58 /* FXW_Theme.m in Sources */,
 				18F9EAAB21D1DDB7005DE74F /* DatePickerVC.m in Sources */,
 				B906FD421E8B668F00645C96 /* MJRefreshAutoFooter.m in Sources */,
+				18EA72E121D6041900BE39F4 /* CellCus.m in Sources */,
 				B906FC5C1E8B3ED900645C96 /* User.m in Sources */,
 				B906B3DB1EE94B9F0073E175 /* BottomTableMenuVC.m in Sources */,
 				B9B9CECC1E9CB986008CC558 /* UIImage+MultiFormat.m in Sources */,

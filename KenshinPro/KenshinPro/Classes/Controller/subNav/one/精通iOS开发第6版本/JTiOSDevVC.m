@@ -13,6 +13,11 @@
 #import "RestructureVC.h"
 #import "SwitchViewVC.h"
 #import "MainTabPickerVC.h"
+#import "SimpleTableVC.h"
+#import "CustomTCellVC.h"
+#import "CustomTCellTwoVC.h"
+#import "SectionVC.h"
+#import "FontsVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -40,10 +45,45 @@
     [self addDataWithTitle:@"旋转2" andDetail:@"2018-12-23"];
     [self addDataWithTitle:@"多视图" andDetail:@"2018-12-24"];
     [self addDataWithTitle:@"选取器" andDetail:@"2018-12-25"];
+    [self addDataWithTitle:@"简单表" andDetail:@"2018-12-28"];
+    [self addDataWithTitle:@"制定表视图单元" andDetail:@"2018-12-28"];
+    [self addDataWithTitle:@"制定表视图单元2" andDetail:@"2018-12-29"];
+    [self addDataWithTitle:@"分区,索引,搜索" andDetail:@"2019-1-2"];
+    [self addDataWithTitle:@"导航控制器" andDetail:@"2019-1-2"];
 }
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"导航控制器"]) {
+        FontsVC *vc = [[FontsVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"分区,索引,搜索"]) {
+        SectionVC *vc = [[SectionVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"制定表视图单元2"]) {
+        CustomTCellTwoVC *vc = [[CustomTCellTwoVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"制定表视图单元"]) {
+        CustomTCellVC *vc = [[CustomTCellVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"简单表"]) {
+        SimpleTableVC *vc = [[SimpleTableVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"选取器"]) {
         MainTabPickerVC *vc = [[MainTabPickerVC alloc] init];
         
