@@ -53,6 +53,11 @@
 		181E36DE207DAB8A005675C1 /* CreateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36DC207DAB8A005675C1 /* CreateQRCodeVC.m */; };
 		181E36DF207DAB8A005675C1 /* CreateQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */; };
 		181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36E1207DAD42005675C1 /* UIImage+FXW.m */; };
+		18268E8821DDA92A008281B4 /* FontListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8621DDA92A008281B4 /* FontListVC.m */; };
+		18268E8C21DDB4BB008281B4 /* FontSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8B21DDB4BB008281B4 /* FontSizeVC.m */; };
+		18268E9021DDBD6B008281B4 /* FontInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8E21DDBD6B008281B4 /* FontInfoVC.m */; };
+		18268E9121DDBD6B008281B4 /* FontInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18268E8F21DDBD6B008281B4 /* FontInfoVC.xib */; };
+		18306B3121DCFBB500F42E05 /* FavoritesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18306B3021DCFBB500F42E05 /* FavoritesList.m */; };
 		183896A1207EE6690008A3B2 /* ModelYY.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A0207EE6690008A3B2 /* ModelYY.m */; };
 		183896A5207EE67F0008A3B2 /* CellJJSJYY.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A3207EE67F0008A3B2 /* CellJJSJYY.m */; };
 		183896A6207EE67F0008A3B2 /* CellJJSJYY.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183896A4207EE67F0008A3B2 /* CellJJSJYY.xib */; };
@@ -63,7 +68,6 @@
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
 		188D746721DCBEE8008CF254 /* FontsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D746521DCBEE8008CF254 /* FontsVC.m */; };
-		188D746821DCBEE8008CF254 /* FontsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188D746621DCBEE8008CF254 /* FontsVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
 		1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894709D21C8CE88006010D9 /* XibBaseVC.m */; };
 		189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1894709E21C8CE88006010D9 /* XibBaseVC.xib */; };
@@ -747,6 +751,15 @@
 		181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQRCodeVC.xib; sourceTree = "<group>"; };
 		181E36E0207DAD42005675C1 /* UIImage+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXW.h"; sourceTree = "<group>"; };
 		181E36E1207DAD42005675C1 /* UIImage+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXW.m"; sourceTree = "<group>"; };
+		18268E8521DDA92A008281B4 /* FontListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontListVC.h; sourceTree = "<group>"; };
+		18268E8621DDA92A008281B4 /* FontListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontListVC.m; sourceTree = "<group>"; };
+		18268E8A21DDB4BB008281B4 /* FontSizeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontSizeVC.h; sourceTree = "<group>"; };
+		18268E8B21DDB4BB008281B4 /* FontSizeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontSizeVC.m; sourceTree = "<group>"; };
+		18268E8D21DDBD6B008281B4 /* FontInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontInfoVC.h; sourceTree = "<group>"; };
+		18268E8E21DDBD6B008281B4 /* FontInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontInfoVC.m; sourceTree = "<group>"; };
+		18268E8F21DDBD6B008281B4 /* FontInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontInfoVC.xib; sourceTree = "<group>"; };
+		18306B2F21DCFBB500F42E05 /* FavoritesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesList.h; sourceTree = "<group>"; };
+		18306B3021DCFBB500F42E05 /* FavoritesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesList.m; sourceTree = "<group>"; };
 		1838969F207EE6690008A3B2 /* ModelYY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelYY.h; sourceTree = "<group>"; };
 		183896A0207EE6690008A3B2 /* ModelYY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelYY.m; sourceTree = "<group>"; };
 		183896A2207EE67F0008A3B2 /* CellJJSJYY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellJJSJYY.h; sourceTree = "<group>"; };
@@ -765,7 +778,6 @@
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
 		188D746421DCBEE8008CF254 /* FontsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontsVC.h; sourceTree = "<group>"; };
 		188D746521DCBEE8008CF254 /* FontsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsVC.m; sourceTree = "<group>"; };
-		188D746621DCBEE8008CF254 /* FontsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontsVC.xib; sourceTree = "<group>"; };
 		18934C78211BC75C007BD44F /* userHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = userHelp.html; sourceTree = "<group>"; };
 		1894709C21C8CE88006010D9 /* XibBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibBaseVC.h; sourceTree = "<group>"; };
 		1894709D21C8CE88006010D9 /* XibBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibBaseVC.m; sourceTree = "<group>"; };
@@ -2102,6 +2114,20 @@
 			path = "生成二维码";
 			sourceTree = "<group>";
 		};
+		18268E8421DDA910008281B4 /* sub */ = {
+			isa = PBXGroup;
+			children = (
+				18268E8521DDA92A008281B4 /* FontListVC.h */,
+				18268E8621DDA92A008281B4 /* FontListVC.m */,
+				18268E8A21DDB4BB008281B4 /* FontSizeVC.h */,
+				18268E8B21DDB4BB008281B4 /* FontSizeVC.m */,
+				18268E8D21DDBD6B008281B4 /* FontInfoVC.h */,
+				18268E8E21DDBD6B008281B4 /* FontInfoVC.m */,
+				18268E8F21DDBD6B008281B4 /* FontInfoVC.xib */,
+			);
+			path = sub;
+			sourceTree = "<group>";
+		};
 		18389699207EE5EF0008A3B2 /* 菜单-水平方向 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2174,9 +2200,11 @@
 		188D746321DCBEAE008CF254 /* 导航控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				18268E8421DDA910008281B4 /* sub */,
+				18306B2F21DCFBB500F42E05 /* FavoritesList.h */,
+				18306B3021DCFBB500F42E05 /* FavoritesList.m */,
 				188D746421DCBEE8008CF254 /* FontsVC.h */,
 				188D746521DCBEE8008CF254 /* FontsVC.m */,
-				188D746621DCBEE8008CF254 /* FontsVC.xib */,
 			);
 			path = "导航控制器";
 			sourceTree = "<group>";
@@ -5610,6 +5638,7 @@
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
 				B910E24D1EA884F700DFCC86 /* MCNavBarVC.xib in Resources */,
+				18268E9121DDBD6B008281B4 /* FontInfoVC.xib in Resources */,
 				18F9B77621D0CE20005D40E0 /* BlueVC.xib in Resources */,
 				B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */,
 				9D43700C201EAE210027F6C6 /* AFN_FXWDemoVC.xib in Resources */,
@@ -5721,7 +5750,6 @@
 				B9EE6AE41EEA4B06000A06DA /* CellDeviceManage.xib in Resources */,
 				B98DF72A1EA8524B00296C2A /* JSTWOVC.xib in Resources */,
 				B90978791E95E7D200F5A0B5 /* DdzmLeftMenuVC.xib in Resources */,
-				188D746821DCBEE8008CF254 /* FontsVC.xib in Resources */,
 				B98DF71D1EA8521300296C2A /* index1.css in Resources */,
 				9D094E2A201192B40088636C /* LOGVC.xib in Resources */,
 				B95ED6B31E9474E200AD490B /* WoYaoBianDaView.xib in Resources */,
@@ -5875,6 +5903,7 @@
 				B9EFE95A1EDE4A62002C2758 /* JWTAlgorithmHS512.m in Sources */,
 				B95ED6AE1E9474E200AD490B /* RFSegmentView.m in Sources */,
 				B9B9CED01E9CB986008CC558 /* UIView+WebCacheOperation.m in Sources */,
+				18268E9021DDBD6B008281B4 /* FontInfoVC.m in Sources */,
 				B95ED6B21E9474E200AD490B /* WoYaoBianDaView.m in Sources */,
 				B9B9CEC91E9CB986008CC558 /* SDWebImagePrefetcher.m in Sources */,
 				18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */,
@@ -5920,6 +5949,7 @@
 				B9BADB491EA5BF57000B3C1C /* VCN4.m in Sources */,
 				B9D8568C1E84B91C0053697F /* AlertVC2.m in Sources */,
 				B9D626EA1E7CC4D600593EC1 /* MASCompositeConstraint.m in Sources */,
+				18268E8C21DDB4BB008281B4 /* FontSizeVC.m in Sources */,
 				B906FD471E8B668F00645C96 /* MJRefreshAutoGifFooter.m in Sources */,
 				B95ED6BC1E9474E200AD490B /* OrderWaittingVC.m in Sources */,
 				181DEBEE21D71E73005D2827 /* CustomTCellTwoVC.m in Sources */,
@@ -5947,6 +5977,7 @@
 				B95ED6BD1E9474E200AD490B /* CellOrderWaitting.m in Sources */,
 				B910E24C1EA884F700DFCC86 /* MCNavBarVC.m in Sources */,
 				18053E56212A99B50007A3DC /* DelegateDemoVC.m in Sources */,
+				18306B3121DCFBB500F42E05 /* FavoritesList.m in Sources */,
 				180900BC209A936C00DBCF1D /* CellJJFriend.m in Sources */,
 				B94C541F1F3BF1DF003AC71B /* UIImage+ImageEffects.m in Sources */,
 				B9D626EB1E7CC4D600593EC1 /* MASConstraint.m in Sources */,
@@ -6070,6 +6101,7 @@
 				9D7C409E200F41EA00017937 /* FXWRecodeVoice.m in Sources */,
 				B9D626EC1E7CC4D600593EC1 /* MASConstraintMaker.m in Sources */,
 				B96C9A9E1EF23BB400D35B9A /* BigSmallVC.m in Sources */,
+				18268E8821DDA92A008281B4 /* FontListVC.m in Sources */,
 				183896A9207EE74F0008A3B2 /* FYMenu2VC.m in Sources */,
 				180900C6209A9B5900DBCF1D /* JJCircleView.m in Sources */,
 				B9B9CEC51E9CB986008CC558 /* SDWebImageDecoder.m in Sources */,
