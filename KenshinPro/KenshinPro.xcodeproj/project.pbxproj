@@ -82,6 +82,9 @@
 		18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C53756207E4F8C00959AF8 /* ModelItem.m */; };
 		18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5375A207E55B800959AF8 /* FXWMenuGridView.m */; };
 		18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C5F680207C9D8800884CFC /* TestBundle.bundle */; };
+		18D7933221DE33F6002AF324 /* DialogViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7933121DE33F6002AF324 /* DialogViewerVC.m */; };
+		18D7933621DE34C7002AF324 /* BIDContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7933421DE34C7002AF324 /* BIDContentCell.m */; };
+		18D7933A21DE47BB002AF324 /* BIDHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7933921DE47BB002AF324 /* BIDHeaderCell.m */; };
 		18E983C120A97525002249F3 /* JavaLearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E983C020A97525002249F3 /* JavaLearnVC.m */; };
 		18EA3D0F21D0774400BDAF99 /* RestructureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA3D0D21D0774400BDAF99 /* RestructureVC.m */; };
 		18EA3D1021D0774400BDAF99 /* RestructureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA3D0E21D0774400BDAF99 /* RestructureVC.xib */; };
@@ -802,6 +805,12 @@
 		18C53759207E55B800959AF8 /* FXWMenuGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWMenuGridView.h; sourceTree = "<group>"; };
 		18C5375A207E55B800959AF8 /* FXWMenuGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWMenuGridView.m; sourceTree = "<group>"; };
 		18C5F680207C9D8800884CFC /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
+		18D7933021DE33F6002AF324 /* DialogViewerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogViewerVC.h; sourceTree = "<group>"; };
+		18D7933121DE33F6002AF324 /* DialogViewerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewerVC.m; sourceTree = "<group>"; };
+		18D7933321DE34C7002AF324 /* BIDContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDContentCell.h; sourceTree = "<group>"; };
+		18D7933421DE34C7002AF324 /* BIDContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDContentCell.m; sourceTree = "<group>"; };
+		18D7933821DE47BB002AF324 /* BIDHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDHeaderCell.h; sourceTree = "<group>"; };
+		18D7933921DE47BB002AF324 /* BIDHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDHeaderCell.m; sourceTree = "<group>"; };
 		18E983BF20A97525002249F3 /* JavaLearnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaLearnVC.h; sourceTree = "<group>"; };
 		18E983C020A97525002249F3 /* JavaLearnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaLearnVC.m; sourceTree = "<group>"; };
 		18EA3D0C21D0774400BDAF99 /* RestructureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestructureVC.h; sourceTree = "<group>"; };
@@ -2268,6 +2277,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				18D7932F21DE2F96002AF324 /* 集合视图 */,
 				188D746321DCBEAE008CF254 /* 导航控制器 */,
 				18A008FA21D5B3D500C48342 /* 表 */,
 				18F9EAA721D1DBEB005DE74F /* 选取器 */,
@@ -2298,6 +2308,19 @@
 				18C5375A207E55B800959AF8 /* FXWMenuGridView.m */,
 			);
 			path = FXWMenuGridView;
+			sourceTree = "<group>";
+		};
+		18D7932F21DE2F96002AF324 /* 集合视图 */ = {
+			isa = PBXGroup;
+			children = (
+				18D7933821DE47BB002AF324 /* BIDHeaderCell.h */,
+				18D7933921DE47BB002AF324 /* BIDHeaderCell.m */,
+				18D7933321DE34C7002AF324 /* BIDContentCell.h */,
+				18D7933421DE34C7002AF324 /* BIDContentCell.m */,
+				18D7933021DE33F6002AF324 /* DialogViewerVC.h */,
+				18D7933121DE33F6002AF324 /* DialogViewerVC.m */,
+			);
+			path = "集合视图";
 			sourceTree = "<group>";
 		};
 		18E983BE20A974FC002249F3 /* Java后端学习 */ = {
@@ -6073,6 +6096,7 @@
 				188D746721DCBEE8008CF254 /* FontsVC.m in Sources */,
 				B93F58651ED2844200393292 /* JWTVC.m in Sources */,
 				B915C2371E7F9DE10088A31F /* MDLinearProgressLayer.m in Sources */,
+				18D7933221DE33F6002AF324 /* DialogViewerVC.m in Sources */,
 				B92642071E83D3AF00EEED61 /* AFURLRequestSerialization.m in Sources */,
 				B906FC571E8B3C6500645C96 /* DicAndModelVC.m in Sources */,
 				B95ED6B71E9474E200AD490B /* OrderCtrlingVC.m in Sources */,
@@ -6112,6 +6136,7 @@
 				B98568151EE7A16100FF9668 /* BLECoreVC.m in Sources */,
 				B9B0D7951E827B57001C04FB /* BaseModel.m in Sources */,
 				B92641E61E8398D000EEED61 /* CommonUIVC.m in Sources */,
+				18D7933621DE34C7002AF324 /* BIDContentCell.m in Sources */,
 				9D094E29201192B40088636C /* LOGVC.m in Sources */,
 				B94CD4B21E9C7CF4003A889E /* UIColor+MaterialTextField.m in Sources */,
 				B90978871E95E7F300F5A0B5 /* MenuTableViewCell.m in Sources */,
@@ -6135,6 +6160,7 @@
 				B94AA0471F556F78009C333E /* FXW_TextDatePicker.m in Sources */,
 				B9F3F8ED1FB4511800D98D37 /* NSCodingVC.m in Sources */,
 				B915C23C1E7F9DE10088A31F /* MDSlider.m in Sources */,
+				18D7933A21DE47BB002AF324 /* BIDHeaderCell.m in Sources */,
 				B915C2301E7F9DE10088A31F /* MDCalendarYearSelector.m in Sources */,
 				18F9B77A21D0CE2F005D40E0 /* YellowVC.m in Sources */,
 				B915C24B1E7F9DE10088A31F /* NSCalendarHelper.m in Sources */,

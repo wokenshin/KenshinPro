@@ -18,6 +18,7 @@
 #import "CustomTCellTwoVC.h"
 #import "SectionVC.h"
 #import "FontsVC.h"
+#import "DialogViewerVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -35,10 +36,13 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"基础+封装";
     [self.view addSubview:self.tableView];
+    //因为底部短啦 所以修改下
+    self.tableView.frame = CGRectMake(0, 0, screenWidth, screenHeight);
 }
 
 
 - (void)loadData{
+    
     [self addDataWithTitle:@"xib基础_1" andDetail:@"2018-12-18"];
     [self addDataWithTitle:@"xib基础_2" andDetail:@"2018-12-19"];
     [self addDataWithTitle:@"旋转" andDetail:@"2018-12-21"];
@@ -50,10 +54,26 @@
     [self addDataWithTitle:@"制定表视图单元2" andDetail:@"2018-12-29"];
     [self addDataWithTitle:@"分区,索引,搜索" andDetail:@"2019-1-2"];
     [self addDataWithTitle:@"导航控制器" andDetail:@"2019-1-2"];
+    [self addDataWithTitle:@"集合视图" andDetail:@"2019-1-3"];
+    
+    
+    
+    
+    
+    //倒叙[这样就是时间升序啦]
+    self.mArrData =  (NSMutableArray *)[[self.mArrData reverseObjectEnumerator] allObjects];
+    
+    
 }
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"集合视图"]) {
+        DialogViewerVC *vc = [[DialogViewerVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"导航控制器"]) {
         FontsVC *vc = [[FontsVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
