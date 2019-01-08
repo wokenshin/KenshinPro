@@ -53,6 +53,8 @@
 		181E36DE207DAB8A005675C1 /* CreateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36DC207DAB8A005675C1 /* CreateQRCodeVC.m */; };
 		181E36DF207DAB8A005675C1 /* CreateQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */; };
 		181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36E1207DAD42005675C1 /* UIImage+FXW.m */; };
+		18245FCC21E3451500985125 /* PersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18245FCA21E3451500985125 /* PersistenceVC.m */; };
+		18245FCD21E3451500985125 /* PersistenceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18245FCB21E3451500985125 /* PersistenceVC.xib */; };
 		18268E8821DDA92A008281B4 /* FontListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8621DDA92A008281B4 /* FontListVC.m */; };
 		18268E8C21DDB4BB008281B4 /* FontSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8B21DDB4BB008281B4 /* FontSizeVC.m */; };
 		18268E9021DDBD6B008281B4 /* FontInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8E21DDBD6B008281B4 /* FontInfoVC.m */; };
@@ -754,6 +756,9 @@
 		181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQRCodeVC.xib; sourceTree = "<group>"; };
 		181E36E0207DAD42005675C1 /* UIImage+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXW.h"; sourceTree = "<group>"; };
 		181E36E1207DAD42005675C1 /* UIImage+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXW.m"; sourceTree = "<group>"; };
+		18245FC921E3451500985125 /* PersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceVC.h; sourceTree = "<group>"; };
+		18245FCA21E3451500985125 /* PersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceVC.m; sourceTree = "<group>"; };
+		18245FCB21E3451500985125 /* PersistenceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersistenceVC.xib; sourceTree = "<group>"; };
 		18268E8521DDA92A008281B4 /* FontListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontListVC.h; sourceTree = "<group>"; };
 		18268E8621DDA92A008281B4 /* FontListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontListVC.m; sourceTree = "<group>"; };
 		18268E8A21DDB4BB008281B4 /* FontSizeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontSizeVC.h; sourceTree = "<group>"; };
@@ -2123,6 +2128,16 @@
 			path = "生成二维码";
 			sourceTree = "<group>";
 		};
+		18245FC321E33D1500985125 /* 数据持久化基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				18245FC921E3451500985125 /* PersistenceVC.h */,
+				18245FCA21E3451500985125 /* PersistenceVC.m */,
+				18245FCB21E3451500985125 /* PersistenceVC.xib */,
+			);
+			path = "数据持久化基础知识";
+			sourceTree = "<group>";
+		};
 		18268E8421DDA910008281B4 /* sub */ = {
 			isa = PBXGroup;
 			children = (
@@ -2277,6 +2292,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				18245FC321E33D1500985125 /* 数据持久化基础知识 */,
 				18D7932F21DE2F96002AF324 /* 集合视图 */,
 				188D746321DCBEAE008CF254 /* 导航控制器 */,
 				18A008FA21D5B3D500C48342 /* 表 */,
@@ -5791,6 +5807,7 @@
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
 				18199DFC2142599300175D61 /* RSAVC.xib in Resources */,
 				B94A8C591F3D46ED002A6D51 /* Notifi2VC.xib in Resources */,
+				18245FCD21E3451500985125 /* PersistenceVC.xib in Resources */,
 				B93002411E8A3C15000C0563 /* AFNMCVC.xib in Resources */,
 				18F9EABB21D1DE26005DE74F /* DependentComponentPickerVC.xib in Resources */,
 				9D763A4C202BF9D700A6FFC1 /* CPFVC.xib in Resources */,
@@ -6191,6 +6208,7 @@
 				B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */,
 				B915C22D1E7F9DE10088A31F /* MDCalendarCell.m in Sources */,
 				B9A743CD1E95EE1400ABFD86 /* SwitchModeVC.m in Sources */,
+				18245FCC21E3451500985125 /* PersistenceVC.m in Sources */,
 				B94F90AB1EB31B1A0032FC0E /* HideNavDividingLineVC.m in Sources */,
 				B9EFE9561EDE4A62002C2758 /* JWTAlgorithmNone.m in Sources */,
 				B9C9634A1E9F141A00A9C0CF /* Test.swift in Sources */,

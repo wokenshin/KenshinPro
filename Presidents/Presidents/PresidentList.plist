@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>presidents</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>百度</string>
+			<key>url</key>
+			<string>https://www.baidu.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>阿里</string>
+			<key>url</key>
+			<string>https://www.1688.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>腾讯</string>
+			<key>url</key>
+			<string>https://www.qq.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>wokenshin——CSDN</string>
+			<key>url</key>
+			<string>https://blog.csdn.net/wokenshin</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>wokenshin——gitHub</string>
+			<key>url</key>
+			<string>https://github.com/wokenshin</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>wokenshin——简书</string>
+			<key>url</key>
+			<string>https://www.jianshu.com/u/63cd2480bff2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -19,6 +19,8 @@
 #import "SectionVC.h"
 #import "FontsVC.h"
 #import "DialogViewerVC.h"
+#import "PersistenceVC.h"
+
 
 @interface JTiOSDevVC ()
 
@@ -55,7 +57,7 @@
     [self addDataWithTitle:@"分区,索引,搜索" andDetail:@"2019-1-2"];
     [self addDataWithTitle:@"导航控制器" andDetail:@"2019-1-2"];
     [self addDataWithTitle:@"集合视图" andDetail:@"2019-1-3"];
-    
+    [self addDataWithTitle:@"数据持久化基础知识" andDetail:@"2019-1-7"];
     
     
     
@@ -68,6 +70,19 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"数据持久化基础知识"]) {
+        PersistenceVC *vc = [[PersistenceVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+        
+//        NSArray *arrPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//        NSString *pathDoc = arrPath[0];
+//        NSLog(@"App应用程序的 doc路径：%@", pathDoc);
+//
+//        NSString *pathTmp = NSTemporaryDirectory();
+//        NSLog(@"App应用程序的 tmp路径：%@", pathTmp);
+    }
     if ([title isEqualToString:@"集合视图"]) {
         DialogViewerVC *vc = [[DialogViewerVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
