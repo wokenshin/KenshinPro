@@ -16,6 +16,8 @@
 		18064E8020A04AD3001AB33F /* ShowDateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18064E7E20A04AD3001AB33F /* ShowDateVC.xib */; };
 		18064E8320A04CD6001AB33F /* NSDate+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 18064E8220A04CD6001AB33F /* NSDate+FXW.m */; };
 		180758342063A97E000A8A3B /* UITextViewBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180758322063A97E000A8A3B /* UITextViewBaseVC.m */; };
+		1808227921E5CA2B006E0778 /* SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808227721E5CA2B006E0778 /* SQLitePersistence.m */; };
+		1808227A21E5CA2B006E0778 /* SQLitePersistence.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1808227821E5CA2B006E0778 /* SQLitePersistence.xib */; };
 		180848C1207F3B3800C2D91B /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180848B9207F3B3700C2D91B /* UITableView+FDIndexPathHeightCache.m */; };
 		180848C2207F3B3800C2D91B /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 180848BA207F3B3800C2D91B /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		180848C3207F3B3800C2D91B /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180848BD207F3B3800C2D91B /* UITableView+FDKeyedHeightCache.m */; };
@@ -78,6 +80,7 @@
 		18A008FF21D5B3F700C48342 /* SimpleTableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A008FD21D5B3F700C48342 /* SimpleTableVC.xib */; };
 		18B397F52137F36D00BDDE31 /* MethodSwizzingDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */; };
 		18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */; };
+		18B65CC521E58DC5004F4E09 /* FourLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B65CC421E58DC5004F4E09 /* FourLines.m */; };
 		18BB876321C9EBD900C55E54 /* XibTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB876121C9EBD900C55E54 /* XibTwoVC.m */; };
 		18BB876421C9EBD900C55E54 /* XibTwoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18BB876221C9EBD900C55E54 /* XibTwoVC.xib */; };
 		18BB876821C9EEBD00C55E54 /* JTiOSDevVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BB876721C9EEBC00C55E54 /* JTiOSDevVC.m */; };
@@ -111,6 +114,8 @@
 		18F9EABB21D1DE26005DE74F /* DependentComponentPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAB921D1DE26005DE74F /* DependentComponentPickerVC.xib */; };
 		18F9EABF21D1DE3D005DE74F /* CustomPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */; };
 		18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */; };
+		18F9F5F921E5DD0C00886D1F /* CoreDataPersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */; };
+		18F9F5FA21E5DD0C00886D1F /* CoreDataPersistenceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */; };
 		18FC7A2721D4B7430075FF9E /* pickerPlay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FC7A2621D4B7430075FF9E /* pickerPlay.wav */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
@@ -692,6 +697,9 @@
 		18064E8220A04CD6001AB33F /* NSDate+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FXW.m"; sourceTree = "<group>"; };
 		180758312063A97E000A8A3B /* UITextViewBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewBaseVC.h; sourceTree = "<group>"; };
 		180758322063A97E000A8A3B /* UITextViewBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewBaseVC.m; sourceTree = "<group>"; };
+		1808227621E5CA2B006E0778 /* SQLitePersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLitePersistence.h; sourceTree = "<group>"; };
+		1808227721E5CA2B006E0778 /* SQLitePersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLitePersistence.m; sourceTree = "<group>"; };
+		1808227821E5CA2B006E0778 /* SQLitePersistence.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQLitePersistence.xib; sourceTree = "<group>"; };
 		180848B9207F3B3700C2D91B /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
 		180848BA207F3B3800C2D91B /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
 		180848BB207F3B3800C2D91B /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
@@ -800,6 +808,8 @@
 		18B397F22137F36D00BDDE31 /* MethodSwizzingDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzingDemoVC.h; sourceTree = "<group>"; };
 		18B397F32137F36D00BDDE31 /* MethodSwizzingDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzingDemoVC.m; sourceTree = "<group>"; };
 		18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodSwizzingDemoVC.xib; sourceTree = "<group>"; };
+		18B65CC321E58DC5004F4E09 /* FourLines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourLines.h; sourceTree = "<group>"; };
+		18B65CC421E58DC5004F4E09 /* FourLines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourLines.m; sourceTree = "<group>"; };
 		18BB876021C9EBD900C55E54 /* XibTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibTwoVC.h; sourceTree = "<group>"; };
 		18BB876121C9EBD900C55E54 /* XibTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibTwoVC.m; sourceTree = "<group>"; wrapsLines = 0; };
 		18BB876221C9EBD900C55E54 /* XibTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibTwoVC.xib; sourceTree = "<group>"; };
@@ -853,6 +863,9 @@
 		18F9EABC21D1DE3D005DE74F /* CustomPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPickerVC.h; sourceTree = "<group>"; };
 		18F9EABD21D1DE3D005DE74F /* CustomPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerVC.m; sourceTree = "<group>"; };
 		18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPickerVC.xib; sourceTree = "<group>"; };
+		18F9F5F621E5DD0C00886D1F /* CoreDataPersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataPersistenceVC.h; sourceTree = "<group>"; };
+		18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataPersistenceVC.m; sourceTree = "<group>"; };
+		18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreDataPersistenceVC.xib; sourceTree = "<group>"; };
 		18FC7A2621D4B7430075FF9E /* pickerPlay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickerPlay.wav; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
@@ -2131,9 +2144,9 @@
 		18245FC321E33D1500985125 /* 数据持久化基础知识 */ = {
 			isa = PBXGroup;
 			children = (
-				18245FC921E3451500985125 /* PersistenceVC.h */,
-				18245FCA21E3451500985125 /* PersistenceVC.m */,
-				18245FCB21E3451500985125 /* PersistenceVC.xib */,
+				18B65CC621E59941004F4E09 /* plist 和 归档 */,
+				18B65CC721E59954004F4E09 /* SQLite */,
+				18F9F5F521E5DCD400886D1F /* CoreData */,
 			);
 			path = "数据持久化基础知识";
 			sourceTree = "<group>";
@@ -2277,6 +2290,28 @@
 				18B397F42137F36D00BDDE31 /* MethodSwizzingDemoVC.xib */,
 			);
 			path = "黑魔法";
+			sourceTree = "<group>";
+		};
+		18B65CC621E59941004F4E09 /* plist 和 归档 */ = {
+			isa = PBXGroup;
+			children = (
+				18B65CC321E58DC5004F4E09 /* FourLines.h */,
+				18B65CC421E58DC5004F4E09 /* FourLines.m */,
+				18245FC921E3451500985125 /* PersistenceVC.h */,
+				18245FCA21E3451500985125 /* PersistenceVC.m */,
+				18245FCB21E3451500985125 /* PersistenceVC.xib */,
+			);
+			path = "plist 和 归档";
+			sourceTree = "<group>";
+		};
+		18B65CC721E59954004F4E09 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				1808227621E5CA2B006E0778 /* SQLitePersistence.h */,
+				1808227721E5CA2B006E0778 /* SQLitePersistence.m */,
+				1808227821E5CA2B006E0778 /* SQLitePersistence.xib */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 		18BB875F21C9EBBC00C55E54 /* xib基础2 */ = {
@@ -2430,6 +2465,16 @@
 				18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */,
 			);
 			path = "选取器";
+			sourceTree = "<group>";
+		};
+		18F9F5F521E5DCD400886D1F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				18F9F5F621E5DD0C00886D1F /* CoreDataPersistenceVC.h */,
+				18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */,
+				18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		18FCF08521AFBEAA009045C2 /* ARC */ = {
@@ -5740,6 +5785,7 @@
 				B910E23D1EA880D700DFCC86 /* GifContentVC.xib in Resources */,
 				186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */,
 				B9C963931E9F1FA400A9C0CF /* OCCallThirdSwiftLibVC.xib in Resources */,
+				18F9F5FA21E5DD0C00886D1F /* CoreDataPersistenceVC.xib in Resources */,
 				181DEBEF21D71E73005D2827 /* CustomTCellTwoVC.xib in Resources */,
 				B9BADB381EA5B703000B3C1C /* VCPush.png in Resources */,
 				B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */,
@@ -5775,6 +5821,7 @@
 				B910E24B1EA884F700DFCC86 /* NavBarCustomVC.xib in Resources */,
 				9D564C1D1FE790DB000A4DDA /* UserInfoVC.xib in Resources */,
 				B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */,
+				1808227A21E5CA2B006E0778 /* SQLitePersistence.xib in Resources */,
 				B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */,
 				B98DF7271EA8524B00296C2A /* call.html in Resources */,
 				9D4274A11FF094F500745A81 /* BadgeViewVC.xib in Resources */,
@@ -5918,6 +5965,7 @@
 				B93002401E8A3C15000C0563 /* AFNMCVC.m in Sources */,
 				B9C963441E9F0D1F00A9C0CF /* OCAndVC.m in Sources */,
 				B95ED6D01E94DABD00AD490B /* FXW_BLECtrl.m in Sources */,
+				18F9F5F921E5DD0C00886D1F /* CoreDataPersistenceVC.m in Sources */,
 				B9EFE95B1EDE4A63002C2758 /* JWTAlgorithmHSBase.m in Sources */,
 				B919D5AE1FAB092400DDBE56 /* GYZSCtrlVC.m in Sources */,
 				B9BADB5A1EA5E5D6000B3C1C /* VCN5.m in Sources */,
@@ -5963,6 +6011,7 @@
 				B915C24D1E7F9DE10088A31F /* NSDateHelper.m in Sources */,
 				B9B9CEC71E9CB986008CC558 /* SDWebImageDownloaderOperation.m in Sources */,
 				B92CCB0C1E7A192100035A79 /* SFHFKeychainUtils.m in Sources */,
+				18B65CC521E58DC5004F4E09 /* FourLines.m in Sources */,
 				B915C2441E7F9DE10088A31F /* MDTabBar.m in Sources */,
 				B94C541C1F3BF1A6003AC71B /* UIView+FXW.m in Sources */,
 				B910E2641EA8888C00DFCC86 /* QRCodeAreaView.m in Sources */,
@@ -6296,6 +6345,7 @@
 				B9EB829B1F3A9438000574F7 /* NSString+FXW.m in Sources */,
 				9D4274A01FF094F500745A81 /* BadgeViewVC.m in Sources */,
 				B906FD461E8B668F00645C96 /* MJRefreshHeader.m in Sources */,
+				1808227921E5CA2B006E0778 /* SQLitePersistence.m in Sources */,
 				181AFEE620747D210071DC86 /* BundleVC.m in Sources */,
 				B9B9CE9E1E9CB8EC008CC558 /* UIView+SDExtension.m in Sources */,
 				B9E53C151F304CAB00971C6B /* FXW_TextAddress.m in Sources */,

@@ -20,7 +20,8 @@
 #import "FontsVC.h"
 #import "DialogViewerVC.h"
 #import "PersistenceVC.h"
-
+#import "SQLitePersistence.h"
+#import "CoreDataPersistenceVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -57,7 +58,9 @@
     [self addDataWithTitle:@"分区,索引,搜索" andDetail:@"2019-1-2"];
     [self addDataWithTitle:@"导航控制器" andDetail:@"2019-1-2"];
     [self addDataWithTitle:@"集合视图" andDetail:@"2019-1-3"];
-    [self addDataWithTitle:@"数据持久化基础知识" andDetail:@"2019-1-7"];
+    [self addDataWithTitle:@"plist 和 归档" andDetail:@"2019-1-7"];
+    [self addDataWithTitle:@"SQLite" andDetail:@"2019-1-9"];
+    [self addDataWithTitle:@"CoreData" andDetail:@"2019-1-9"];
     
     
     
@@ -70,7 +73,19 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
-    if ([title isEqualToString:@"数据持久化基础知识"]) {
+    if ([title isEqualToString:@"CoreData"]) {
+        CoreDataPersistenceVC *vc = [[CoreDataPersistenceVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"SQLite"]) {
+        SQLitePersistence *vc = [[SQLitePersistence alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"plist 和 归档"]) {
         PersistenceVC *vc = [[PersistenceVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
