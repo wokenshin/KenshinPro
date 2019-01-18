@@ -33,6 +33,8 @@
 		18118BC32074B28A00127921 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 18118BC22074B28A00127921 /* test.png */; };
 		18135680209AAF69000D1F42 /* PureCodeViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1813567F209AAF69000D1F42 /* PureCodeViewVC.m */; };
 		18135684209AAFCB000D1F42 /* FriendSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18135683209AAFCB000D1F42 /* FriendSectionView.m */; };
+		1815765221E6DFD200243390 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1815765021E6DFD200243390 /* Test.xcdatamodeld */; };
+		1815765421E6EB0700243390 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1815765321E6EB0700243390 /* CoreData.framework */; };
 		1817EAA1207E16E1009DD645 /* FYMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817EAA0207E16E1009DD645 /* FYMenuVC.m */; };
 		1817EAAB207E1A10009DD645 /* CellJJSJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817EAA9207E1A10009DD645 /* CellJJSJMenu.m */; };
 		1817EAAC207E1A10009DD645 /* CellJJSJMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1817EAAA207E1A10009DD645 /* CellJJSJMenu.xib */; };
@@ -55,6 +57,8 @@
 		181E36DE207DAB8A005675C1 /* CreateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36DC207DAB8A005675C1 /* CreateQRCodeVC.m */; };
 		181E36DF207DAB8A005675C1 /* CreateQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */; };
 		181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36E1207DAD42005675C1 /* UIImage+FXW.m */; };
+		181E506D21F018BD00DFE235 /* SlowWorkerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E506B21F018BD00DFE235 /* SlowWorkerVC.m */; };
+		181E506E21F018BD00DFE235 /* SlowWorkerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */; };
 		18245FCC21E3451500985125 /* PersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18245FCA21E3451500985125 /* PersistenceVC.m */; };
 		18245FCD21E3451500985125 /* PersistenceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18245FCB21E3451500985125 /* PersistenceVC.xib */; };
 		18268E8821DDA92A008281B4 /* FontListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8621DDA92A008281B4 /* FontListVC.m */; };
@@ -727,6 +731,8 @@
 		1813567F209AAF69000D1F42 /* PureCodeViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PureCodeViewVC.m; sourceTree = "<group>"; };
 		18135682209AAFCB000D1F42 /* FriendSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendSectionView.h; sourceTree = "<group>"; };
 		18135683209AAFCB000D1F42 /* FriendSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendSectionView.m; sourceTree = "<group>"; };
+		1815765121E6DFD200243390 /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
+		1815765321E6EB0700243390 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1817EA9F207E16E1009DD645 /* FYMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYMenuVC.h; sourceTree = "<group>"; };
 		1817EAA0207E16E1009DD645 /* FYMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYMenuVC.m; sourceTree = "<group>"; };
 		1817EAA8207E1A10009DD645 /* CellJJSJMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellJJSJMenu.h; sourceTree = "<group>"; };
@@ -764,6 +770,9 @@
 		181E36DD207DAB8A005675C1 /* CreateQRCodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQRCodeVC.xib; sourceTree = "<group>"; };
 		181E36E0207DAD42005675C1 /* UIImage+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FXW.h"; sourceTree = "<group>"; };
 		181E36E1207DAD42005675C1 /* UIImage+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FXW.m"; sourceTree = "<group>"; };
+		181E506A21F018BD00DFE235 /* SlowWorkerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlowWorkerVC.h; sourceTree = "<group>"; };
+		181E506B21F018BD00DFE235 /* SlowWorkerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlowWorkerVC.m; sourceTree = "<group>"; };
+		181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlowWorkerVC.xib; sourceTree = "<group>"; };
 		18245FC921E3451500985125 /* PersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceVC.h; sourceTree = "<group>"; };
 		18245FCA21E3451500985125 /* PersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceVC.m; sourceTree = "<group>"; };
 		18245FCB21E3451500985125 /* PersistenceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersistenceVC.xib; sourceTree = "<group>"; };
@@ -1864,6 +1873,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1815765421E6EB0700243390 /* CoreData.framework in Frameworks */,
 				189A734B20A92837003D3439 /* Bugly.framework in Frameworks */,
 				B97940BE1FC3EFBD0039458A /* libsqlite3.tbd in Frameworks */,
 				9D8D34771FFB26F200CB5F01 /* libopencore-amrnb.a in Frameworks */,
@@ -2141,6 +2151,16 @@
 			path = "生成二维码";
 			sourceTree = "<group>";
 		};
+		181E506921F018AC00DFE235 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				181E506A21F018BD00DFE235 /* SlowWorkerVC.h */,
+				181E506B21F018BD00DFE235 /* SlowWorkerVC.m */,
+				181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		18245FC321E33D1500985125 /* 数据持久化基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2327,6 +2347,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				181E506921F018AC00DFE235 /* GCD */,
 				18245FC321E33D1500985125 /* 数据持久化基础知识 */,
 				18D7932F21DE2F96002AF324 /* 集合视图 */,
 				188D746321DCBEAE008CF254 /* 导航控制器 */,
@@ -2470,6 +2491,7 @@
 		18F9F5F521E5DCD400886D1F /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				1815765021E6DFD200243390 /* Test.xcdatamodeld */,
 				18F9F5F621E5DD0C00886D1F /* CoreDataPersistenceVC.h */,
 				18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */,
 				18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */,
@@ -4469,6 +4491,7 @@
 		B97940B61FC3EF870039458A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1815765321E6EB0700243390 /* CoreData.framework */,
 				189A734A20A92837003D3439 /* Bugly.framework */,
 				B97940BD1FC3EFBD0039458A /* libsqlite3.tbd */,
 				B97940BB1FC3EFAD0039458A /* SystemConfiguration.framework */,
@@ -5868,6 +5891,7 @@
 				B94F90AC1EB31B1A0032FC0E /* HideNavDividingLineVC.xib in Resources */,
 				183896A6207EE67F0008A3B2 /* CellJJSJYY.xib in Resources */,
 				B9FA829F1F1C809A00D8CD4C /* Podfile in Resources */,
+				181E506E21F018BD00DFE235 /* SlowWorkerVC.xib in Resources */,
 				B95AC88D1EADC95300806D1A /* BaseRichTextView.xib in Resources */,
 				B9BD97581E810B68009BB0D4 /* BaseFunctionVC.xib in Resources */,
 			);
@@ -5996,6 +6020,7 @@
 				B9B9CEC91E9CB986008CC558 /* SDWebImagePrefetcher.m in Sources */,
 				18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */,
 				B9B9CECE1E9CB986008CC558 /* UIImageView+HighlightedWebCache.m in Sources */,
+				1815765221E6DFD200243390 /* Test.xcdatamodeld in Sources */,
 				B906FCEA1E8B553600645C96 /* FXW_Const.m in Sources */,
 				180758342063A97E000A8A3B /* UITextViewBaseVC.m in Sources */,
 				B98505421E963CF5007C01CB /* PCCircleViewConst.m in Sources */,
@@ -6005,6 +6030,7 @@
 				1803E596207DFA1C00F7ACA6 /* FYScrollViewVC.m in Sources */,
 				B9EFE9601EDE4A63002C2758 /* JWTClaimsSetVerifier.m in Sources */,
 				B906FD521E8B668F00645C96 /* NSBundle+MJRefresh.m in Sources */,
+				181E506D21F018BD00DFE235 /* SlowWorkerVC.m in Sources */,
 				9DA74570204153E3006FEA5E /* PureLayoutVC.m in Sources */,
 				B98DF73C1EA8530C00296C2A /* OCCallJSTwoVC.m in Sources */,
 				B98DF72F1EA852AC00296C2A /* JSCallOCVC.m in Sources */,
@@ -6811,6 +6837,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1815765021E6DFD200243390 /* Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1815765121E6DFD200243390 /* Test.xcdatamodel */,
+			);
+			currentVersion = 1815765121E6DFD200243390 /* Test.xcdatamodel */;
+			path = Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B9673F891E78E22A006AB3DA /* Project object */;
 }

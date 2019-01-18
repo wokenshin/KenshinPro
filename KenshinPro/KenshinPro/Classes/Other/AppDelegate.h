@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreData/CoreData.h>
 
 /**
  App的网络状态
@@ -24,6 +24,10 @@ typedef NS_ENUM(NSInteger, AppNetStatus) {
 @property (strong, nonatomic) UIWindow *window;
 
 @property (nonatomic, assign) AppNetStatus              netStatus;
+
+@property (readonly, strong) NSPersistentContainer *persistentContainer;
+
+- (void)saveContext;
 
 @end
 

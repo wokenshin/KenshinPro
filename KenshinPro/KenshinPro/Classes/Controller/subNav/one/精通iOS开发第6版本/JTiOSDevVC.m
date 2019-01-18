@@ -22,6 +22,10 @@
 #import "PersistenceVC.h"
 #import "SQLitePersistence.h"
 #import "CoreDataPersistenceVC.h"
+#import "SlowWorkerVC.h"
+
+
+
 
 @interface JTiOSDevVC ()
 
@@ -61,6 +65,8 @@
     [self addDataWithTitle:@"plist 和 归档" andDetail:@"2019-1-7"];
     [self addDataWithTitle:@"SQLite" andDetail:@"2019-1-9"];
     [self addDataWithTitle:@"CoreData" andDetail:@"2019-1-9"];
+    [self addDataWithTitle:@"iCloud 之旅[必须用真机]" andDetail:@"2019-1-16"];
+    [self addDataWithTitle:@"SlowWorker" andDetail:@"GCD章节"];
     
     
     
@@ -73,6 +79,16 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"SlowWorker"]) {
+        SlowWorkerVC *vc = [[SlowWorkerVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"iCloud 之旅[必须用真机]"]) {
+        [self alertSystemTitle:@"代码忽略" message:@"" OK:^{}];
+        return;
+    }
     if ([title isEqualToString:@"CoreData"]) {
         CoreDataPersistenceVC *vc = [[CoreDataPersistenceVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

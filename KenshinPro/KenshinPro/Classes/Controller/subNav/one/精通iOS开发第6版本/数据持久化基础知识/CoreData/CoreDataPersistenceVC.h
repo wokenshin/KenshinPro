@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//注意 在AppDelegate.m 中也有相关的代码    这里的demo功能没有实现。
 @interface CoreDataPersistenceVC : UIViewController
 
 @end
