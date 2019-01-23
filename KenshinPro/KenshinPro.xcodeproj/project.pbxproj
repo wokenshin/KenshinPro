@@ -35,6 +35,10 @@
 		18135684209AAFCB000D1F42 /* FriendSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18135683209AAFCB000D1F42 /* FriendSectionView.m */; };
 		1815765221E6DFD200243390 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1815765021E6DFD200243390 /* Test.xcdatamodeld */; };
 		1815765421E6EB0700243390 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1815765321E6EB0700243390 /* CoreData.framework */; };
+		1815B1B221F6B399003F9DF4 /* QuartzFunVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B1B021F6B399003F9DF4 /* QuartzFunVC.m */; };
+		1815B1B321F6B399003F9DF4 /* QuartzFunVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1815B1B121F6B399003F9DF4 /* QuartzFunVC.xib */; };
+		1815B1B621F6B406003F9DF4 /* QuartzFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B1B521F6B406003F9DF4 /* QuartzFunView.m */; };
+		1815B1BA21F6B609003F9DF4 /* UIColor+BIDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B1B921F6B609003F9DF4 /* UIColor+BIDRandom.m */; };
 		1817EAA1207E16E1009DD645 /* FYMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817EAA0207E16E1009DD645 /* FYMenuVC.m */; };
 		1817EAAB207E1A10009DD645 /* CellJJSJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817EAA9207E1A10009DD645 /* CellJJSJMenu.m */; };
 		1817EAAC207E1A10009DD645 /* CellJJSJMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1817EAAA207E1A10009DD645 /* CellJJSJMenu.xib */; };
@@ -120,6 +124,8 @@
 		18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */; };
 		18F9F5F921E5DD0C00886D1F /* CoreDataPersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */; };
 		18F9F5FA21E5DD0C00886D1F /* CoreDataPersistenceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */; };
+		18FBD18A21F1A9080072C182 /* AppStateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBD18821F1A9080072C182 /* AppStateVC.m */; };
+		18FBD18D21F1B8920072C182 /* wlp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBD18C21F1B8920072C182 /* wlp.jpg */; };
 		18FC7A2721D4B7430075FF9E /* pickerPlay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FC7A2621D4B7430075FF9E /* pickerPlay.wav */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
@@ -733,6 +739,14 @@
 		18135683209AAFCB000D1F42 /* FriendSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendSectionView.m; sourceTree = "<group>"; };
 		1815765121E6DFD200243390 /* Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test.xcdatamodel; sourceTree = "<group>"; };
 		1815765321E6EB0700243390 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1815B1AF21F6B399003F9DF4 /* QuartzFunVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuartzFunVC.h; sourceTree = "<group>"; };
+		1815B1B021F6B399003F9DF4 /* QuartzFunVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzFunVC.m; sourceTree = "<group>"; };
+		1815B1B121F6B399003F9DF4 /* QuartzFunVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuartzFunVC.xib; sourceTree = "<group>"; };
+		1815B1B421F6B406003F9DF4 /* QuartzFunView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuartzFunView.h; sourceTree = "<group>"; };
+		1815B1B521F6B406003F9DF4 /* QuartzFunView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzFunView.m; sourceTree = "<group>"; };
+		1815B1B721F6B45D003F9DF4 /* BIDConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDConstants.h; sourceTree = "<group>"; };
+		1815B1B821F6B609003F9DF4 /* UIColor+BIDRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+BIDRandom.h"; sourceTree = "<group>"; };
+		1815B1B921F6B609003F9DF4 /* UIColor+BIDRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BIDRandom.m"; sourceTree = "<group>"; };
 		1817EA9F207E16E1009DD645 /* FYMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYMenuVC.h; sourceTree = "<group>"; };
 		1817EAA0207E16E1009DD645 /* FYMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYMenuVC.m; sourceTree = "<group>"; };
 		1817EAA8207E1A10009DD645 /* CellJJSJMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellJJSJMenu.h; sourceTree = "<group>"; };
@@ -875,6 +889,9 @@
 		18F9F5F621E5DD0C00886D1F /* CoreDataPersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataPersistenceVC.h; sourceTree = "<group>"; };
 		18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataPersistenceVC.m; sourceTree = "<group>"; };
 		18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreDataPersistenceVC.xib; sourceTree = "<group>"; };
+		18FBD18721F1A9080072C182 /* AppStateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStateVC.h; sourceTree = "<group>"; };
+		18FBD18821F1A9080072C182 /* AppStateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppStateVC.m; sourceTree = "<group>"; };
+		18FBD18C21F1B8920072C182 /* wlp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wlp.jpg; sourceTree = "<group>"; };
 		18FC7A2621D4B7430075FF9E /* pickerPlay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickerPlay.wav; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
@@ -2054,6 +2071,21 @@
 			path = VIew;
 			sourceTree = "<group>";
 		};
+		1815B1AE21F6B339003F9DF4 /* CoreGraphics绘图 */ = {
+			isa = PBXGroup;
+			children = (
+				1815B1B721F6B45D003F9DF4 /* BIDConstants.h */,
+				1815B1B821F6B609003F9DF4 /* UIColor+BIDRandom.h */,
+				1815B1B921F6B609003F9DF4 /* UIColor+BIDRandom.m */,
+				1815B1B421F6B406003F9DF4 /* QuartzFunView.h */,
+				1815B1B521F6B406003F9DF4 /* QuartzFunView.m */,
+				1815B1AF21F6B399003F9DF4 /* QuartzFunVC.h */,
+				1815B1B021F6B399003F9DF4 /* QuartzFunVC.m */,
+				1815B1B121F6B399003F9DF4 /* QuartzFunVC.xib */,
+			);
+			path = "CoreGraphics绘图";
+			sourceTree = "<group>";
+		};
 		1817EA9E207E1665009DD645 /* 菜单-垂直方向 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2347,6 +2379,8 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				1815B1AE21F6B339003F9DF4 /* CoreGraphics绘图 */,
+				18FBD18621F1A8BA0072C182 /* App状态 */,
 				181E506921F018AC00DFE235 /* GCD */,
 				18245FC321E33D1500985125 /* 数据持久化基础知识 */,
 				18D7932F21DE2F96002AF324 /* 集合视图 */,
@@ -2497,6 +2531,16 @@
 				18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		18FBD18621F1A8BA0072C182 /* App状态 */ = {
+			isa = PBXGroup;
+			children = (
+				18FBD18721F1A9080072C182 /* AppStateVC.h */,
+				18FBD18821F1A9080072C182 /* AppStateVC.m */,
+				18FBD18C21F1B8920072C182 /* wlp.jpg */,
+			);
+			path = "App状态";
 			sourceTree = "<group>";
 		};
 		18FCF08521AFBEAA009045C2 /* ARC */ = {
@@ -5760,6 +5804,7 @@
 				9DA74571204153E3006FEA5E /* PureLayoutVC.xib in Resources */,
 				18F9EAAC21D1DDB7005DE74F /* DatePickerVC.xib in Resources */,
 				B9A361EE1F9854B2003B04A2 /* RunloopStatusFXWVC.xib in Resources */,
+				18FBD18D21F1B8920072C182 /* wlp.jpg in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
 				18F9B77B21D0CE2F005D40E0 /* YellowVC.xib in Resources */,
@@ -5770,6 +5815,7 @@
 				B9F3F8EE1FB4511800D98D37 /* NSCodingVC.xib in Resources */,
 				B95ED6DB1E94EA4F00AD490B /* CategoryCell.xib in Resources */,
 				B95ED6D51E94DC4600AD490B /* FXW_BLECtrlDemoVC.xib in Resources */,
+				1815B1B321F6B399003F9DF4 /* QuartzFunVC.xib in Resources */,
 				B94A8C531F3D46BF002A6D51 /* NotifiVC.xib in Resources */,
 				9DE9456B1FEA052A001D0C6A /* BlockVC.xib in Resources */,
 				B93F58661ED2844200393292 /* JWTVC.xib in Resources */,
@@ -6080,6 +6126,7 @@
 				B95ED6C61E9474E200AD490B /* ControlMenuVC.m in Sources */,
 				B98DF74E1EA85D0800296C2A /* MaoBoLiVC.m in Sources */,
 				B96528821EA598600044CA5F /* ImageUtil.m in Sources */,
+				1815B1B621F6B406003F9DF4 /* QuartzFunView.m in Sources */,
 				18064E8320A04CD6001AB33F /* NSDate+FXW.m in Sources */,
 				B9F3F8F11FB451D800D98D37 /* CusModel.m in Sources */,
 				B93084391F3D5F700035DA42 /* Person.m in Sources */,
@@ -6097,6 +6144,7 @@
 				B94C541F1F3BF1DF003AC71B /* UIImage+ImageEffects.m in Sources */,
 				B9D626EB1E7CC4D600593EC1 /* MASConstraint.m in Sources */,
 				B915C2461E7F9DE10088A31F /* MDTableViewCell.m in Sources */,
+				1815B1BA21F6B609003F9DF4 /* UIColor+BIDRandom.m in Sources */,
 				B9B9CECD1E9CB986008CC558 /* UIImage+WebP.m in Sources */,
 				B9EE6AE21EEA4B06000A06DA /* DeviceManageVC.m in Sources */,
 				B95ED6C41E9474E200AD490B /* CellCtrlDdzm.m in Sources */,
@@ -6331,6 +6379,7 @@
 				B9A601111F2F0E740032E765 /* ZZGY_VC.m in Sources */,
 				B9B9CE9D1E9CB8EC008CC558 /* SDCycleScrollView.m in Sources */,
 				B9F3F8E91FB43E3400D98D37 /* CodingRuntime.m in Sources */,
+				1815B1B221F6B399003F9DF4 /* QuartzFunVC.m in Sources */,
 				B915C22C1E7F9DE10088A31F /* MDCalendar.m in Sources */,
 				18135684209AAFCB000D1F42 /* FriendSectionView.m in Sources */,
 				18182CCF213E84B30097EFA8 /* NSArray+FXW.m in Sources */,
@@ -6367,6 +6416,7 @@
 				B90978781E95E7D200F5A0B5 /* DdzmLeftMenuVC.m in Sources */,
 				18F91B2621CCCABB007621C8 /* OrientationsVC.m in Sources */,
 				B95ED6B61E9474E200AD490B /* ModelOrderCtrling.m in Sources */,
+				18FBD18A21F1A9080072C182 /* AppStateVC.m in Sources */,
 				B910E2671EA8888C00DFCC86 /* VScanErWeiMaTwoVC.m in Sources */,
 				B9EB829B1F3A9438000574F7 /* NSString+FXW.m in Sources */,
 				9D4274A01FF094F500745A81 /* BadgeViewVC.m in Sources */,

@@ -23,8 +23,8 @@
 #import "SQLitePersistence.h"
 #import "CoreDataPersistenceVC.h"
 #import "SlowWorkerVC.h"
-
-
+#import "AppStateVC.h"
+#import "QuartzFunVC.h"
 
 
 @interface JTiOSDevVC ()
@@ -67,6 +67,8 @@
     [self addDataWithTitle:@"CoreData" andDetail:@"2019-1-9"];
     [self addDataWithTitle:@"iCloud 之旅[必须用真机]" andDetail:@"2019-1-16"];
     [self addDataWithTitle:@"SlowWorker" andDetail:@"GCD章节"];
+    [self addDataWithTitle:@"App状态" andDetail:@"AppDelegate 前台 后台 等等"];
+    [self addDataWithTitle:@"CoreGraphics绘图" andDetail:@"QuartzFun"];
     
     
     
@@ -79,6 +81,18 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"CoreGraphics绘图"]) {
+        QuartzFunVC *vc = [[QuartzFunVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"App状态"]) {
+        AppStateVC *vc = [[AppStateVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"SlowWorker"]) {
         SlowWorkerVC *vc = [[SlowWorkerVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
