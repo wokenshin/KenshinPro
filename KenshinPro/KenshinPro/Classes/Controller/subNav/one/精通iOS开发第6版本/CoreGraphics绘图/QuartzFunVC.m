@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"绘图";
     _funView = [[QuartzFunView alloc] initWithFrame:CGRectMake(0, 120, screenWidth, screenHeight - 120 - 49)];
     [self.view addSubview:_funView];
     

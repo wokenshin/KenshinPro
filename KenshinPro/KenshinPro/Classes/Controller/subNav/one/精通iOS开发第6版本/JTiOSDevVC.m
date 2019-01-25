@@ -25,7 +25,10 @@
 #import "SlowWorkerVC.h"
 #import "AppStateVC.h"
 #import "QuartzFunVC.h"
-
+#import "TouchExplorerVC.h"
+#import "SwipesVC.h"
+#import "SwipesTwoVC.h"
+#import "TapTapsVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -69,6 +72,11 @@
     [self addDataWithTitle:@"SlowWorker" andDetail:@"GCD章节"];
     [self addDataWithTitle:@"App状态" andDetail:@"AppDelegate 前台 后台 等等"];
     [self addDataWithTitle:@"CoreGraphics绘图" andDetail:@"QuartzFun"];
+    [self addDataWithTitle:@"游戏 Sprite Kit" andDetail:@"第六版内容过于陈旧 在此省略"];
+    [self addDataWithTitle:@"手势" andDetail:@"2019-1-23"];
+    [self addDataWithTitle:@"轻扫 代理实现" andDetail:@"2019-1-24"];
+    [self addDataWithTitle:@"轻扫 手势" andDetail:@"2019-1-24"];
+    [self addDataWithTitle:@"Tap Taps" andDetail:@"避免手势冲突"];
     
     
     
@@ -81,6 +89,30 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"Tap Taps"]) {
+        TapTapsVC *vc = [[TapTapsVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"轻扫 手势"]) {
+        SwipesTwoVC *vc = [[SwipesTwoVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"轻扫 代理实现"]) {
+        SwipesVC *vc = [[SwipesVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"手势"]) {
+        TouchExplorerVC *vc = [[TouchExplorerVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"CoreGraphics绘图"]) {
         QuartzFunVC *vc = [[QuartzFunVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

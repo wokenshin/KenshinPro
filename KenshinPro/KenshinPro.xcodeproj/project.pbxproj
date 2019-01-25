@@ -63,6 +63,10 @@
 		181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36E1207DAD42005675C1 /* UIImage+FXW.m */; };
 		181E506D21F018BD00DFE235 /* SlowWorkerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E506B21F018BD00DFE235 /* SlowWorkerVC.m */; };
 		181E506E21F018BD00DFE235 /* SlowWorkerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */; };
+		1821F01A21F9A00600DCB02F /* SwipesTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821F01821F9A00600DCB02F /* SwipesTwoVC.m */; };
+		1821F01B21F9A00600DCB02F /* SwipesTwoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1821F01921F9A00600DCB02F /* SwipesTwoVC.xib */; };
+		1821F02021F9AD3900DCB02F /* TapTapsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821F01E21F9AD3900DCB02F /* TapTapsVC.m */; };
+		1821F02121F9AD3900DCB02F /* TapTapsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1821F01F21F9AD3900DCB02F /* TapTapsVC.xib */; };
 		18245FCC21E3451500985125 /* PersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18245FCA21E3451500985125 /* PersistenceVC.m */; };
 		18245FCD21E3451500985125 /* PersistenceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18245FCB21E3451500985125 /* PersistenceVC.xib */; };
 		18268E8821DDA92A008281B4 /* FontListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8621DDA92A008281B4 /* FontListVC.m */; };
@@ -95,6 +99,10 @@
 		18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C53756207E4F8C00959AF8 /* ModelItem.m */; };
 		18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5375A207E55B800959AF8 /* FXWMenuGridView.m */; };
 		18C5F681207C9D8900884CFC /* TestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18C5F680207C9D8800884CFC /* TestBundle.bundle */; };
+		18D5962121F847A8003E089D /* TouchExplorerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5961F21F847A8003E089D /* TouchExplorerVC.m */; };
+		18D5962221F847A8003E089D /* TouchExplorerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D5962021F847A8003E089D /* TouchExplorerVC.xib */; };
+		18D5962D21F8658E003E089D /* SwipesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D5962B21F8658E003E089D /* SwipesVC.m */; };
+		18D5962E21F8658E003E089D /* SwipesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D5962C21F8658E003E089D /* SwipesVC.xib */; };
 		18D7933221DE33F6002AF324 /* DialogViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7933121DE33F6002AF324 /* DialogViewerVC.m */; };
 		18D7933621DE34C7002AF324 /* BIDContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7933421DE34C7002AF324 /* BIDContentCell.m */; };
 		18D7933A21DE47BB002AF324 /* BIDHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D7933921DE47BB002AF324 /* BIDHeaderCell.m */; };
@@ -787,6 +795,12 @@
 		181E506A21F018BD00DFE235 /* SlowWorkerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlowWorkerVC.h; sourceTree = "<group>"; };
 		181E506B21F018BD00DFE235 /* SlowWorkerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlowWorkerVC.m; sourceTree = "<group>"; };
 		181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlowWorkerVC.xib; sourceTree = "<group>"; };
+		1821F01721F9A00600DCB02F /* SwipesTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipesTwoVC.h; sourceTree = "<group>"; };
+		1821F01821F9A00600DCB02F /* SwipesTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipesTwoVC.m; sourceTree = "<group>"; };
+		1821F01921F9A00600DCB02F /* SwipesTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipesTwoVC.xib; sourceTree = "<group>"; };
+		1821F01D21F9AD3900DCB02F /* TapTapsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapTapsVC.h; sourceTree = "<group>"; };
+		1821F01E21F9AD3900DCB02F /* TapTapsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapTapsVC.m; sourceTree = "<group>"; };
+		1821F01F21F9AD3900DCB02F /* TapTapsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TapTapsVC.xib; sourceTree = "<group>"; };
 		18245FC921E3451500985125 /* PersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceVC.h; sourceTree = "<group>"; };
 		18245FCA21E3451500985125 /* PersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceVC.m; sourceTree = "<group>"; };
 		18245FCB21E3451500985125 /* PersistenceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersistenceVC.xib; sourceTree = "<group>"; };
@@ -843,6 +857,12 @@
 		18C53759207E55B800959AF8 /* FXWMenuGridView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FXWMenuGridView.h; sourceTree = "<group>"; };
 		18C5375A207E55B800959AF8 /* FXWMenuGridView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWMenuGridView.m; sourceTree = "<group>"; };
 		18C5F680207C9D8800884CFC /* TestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TestBundle.bundle; sourceTree = "<group>"; };
+		18D5961E21F847A8003E089D /* TouchExplorerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchExplorerVC.h; sourceTree = "<group>"; };
+		18D5961F21F847A8003E089D /* TouchExplorerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchExplorerVC.m; sourceTree = "<group>"; };
+		18D5962021F847A8003E089D /* TouchExplorerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TouchExplorerVC.xib; sourceTree = "<group>"; };
+		18D5962A21F8658E003E089D /* SwipesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipesVC.h; sourceTree = "<group>"; };
+		18D5962B21F8658E003E089D /* SwipesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipesVC.m; sourceTree = "<group>"; };
+		18D5962C21F8658E003E089D /* SwipesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipesVC.xib; sourceTree = "<group>"; };
 		18D7933021DE33F6002AF324 /* DialogViewerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DialogViewerVC.h; sourceTree = "<group>"; };
 		18D7933121DE33F6002AF324 /* DialogViewerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialogViewerVC.m; sourceTree = "<group>"; };
 		18D7933321DE34C7002AF324 /* BIDContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDContentCell.h; sourceTree = "<group>"; };
@@ -2193,6 +2213,26 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		1821F01621F99FF100DCB02F /* Swipes2 */ = {
+			isa = PBXGroup;
+			children = (
+				1821F01721F9A00600DCB02F /* SwipesTwoVC.h */,
+				1821F01821F9A00600DCB02F /* SwipesTwoVC.m */,
+				1821F01921F9A00600DCB02F /* SwipesTwoVC.xib */,
+			);
+			path = Swipes2;
+			sourceTree = "<group>";
+		};
+		1821F01C21F9AD2500DCB02F /* TapTaps */ = {
+			isa = PBXGroup;
+			children = (
+				1821F01D21F9AD3900DCB02F /* TapTapsVC.h */,
+				1821F01E21F9AD3900DCB02F /* TapTapsVC.m */,
+				1821F01F21F9AD3900DCB02F /* TapTapsVC.xib */,
+			);
+			path = TapTaps;
+			sourceTree = "<group>";
+		};
 		18245FC321E33D1500985125 /* 数据持久化基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2322,6 +2362,7 @@
 		18A008FA21D5B3D500C48342 /* 表 */ = {
 			isa = PBXGroup;
 			children = (
+				18F91B2221CCCAA0007621C8 /* 旋转 */,
 				18EA72DD21D5FC7000BE39F4 /* 简单表 */,
 				18EA72DE21D5FC9000BE39F4 /* 制定表视图单元 */,
 				181DEBEA21D71E49005D2827 /* 制定表视图单元2 */,
@@ -2379,6 +2420,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				18D5961D21F84784003E089D /* 手势 */,
 				1815B1AE21F6B339003F9DF4 /* CoreGraphics绘图 */,
 				18FBD18621F1A8BA0072C182 /* App状态 */,
 				181E506921F018AC00DFE235 /* GCD */,
@@ -2389,7 +2431,6 @@
 				18F9EAA721D1DBEB005DE74F /* 选取器 */,
 				18F9B76C21D0C931005D40E0 /* 多视图 */,
 				18EA3D0B21D0771E00BDAF99 /* 旋转2 */,
-				18F91B2221CCCAA0007621C8 /* 旋转 */,
 				1894709B21C8CE61006010D9 /* xib基础 */,
 				18BB875F21C9EBBC00C55E54 /* xib基础2 */,
 				18BB876621C9EEBC00C55E54 /* JTiOSDevVC.h */,
@@ -2414,6 +2455,37 @@
 				18C5375A207E55B800959AF8 /* FXWMenuGridView.m */,
 			);
 			path = FXWMenuGridView;
+			sourceTree = "<group>";
+		};
+		18D5961D21F84784003E089D /* 手势 */ = {
+			isa = PBXGroup;
+			children = (
+				18D5962321F8651F003E089D /* TouchExplorer */,
+				18D5962421F86537003E089D /* Swipes */,
+				1821F01621F99FF100DCB02F /* Swipes2 */,
+				1821F01C21F9AD2500DCB02F /* TapTaps */,
+			);
+			path = "手势";
+			sourceTree = "<group>";
+		};
+		18D5962321F8651F003E089D /* TouchExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				18D5961E21F847A8003E089D /* TouchExplorerVC.h */,
+				18D5961F21F847A8003E089D /* TouchExplorerVC.m */,
+				18D5962021F847A8003E089D /* TouchExplorerVC.xib */,
+			);
+			path = TouchExplorer;
+			sourceTree = "<group>";
+		};
+		18D5962421F86537003E089D /* Swipes */ = {
+			isa = PBXGroup;
+			children = (
+				18D5962A21F8658E003E089D /* SwipesVC.h */,
+				18D5962B21F8658E003E089D /* SwipesVC.m */,
+				18D5962C21F8658E003E089D /* SwipesVC.xib */,
+			);
+			path = Swipes;
 			sourceTree = "<group>";
 		};
 		18D7932F21DE2F96002AF324 /* 集合视图 */ = {
@@ -5782,6 +5854,7 @@
 				B91748D71ECC3FDD006C70F5 /* CountDownVC.xib in Resources */,
 				181DEBFA21D72882005D2827 /* SectionVC.xib in Resources */,
 				B964771D1EB04A5300A9A498 /* alert_success_icon@2x.png in Resources */,
+				18D5962E21F8658E003E089D /* SwipesVC.xib in Resources */,
 				9D2BEADA1FF3839D002D2EE3 /* GYZJVC.xib in Resources */,
 				B95ED6C51E9474E200AD490B /* CellCtrlDdzm.xib in Resources */,
 				B98DF71E1EA8521300296C2A /* index1.html in Resources */,
@@ -5823,6 +5896,7 @@
 				18934C79211BC75C007BD44F /* userHelp.html in Resources */,
 				B95ED6E01E94EA6900AD490B /* BaiDuBottomMenu.xib in Resources */,
 				B95AC89A1EADDC2600806D1A /* TextConnectWebVC.xib in Resources */,
+				1821F02121F9AD3900DCB02F /* TapTapsVC.xib in Resources */,
 				B98DF7101EA8516100296C2A /* JSContentVC.xib in Resources */,
 				18188C9921D4663200AD1E3E /* pickerDic.plist in Resources */,
 				9DED18951FF4D06700C8BD29 /* RecodePlayVC.xib in Resources */,
@@ -5888,6 +5962,7 @@
 				B910E2621EA8888C00DFCC86 /* ScanVC.xib in Resources */,
 				9D8638BE200C475400007CEE /* CopyVC.xib in Resources */,
 				B910E24B1EA884F700DFCC86 /* NavBarCustomVC.xib in Resources */,
+				1821F01B21F9A00600DCB02F /* SwipesTwoVC.xib in Resources */,
 				9D564C1D1FE790DB000A4DDA /* UserInfoVC.xib in Resources */,
 				B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */,
 				1808227A21E5CA2B006E0778 /* SQLitePersistence.xib in Resources */,
@@ -5918,6 +5993,7 @@
 				18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */,
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
 				9D7C409B200F419100017937 /* JJSJRecodeVoiceVC.xib in Resources */,
+				18D5962221F847A8003E089D /* TouchExplorerVC.xib in Resources */,
 				18EA3D1021D0774400BDAF99 /* RestructureVC.xib in Resources */,
 				18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */,
 				B9CF8C2C1EC2BA2F00C64D58 /* skin in Resources */,
@@ -6175,6 +6251,7 @@
 				B915C2361E7F9DE10088A31F /* MDDeviceHelper.m in Sources */,
 				B96E606B1EA70E5900BC0543 /* EvaluateStarsVC.m in Sources */,
 				B94CD4991E9C645F003A889E /* TableViewBuJuVC.m in Sources */,
+				1821F01A21F9A00600DCB02F /* SwipesTwoVC.m in Sources */,
 				B906FC521E8B3BC000645C96 /* NSString+MJExtension.m in Sources */,
 				B915C22A1E7F9DE10088A31F /* MDBubbleLabel.m in Sources */,
 				B915C22F1E7F9DE10088A31F /* MDCalendarHeader.m in Sources */,
@@ -6201,6 +6278,7 @@
 				9D8638BD200C475400007CEE /* CopyVC.m in Sources */,
 				1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */,
 				B98DF7291EA8524B00296C2A /* JSTWOVC.m in Sources */,
+				18D5962D21F8658E003E089D /* SwipesVC.m in Sources */,
 				B95ED6AD1E9474E200AD490B /* LockMasterAppVC.m in Sources */,
 				B9B9CECA1E9CB986008CC558 /* UIButton+WebCache.m in Sources */,
 				B915C2431E7F9DE10088A31F /* MDSwitch.m in Sources */,
@@ -6240,6 +6318,7 @@
 				B92642071E83D3AF00EEED61 /* AFURLRequestSerialization.m in Sources */,
 				B906FC571E8B3C6500645C96 /* DicAndModelVC.m in Sources */,
 				B95ED6B71E9474E200AD490B /* OrderCtrlingVC.m in Sources */,
+				1821F02021F9AD3900DCB02F /* TapTapsVC.m in Sources */,
 				B9EE6ADB1EEA4A46000A06DA /* QYVC.m in Sources */,
 				B95ED6CB1E947FCF00AD490B /* BLEVC.m in Sources */,
 				B98505431E963CF5007C01CB /* CALayer+Anim.m in Sources */,
@@ -6264,6 +6343,7 @@
 				B95B40AE1F8DEC1900A6658C /* GgzsVC.m in Sources */,
 				9D7C409E200F41EA00017937 /* FXWRecodeVoice.m in Sources */,
 				B9D626EC1E7CC4D600593EC1 /* MASConstraintMaker.m in Sources */,
+				18D5962121F847A8003E089D /* TouchExplorerVC.m in Sources */,
 				B96C9A9E1EF23BB400D35B9A /* BigSmallVC.m in Sources */,
 				18268E8821DDA92A008281B4 /* FontListVC.m in Sources */,
 				183896A9207EE74F0008A3B2 /* FYMenu2VC.m in Sources */,

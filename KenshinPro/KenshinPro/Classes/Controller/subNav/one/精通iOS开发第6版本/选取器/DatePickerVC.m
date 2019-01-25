@@ -27,7 +27,7 @@
 }
 
 - (void)logoutUI{
-    [self setNavLeftBtnWithName:@"推出" andClickResultblock:^{
+    [self setNavLeftBtnWithName:@"退出" andClickResultblock:^{
         
         MainTabBarVC *vc = [[MainTabBarVC alloc] init];
         

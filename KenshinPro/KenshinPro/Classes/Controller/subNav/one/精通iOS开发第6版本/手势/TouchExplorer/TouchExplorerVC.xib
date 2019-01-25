@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TouchExplorerVC">
+            <connections>
+                <outlet property="messageLabel" destination="Wm8-LY-fb3" id="a3p-xe-lKE"/>
+                <outlet property="tapsLabel" destination="MSp-gr-OLY" id="aHj-Vt-Jth"/>
+                <outlet property="touchesLabel" destination="UMh-Ou-dc5" id="tW0-QF-JYr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wm8-LY-fb3">
+                    <rect key="frame" x="20" y="40" width="335" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="W76-ts-HQh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-Ou-dc5">
+                    <rect key="frame" x="20" y="140" width="335" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="jFB-Ze-ywB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSp-gr-OLY">
+                    <rect key="frame" x="20" y="90" width="335" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="yWO-f9-u9W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.31372549020000001" green="0.70196078429999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Wm8-LY-fb3" secondAttribute="trailing" constant="20" id="Fe5-ts-jdJ"/>
+                <constraint firstItem="UMh-Ou-dc5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="JE6-FP-fv9"/>
+                <constraint firstItem="UMh-Ou-dc5" firstAttribute="top" secondItem="MSp-gr-OLY" secondAttribute="bottom" constant="20" id="PLt-om-8q9"/>
+                <constraint firstItem="MSp-gr-OLY" firstAttribute="top" secondItem="Wm8-LY-fb3" secondAttribute="bottom" constant="20" id="PSy-e9-Qle"/>
+                <constraint firstItem="Wm8-LY-fb3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="UnN-2T-XkJ"/>
+                <constraint firstItem="Wm8-LY-fb3" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="ZcL-yY-kcF"/>
+                <constraint firstItem="MSp-gr-OLY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="bwl-S1-CjO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="UMh-Ou-dc5" secondAttribute="trailing" constant="20" id="hAq-Ts-8Hk"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="MSp-gr-OLY" secondAttribute="trailing" constant="20" id="z8t-u2-0BG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-614" y="4"/>
+        </view>
+    </objects>
+</document>
