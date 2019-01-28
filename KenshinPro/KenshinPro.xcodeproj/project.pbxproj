@@ -39,6 +39,12 @@
 		1815B1B321F6B399003F9DF4 /* QuartzFunVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1815B1B121F6B399003F9DF4 /* QuartzFunVC.xib */; };
 		1815B1B621F6B406003F9DF4 /* QuartzFunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B1B521F6B406003F9DF4 /* QuartzFunView.m */; };
 		1815B1BA21F6B609003F9DF4 /* UIColor+BIDRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815B1B921F6B609003F9DF4 /* UIColor+BIDRandom.m */; };
+		1816C71F21FE8DAB00880118 /* PinchMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816C71D21FE8DAB00880118 /* PinchMeVC.m */; };
+		1816C72021FE8DAB00880118 /* PinchMeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1816C71E21FE8DAB00880118 /* PinchMeVC.xib */; };
+		1816C72721FE972F00880118 /* CheckPleaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816C72521FE972F00880118 /* CheckPleaseVC.m */; };
+		1816C72821FE972F00880118 /* CheckPleaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1816C72621FE972F00880118 /* CheckPleaseVC.xib */; };
+		1816C72B21FE993600880118 /* CGPointUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 1816C72921FE993600880118 /* CGPointUtils.c */; };
+		1816C73121FE998500880118 /* CheckMarkRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816C73021FE998500880118 /* CheckMarkRecognizer.m */; };
 		1817EAA1207E16E1009DD645 /* FYMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817EAA0207E16E1009DD645 /* FYMenuVC.m */; };
 		1817EAAB207E1A10009DD645 /* CellJJSJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817EAA9207E1A10009DD645 /* CellJJSJMenu.m */; };
 		1817EAAC207E1A10009DD645 /* CellJJSJMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1817EAAA207E1A10009DD645 /* CellJJSJMenu.xib */; };
@@ -755,6 +761,16 @@
 		1815B1B721F6B45D003F9DF4 /* BIDConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDConstants.h; sourceTree = "<group>"; };
 		1815B1B821F6B609003F9DF4 /* UIColor+BIDRandom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+BIDRandom.h"; sourceTree = "<group>"; };
 		1815B1B921F6B609003F9DF4 /* UIColor+BIDRandom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BIDRandom.m"; sourceTree = "<group>"; };
+		1816C71C21FE8DAB00880118 /* PinchMeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchMeVC.h; sourceTree = "<group>"; };
+		1816C71D21FE8DAB00880118 /* PinchMeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchMeVC.m; sourceTree = "<group>"; };
+		1816C71E21FE8DAB00880118 /* PinchMeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinchMeVC.xib; sourceTree = "<group>"; };
+		1816C72421FE972F00880118 /* CheckPleaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPleaseVC.h; sourceTree = "<group>"; };
+		1816C72521FE972F00880118 /* CheckPleaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckPleaseVC.m; sourceTree = "<group>"; };
+		1816C72621FE972F00880118 /* CheckPleaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckPleaseVC.xib; sourceTree = "<group>"; };
+		1816C72921FE993600880118 /* CGPointUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CGPointUtils.c; sourceTree = "<group>"; };
+		1816C72A21FE993600880118 /* CGPointUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPointUtils.h; sourceTree = "<group>"; };
+		1816C72F21FE998500880118 /* CheckMarkRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckMarkRecognizer.h; sourceTree = "<group>"; };
+		1816C73021FE998500880118 /* CheckMarkRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckMarkRecognizer.m; sourceTree = "<group>"; };
 		1817EA9F207E16E1009DD645 /* FYMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYMenuVC.h; sourceTree = "<group>"; };
 		1817EAA0207E16E1009DD645 /* FYMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYMenuVC.m; sourceTree = "<group>"; };
 		1817EAA8207E1A10009DD645 /* CellJJSJMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellJJSJMenu.h; sourceTree = "<group>"; };
@@ -2106,6 +2122,30 @@
 			path = "CoreGraphics绘图";
 			sourceTree = "<group>";
 		};
+		1816C71B21FE8D9000880118 /* PinchMe */ = {
+			isa = PBXGroup;
+			children = (
+				1816C71C21FE8DAB00880118 /* PinchMeVC.h */,
+				1816C71D21FE8DAB00880118 /* PinchMeVC.m */,
+				1816C71E21FE8DAB00880118 /* PinchMeVC.xib */,
+			);
+			path = PinchMe;
+			sourceTree = "<group>";
+		};
+		1816C72321FE971B00880118 /* CheckPlease */ = {
+			isa = PBXGroup;
+			children = (
+				1816C72921FE993600880118 /* CGPointUtils.c */,
+				1816C72A21FE993600880118 /* CGPointUtils.h */,
+				1816C72F21FE998500880118 /* CheckMarkRecognizer.h */,
+				1816C73021FE998500880118 /* CheckMarkRecognizer.m */,
+				1816C72421FE972F00880118 /* CheckPleaseVC.h */,
+				1816C72521FE972F00880118 /* CheckPleaseVC.m */,
+				1816C72621FE972F00880118 /* CheckPleaseVC.xib */,
+			);
+			path = CheckPlease;
+			sourceTree = "<group>";
+		};
 		1817EA9E207E1665009DD645 /* 菜单-垂直方向 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2460,6 +2500,8 @@
 		18D5961D21F84784003E089D /* 手势 */ = {
 			isa = PBXGroup;
 			children = (
+				1816C72321FE971B00880118 /* CheckPlease */,
+				1816C71B21FE8D9000880118 /* PinchMe */,
 				18D5962321F8651F003E089D /* TouchExplorer */,
 				18D5962421F86537003E089D /* Swipes */,
 				1821F01621F99FF100DCB02F /* Swipes2 */,
@@ -5867,6 +5909,7 @@
 				B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */,
 				9D43700C201EAE210027F6C6 /* AFN_FXWDemoVC.xib in Resources */,
 				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
+				1816C72821FE972F00880118 /* CheckPleaseVC.xib in Resources */,
 				9D4FFC621FF4943B004741FA /* RecodeVoiceVC.xib in Resources */,
 				181E36DF207DAB8A005675C1 /* CreateQRCodeVC.xib in Resources */,
 				B98A10891FBD22A800556A00 /* CJJMVC.xib in Resources */,
@@ -5932,6 +5975,7 @@
 				181DEBEF21D71E73005D2827 /* CustomTCellTwoVC.xib in Resources */,
 				B9BADB381EA5B703000B3C1C /* VCPush.png in Resources */,
 				B9CF8C051EC2B16700C64D58 /* ThemeVC.xib in Resources */,
+				1816C72021FE8DAB00880118 /* PinchMeVC.xib in Resources */,
 				B9254BCA1EAEF20E00F82344 /* PlistVC.xib in Resources */,
 				B9BADB5B1EA5E5D6000B3C1C /* VCN5.xib in Resources */,
 				B9EFFE701F74BAB600E5A871 /* MyXibVC.xib in Resources */,
@@ -6163,6 +6207,7 @@
 				B915C2441E7F9DE10088A31F /* MDTabBar.m in Sources */,
 				B94C541C1F3BF1A6003AC71B /* UIView+FXW.m in Sources */,
 				B910E2641EA8888C00DFCC86 /* QRCodeAreaView.m in Sources */,
+				1816C73121FE998500880118 /* CheckMarkRecognizer.m in Sources */,
 				9D4274AE1FF0972C00745A81 /* UIBarButtonItem+PPBadgeView.m in Sources */,
 				B9D856911E84CE450053697F /* CustomNavVC.m in Sources */,
 				B95ED6D41E94DC4600AD490B /* FXW_BLECtrlDemoVC.m in Sources */,
@@ -6189,6 +6234,7 @@
 				18268E8C21DDB4BB008281B4 /* FontSizeVC.m in Sources */,
 				B906FD471E8B668F00645C96 /* MJRefreshAutoGifFooter.m in Sources */,
 				B95ED6BC1E9474E200AD490B /* OrderWaittingVC.m in Sources */,
+				1816C72B21FE993600880118 /* CGPointUtils.c in Sources */,
 				181DEBEE21D71E73005D2827 /* CustomTCellTwoVC.m in Sources */,
 				B93002371E8A3695000C0563 /* AFN_MC.m in Sources */,
 				B9EFE9551EDE4A62002C2758 /* JWTAlgorithmFactory.m in Sources */,
@@ -6292,6 +6338,7 @@
 				183896A5207EE67F0008A3B2 /* CellJJSJYY.m in Sources */,
 				9D5FD635203146BF0071827F /* ExtensibleTableVC.m in Sources */,
 				B94C542A1F3C30C6003AC71B /* AddBorderVC.m in Sources */,
+				1816C72721FE972F00880118 /* CheckPleaseVC.m in Sources */,
 				183896A1207EE6690008A3B2 /* ModelYY.m in Sources */,
 				B910E2371EA880A500DFCC86 /* SDWebImageLoadGifVC.m in Sources */,
 				B94D8F321EDF99EB0003D10A /* CRC32VC.m in Sources */,
@@ -6304,6 +6351,7 @@
 				B9254BC41EAED92E00F82344 /* NSUserDefaultsVC.m in Sources */,
 				18199DFB2142599300175D61 /* RSAVC.m in Sources */,
 				9D6FD2AD1FE75C430032CA36 /* FMDBVC.m in Sources */,
+				1816C71F21FE8DAB00880118 /* PinchMeVC.m in Sources */,
 				B906FC621E8B450100645C96 /* MJStatusResult.m in Sources */,
 				B94F909B1EB2C6F40032FC0E /* MBProgressVC.m in Sources */,
 				9D7357821FE2AB7100BE3EFF /* SDWebImgVC.m in Sources */,

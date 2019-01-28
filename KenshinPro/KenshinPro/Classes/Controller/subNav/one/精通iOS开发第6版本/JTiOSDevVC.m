@@ -29,6 +29,8 @@
 #import "SwipesVC.h"
 #import "SwipesTwoVC.h"
 #import "TapTapsVC.h"
+#import "PinchMeVC.h"
+#import "CheckPleaseVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -77,7 +79,8 @@
     [self addDataWithTitle:@"轻扫 代理实现" andDetail:@"2019-1-24"];
     [self addDataWithTitle:@"轻扫 手势" andDetail:@"2019-1-24"];
     [self addDataWithTitle:@"Tap Taps" andDetail:@"避免手势冲突"];
-    
+    [self addDataWithTitle:@"缩放+旋转" andDetail:@"2019-1-28"];
+    [self addDataWithTitle:@"自定义手势" andDetail:@"感觉书中代码辣鸡，手势并不标准"];
     
     
     
@@ -89,6 +92,18 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"自定义手势"]) {
+        CheckPleaseVC *vc = [[CheckPleaseVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"缩放+旋转"]) {
+        PinchMeVC *vc = [[PinchMeVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"Tap Taps"]) {
         TapTapsVC *vc = [[TapTapsVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
