@@ -31,6 +31,7 @@
 #import "TapTapsVC.h"
 #import "PinchMeVC.h"
 #import "CheckPleaseVC.h"
+#import "WhereAmIVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -46,7 +47,7 @@
 
 - (void) initJTiOSDevVCUI{
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"基础+封装";
+    self.navigationItem.title = @"精通iOS开发第6版本";
     [self.view addSubview:self.tableView];
     //因为底部短啦 所以修改下
     self.tableView.frame = CGRectMake(0, 0, screenWidth, screenHeight);
@@ -81,7 +82,7 @@
     [self addDataWithTitle:@"Tap Taps" andDetail:@"避免手势冲突"];
     [self addDataWithTitle:@"缩放+旋转" andDetail:@"2019-1-28"];
     [self addDataWithTitle:@"自定义手势" andDetail:@"感觉书中代码辣鸡，手势并不标准"];
-    
+    [self addDataWithTitle:@"定位+地图" andDetail:@"2019-1-29"];
     
     
     //倒叙[这样就是时间升序啦]
@@ -92,6 +93,12 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"定位+地图"]) {
+        WhereAmIVC *vc = [[WhereAmIVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"自定义手势"]) {
         CheckPleaseVC *vc = [[CheckPleaseVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
