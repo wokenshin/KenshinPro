@@ -90,6 +90,8 @@
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
 		188D746721DCBEE8008CF254 /* FontsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D746521DCBEE8008CF254 /* FontsVC.m */; };
+		1891E6BC2201DCF700E3C972 /* MotionMonitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */; };
+		1891E6BD2201DCF700E3C972 /* MotionMonitorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
 		1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894709D21C8CE88006010D9 /* XibBaseVC.m */; };
 		189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1894709E21C8CE88006010D9 /* XibBaseVC.xib */; };
@@ -850,6 +852,9 @@
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
 		188D746421DCBEE8008CF254 /* FontsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontsVC.h; sourceTree = "<group>"; };
 		188D746521DCBEE8008CF254 /* FontsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsVC.m; sourceTree = "<group>"; };
+		1891E6B92201DCF700E3C972 /* MotionMonitorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionMonitorVC.h; sourceTree = "<group>"; };
+		1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionMonitorVC.m; sourceTree = "<group>"; };
+		1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotionMonitorVC.xib; sourceTree = "<group>"; };
 		18934C78211BC75C007BD44F /* userHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = userHelp.html; sourceTree = "<group>"; };
 		1894709C21C8CE88006010D9 /* XibBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibBaseVC.h; sourceTree = "<group>"; };
 		1894709D21C8CE88006010D9 /* XibBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibBaseVC.m; sourceTree = "<group>"; };
@@ -2398,6 +2403,16 @@
 			path = "导航控制器";
 			sourceTree = "<group>";
 		};
+		1891E6B82201DCA000E3C972 /* 陀螺仪和加速计 */ = {
+			isa = PBXGroup;
+			children = (
+				1891E6B92201DCF700E3C972 /* MotionMonitorVC.h */,
+				1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */,
+				1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */,
+			);
+			path = "陀螺仪和加速计";
+			sourceTree = "<group>";
+		};
 		1894709B21C8CE61006010D9 /* xib基础 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2480,6 +2495,7 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				1891E6B82201DCA000E3C972 /* 陀螺仪和加速计 */,
 				1816C73221FEAE2300880118 /* CoreLocation和KitMap */,
 				18D5961D21F84784003E089D /* 手势 */,
 				1815B1AE21F6B339003F9DF4 /* CoreGraphics绘图 */,
@@ -5933,6 +5949,7 @@
 				B9A361F41F987F05003B04A2 /* DelayShowImgVC.xib in Resources */,
 				9D43700C201EAE210027F6C6 /* AFN_FXWDemoVC.xib in Resources */,
 				B98568111EE7A11400FF9668 /* DesignModeVC.xib in Resources */,
+				1891E6BD2201DCF700E3C972 /* MotionMonitorVC.xib in Resources */,
 				1816C72821FE972F00880118 /* CheckPleaseVC.xib in Resources */,
 				9D4FFC621FF4943B004741FA /* RecodeVoiceVC.xib in Resources */,
 				181E36DF207DAB8A005675C1 /* CreateQRCodeVC.xib in Resources */,
@@ -6653,6 +6670,7 @@
 				B906B3DB1EE94B9F0073E175 /* BottomTableMenuVC.m in Sources */,
 				B9B9CECC1E9CB986008CC558 /* UIImage+MultiFormat.m in Sources */,
 				B95ED6BB1E9474E200AD490B /* ModelOrderWaitting.m in Sources */,
+				1891E6BC2201DCF700E3C972 /* MotionMonitorVC.m in Sources */,
 				B92641F41E83C5E100EEED61 /* SendSMSVC.m in Sources */,
 				B92CCAE81E7A149300035A79 /* MainTabBarVC.m in Sources */,
 				B98DF7091EA8481F00296C2A /* AnimationVC.m in Sources */,

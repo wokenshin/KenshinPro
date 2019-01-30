@@ -34,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"CoreLocation和KitMap";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     //初始化定位管理器
     _locationManager = [[CLLocationManager alloc] init];
