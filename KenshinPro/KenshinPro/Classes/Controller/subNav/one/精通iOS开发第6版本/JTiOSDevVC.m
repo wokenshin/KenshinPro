@@ -33,6 +33,9 @@
 #import "CheckPleaseVC.h"
 #import "WhereAmIVC.h"
 #import "MotionMonitorVC.h"
+#import "MMVC.h"
+#import "ShakeAndBreakVC.h"
+#import "BallVC.h"
 
 
 @interface JTiOSDevVC ()
@@ -85,7 +88,10 @@
     [self addDataWithTitle:@"缩放+旋转" andDetail:@"2019-1-28"];
     [self addDataWithTitle:@"自定义手势" andDetail:@"感觉书中代码辣鸡，手势并不标准"];
     [self addDataWithTitle:@"定位+地图" andDetail:@"2019-1-29"];
-    [self addDataWithTitle:@"陀螺仪和加速计" andDetail:@"2019-1-30"];
+    [self addDataWithTitle:@"陀螺仪和加速计" andDetail:@"2019-1-30 被动获取"];
+    [self addDataWithTitle:@"陀螺仪和加速计2" andDetail:@"2019-1-31 主动获取"];
+    [self addDataWithTitle:@"死劲儿摇晃手机" andDetail:@"2019-1-31"];
+    [self addDataWithTitle:@"滚弹珠程序" andDetail:@"2019-1-31"];
     
     
     //倒叙[这样就是时间升序啦]
@@ -96,6 +102,24 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"滚弹珠程序"]) {
+        BallVC *vc = [[BallVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"死劲儿摇晃手机"]) {
+        ShakeAndBreakVC *vc = [[ShakeAndBreakVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"陀螺仪和加速计2"]) {
+        MMVC *vc = [[MMVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"陀螺仪和加速计"]) {
         MotionMonitorVC *vc = [[MotionMonitorVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

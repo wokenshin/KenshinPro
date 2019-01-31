@@ -143,6 +143,16 @@
 		18F9EAC021D1DE3D005DE74F /* CustomPickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EABE21D1DE3D005DE74F /* CustomPickerVC.xib */; };
 		18F9F5F921E5DD0C00886D1F /* CoreDataPersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */; };
 		18F9F5FA21E5DD0C00886D1F /* CoreDataPersistenceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */; };
+		18FBBFB52202BEDE00624D77 /* MMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBBFB32202BEDE00624D77 /* MMVC.m */; };
+		18FBBFB62202BEDE00624D77 /* MMVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFB42202BEDE00624D77 /* MMVC.xib */; };
+		18FBBFBA2202CA1D00624D77 /* ShakeAndBreakVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBBFB82202CA1D00624D77 /* ShakeAndBreakVC.m */; };
+		18FBBFBB2202CA1D00624D77 /* ShakeAndBreakVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFB92202CA1D00624D77 /* ShakeAndBreakVC.xib */; };
+		18FBBFBF2202CA8E00624D77 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFBC2202CA8E00624D77 /* home.png */; };
+		18FBBFC02202CA8E00624D77 /* homebroken.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFBD2202CA8E00624D77 /* homebroken.png */; };
+		18FBBFC12202CA8E00624D77 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFBE2202CA8E00624D77 /* glass.wav */; };
+		18FBBFC82202D35300624D77 /* BallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBBFC62202D35300624D77 /* BallVC.m */; };
+		18FBBFC92202D35300624D77 /* BallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFC72202D35300624D77 /* BallVC.xib */; };
+		18FBBFCB2202D39000624D77 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FBBFCA2202D39000624D77 /* ball.png */; };
 		18FBD18A21F1A9080072C182 /* AppStateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBD18821F1A9080072C182 /* AppStateVC.m */; };
 		18FBD18D21F1B8920072C182 /* wlp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBD18C21F1B8920072C182 /* wlp.jpg */; };
 		18FC7A2721D4B7430075FF9E /* pickerPlay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FC7A2621D4B7430075FF9E /* pickerPlay.wav */; };
@@ -938,6 +948,19 @@
 		18F9F5F621E5DD0C00886D1F /* CoreDataPersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataPersistenceVC.h; sourceTree = "<group>"; };
 		18F9F5F721E5DD0C00886D1F /* CoreDataPersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataPersistenceVC.m; sourceTree = "<group>"; };
 		18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreDataPersistenceVC.xib; sourceTree = "<group>"; };
+		18FBBFB22202BEDE00624D77 /* MMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMVC.h; sourceTree = "<group>"; };
+		18FBBFB32202BEDE00624D77 /* MMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMVC.m; sourceTree = "<group>"; };
+		18FBBFB42202BEDE00624D77 /* MMVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMVC.xib; sourceTree = "<group>"; };
+		18FBBFB72202CA1D00624D77 /* ShakeAndBreakVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeAndBreakVC.h; sourceTree = "<group>"; };
+		18FBBFB82202CA1D00624D77 /* ShakeAndBreakVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeAndBreakVC.m; sourceTree = "<group>"; };
+		18FBBFB92202CA1D00624D77 /* ShakeAndBreakVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShakeAndBreakVC.xib; sourceTree = "<group>"; };
+		18FBBFBC2202CA8E00624D77 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		18FBBFBD2202CA8E00624D77 /* homebroken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebroken.png; sourceTree = "<group>"; };
+		18FBBFBE2202CA8E00624D77 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
+		18FBBFC52202D35300624D77 /* BallVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallVC.h; sourceTree = "<group>"; };
+		18FBBFC62202D35300624D77 /* BallVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallVC.m; sourceTree = "<group>"; };
+		18FBBFC72202D35300624D77 /* BallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BallVC.xib; sourceTree = "<group>"; };
+		18FBBFCA2202D39000624D77 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		18FBD18721F1A9080072C182 /* AppStateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStateVC.h; sourceTree = "<group>"; };
 		18FBD18821F1A9080072C182 /* AppStateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppStateVC.m; sourceTree = "<group>"; };
 		18FBD18C21F1B8920072C182 /* wlp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wlp.jpg; sourceTree = "<group>"; };
@@ -2406,9 +2429,9 @@
 		1891E6B82201DCA000E3C972 /* 陀螺仪和加速计 */ = {
 			isa = PBXGroup;
 			children = (
-				1891E6B92201DCF700E3C972 /* MotionMonitorVC.h */,
-				1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */,
-				1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */,
+				18FBBFC32202D25200624D77 /* 陀螺仪加速计 */,
+				18FBBFC22202D23C00624D77 /* 摇晃 */,
+				18FBBFC42202D26800624D77 /* 滚弹珠程序 */,
 			);
 			path = "陀螺仪和加速计";
 			sourceTree = "<group>";
@@ -2682,6 +2705,43 @@
 				18F9F5F821E5DD0C00886D1F /* CoreDataPersistenceVC.xib */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		18FBBFC22202D23C00624D77 /* 摇晃 */ = {
+			isa = PBXGroup;
+			children = (
+				18FBBFB72202CA1D00624D77 /* ShakeAndBreakVC.h */,
+				18FBBFB82202CA1D00624D77 /* ShakeAndBreakVC.m */,
+				18FBBFB92202CA1D00624D77 /* ShakeAndBreakVC.xib */,
+				18FBBFBE2202CA8E00624D77 /* glass.wav */,
+				18FBBFBC2202CA8E00624D77 /* home.png */,
+				18FBBFBD2202CA8E00624D77 /* homebroken.png */,
+			);
+			path = "摇晃";
+			sourceTree = "<group>";
+		};
+		18FBBFC32202D25200624D77 /* 陀螺仪加速计 */ = {
+			isa = PBXGroup;
+			children = (
+				1891E6B92201DCF700E3C972 /* MotionMonitorVC.h */,
+				1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */,
+				1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */,
+				18FBBFB22202BEDE00624D77 /* MMVC.h */,
+				18FBBFB32202BEDE00624D77 /* MMVC.m */,
+				18FBBFB42202BEDE00624D77 /* MMVC.xib */,
+			);
+			path = "陀螺仪加速计";
+			sourceTree = "<group>";
+		};
+		18FBBFC42202D26800624D77 /* 滚弹珠程序 */ = {
+			isa = PBXGroup;
+			children = (
+				18FBBFC52202D35300624D77 /* BallVC.h */,
+				18FBBFC62202D35300624D77 /* BallVC.m */,
+				18FBBFC72202D35300624D77 /* BallVC.xib */,
+				18FBBFCA2202D39000624D77 /* ball.png */,
+			);
+			path = "滚弹珠程序";
 			sourceTree = "<group>";
 		};
 		18FBD18621F1A8BA0072C182 /* App状态 */ = {
@@ -5931,6 +5991,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FBBFB62202BEDE00624D77 /* MMVC.xib in Resources */,
 				B95ED6CC1E947FCF00AD490B /* BLEVC.xib in Resources */,
 				B9D8568D1E84B91C0053697F /* AlertVC2.xib in Resources */,
 				B91748D71ECC3FDD006C70F5 /* CountDownVC.xib in Resources */,
@@ -5940,6 +6001,7 @@
 				9D2BEADA1FF3839D002D2EE3 /* GYZJVC.xib in Resources */,
 				B95ED6C51E9474E200AD490B /* CellCtrlDdzm.xib in Resources */,
 				B98DF71E1EA8521300296C2A /* index1.html in Resources */,
+				18FBBFBB2202CA1D00624D77 /* ShakeAndBreakVC.xib in Resources */,
 				18A008FF21D5B3F700C48342 /* SimpleTableVC.xib in Resources */,
 				B9673FA41E78E22A006AB3DA /* LaunchScreen.storyboard in Resources */,
 				B9BD974E1E81054C009BB0D4 /* LICENSE in Resources */,
@@ -5960,6 +6022,7 @@
 				B9B3D4651F7A279E00A30555 /* SmartDeviceContentVC.xib in Resources */,
 				9DA74571204153E3006FEA5E /* PureLayoutVC.xib in Resources */,
 				18F9EAAC21D1DDB7005DE74F /* DatePickerVC.xib in Resources */,
+				18FBBFC12202CA8E00624D77 /* glass.wav in Resources */,
 				B9A361EE1F9854B2003B04A2 /* RunloopStatusFXWVC.xib in Resources */,
 				18FBD18D21F1B8920072C182 /* wlp.jpg in Resources */,
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
@@ -6006,6 +6069,7 @@
 				181DEBF421D71E92005D2827 /* CellCusTwo.xib in Resources */,
 				B906FD501E8B668F00645C96 /* MJRefresh.bundle in Resources */,
 				B9BADB361EA5B6A1000B3C1C /* MainVC.xib in Resources */,
+				18FBBFC92202D35300624D77 /* BallVC.xib in Resources */,
 				18EA72DC21D5FBDF00BE39F4 /* CustomTCellVC.xib in Resources */,
 				189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */,
 				B906FC581E8B3C6500645C96 /* DicAndModelVC.xib in Resources */,
@@ -6033,6 +6097,7 @@
 				B9BADB3F1EA5BB82000B3C1C /* VCN2.xib in Resources */,
 				B98DF7331EA852D100296C2A /* jsCallOC2.html in Resources */,
 				181DEBFC21D72A01005D2827 /* sortednames.plist in Resources */,
+				18FBBFBF2202CA8E00624D77 /* home.png in Resources */,
 				B9BD97501E81054C009BB0D4 /* MBProgressHUD.bundle in Resources */,
 				B94C542B1F3C30C6003AC71B /* AddBorderVC.xib in Resources */,
 				B95ED6B91E9474E200AD490B /* CellOrderCtrling.xib in Resources */,
@@ -6052,6 +6117,7 @@
 				B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */,
 				1808227A21E5CA2B006E0778 /* SQLitePersistence.xib in Resources */,
 				B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */,
+				18FBBFCB2202D39000624D77 /* ball.png in Resources */,
 				18CD2B1E220031D20086675B /* WhereAmIVC.xib in Resources */,
 				B98DF7271EA8524B00296C2A /* call.html in Resources */,
 				9D4274A11FF094F500745A81 /* BadgeViewVC.xib in Resources */,
@@ -6059,6 +6125,7 @@
 				B9673FA11E78E22A006AB3DA /* Assets.xcassets in Resources */,
 				B99036771FABF60100CFE633 /* CellLockCtrl.xib in Resources */,
 				B9ACEC3B1F3983F700009B5E /* TextImgVC.xib in Resources */,
+				18FBBFC02202CA8E00624D77 /* homebroken.png in Resources */,
 				B98DF74F1EA85D0800296C2A /* MaoBoLiVC.xib in Resources */,
 				9DA3A8542010417E003641A7 /* JJSJVC.xib in Resources */,
 				B910E24F1EA884F700DFCC86 /* MCSearchVC.xib in Resources */,
@@ -6418,6 +6485,7 @@
 				B906FD4F1E8B668F00645C96 /* MJRefreshStateHeader.m in Sources */,
 				B90978851E95E7F300F5A0B5 /* LeftMenuTableView.m in Sources */,
 				B9436F611EEE6F8B00660C70 /* GCDAsyncSocket.m in Sources */,
+				18FBBFBA2202CA1D00624D77 /* ShakeAndBreakVC.m in Sources */,
 				B9D626F11E7CC4D600593EC1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9D564C131FE7672A000A4DDA /* FMDatabasePool.m in Sources */,
 				B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */,
@@ -6503,6 +6571,7 @@
 				B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */,
 				B915C22D1E7F9DE10088A31F /* MDCalendarCell.m in Sources */,
 				B9A743CD1E95EE1400ABFD86 /* SwitchModeVC.m in Sources */,
+				18FBBFB52202BEDE00624D77 /* MMVC.m in Sources */,
 				18245FCC21E3451500985125 /* PersistenceVC.m in Sources */,
 				B94F90AB1EB31B1A0032FC0E /* HideNavDividingLineVC.m in Sources */,
 				B9EFE9561EDE4A62002C2758 /* JWTAlgorithmNone.m in Sources */,
@@ -6539,6 +6608,7 @@
 				9D564C201FE79147000A4DDA /* DBUser.m in Sources */,
 				B95ED6BA1E9474E200AD490B /* OrderFinishVC.m in Sources */,
 				B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */,
+				18FBBFC82202D35300624D77 /* BallVC.m in Sources */,
 				B915C2321E7F9DE10088A31F /* MDCircularProgressLayer.m in Sources */,
 				B915C2511E7F9DE10088A31F /* UIViewHelper.m in Sources */,
 				B906FC681E8B455500645C96 /* MJAd.m in Sources */,

@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"自动挡";
     _motionManager = [[CMMotionManager alloc] init];
     _queue = [[NSOperationQueue alloc] init];
     
@@ -35,7 +36,7 @@
                 labelText = [NSString stringWithFormat:@"Accelerometer encountered error:%@", error];
             } else {
                 labelText = [NSString stringWithFormat:@"Acceleremoter\n---\n"
-                             "x:%_.2f\ny:%+.2f\nz:%+.2f",
+                             "x:%+.2f\ny:%+.2f\nz:%+.2f",
                              accelerometerData.acceleration.x,
                              accelerometerData.acceleration.y,
                              accelerometerData.acceleration.z];
