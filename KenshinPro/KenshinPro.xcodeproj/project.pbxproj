@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1803E592207DF72C00F7ACA6 /* FiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803E591207DF72C00F7ACA6 /* FiveVC.m */; };
 		1803E596207DFA1C00F7ACA6 /* FYScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803E595207DFA1C00F7ACA6 /* FYScrollViewVC.m */; };
+		18045ABF2203D933008CF942 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18045ABE2203D933008CF942 /* BallView.m */; };
+		18045AC12203D98A008CF942 /* BallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18045AC02203D98A008CF942 /* BallView.xib */; };
 		18053E56212A99B50007A3DC /* DelegateDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18053E54212A99B50007A3DC /* DelegateDemoVC.m */; };
 		18053E5A212A9A060007A3DC /* MyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18053E59212A9A060007A3DC /* MyDelegate.m */; };
 		1805A692211A723E003BE425 /* FXWWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805A691211A723E003BE425 /* FXWWebVC.m */; };
@@ -723,6 +725,9 @@
 		1803E591207DF72C00F7ACA6 /* FiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveVC.m; sourceTree = "<group>"; };
 		1803E594207DFA1C00F7ACA6 /* FYScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYScrollViewVC.h; sourceTree = "<group>"; };
 		1803E595207DFA1C00F7ACA6 /* FYScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYScrollViewVC.m; sourceTree = "<group>"; };
+		18045ABD2203D933008CF942 /* BallView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallView.h; sourceTree = "<group>"; };
+		18045ABE2203D933008CF942 /* BallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
+		18045AC02203D98A008CF942 /* BallView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BallView.xib; sourceTree = "<group>"; };
 		18053E53212A99B50007A3DC /* DelegateDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateDemoVC.h; sourceTree = "<group>"; };
 		18053E54212A99B50007A3DC /* DelegateDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateDemoVC.m; sourceTree = "<group>"; };
 		18053E58212A9A060007A3DC /* MyDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDelegate.h; sourceTree = "<group>"; };
@@ -2740,6 +2745,9 @@
 				18FBBFC62202D35300624D77 /* BallVC.m */,
 				18FBBFC72202D35300624D77 /* BallVC.xib */,
 				18FBBFCA2202D39000624D77 /* ball.png */,
+				18045ABD2203D933008CF942 /* BallView.h */,
+				18045ABE2203D933008CF942 /* BallView.m */,
+				18045AC02203D98A008CF942 /* BallView.xib */,
 			);
 			path = "滚弹珠程序";
 			sourceTree = "<group>";
@@ -6141,6 +6149,7 @@
 				B94EDCEB1F282EC1004C5D2D /* DefineVC.xib in Resources */,
 				181AFEE720747D210071DC86 /* BundleVC.xib in Resources */,
 				9D6FD2AE1FE75C430032CA36 /* FMDBVC.xib in Resources */,
+				18045AC12203D98A008CF942 /* BallView.xib in Resources */,
 				1817EAAC207E1A10009DD645 /* CellJJSJMenu.xib in Resources */,
 				B906B3D71EE94B7C0073E175 /* CellFXWTableMenu.xib in Resources */,
 				18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */,
@@ -6661,6 +6670,7 @@
 				18FBD18A21F1A9080072C182 /* AppStateVC.m in Sources */,
 				B910E2671EA8888C00DFCC86 /* VScanErWeiMaTwoVC.m in Sources */,
 				B9EB829B1F3A9438000574F7 /* NSString+FXW.m in Sources */,
+				18045ABF2203D933008CF942 /* BallView.m in Sources */,
 				9D4274A01FF094F500745A81 /* BadgeViewVC.m in Sources */,
 				B906FD461E8B668F00645C96 /* MJRefreshHeader.m in Sources */,
 				1808227921E5CA2B006E0778 /* SQLitePersistence.m in Sources */,
