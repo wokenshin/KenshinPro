@@ -32,6 +32,8 @@
 		180900BF209A945400DBCF1D /* JJModelFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 180900BE209A945400DBCF1D /* JJModelFriend.m */; };
 		180900C6209A9B5900DBCF1D /* JJCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180900C5209A9B5900DBCF1D /* JJCircleView.m */; };
 		180B6D0E2047998900B4CACB /* JJSJIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180B6D0D2047998900B4CACB /* JJSJIM.framework */; };
+		180F399F2205440500F47A5A /* CameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180F399D2205440500F47A5A /* CameraVC.m */; };
+		180F39A02205440500F47A5A /* CameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180F399E2205440500F47A5A /* CameraVC.xib */; };
 		18118BC32074B28A00127921 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 18118BC22074B28A00127921 /* test.png */; };
 		18135680209AAF69000D1F42 /* PureCodeViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1813567F209AAF69000D1F42 /* PureCodeViewVC.m */; };
 		18135684209AAFCB000D1F42 /* FriendSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18135683209AAFCB000D1F42 /* FriendSectionView.m */; };
@@ -71,6 +73,10 @@
 		181E36E2207DAD42005675C1 /* UIImage+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E36E1207DAD42005675C1 /* UIImage+FXW.m */; };
 		181E506D21F018BD00DFE235 /* SlowWorkerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E506B21F018BD00DFE235 /* SlowWorkerVC.m */; };
 		181E506E21F018BD00DFE235 /* SlowWorkerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */; };
+		1820DA0D220687C900B75EA2 /* LocalizedMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1820DA0B220687C900B75EA2 /* LocalizedMeVC.m */; };
+		1820DA0E220687C900B75EA2 /* LocalizedMeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1820DA0C220687C900B75EA2 /* LocalizedMeVC.xib */; };
+		1820DA112206883400B75EA2 /* flag_france.png in Resources */ = {isa = PBXBuildFile; fileRef = 1820DA0F2206883300B75EA2 /* flag_france.png */; };
+		1820DA122206883400B75EA2 /* flag_usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1820DA102206883400B75EA2 /* flag_usa.png */; };
 		1821F01A21F9A00600DCB02F /* SwipesTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821F01821F9A00600DCB02F /* SwipesTwoVC.m */; };
 		1821F01B21F9A00600DCB02F /* SwipesTwoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1821F01921F9A00600DCB02F /* SwipesTwoVC.xib */; };
 		1821F02021F9AD3900DCB02F /* TapTapsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1821F01E21F9AD3900DCB02F /* TapTapsVC.m */; };
@@ -766,6 +772,9 @@
 		180900C4209A9B5900DBCF1D /* JJCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJCircleView.h; sourceTree = "<group>"; };
 		180900C5209A9B5900DBCF1D /* JJCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJCircleView.m; sourceTree = "<group>"; };
 		180B6D0D2047998900B4CACB /* JJSJIM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JJSJIM.framework; sourceTree = "<group>"; };
+		180F399C2205440500F47A5A /* CameraVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraVC.h; sourceTree = "<group>"; };
+		180F399D2205440500F47A5A /* CameraVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraVC.m; sourceTree = "<group>"; };
+		180F399E2205440500F47A5A /* CameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraVC.xib; sourceTree = "<group>"; };
 		18118BC22074B28A00127921 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		1813567E209AAF69000D1F42 /* PureCodeViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PureCodeViewVC.h; sourceTree = "<group>"; };
 		1813567F209AAF69000D1F42 /* PureCodeViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PureCodeViewVC.m; sourceTree = "<group>"; };
@@ -831,6 +840,12 @@
 		181E506A21F018BD00DFE235 /* SlowWorkerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlowWorkerVC.h; sourceTree = "<group>"; };
 		181E506B21F018BD00DFE235 /* SlowWorkerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlowWorkerVC.m; sourceTree = "<group>"; };
 		181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlowWorkerVC.xib; sourceTree = "<group>"; };
+		1820DA0A220687C900B75EA2 /* LocalizedMeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizedMeVC.h; sourceTree = "<group>"; };
+		1820DA0B220687C900B75EA2 /* LocalizedMeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizedMeVC.m; sourceTree = "<group>"; };
+		1820DA0C220687C900B75EA2 /* LocalizedMeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalizedMeVC.xib; sourceTree = "<group>"; };
+		1820DA0F2206883300B75EA2 /* flag_france.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag_france.png; sourceTree = "<group>"; };
+		1820DA102206883400B75EA2 /* flag_usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag_usa.png; sourceTree = "<group>"; };
+		1820DA132206939500B75EA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1821F01721F9A00600DCB02F /* SwipesTwoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipesTwoVC.h; sourceTree = "<group>"; };
 		1821F01821F9A00600DCB02F /* SwipesTwoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipesTwoVC.m; sourceTree = "<group>"; };
 		1821F01921F9A00600DCB02F /* SwipesTwoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipesTwoVC.xib; sourceTree = "<group>"; };
@@ -2129,6 +2144,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		180F399B22053E8800F47A5A /* 摄像头和照片库 */ = {
+			isa = PBXGroup;
+			children = (
+				180F399C2205440500F47A5A /* CameraVC.h */,
+				180F399D2205440500F47A5A /* CameraVC.m */,
+				180F399E2205440500F47A5A /* CameraVC.xib */,
+			);
+			path = "摄像头和照片库";
+			sourceTree = "<group>";
+		};
 		1813567D209AAF34000D1F42 /* 纯代码View */ = {
 			isa = PBXGroup;
 			children = (
@@ -2304,6 +2329,18 @@
 				181E506C21F018BD00DFE235 /* SlowWorkerVC.xib */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		1820DA09220687A800B75EA2 /* 本地化 */ = {
+			isa = PBXGroup;
+			children = (
+				1820DA0F2206883300B75EA2 /* flag_france.png */,
+				1820DA102206883400B75EA2 /* flag_usa.png */,
+				1820DA0A220687C900B75EA2 /* LocalizedMeVC.h */,
+				1820DA0B220687C900B75EA2 /* LocalizedMeVC.m */,
+				1820DA0C220687C900B75EA2 /* LocalizedMeVC.xib */,
+			);
+			path = "本地化";
 			sourceTree = "<group>";
 		};
 		1821F01621F99FF100DCB02F /* Swipes2 */ = {
@@ -2523,6 +2560,8 @@
 		18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */ = {
 			isa = PBXGroup;
 			children = (
+				1820DA09220687A800B75EA2 /* 本地化 */,
+				180F399B22053E8800F47A5A /* 摄像头和照片库 */,
 				1891E6B82201DCA000E3C972 /* 陀螺仪和加速计 */,
 				1816C73221FEAE2300880118 /* CoreLocation和KitMap */,
 				18D5961D21F84784003E089D /* 手势 */,
@@ -6026,6 +6065,7 @@
 				B98A10891FBD22A800556A00 /* CJJMVC.xib in Resources */,
 				B9E53C081F302ED600971C6B /* area.json in Resources */,
 				B95ED6B11E9474E200AD490B /* OrderDetailVC.xib in Resources */,
+				1820DA122206883400B75EA2 /* flag_usa.png in Resources */,
 				B99036791FABF60100CFE633 /* LockCtrlHeaderView.xib in Resources */,
 				B9B3D4651F7A279E00A30555 /* SmartDeviceContentVC.xib in Resources */,
 				9DA74571204153E3006FEA5E /* PureLayoutVC.xib in Resources */,
@@ -6078,8 +6118,10 @@
 				B906FD501E8B668F00645C96 /* MJRefresh.bundle in Resources */,
 				B9BADB361EA5B6A1000B3C1C /* MainVC.xib in Resources */,
 				18FBBFC92202D35300624D77 /* BallVC.xib in Resources */,
+				180F39A02205440500F47A5A /* CameraVC.xib in Resources */,
 				18EA72DC21D5FBDF00BE39F4 /* CustomTCellVC.xib in Resources */,
 				189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */,
+				1820DA112206883400B75EA2 /* flag_france.png in Resources */,
 				B906FC581E8B3C6500645C96 /* DicAndModelVC.xib in Resources */,
 				B910E23D1EA880D700DFCC86 /* GifContentVC.xib in Resources */,
 				186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */,
@@ -6123,6 +6165,7 @@
 				1821F01B21F9A00600DCB02F /* SwipesTwoVC.xib in Resources */,
 				9D564C1D1FE790DB000A4DDA /* UserInfoVC.xib in Resources */,
 				B99C842E1F9992EF00952F3D /* FXW_DebugView.xib in Resources */,
+				1820DA0E220687C900B75EA2 /* LocalizedMeVC.xib in Resources */,
 				1808227A21E5CA2B006E0778 /* SQLitePersistence.xib in Resources */,
 				B96C9A9F1EF23BB400D35B9A /* BigSmallVC.xib in Resources */,
 				18FBBFCB2202D39000624D77 /* ball.png in Resources */,
@@ -6567,7 +6610,9 @@
 				B99036781FABF60100CFE633 /* LockCtrlHeaderView.m in Sources */,
 				18A008FE21D5B3F700C48342 /* SimpleTableVC.m in Sources */,
 				B95ED6DF1E94EA6900AD490B /* BaiDuBottomMenu.m in Sources */,
+				180F399F2205440500F47A5A /* CameraVC.m in Sources */,
 				18F9B77021D0CE0F005D40E0 /* SwitchViewVC.m in Sources */,
+				1820DA0D220687C900B75EA2 /* LocalizedMeVC.m in Sources */,
 				B910E2631EA8888C00DFCC86 /* ScanErWeiMaOneVC.m in Sources */,
 				B93084351F3D5E1F0035DA42 /* RespondCodesVC.m in Sources */,
 				B9B9CEC41E9CB986008CC558 /* SDWebImageCompat.m in Sources */,
@@ -6802,6 +6847,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B9673FA31E78E22A006AB3DA /* Base */,
+				1820DA132206939500B75EA2 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -6874,6 +6920,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -6921,6 +6968,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

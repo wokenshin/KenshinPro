@@ -36,7 +36,8 @@
 #import "MMVC.h"
 #import "ShakeAndBreakVC.h"
 #import "BallVC.h"
-
+#import "CameraVC.h"
+#import "LocalizedMeVC.h"
 
 @interface JTiOSDevVC ()
 
@@ -92,6 +93,8 @@
     [self addDataWithTitle:@"陀螺仪和加速计2" andDetail:@"2019-1-31 主动获取"];
     [self addDataWithTitle:@"死劲儿摇晃手机" andDetail:@"2019-1-31"];
     [self addDataWithTitle:@"滚弹珠程序" andDetail:@"2019-1-31"];
+    [self addDataWithTitle:@"摄像头和照片库" andDetail:@"2019-2-2"];
+    [self addDataWithTitle:@"本地化" andDetail:@"2019-2-3"];
     
     
     //倒叙[这样就是时间升序啦]
@@ -102,6 +105,18 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"本地化"]) {
+        LocalizedMeVC *vc = [[LocalizedMeVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"摄像头和照片库"]) {
+        CameraVC *vc = [[CameraVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"滚弹珠程序"]) {
         BallVC *vc = [[BallVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
