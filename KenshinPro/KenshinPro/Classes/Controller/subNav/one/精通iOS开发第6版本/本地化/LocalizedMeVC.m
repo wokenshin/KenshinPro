@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"未完成";
     NSLocale *locale = [NSLocale currentLocale];
     NSString *currentLangID = [[NSLocale preferredLanguages] objectAtIndex:0];
     NSString *displayLang   = [locale displayNameForKey:NSLocaleLanguageCode value:currentLangID];

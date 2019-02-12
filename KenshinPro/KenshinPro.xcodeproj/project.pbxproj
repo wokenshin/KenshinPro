@@ -94,10 +94,12 @@
 		183896A9207EE74F0008A3B2 /* FYMenu2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A8207EE74F0008A3B2 /* FYMenu2VC.m */; };
 		183896AD207EEAB10008A3B2 /* FXWMenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896AC207EEAB10008A3B2 /* FXWMenuScrollView.m */; };
 		183896B1207EEE720008A3B2 /* JJSJHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896B0207EEE720008A3B2 /* JJSJHomeVC.m */; };
+		184658622212C32B00B9ADB9 /* PasswordInpudWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */; };
 		18629C1621D2051F00B14394 /* MainTabPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18629C1521D2051F00B14394 /* MainTabPickerVC.m */; };
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
 		188D746721DCBEE8008CF254 /* FontsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D746521DCBEE8008CF254 /* FontsVC.m */; };
+		1890BECC2211080A0055C436 /* IOSKFJJVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890BECB2211080A0055C436 /* IOSKFJJVC.m */; };
 		1891E6BC2201DCF700E3C972 /* MotionMonitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */; };
 		1891E6BD2201DCF700E3C972 /* MotionMonitorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
@@ -875,6 +877,8 @@
 		183896AC207EEAB10008A3B2 /* FXWMenuScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FXWMenuScrollView.m; sourceTree = "<group>"; };
 		183896AF207EEE720008A3B2 /* JJSJHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJSJHomeVC.h; sourceTree = "<group>"; };
 		183896B0207EEE720008A3B2 /* JJSJHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSJHomeVC.m; sourceTree = "<group>"; };
+		184658602212C32B00B9ADB9 /* PasswordInpudWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordInpudWindow.h; sourceTree = "<group>"; };
+		184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordInpudWindow.m; sourceTree = "<group>"; };
 		18629C1421D2051F00B14394 /* MainTabPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabPickerVC.h; sourceTree = "<group>"; };
 		18629C1521D2051F00B14394 /* MainTabPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabPickerVC.m; sourceTree = "<group>"; };
 		186D059C212D0F3100BED61B /* SQCopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQCopyVC.h; sourceTree = "<group>"; };
@@ -882,6 +886,8 @@
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
 		188D746421DCBEE8008CF254 /* FontsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontsVC.h; sourceTree = "<group>"; };
 		188D746521DCBEE8008CF254 /* FontsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsVC.m; sourceTree = "<group>"; };
+		1890BECA2211080A0055C436 /* IOSKFJJVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSKFJJVC.h; sourceTree = "<group>"; };
+		1890BECB2211080A0055C436 /* IOSKFJJVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSKFJJVC.m; sourceTree = "<group>"; };
 		1891E6B92201DCF700E3C972 /* MotionMonitorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionMonitorVC.h; sourceTree = "<group>"; };
 		1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionMonitorVC.m; sourceTree = "<group>"; };
 		1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotionMonitorVC.xib; sourceTree = "<group>"; };
@@ -2468,6 +2474,17 @@
 			path = "导航控制器";
 			sourceTree = "<group>";
 		};
+		1890BEC9221107A20055C436 /* iOS开发进阶 */ = {
+			isa = PBXGroup;
+			children = (
+				1890BECA2211080A0055C436 /* IOSKFJJVC.h */,
+				1890BECB2211080A0055C436 /* IOSKFJJVC.m */,
+				184658602212C32B00B9ADB9 /* PasswordInpudWindow.h */,
+				184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */,
+			);
+			path = "iOS开发进阶";
+			sourceTree = "<group>";
+		};
 		1891E6B82201DCA000E3C972 /* 陀螺仪和加速计 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3880,6 +3897,7 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				1890BEC9221107A20055C436 /* iOS开发进阶 */,
 				18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */,
 				18FCF08521AFBEAA009045C2 /* ARC */,
 				186D059B212D0F1300BED61B /* 深浅拷贝 */,
@@ -6324,6 +6342,7 @@
 				B96BF32D1E9B0E10008ADB3D /* KenshinAppVC.m in Sources */,
 				B92CCAFC1E7A159300035A79 /* FourVC.m in Sources */,
 				B94DA31A1E8CB82B0072BECE /* MJStudent.m in Sources */,
+				1890BECC2211080A0055C436 /* IOSKFJJVC.m in Sources */,
 				18F9EABF21D1DE3D005DE74F /* CustomPickerVC.m in Sources */,
 				B92CCB0A1E7A192100035A79 /* DateUtil.m in Sources */,
 				B915C2471E7F9DE10088A31F /* MDTextField.m in Sources */,
@@ -6740,6 +6759,7 @@
 				18EA72DB21D5FBDF00BE39F4 /* CustomTCellVC.m in Sources */,
 				9D4274AD1FF0972C00745A81 /* PPBadgeLabel.m in Sources */,
 				B94CD49C1E9C65A5003A889E /* VCView.m in Sources */,
+				184658622212C32B00B9ADB9 /* PasswordInpudWindow.m in Sources */,
 				9D5FD640203162560071827F /* ModelJJSJ.m in Sources */,
 				B96477131EB02DEB00A9A498 /* STUI.m in Sources */,
 				B9E53C0B1F302EFB00971C6B /* addressModel.m in Sources */,
