@@ -87,6 +87,11 @@
 		18268E8C21DDB4BB008281B4 /* FontSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8B21DDB4BB008281B4 /* FontSizeVC.m */; };
 		18268E9021DDBD6B008281B4 /* FontInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18268E8E21DDBD6B008281B4 /* FontInfoVC.m */; };
 		18268E9121DDBD6B008281B4 /* FontInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18268E8F21DDBD6B008281B4 /* FontInfoVC.xib */; };
+		1829F893221A4374001FE40C /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829F892221A4374001FE40C /* ClassA.m */; };
+		1829F896221A437D001FE40C /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829F895221A437D001FE40C /* ClassB.m */; };
+		1829F89A221A45C5001FE40C /* ClassOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829F899221A45C5001FE40C /* ClassOne.m */; };
+		1829F89D221A45CD001FE40C /* ClassTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829F89C221A45CD001FE40C /* ClassTwo.m */; };
+		182DF6102216A7A9008FA8E4 /* GXOCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182DF60F2216A7A9008FA8E4 /* GXOCVC.m */; };
 		18306B3121DCFBB500F42E05 /* FavoritesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18306B3021DCFBB500F42E05 /* FavoritesList.m */; };
 		183896A1207EE6690008A3B2 /* ModelYY.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A0207EE6690008A3B2 /* ModelYY.m */; };
 		183896A5207EE67F0008A3B2 /* CellJJSJYY.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896A3207EE67F0008A3B2 /* CellJJSJYY.m */; };
@@ -103,6 +108,10 @@
 		1891E6BC2201DCF700E3C972 /* MotionMonitorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */; };
 		1891E6BD2201DCF700E3C972 /* MotionMonitorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */; };
 		18934C79211BC75C007BD44F /* userHelp.html in Resources */ = {isa = PBXBuildFile; fileRef = 18934C78211BC75C007BD44F /* userHelp.html */; };
+		1893BC5A2213FEBA005F3821 /* CoreTextVCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BC582213FEBA005F3821 /* CoreTextVCV.m */; };
+		1893BC5B2213FEBA005F3821 /* CoreTextVCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC592213FEBA005F3821 /* CoreTextVCV.xib */; };
+		1893BC5E2213FED8005F3821 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1893BC5D2213FED8005F3821 /* CTDisplayView.m */; };
+		1893BC602214009A005F3821 /* CTDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1893BC5F2214009A005F3821 /* CTDisplayView.xib */; };
 		1894709F21C8CE88006010D9 /* XibBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894709D21C8CE88006010D9 /* XibBaseVC.m */; };
 		189470A021C8CE88006010D9 /* XibBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1894709E21C8CE88006010D9 /* XibBaseVC.xib */; };
 		189A734B20A92837003D3439 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A734A20A92837003D3439 /* Bugly.framework */; };
@@ -864,6 +873,16 @@
 		18268E8D21DDBD6B008281B4 /* FontInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontInfoVC.h; sourceTree = "<group>"; };
 		18268E8E21DDBD6B008281B4 /* FontInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontInfoVC.m; sourceTree = "<group>"; };
 		18268E8F21DDBD6B008281B4 /* FontInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontInfoVC.xib; sourceTree = "<group>"; };
+		1829F891221A4374001FE40C /* ClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		1829F892221A4374001FE40C /* ClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		1829F894221A437D001FE40C /* ClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		1829F895221A437D001FE40C /* ClassB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		1829F898221A45C5001FE40C /* ClassOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassOne.h; sourceTree = "<group>"; };
+		1829F899221A45C5001FE40C /* ClassOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassOne.m; sourceTree = "<group>"; };
+		1829F89B221A45CD001FE40C /* ClassTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassTwo.h; sourceTree = "<group>"; };
+		1829F89C221A45CD001FE40C /* ClassTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassTwo.m; sourceTree = "<group>"; };
+		182DF60E2216A7A9008FA8E4 /* GXOCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXOCVC.h; sourceTree = "<group>"; };
+		182DF60F2216A7A9008FA8E4 /* GXOCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXOCVC.m; sourceTree = "<group>"; };
 		18306B2F21DCFBB500F42E05 /* FavoritesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesList.h; sourceTree = "<group>"; };
 		18306B3021DCFBB500F42E05 /* FavoritesList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesList.m; sourceTree = "<group>"; };
 		1838969F207EE6690008A3B2 /* ModelYY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelYY.h; sourceTree = "<group>"; };
@@ -892,6 +911,12 @@
 		1891E6BA2201DCF700E3C972 /* MotionMonitorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotionMonitorVC.m; sourceTree = "<group>"; };
 		1891E6BB2201DCF700E3C972 /* MotionMonitorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MotionMonitorVC.xib; sourceTree = "<group>"; };
 		18934C78211BC75C007BD44F /* userHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = userHelp.html; sourceTree = "<group>"; };
+		1893BC572213FEBA005F3821 /* CoreTextVCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextVCV.h; sourceTree = "<group>"; };
+		1893BC582213FEBA005F3821 /* CoreTextVCV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextVCV.m; sourceTree = "<group>"; };
+		1893BC592213FEBA005F3821 /* CoreTextVCV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreTextVCV.xib; sourceTree = "<group>"; };
+		1893BC5C2213FED8005F3821 /* CTDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		1893BC5D2213FED8005F3821 /* CTDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		1893BC5F2214009A005F3821 /* CTDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTDisplayView.xib; sourceTree = "<group>"; };
 		1894709C21C8CE88006010D9 /* XibBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibBaseVC.h; sourceTree = "<group>"; };
 		1894709D21C8CE88006010D9 /* XibBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibBaseVC.m; sourceTree = "<group>"; };
 		1894709E21C8CE88006010D9 /* XibBaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibBaseVC.xib; sourceTree = "<group>"; };
@@ -2393,6 +2418,39 @@
 			path = sub;
 			sourceTree = "<group>";
 		};
+		1829F890221A4355001FE40C /* 类之间的循环引用 */ = {
+			isa = PBXGroup;
+			children = (
+				1829F891221A4374001FE40C /* ClassA.h */,
+				1829F892221A4374001FE40C /* ClassA.m */,
+				1829F894221A437D001FE40C /* ClassB.h */,
+				1829F895221A437D001FE40C /* ClassB.m */,
+			);
+			path = "类之间的循环引用";
+			sourceTree = "<group>";
+		};
+		1829F897221A45AB001FE40C /* 向前声明解决类之间的循环引用 */ = {
+			isa = PBXGroup;
+			children = (
+				1829F898221A45C5001FE40C /* ClassOne.h */,
+				1829F899221A45C5001FE40C /* ClassOne.m */,
+				1829F89B221A45CD001FE40C /* ClassTwo.h */,
+				1829F89C221A45CD001FE40C /* ClassTwo.m */,
+			);
+			path = "向前声明解决类之间的循环引用";
+			sourceTree = "<group>";
+		};
+		182DF60D2216A753008FA8E4 /* Effective Objective-C 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1829F890221A4355001FE40C /* 类之间的循环引用 */,
+				1829F897221A45AB001FE40C /* 向前声明解决类之间的循环引用 */,
+				182DF60E2216A7A9008FA8E4 /* GXOCVC.h */,
+				182DF60F2216A7A9008FA8E4 /* GXOCVC.m */,
+			);
+			path = "Effective Objective-C 2.0";
+			sourceTree = "<group>";
+		};
 		18389699207EE5EF0008A3B2 /* 菜单-水平方向 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2477,10 +2535,10 @@
 		1890BEC9221107A20055C436 /* iOS开发进阶 */ = {
 			isa = PBXGroup;
 			children = (
+				1893BC552213FE8C005F3821 /* UIWindow */,
+				1893BC562213FE9D005F3821 /* CoreText */,
 				1890BECA2211080A0055C436 /* IOSKFJJVC.h */,
 				1890BECB2211080A0055C436 /* IOSKFJJVC.m */,
-				184658602212C32B00B9ADB9 /* PasswordInpudWindow.h */,
-				184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */,
 			);
 			path = "iOS开发进阶";
 			sourceTree = "<group>";
@@ -2493,6 +2551,28 @@
 				18FBBFC42202D26800624D77 /* 滚弹珠程序 */,
 			);
 			path = "陀螺仪和加速计";
+			sourceTree = "<group>";
+		};
+		1893BC552213FE8C005F3821 /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+				184658602212C32B00B9ADB9 /* PasswordInpudWindow.h */,
+				184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */,
+			);
+			path = UIWindow;
+			sourceTree = "<group>";
+		};
+		1893BC562213FE9D005F3821 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				1893BC572213FEBA005F3821 /* CoreTextVCV.h */,
+				1893BC582213FEBA005F3821 /* CoreTextVCV.m */,
+				1893BC592213FEBA005F3821 /* CoreTextVCV.xib */,
+				1893BC5C2213FED8005F3821 /* CTDisplayView.h */,
+				1893BC5D2213FED8005F3821 /* CTDisplayView.m */,
+				1893BC5F2214009A005F3821 /* CTDisplayView.xib */,
+			);
+			path = CoreText;
 			sourceTree = "<group>";
 		};
 		1894709B21C8CE61006010D9 /* xib基础 */ = {
@@ -3897,6 +3977,7 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				182DF60D2216A753008FA8E4 /* Effective Objective-C 2.0 */,
 				1890BEC9221107A20055C436 /* iOS开发进阶 */,
 				18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */,
 				18FCF08521AFBEAA009045C2 /* ARC */,
@@ -5985,7 +6066,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Kenshin;
 				TargetAttributes = {
 					181AFEF7207480A30071DC86 = {
@@ -6057,6 +6138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FBBFB62202BEDE00624D77 /* MMVC.xib in Resources */,
+				1893BC602214009A005F3821 /* CTDisplayView.xib in Resources */,
 				B95ED6CC1E947FCF00AD490B /* BLEVC.xib in Resources */,
 				B9D8568D1E84B91C0053697F /* AlertVC2.xib in Resources */,
 				B91748D71ECC3FDD006C70F5 /* CountDownVC.xib in Resources */,
@@ -6213,6 +6295,7 @@
 				18045AC12203D98A008CF942 /* BallView.xib in Resources */,
 				1817EAAC207E1A10009DD645 /* CellJJSJMenu.xib in Resources */,
 				B906B3D71EE94B7C0073E175 /* CellFXWTableMenu.xib in Resources */,
+				1893BC5B2213FEBA005F3821 /* CoreTextVCV.xib in Resources */,
 				18B397F62137F36D00BDDE31 /* MethodSwizzingDemoVC.xib in Resources */,
 				B98F39701EE4EFB60064468E /* RegexVC.xib in Resources */,
 				9D7C409B200F419100017937 /* JJSJRecodeVoiceVC.xib in Resources */,
@@ -6377,6 +6460,7 @@
 				B9EFE9601EDE4A63002C2758 /* JWTClaimsSetVerifier.m in Sources */,
 				B906FD521E8B668F00645C96 /* NSBundle+MJRefresh.m in Sources */,
 				181E506D21F018BD00DFE235 /* SlowWorkerVC.m in Sources */,
+				1829F89A221A45C5001FE40C /* ClassOne.m in Sources */,
 				9DA74570204153E3006FEA5E /* PureLayoutVC.m in Sources */,
 				B98DF73C1EA8530C00296C2A /* OCCallJSTwoVC.m in Sources */,
 				B98DF72F1EA852AC00296C2A /* JSCallOCVC.m in Sources */,
@@ -6423,12 +6507,14 @@
 				B9B904A51F7E31000072ABEA /* FXW_GuidePage.m in Sources */,
 				B92641EF1E8399C900EEED61 /* PopSelect.m in Sources */,
 				B95AC88B1EADC94800806D1A /* BaseRichTextView.m in Sources */,
+				182DF6102216A7A9008FA8E4 /* GXOCVC.m in Sources */,
 				B9EFE9611EDE4A63002C2758 /* JWT.m in Sources */,
 				B9D856951E84EEFA0053697F /* ViewControllerOne.m in Sources */,
 				B9BADB431EA5BB99000B3C1C /* VCN3.m in Sources */,
 				B95ED6C61E9474E200AD490B /* ControlMenuVC.m in Sources */,
 				B98DF74E1EA85D0800296C2A /* MaoBoLiVC.m in Sources */,
 				B96528821EA598600044CA5F /* ImageUtil.m in Sources */,
+				1829F893221A4374001FE40C /* ClassA.m in Sources */,
 				1815B1B621F6B406003F9DF4 /* QuartzFunView.m in Sources */,
 				18064E8320A04CD6001AB33F /* NSDate+FXW.m in Sources */,
 				B9F3F8F11FB451D800D98D37 /* CusModel.m in Sources */,
@@ -6557,6 +6643,7 @@
 				B90978851E95E7F300F5A0B5 /* LeftMenuTableView.m in Sources */,
 				B9436F611EEE6F8B00660C70 /* GCDAsyncSocket.m in Sources */,
 				18FBBFBA2202CA1D00624D77 /* ShakeAndBreakVC.m in Sources */,
+				1829F896221A437D001FE40C /* ClassB.m in Sources */,
 				B9D626F11E7CC4D600593EC1 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				9D564C131FE7672A000A4DDA /* FMDatabasePool.m in Sources */,
 				B98568101EE7A11400FF9668 /* DesignModeVC.m in Sources */,
@@ -6596,6 +6683,7 @@
 				B906FC4A1E8B3BC000645C96 /* MJFoundation.m in Sources */,
 				9D4274AC1FF0972C00745A81 /* UITabBarItem+PPBadgeView.m in Sources */,
 				B915C2331E7F9DE10088A31F /* MDCollectionViewCell.m in Sources */,
+				1893BC5E2213FED8005F3821 /* CTDisplayView.m in Sources */,
 				B9E53C101F302F4D00971C6B /* AddressPickerVC.m in Sources */,
 				B94CD4A21E9C792A003A889E /* PureTableViewVC.m in Sources */,
 				B915C2391E7F9DE10088A31F /* MDProgress.m in Sources */,
@@ -6648,6 +6736,7 @@
 				18245FCC21E3451500985125 /* PersistenceVC.m in Sources */,
 				B94F90AB1EB31B1A0032FC0E /* HideNavDividingLineVC.m in Sources */,
 				B9EFE9561EDE4A62002C2758 /* JWTAlgorithmNone.m in Sources */,
+				1893BC5A2213FEBA005F3821 /* CoreTextVCV.m in Sources */,
 				B9C9634A1E9F141A00A9C0CF /* Test.swift in Sources */,
 				B915C2291E7F9DE10088A31F /* MaterialControls.m in Sources */,
 				B906FC501E8B3BC000645C96 /* NSObject+MJKeyValue.m in Sources */,
@@ -6743,6 +6832,7 @@
 				B9E53C151F304CAB00971C6B /* FXW_TextAddress.m in Sources */,
 				18C5375B207E55B800959AF8 /* FXWMenuGridView.m in Sources */,
 				B9B7C51F1F16FE810063BDAF /* NSDataUtilsVC.m in Sources */,
+				1829F89D221A45CD001FE40C /* ClassTwo.m in Sources */,
 				B92CCB161E7A27B900035A79 /* GetContactsVC.m in Sources */,
 				B92CCB3C1E7A88B900035A79 /* RegexUtil.m in Sources */,
 				B9BADB3E1EA5BB82000B3C1C /* VCN2.m in Sources */,
@@ -6946,15 +7036,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -6994,15 +7092,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -7022,6 +7128,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

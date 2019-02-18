@@ -46,7 +46,7 @@
 #import "ARCVC.h"
 #import "JTiOSDevVC.h"
 #import "IOSKFJJVC.h"
-
+#import "GXOCVC.h"
 
 
 @interface OneVC ()
@@ -70,6 +70,8 @@
 #pragma mark 加载数据
 - (void)loadData
 {
+    
+    [self addDataWithTitle:@"《Effective Objective-C 2.0》" andDetail:@"2019-2-15"];
     [self addDataWithTitle:@"《iOS开发进阶》" andDetail:@"2019-2-11"];
     [self addDataWithTitle:@"《精通iOS开发第6版本》" andDetail:@"2018-12-18"];
     [self addDataWithTitle:@"Block-1" andDetail:@"2018-12-11"];
@@ -144,6 +146,12 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"《Effective Objective-C 2.0》"]) {
+        GXOCVC *vc = [[GXOCVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"《iOS开发进阶》"]) {
         IOSKFJJVC *vc = [[IOSKFJJVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
