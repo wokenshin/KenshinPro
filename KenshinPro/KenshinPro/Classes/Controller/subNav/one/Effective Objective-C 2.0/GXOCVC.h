@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GXOCVC : BaseTableVC
 
+
+
 @end
 
 NS_ASSUME_NONNULL_END

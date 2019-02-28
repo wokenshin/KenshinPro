@@ -101,6 +101,7 @@
 		183896B1207EEE720008A3B2 /* JJSJHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 183896B0207EEE720008A3B2 /* JJSJHomeVC.m */; };
 		184658622212C32B00B9ADB9 /* PasswordInpudWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */; };
 		18629C1621D2051F00B14394 /* MainTabPickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18629C1521D2051F00B14394 /* MainTabPickerVC.m */; };
+		186C47062227B96500BB243A /* NSTimer+FXW.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C47052227B96500BB243A /* NSTimer+FXW.m */; };
 		186D059F212D0F3100BED61B /* SQCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D059D212D0F3100BED61B /* SQCopyVC.m */; };
 		186D05A0212D0F3100BED61B /* SQCopyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D059E212D0F3100BED61B /* SQCopyVC.xib */; };
 		188D746721DCBEE8008CF254 /* FontsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D746521DCBEE8008CF254 /* FontsVC.m */; };
@@ -900,6 +901,8 @@
 		184658612212C32B00B9ADB9 /* PasswordInpudWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasswordInpudWindow.m; sourceTree = "<group>"; };
 		18629C1421D2051F00B14394 /* MainTabPickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabPickerVC.h; sourceTree = "<group>"; };
 		18629C1521D2051F00B14394 /* MainTabPickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabPickerVC.m; sourceTree = "<group>"; };
+		186C47042227B96500BB243A /* NSTimer+FXW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FXW.h"; sourceTree = "<group>"; };
+		186C47052227B96500BB243A /* NSTimer+FXW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FXW.m"; sourceTree = "<group>"; };
 		186D059C212D0F3100BED61B /* SQCopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQCopyVC.h; sourceTree = "<group>"; };
 		186D059D212D0F3100BED61B /* SQCopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQCopyVC.m; sourceTree = "<group>"; };
 		186D059E212D0F3100BED61B /* SQCopyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SQCopyVC.xib; sourceTree = "<group>"; };
@@ -5792,6 +5795,8 @@
 				B94C541E1F3BF1DF003AC71B /* UIImage+ImageEffects.m */,
 				181E36E0207DAD42005675C1 /* UIImage+FXW.h */,
 				181E36E1207DAD42005675C1 /* UIImage+FXW.m */,
+				186C47042227B96500BB243A /* NSTimer+FXW.h */,
+				186C47052227B96500BB243A /* NSTimer+FXW.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -6769,6 +6774,7 @@
 				B910E24E1EA884F700DFCC86 /* MCSearchVC.m in Sources */,
 				9D564C201FE79147000A4DDA /* DBUser.m in Sources */,
 				B95ED6BA1E9474E200AD490B /* OrderFinishVC.m in Sources */,
+				186C47062227B96500BB243A /* NSTimer+FXW.m in Sources */,
 				B9EFE9621EDE4A63002C2758 /* JWTTools.m in Sources */,
 				18FBBFC82202D35300624D77 /* BallVC.m in Sources */,
 				B915C2321E7F9DE10088A31F /* MDCircularProgressLayer.m in Sources */,

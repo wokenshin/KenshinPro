@@ -8,6 +8,7 @@
 
 #import "GXOCVC.h"
 #import "NSString+FXW.h"
+#import "NSTimer+FXW.h"
 
 typedef NS_ENUM(NSUInteger, TestHaHa) {
     TestHaHa_A = 0,
@@ -23,6 +24,8 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
 @property (nonatomic, strong) NSString  *firstName;
 @property (nonatomic, strong) NSString  *pro;
 
+@property (nonatomic, strong) NSString  *blockPro;
+@property (nonatomic, strong) NSTimer   *timer;
 @end
 
 @implementation GXOCVC
@@ -34,8 +37,10 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
     return @"yo ho ho ho ho ho ho 我是控制器 GXOCVC";
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self loadData];
     [self initJTiOSDevVCUI];
     
@@ -65,6 +70,7 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
     NSLog(@"深拷贝%p", arrMCopy);
     NSLog(@"浅拷贝%p", [arrMCopy copy]);
     
+    
 }
 
 - (void) initJTiOSDevVCUI{
@@ -81,10 +87,20 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
     [self addDataWithTitle:@"异或运算" andDetail:@"2019-2-19"];
     [self addDataWithTitle:@"方法调配 method swizzling" andDetail:@"2019-2-20"];
     [self addDataWithTitle:@"分类 便于调试" andDetail:@"debug 看回溯"];
+    [self addDataWithTitle:@"block" andDetail:@"2019-2-26"];
+    [self addDataWithTitle:@"多用块枚举，少用for循环" andDetail:@"这里有OC 1.0的枚举器遍历"];
+    [self addDataWithTitle:@"快速遍历 即 for in" andDetail:@"这里有OC 2.0的快速遍历"];
+    [self addDataWithTitle:@"基于块的遍历方式" andDetail:@"2019-2-27"];
+    [self addDataWithTitle:@"无缝桥接" andDetail:@"2019-2-27"];
+    [self addDataWithTitle:@"NSTimer 块实现 防止保留环" andDetail:@"2019-2-28"];
     //倒叙[这样就是时间升序啦]
     self.mArrData =  (NSMutableArray *)[[self.mArrData reverseObjectEnumerator] allObjects];
     
     
+}
+
+- (void)fxw_timerFunction{
+    NSLog(@"我是timer触发的重复任务 哈哈哈哈!!! dealloc时会弄死我");
 }
 
 - (void)clickCellWithTitle:(NSString *)title{
@@ -93,6 +109,142 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
         UIViewController *vc = [[UIViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
+    if ([title isEqualToString:@"NSTimer 块实现 防止保留环"]) {
+        __weak GXOCVC *weakSelf = self;
+        _timer = [NSTimer fxw_timerWithInterval:3.0 block:^{
+            GXOCVC *strogSelf = weakSelf;//不知道为什么要多此一步 书上是这么写的，但是实际测试 直接用weakSelf也是OK的
+//            [weakSelf fxw_timerFunction];
+            [strogSelf fxw_timerFunction];
+        } repeats:YES];
+        return;
+    }
+    if ([title isEqualToString:@"无缝桥接"]) {
+        NSArray *anNSArray = @[@1, @2, @3, @4, @5];
+        CFArrayRef aCFArray = (__bridge CFArrayRef)anNSArray;
+        NSLog(@"Size of array = %li", CFArrayGetCount(aCFArray));
+        return;
+    }
+    if ([title isEqualToString:@"基于块的遍历方式"]) {
+        //oc中国最新引入的一种便利方式[2017年时]
+        NSArray *arr = @[@"hong", @"xu", @"ting", @"ling", @"li"];
+        [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSLog(@"%@", obj);
+            if (stop) {
+                *stop = YES;
+            }
+        }];
+        //NSSet 和NSDictionary 中也有类似的方法
+        return;
+    }
+    if ([title isEqualToString:@"快速遍历 即 for in"]) {
+        NSArray *arr = @[@"hong", @"xu", @"ting", @"ling", @"li"];
+        for (NSString *str in arr) {
+            NSLog(@"%@", str);
+        }
+        
+        //遍历字典 和 set也很简单
+        NSDictionary *dic = @{@"name":@"kenshin",
+                              @"age":@"29",
+                              @"money":@"15w",
+                              @"salary":@"2w"};
+        for (id key in dic) {
+            NSLog(@"%@", dic[key]);
+        }
+        
+        
+        return;
+    }
+    if ([title isEqualToString:@"多用块枚举，少用for循环"]) {
+        NSArray *anArray = @[@"9", @"5", @"2", @"7"];
+        NSEnumerator *enumerator = [anArray objectEnumerator];
+        NSString *num;
+        while ((num = [enumerator nextObject])!= nil) {
+            NSLog(@"%@", num);
+        }
+        
+        //上面是 枚举器 的写法，它的真正优势在于无论便利哪种集合都可以采用这套相似的语法
+        //比如字典、set
+        NSDictionary *dic = @{@"name":@"kenshin",
+                              @"age":@"29",
+                              @"money":@"15w",
+                              @"salary":@"2w"};
+        
+        NSEnumerator *eDic = [dic keyEnumerator];//注意这里是 keyEnumerator
+        NSString *key = nil;
+        while ((key = [eDic nextObject]) != nil) {
+            NSLog(@"%@=%@", key, dic[key]);
+        }
+        return;
+    }
+    if ([title isEqualToString:@"block"]) {
+        //block
+        ^{
+            NSLog(@"这就是一个block 为什么不会执行呢？");
+        };
+        
+        void (^someBlock) () = ^{
+            NSLog(@"这也是一个block");
+        };
+        
+        someBlock();
+        
+        //block类型的语法结构如下
+        //return_type (^block_name)(parameters)
+        
+        //如下 返回值 int 并且接受两个int参数
+        int (^addBlock)(int a, int b) = ^(int a, int b){
+            //在块中默认可以访问实例变量，但是不能直接访问，那样会发生循环引用
+            self->_blockPro = @"kenshin";
+            
+            return a+b;
+        };
+        
+        int sum = addBlock(100, 200);
+        NSLog(@"addBlock(100, 200) == %d", sum);
+        
+        //使用块以外的变量
+        int additional = 5;
+        
+        //修改块以外的变量
+        __block int x = 5;
+        
+        int (^addBlock2)(int a, int b) = ^(int a, int b){
+            //additional = 15; 默认是不允许修改块以外的变量的 如果要修改需要在变量前面加上 __block修饰
+            x = 0;
+            return a + b + additional + x;
+        };
+        
+        int sum2 = addBlock2(100, 200);
+        NSLog(@"addBlock2(100, 200) == %d", sum2);
+        
+        
+        NSArray *array = @[@0, @1, @2, @3, @4, @5];
+        __block NSInteger count = 0;
+        [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if ([obj compare:@2] == NSOrderedAscending) {
+                count++;
+            }
+        }];
+        NSLog(@"数组中小于2的个数 count == %ld", (long)count);
+        
+        //全局块、栈块及堆块
+        
+        
+        void (^block)(void);
+        if (_blockPro == nil) {
+            block = ^{
+                NSLog(@"Block A");
+            };
+        } else {
+            block = ^{
+                NSLog(@"Block B");
+            };
+        }
+        
+        block();
+        NSLog(@"《Effectivc Objective-C 2.0》153页 说的可能会崩溃 但是测试的时候没有崩溃 或许是伪代码不够垃圾");
         return;
     }
     if ([title isEqualToString:@"分类 便于调试"]) {
@@ -132,4 +284,9 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
     return TestHaHa_A | TestHaHa_B | TestHaHa_D | TestHaHa_E;
 }
 
+- (void)dealloc
+{
+    [_timer invalidate];
+    NSLog(@"GXOCVC释放🐦!");
+}
 @end
