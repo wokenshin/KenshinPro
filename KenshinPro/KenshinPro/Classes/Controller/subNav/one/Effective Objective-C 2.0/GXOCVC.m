@@ -114,7 +114,11 @@ typedef NS_ENUM(NSUInteger, TestHaHa) {
     if ([title isEqualToString:@"NSTimer 块实现 防止保留环"]) {
         __weak GXOCVC *weakSelf = self;
         _timer = [NSTimer fxw_timerWithInterval:3.0 block:^{
-            GXOCVC *strogSelf = weakSelf;//不知道为什么要多此一步 书上是这么写的，但是实际测试 直接用weakSelf也是OK的
+            //不知道为什么要多此一步 书上是这么写的，但是实际测试 直接用weakSelf也是OK的
+            //原因：
+            //__weak 本身是可以避免循环引用的问题的，但是其会导致外部对象释放了之后，block 内部也访问不到这个对象的问题，我们可以通过在 block 内部声明一个 __strong 的变量来指向 weakObj，使外部对象既能在 block 内部保持住，又能避免循环引用的问题。
+            //但是个人觉得 只要保证weak修饰的内容释放后block不会触发，那么是可以只需要使用weak的
+            GXOCVC *strogSelf = weakSelf;
 //            [weakSelf fxw_timerFunction];
             [strogSelf fxw_timerFunction];
         } repeats:YES];

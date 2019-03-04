@@ -47,7 +47,7 @@
 #import "JTiOSDevVC.h"
 #import "IOSKFJJVC.h"
 #import "GXOCVC.h"
-
+#import "MSVC.h"
 
 @interface OneVC ()
 
@@ -71,6 +71,7 @@
 - (void)loadData
 {
     
+    [self addDataWithTitle:@"面试2019" andDetail:@"2019-3-1"];
     [self addDataWithTitle:@"《Effective Objective-C 2.0》" andDetail:@"2019-2-15"];
     [self addDataWithTitle:@"《iOS开发进阶》" andDetail:@"2019-2-11"];
     [self addDataWithTitle:@"《精通iOS开发第6版本》" andDetail:@"2018-12-18"];
@@ -146,6 +147,12 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"面试2019"]) {
+        MSVC *vc = [[MSVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"《Effective Objective-C 2.0》"]) {
         GXOCVC *vc = [[GXOCVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

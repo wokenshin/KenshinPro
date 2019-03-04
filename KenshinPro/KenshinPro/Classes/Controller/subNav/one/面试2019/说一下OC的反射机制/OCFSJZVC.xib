@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OCFSJZVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vet-bT-LYh">
+                    <rect key="frame" x="0.0" y="40" width="375" height="142.5"/>
+                    <string key="text">Objective-C反射机制：是类似于Java的反射机制，这种动态机制可以让oc语言更加的灵活。这句话是对oc反射机制的初步认识，不过具体的怎么类似于java机制，怎么让oc更加的灵活，还得看下面的内容才能了解。
+
+      oc反射机制有三个用途：</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1B-o6-03l">
+                    <rect key="frame" x="30" y="222.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.73333333329999995" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="D6m-XA-wLR"/>
+                    </constraints>
+                    <state key="normal" title="1.获得Class">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn_getClass:" destination="-1" eventType="touchUpInside" id="3MA-PQ-e9T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyk-Hy-u4O">
+                    <rect key="frame" x="30" y="278.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.73333333329999995" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="ymw-l9-jO0"/>
+                    </constraints>
+                    <state key="normal" title="2.检查继承关系">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn_checkExtendsRelationship:" destination="-1" eventType="touchUpInside" id="dQN-Jt-PKB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qU-E1-UnL">
+                    <rect key="frame" x="30" y="334.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.73333333329999995" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="kjk-xO-poe"/>
+                    </constraints>
+                    <state key="normal" title=" 3.动态的调用方法">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn_dynamicFunc:" destination="-1" eventType="touchUpInside" id="mJj-lF-nRt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBD-s9-ZMK">
+                    <rect key="frame" x="30" y="400.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.70980392160000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="ILb-5e-DIY"/>
+                        <constraint firstAttribute="height" constant="36" id="K9n-vt-Vbl"/>
+                    </constraints>
+                    <state key="normal" title="初探Objective-C 反射机制">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtnFirstOCReflection:" destination="-1" eventType="touchUpInside" id="0U5-wj-eY1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-IH-Bav">
+                    <rect key="frame" x="30" y="456.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.70980392160000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="X2y-CL-QZv"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="r3s-aJ-w0d"/>
+                    </constraints>
+                    <state key="normal" title="利用反射搞事情">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn_SAX:" destination="-1" eventType="touchUpInside" id="4ya-5c-h6n"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3b-dt-m03">
+                    <rect key="frame" x="30" y="512.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.70980392160000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="Bgu-mk-F72"/>
+                        <constraint firstAttribute="height" constant="36" id="pAH-vA-zCl"/>
+                    </constraints>
+                    <state key="normal" title="高级">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn_dynamicFunc:" destination="-1" eventType="touchUpInside" id="F9t-ew-Ydf"/>
+                        <action selector="clickHigh:" destination="-1" eventType="touchUpInside" id="BZ3-Uh-g6z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-TX-mJe">
+                    <rect key="frame" x="30" y="568.5" width="315" height="36"/>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.70980392160000005" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="3mH-na-uCP"/>
+                        <constraint firstAttribute="height" constant="36" id="bhl-XR-xPZ"/>
+                    </constraints>
+                    <state key="normal" title=" 3.动态的调用方法">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickBtn_dynamicFunc:" destination="-1" eventType="touchUpInside" id="Jme-g4-4WE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="U3b-dt-m03" secondAttribute="trailing" constant="30" id="03F-Sb-lWo"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Wyk-Hy-u4O" secondAttribute="trailing" constant="30" id="1tG-TP-jR8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="C1B-o6-03l" secondAttribute="trailing" constant="30" id="2l9-kk-Wbv"/>
+                <constraint firstItem="8qU-E1-UnL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="6EG-Dd-apw"/>
+                <constraint firstItem="0fJ-TX-mJe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="7K7-kE-oeN"/>
+                <constraint firstItem="U3b-dt-m03" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="AOE-LM-R9E"/>
+                <constraint firstItem="C1B-o6-03l" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="BZw-cd-Byv"/>
+                <constraint firstItem="C1B-o6-03l" firstAttribute="top" secondItem="vet-bT-LYh" secondAttribute="bottom" constant="40" id="KYZ-3L-7nM"/>
+                <constraint firstItem="Wyk-Hy-u4O" firstAttribute="top" secondItem="C1B-o6-03l" secondAttribute="bottom" constant="20" id="M4l-xn-0pz"/>
+                <constraint firstItem="lBD-s9-ZMK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="PXc-PP-1r5"/>
+                <constraint firstItem="vet-bT-LYh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="S4G-KG-8qs"/>
+                <constraint firstItem="U3b-dt-m03" firstAttribute="top" secondItem="vO6-IH-Bav" secondAttribute="bottom" constant="20" id="SsP-fI-le1"/>
+                <constraint firstItem="8qU-E1-UnL" firstAttribute="top" secondItem="Wyk-Hy-u4O" secondAttribute="bottom" constant="20" id="ToB-3J-r3p"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vO6-IH-Bav" secondAttribute="trailing" constant="30" id="aiY-PT-Pat"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8qU-E1-UnL" secondAttribute="trailing" constant="30" id="at0-p2-398"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="0fJ-TX-mJe" secondAttribute="trailing" constant="30" id="b0F-rp-CJH"/>
+                <constraint firstItem="Wyk-Hy-u4O" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="bwm-f6-aYn"/>
+                <constraint firstItem="vO6-IH-Bav" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="d4w-Kh-2gF"/>
+                <constraint firstItem="vet-bT-LYh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="hcl-8S-qWu"/>
+                <constraint firstItem="lBD-s9-ZMK" firstAttribute="top" secondItem="8qU-E1-UnL" secondAttribute="bottom" constant="30" id="ngK-fP-WR6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vet-bT-LYh" secondAttribute="trailing" id="ngi-Ml-SlN"/>
+                <constraint firstItem="vO6-IH-Bav" firstAttribute="top" secondItem="lBD-s9-ZMK" secondAttribute="bottom" constant="20" id="s6b-Ke-q2Z"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="lBD-s9-ZMK" secondAttribute="trailing" constant="30" id="vo0-ax-4A7"/>
+                <constraint firstItem="0fJ-TX-mJe" firstAttribute="top" secondItem="U3b-dt-m03" secondAttribute="bottom" constant="20" id="xdH-94-yIj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

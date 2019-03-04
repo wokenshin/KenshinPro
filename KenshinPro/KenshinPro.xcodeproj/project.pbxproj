@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180231BD2228C1540055E828 /* MSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180231BC2228C1540055E828 /* MSVC.m */; };
+		180231C22228C4680055E828 /* OCFSJZVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180231C02228C4680055E828 /* OCFSJZVC.m */; };
+		180231C32228C4680055E828 /* OCFSJZVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180231C12228C4680055E828 /* OCFSJZVC.xib */; };
+		180231C62228CB570055E828 /* FSJZ_Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 180231C52228CB570055E828 /* FSJZ_Person.m */; };
 		1803E592207DF72C00F7ACA6 /* FiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803E591207DF72C00F7ACA6 /* FiveVC.m */; };
 		1803E596207DFA1C00F7ACA6 /* FYScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803E595207DFA1C00F7ACA6 /* FYScrollViewVC.m */; };
 		18045ABF2203D933008CF942 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18045ABE2203D933008CF942 /* BallView.m */; };
@@ -739,6 +743,13 @@
 
 /* Begin PBXFileReference section */
 		01B765F29EAD76CABC176E56 /* Pods-KenshinPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinPro/Pods-KenshinPro.release.xcconfig"; sourceTree = "<group>"; };
+		180231BB2228C1540055E828 /* MSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSVC.h; sourceTree = "<group>"; };
+		180231BC2228C1540055E828 /* MSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSVC.m; sourceTree = "<group>"; };
+		180231BF2228C4680055E828 /* OCFSJZVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCFSJZVC.h; sourceTree = "<group>"; };
+		180231C02228C4680055E828 /* OCFSJZVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCFSJZVC.m; sourceTree = "<group>"; };
+		180231C12228C4680055E828 /* OCFSJZVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCFSJZVC.xib; sourceTree = "<group>"; };
+		180231C42228CB570055E828 /* FSJZ_Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSJZ_Person.h; sourceTree = "<group>"; };
+		180231C52228CB570055E828 /* FSJZ_Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSJZ_Person.m; sourceTree = "<group>"; };
 		1803E590207DF72C00F7ACA6 /* FiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveVC.h; sourceTree = "<group>"; };
 		1803E591207DF72C00F7ACA6 /* FiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveVC.m; sourceTree = "<group>"; };
 		1803E594207DFA1C00F7ACA6 /* FYScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYScrollViewVC.h; sourceTree = "<group>"; };
@@ -2046,6 +2057,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180231BA2228C1320055E828 /* 面试2019 */ = {
+			isa = PBXGroup;
+			children = (
+				180231BE2228C4450055E828 /* 说一下OC的反射机制 */,
+				180231BB2228C1540055E828 /* MSVC.h */,
+				180231BC2228C1540055E828 /* MSVC.m */,
+			);
+			path = "面试2019";
+			sourceTree = "<group>";
+		};
+		180231BE2228C4450055E828 /* 说一下OC的反射机制 */ = {
+			isa = PBXGroup;
+			children = (
+				180231BF2228C4680055E828 /* OCFSJZVC.h */,
+				180231C02228C4680055E828 /* OCFSJZVC.m */,
+				180231C12228C4680055E828 /* OCFSJZVC.xib */,
+				180231C42228CB570055E828 /* FSJZ_Person.h */,
+				180231C52228CB570055E828 /* FSJZ_Person.m */,
+			);
+			path = "说一下OC的反射机制";
+			sourceTree = "<group>";
+		};
 		1803E58C207DF6CB00F7ACA6 /* five */ = {
 			isa = PBXGroup;
 			children = (
@@ -3980,6 +4013,7 @@
 		B92CCAEB1E7A151F00035A79 /* one */ = {
 			isa = PBXGroup;
 			children = (
+				180231BA2228C1320055E828 /* 面试2019 */,
 				182DF60D2216A753008FA8E4 /* Effective Objective-C 2.0 */,
 				1890BEC9221107A20055C436 /* iOS开发进阶 */,
 				18BB876521C9EE8000C55E54 /* 精通iOS开发第6版本 */,
@@ -6181,6 +6215,7 @@
 				B95ED6C31E9474E200AD490B /* test.m2 in Resources */,
 				B9436F581EEE6E8200660C70 /* SocketVC.xib in Resources */,
 				18F9B77B21D0CE2F005D40E0 /* YellowVC.xib in Resources */,
+				180231C32228C4680055E828 /* OCFSJZVC.xib in Resources */,
 				9D5FD63C203148430071827F /* CellJJSJ.xib in Resources */,
 				B98DF71F1EA8521300296C2A /* index1.js in Resources */,
 				B906B3DC1EE94B9F0073E175 /* BottomTableMenuVC.xib in Resources */,
@@ -6452,6 +6487,7 @@
 				18268E9021DDBD6B008281B4 /* FontInfoVC.m in Sources */,
 				B95ED6B21E9474E200AD490B /* WoYaoBianDaView.m in Sources */,
 				B9B9CEC91E9CB986008CC558 /* SDWebImagePrefetcher.m in Sources */,
+				180231BD2228C1540055E828 /* MSVC.m in Sources */,
 				18C53757207E4F8C00959AF8 /* ModelItem.m in Sources */,
 				B9B9CECE1E9CB986008CC558 /* UIImageView+HighlightedWebCache.m in Sources */,
 				1815765221E6DFD200243390 /* Test.xcdatamodeld in Sources */,
@@ -6686,6 +6722,7 @@
 				180900B7209A90CD00DBCF1D /* PuerTCellVC.m in Sources */,
 				B906FD451E8B668F00645C96 /* MJRefreshFooter.m in Sources */,
 				B906FC4A1E8B3BC000645C96 /* MJFoundation.m in Sources */,
+				180231C22228C4680055E828 /* OCFSJZVC.m in Sources */,
 				9D4274AC1FF0972C00745A81 /* UITabBarItem+PPBadgeView.m in Sources */,
 				B915C2331E7F9DE10088A31F /* MDCollectionViewCell.m in Sources */,
 				1893BC5E2213FED8005F3821 /* CTDisplayView.m in Sources */,
@@ -6798,6 +6835,7 @@
 				B92642051E83D3AF00EEED61 /* AFNetworkReachabilityManager.m in Sources */,
 				181DEBF321D71E92005D2827 /* CellCusTwo.m in Sources */,
 				B94A8C581F3D46ED002A6D51 /* Notifi2VC.m in Sources */,
+				180231C62228CB570055E828 /* FSJZ_Person.m in Sources */,
 				B906FC4F1E8B3BC000645C96 /* NSObject+MJCoding.m in Sources */,
 				181E36DE207DAB8A005675C1 /* CreateQRCodeVC.m in Sources */,
 				B906FD511E8B668F00645C96 /* MJRefreshConst.m in Sources */,
