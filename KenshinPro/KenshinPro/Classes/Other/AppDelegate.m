@@ -61,6 +61,11 @@
     NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
+////黑屏
+//- (void)blackScreenOn:(BOOL)isOn{
+//    [UIApplication sharedApplication].keyWindow.hidden = isOn;
+//}
+
 #pragma mark - 设置根控制器
 - (void)intoRootVC
 {

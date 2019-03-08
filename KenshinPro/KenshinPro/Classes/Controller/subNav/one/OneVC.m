@@ -48,6 +48,7 @@
 #import "IOSKFJJVC.h"
 #import "GXOCVC.h"
 #import "MSVC.h"
+#import "CLangVC.h"
 
 @interface OneVC ()
 
@@ -65,12 +66,23 @@
     
 }
 
+- (void)test2017_12_22
+{
+    NSMutableDictionary *dicTest = [[NSMutableDictionary alloc] init];
+    [dicTest setObject:@"蟑螂" forKey:@"小强"];
+    
+    id obj = dicTest[@"小强"];//脑袋短路了 看代码的时候没看懂 id<ProXxx> api  = _dicApi[responseKey];
+    //    NSLog(@"上面语法的意思是：找出字典中 key为 小强 的 value");
+    obj = nil;
+    
+}
 
 
 #pragma mark 加载数据
 - (void)loadData
 {
     
+    [self addDataWithTitle:@"C语言" andDetail:@"2019-3-8"];
     [self addDataWithTitle:@"面试2019" andDetail:@"2019-3-1"];
     [self addDataWithTitle:@"《Effective Objective-C 2.0》" andDetail:@"2019-2-15"];
     [self addDataWithTitle:@"《iOS开发进阶》" andDetail:@"2019-2-11"];
@@ -147,6 +159,12 @@
 
 - (void)clickCellWithTitle:(NSString *)title
 {
+    if ([title isEqualToString:@"C语言"]) {
+        CLangVC *vc = [[CLangVC alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }
     if ([title isEqualToString:@"面试2019"]) {
         MSVC *vc = [[MSVC alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
@@ -555,17 +573,6 @@
         return;
     }
     [self toast:[NSString stringWithFormat:@"未找到对应VC 点击了:%@", title]];
-    
-}
-
-- (void)test2017_12_22
-{
-    NSMutableDictionary *dicTest = [[NSMutableDictionary alloc] init];
-    [dicTest setObject:@"蟑螂" forKey:@"小强"];
-    
-    id obj = dicTest[@"小强"];//脑袋短路了 看代码的时候没看懂 id<ProXxx> api  = _dicApi[responseKey];
-//    NSLog(@"上面语法的意思是：找出字典中 key为 小强 的 value");
-    obj = nil;
     
 }
 
