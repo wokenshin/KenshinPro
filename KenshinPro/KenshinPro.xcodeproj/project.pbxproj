@@ -181,6 +181,8 @@
 		18FBD18D21F1B8920072C182 /* wlp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBD18C21F1B8920072C182 /* wlp.jpg */; };
 		18FC7A2721D4B7430075FF9E /* pickerPlay.wav in Resources */ = {isa = PBXBuildFile; fileRef = 18FC7A2621D4B7430075FF9E /* pickerPlay.wav */; };
 		18FCF08821AFBECB009045C2 /* ARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FCF08721AFBECB009045C2 /* ARCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18FE29282238952D00860961 /* GCDSSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE29262238952D00860961 /* GCDSSVC.m */; };
+		18FE29292238952D00860961 /* GCDSSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FE29272238952D00860961 /* GCDSSVC.xib */; };
 		18FF509F2232131D004824EE /* CLangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF509E2232131D004824EE /* CLangVC.m */; };
 		2E836C4FD175F05D2059F3EC /* libPods-KenshinPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */; };
 		9D094E29201192B40088636C /* LOGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D094E27201192B40088636C /* LOGVC.m */; };
@@ -1033,6 +1035,9 @@
 		18FC7A2621D4B7430075FF9E /* pickerPlay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickerPlay.wav; sourceTree = "<group>"; };
 		18FCF08621AFBECB009045C2 /* ARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCVC.h; sourceTree = "<group>"; };
 		18FCF08721AFBECB009045C2 /* ARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCVC.m; sourceTree = "<group>"; };
+		18FE29252238952D00860961 /* GCDSSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSSVC.h; sourceTree = "<group>"; };
+		18FE29262238952D00860961 /* GCDSSVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSSVC.m; sourceTree = "<group>"; };
+		18FE29272238952D00860961 /* GCDSSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCDSSVC.xib; sourceTree = "<group>"; };
 		18FF509D2232131D004824EE /* CLangVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLangVC.h; sourceTree = "<group>"; };
 		18FF509E2232131D004824EE /* CLangVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLangVC.m; sourceTree = "<group>"; };
 		4CC3A5C3C03B02976CF8A7E4 /* libPods-KenshinPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KenshinPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2063,6 +2068,7 @@
 		180231BA2228C1320055E828 /* 面试2019 */ = {
 			isa = PBXGroup;
 			children = (
+				18FE29242238950A00860961 /* GCD死锁及解决方案 */,
 				180231BE2228C4450055E828 /* 说一下OC的反射机制 */,
 				180231BB2228C1540055E828 /* MSVC.h */,
 				180231BC2228C1540055E828 /* MSVC.m */,
@@ -2944,6 +2950,16 @@
 				18FCF08721AFBECB009045C2 /* ARCVC.m */,
 			);
 			path = ARC;
+			sourceTree = "<group>";
+		};
+		18FE29242238950A00860961 /* GCD死锁及解决方案 */ = {
+			isa = PBXGroup;
+			children = (
+				18FE29252238952D00860961 /* GCDSSVC.h */,
+				18FE29262238952D00860961 /* GCDSSVC.m */,
+				18FE29272238952D00860961 /* GCDSSVC.xib */,
+			);
+			path = "GCD死锁及解决方案";
 			sourceTree = "<group>";
 		};
 		18FF509C223212EB004824EE /* C语言 */ = {
@@ -3962,13 +3978,13 @@
 			isa = PBXGroup;
 			children = (
 				B92CCB031E7A192100035A79 /* HDeviceIdentifierUtils */,
+				B92CCB001E7A167D00035A79 /* FXW_Define.h */,
 				B92CCAFD1E7A166100035A79 /* Tools.h */,
 				B92CCAFE1E7A166100035A79 /* Tools.m */,
 				B92CCB041E7A192100035A79 /* DateUtil.h */,
 				B92CCB051E7A192100035A79 /* DateUtil.m */,
 				B9CF8BD91EC2AF5500C64D58 /* FXW_Theme.h */,
 				B9CF8BDA1EC2AF5500C64D58 /* FXW_Theme.m */,
-				B92CCB001E7A167D00035A79 /* FXW_Define.h */,
 				B92CCB2F1E7A73D000035A79 /* FXW_ENUM.h */,
 				B906FCE81E8B553600645C96 /* FXW_Const.h */,
 				B906FCE91E8B553600645C96 /* FXW_Const.m */,
@@ -6241,6 +6257,7 @@
 				9DE9456B1FEA052A001D0C6A /* BlockVC.xib in Resources */,
 				B93F58661ED2844200393292 /* JWTVC.xib in Resources */,
 				B94C54311F3C34CB003AC71B /* ArrayVC.xib in Resources */,
+				18FE29292238952D00860961 /* GCDSSVC.xib in Resources */,
 				18934C79211BC75C007BD44F /* userHelp.html in Resources */,
 				B95ED6E01E94EA6900AD490B /* BaiDuBottomMenu.xib in Resources */,
 				B95AC89A1EADDC2600806D1A /* TextConnectWebVC.xib in Resources */,
@@ -6784,6 +6801,7 @@
 				B96528891EA5A5230044CA5F /* ModelUploadImg.m in Sources */,
 				B915C2421E7F9DE10088A31F /* MDSuggestTableView.m in Sources */,
 				B9EFE9541EDE4A62002C2758 /* MF_Base64Additions.m in Sources */,
+				18FE29282238952D00860961 /* GCDSSVC.m in Sources */,
 				B94F909F1EB2E3560032FC0E /* NSStringVC.m in Sources */,
 				B915C22D1E7F9DE10088A31F /* MDCalendarCell.m in Sources */,
 				B9A743CD1E95EE1400ABFD86 /* SwitchModeVC.m in Sources */,

@@ -82,14 +82,14 @@
 - (void)loadData
 {
     
-    [self addDataWithTitle:@"C语言" andDetail:@"2019-3-8"];
     [self addDataWithTitle:@"面试2019" andDetail:@"2019-3-1"];
+    [self addDataWithTitle:@"C语言" andDetail:@"2019-3-8"];
     [self addDataWithTitle:@"《Effective Objective-C 2.0》" andDetail:@"2019-2-15"];
     [self addDataWithTitle:@"《iOS开发进阶》" andDetail:@"2019-2-11"];
     [self addDataWithTitle:@"《精通iOS开发第6版本》" andDetail:@"2018-12-18"];
     [self addDataWithTitle:@"Block-1" andDetail:@"2018-12-11"];
-    [self addDataWithTitle:@"ARC Demo3" andDetail:@"2018-12-10"];
-    [self addDataWithTitle:@"ARC Demo2" andDetail:@"2018-11-30"];
+    [self addDataWithTitle:@"ARC Demo3" andDetail:@"2018-12-10 会崩溃"];
+    [self addDataWithTitle:@"ARC Demo2" andDetail:@"2018-11-30 会崩溃"];
     [self addDataWithTitle:@"ARC Demo1" andDetail:@"2018-11-30"];
     [self addDataWithTitle:@"非自己生成的对象，自己也能持有" andDetail:@"2018.11.28"];
     [self addDataWithTitle:@"代码块" andDetail:@"2018.11.26"];

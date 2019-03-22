@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GCDSSVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKK-iv-CVZ">
+                    <rect key="frame" x="20" y="40" width="335" height="36"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.73333333329999995" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="IxJ-pN-3bG"/>
+                    </constraints>
+                    <state key="normal" title="导致死锁的典型代码">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="deadLockTypicalCode:" destination="-1" eventType="touchUpInside" id="OqF-d6-Whl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUl-Dj-e00">
+                    <rect key="frame" x="20" y="96" width="335" height="36"/>
+                    <color key="backgroundColor" red="0.11662732809782028" green="0.64022940397262573" blue="0.087580464780330658" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="jU6-4H-hMR"/>
+                    </constraints>
+                    <state key="normal" title="同步的向串行队列添加block">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="syncSerialQueueAddBlock:" destination="-1" eventType="touchUpInside" id="heN-ZK-iFq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WKK-iv-CVZ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="Ah2-DO-L2f"/>
+                <constraint firstItem="oUl-Dj-e00" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Huh-gL-0I3"/>
+                <constraint firstItem="oUl-Dj-e00" firstAttribute="top" secondItem="WKK-iv-CVZ" secondAttribute="bottom" constant="20" id="PGX-ab-USf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="oUl-Dj-e00" secondAttribute="trailing" constant="20" id="S1h-sJ-Yez"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WKK-iv-CVZ" secondAttribute="trailing" constant="20" id="f9b-30-1UO"/>
+                <constraint firstItem="WKK-iv-CVZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="gm3-hI-oDn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-14" y="3"/>
+        </view>
+    </objects>
+</document>

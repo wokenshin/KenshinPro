@@ -88,7 +88,8 @@
 #define FontPay [UIFont systemFontOfSize:14]
 
 //weakSelf 定义一个self的弱引用  等同于 __weak typeof(self) weakSelf = self;
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define WS(weakSelf)   __weak __typeof(&*self)weakSelf = self;
+#define SS(strongSelf) __strong __typeof(&*self)strongSelf = self;
 
 //RBG转化为UIColor
 #define RGB2Color(r,g,b) ([UIColor colorWithRed:(r * 1.0 /255) green:g * 1.0/255 blue:b * 1.0/255 alpha:1.0])

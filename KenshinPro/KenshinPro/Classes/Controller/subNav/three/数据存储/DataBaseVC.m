@@ -35,6 +35,7 @@
 
 - (void)loadData
 {
+    [self addDataWithTitle:@"网友「待业青年」demo" andDetail:@"2019-3-13"];
     [self addDataWithTitle:@"NSUserDefault-沙盒" andDetail:@"项目里使用最频繁的数据存储方式"];
     [self addDataWithTitle:@"plist-属性列表" andDetail:@"个人感觉还是没有沙盒用着方便 移植kenshinApp中的内容"];
     [self addDataWithTitle:@"NSCoding自动归档解档" andDetail:@"参考 ddzm"];

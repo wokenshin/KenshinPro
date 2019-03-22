@@ -21,7 +21,6 @@
     [self loadData];
     [self initCLangVCUI];
     
-    
 }
 
 - (void) initCLangVCUI{
@@ -35,6 +34,11 @@
 
 - (void)loadData{
     
+    [self addDataWithTitle:@"指针常量" andDetail:@"2019-3-11"];
+    [self addDataWithTitle:@"常量指针" andDetail:@"2019-3-11"];
+    [self addDataWithTitle:@"指针的比较" andDetail:@"++, --, +, -"];
+    [self addDataWithTitle:@"递减一个指针" andDetail:@"++, --, +, -"];
+    [self addDataWithTitle:@"递增一个指针" andDetail:@"++, --, +, -"];
     [self addDataWithTitle:@"指针的算术运算" andDetail:@"++, --, +, -"];
     [self addDataWithTitle:@"C中的NULL指针" andDetail:@"2019-3-8"];
     [self addDataWithTitle:@"内存地址" andDetail:@"2019-3-8"];
@@ -44,6 +48,77 @@
 
 - (void)clickCellWithTitle:(NSString *)title{
     
+    if ([title isEqualToString:@"指针常量"]) {
+        /*
+         定义：又叫常指针，可以理解为常量的指针，也即这个是指针，但指向的是个常量，这个常量是指针的值（地址），而不是地址指向的值。
+         
+         */
+        return;
+    }
+    if ([title isEqualToString:@"常量指针"]) {
+        
+        return;
+    }
+    if ([title isEqualToString:@"指针的比较"]) {
+        /*
+         指针可以用关系运算符进行比较，如 ==、< 和 >。如果 p1 和 p2 指向两个相关的变量，
+         比如同一个数组中的不同元素，则可对 p1 和 p2 进行大小比较。
+         下面的程序修改了上面的实例，只要变量指针所指向的地址小于或等于数组的最后一个元素的地址 &var[MAX - 1]，则把变量指针进行递增：
+         */
+        const int MAX = 3;
+        int var[] = {10, 100, 1000};
+        int i;
+        int *ptr;
+        /* 指针中第一个元素的地址 */
+        ptr = var;
+        i = 0;
+        while (ptr<=&var[MAX -1]) {
+            //C语言中%X的意思是以十六进制数形式输出整数
+            printf("var[%d]的地址是%x\n", i, ptr);
+            printf("var[%d]==%d\n", i, *ptr);
+            
+            /* 指向上一个位置 */
+            ptr++;
+            i++;
+        }
+        
+        return;
+    }
+    if ([title isEqualToString:@"递减一个指针"]) {
+        const int MAX = 3;
+        int var[] = {10, 100, 1000};
+        int i, *ptr;
+        
+         /* 指针中最后一个元素的地址 */
+        ptr = &var[MAX-1];
+        for (i = MAX; i > 0; i--) {
+            printf("存储地址var[%d] = %d\n", i-1, ptr);//十进制输出
+            printf("存储值  var[%d] = %d\n", i-1, *ptr);
+            /* 移动到下一个位置 */
+            ptr--;
+        }
+        
+        return;
+    }
+    if ([title isEqualToString:@"递增一个指针"]) {
+        const int MAX = 3;
+        
+        int var[] = {10, 100, 1000};
+        int i, *ptr;
+        
+        //指针中的数组地址
+        ptr = var;
+        for (i = 0; i < MAX; i++) {
+            //C语言中%X的意思是以十六进制数形式输出整数
+            //%d 同上 十进制
+            printf("存储地址：var[%d] = %d\n", i, ptr);
+            printf("存储值： var[%d] = %d\n", i, *ptr);
+            /* 移动到下一个位置 */
+            ptr++;
+        }
+        
+        return;
+    }
     if ([title isEqualToString:@"指针的算术运算"]) {
         int *ip = NULL;//NULL的地址是 0x0
         
@@ -51,7 +126,6 @@
         
         ip++;
         printf("ip 的地址是 %p\n", ip);
-        
         return;
     }
     if ([title isEqualToString:@""]){

@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtGender;
 @property (weak, nonatomic) IBOutlet UITextField *txtAge;
 
-@property (nonatomic, strong) DBUser                 *user;
+@property (nonatomic, strong) DBUser             *user;
 
 
 @end
