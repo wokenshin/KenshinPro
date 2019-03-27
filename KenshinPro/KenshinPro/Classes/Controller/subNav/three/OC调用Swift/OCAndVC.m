@@ -38,7 +38,7 @@
 //OC调用自己创建的Swift
 - (IBAction)clickOCCallSwiftBase:(id)sender
 {
-    Student * s1 = [[Student alloc] init];
+    Student *s1 = [[Student alloc] init];
     NSLog(@"%@", s1.name);
     
 }
