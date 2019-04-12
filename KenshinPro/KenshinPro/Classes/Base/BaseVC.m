@@ -182,7 +182,7 @@ UINavigationControllerDelegate, UIImagePickerControllerDelegate>//获取相册 o
                 andTitleColor:(UIColor *)color
           andClickResultblock:(VoidBlock )block
 {
-    UIButton* rightBtn= [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton* rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     [rightBtn setTitle:btnName forState:UIControlStateNormal];
     [rightBtn setTitleColor:color forState:UIControlStateNormal];
